@@ -28,6 +28,7 @@ jobs:
       - name: Build
         run: |
           hexo genereate
+          ls
 
       - name: Deploy to ecs server
         uses: easingthemes/ssh-deploy@v2.1.5
