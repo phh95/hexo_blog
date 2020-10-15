@@ -27,7 +27,7 @@ jobs:
           npm install
       - name: Build
         run: |
-          hexo genereate
+          npm run build 
           ls
 
       - name: Deploy to ecs server
