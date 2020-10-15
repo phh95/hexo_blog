@@ -27,12 +27,7 @@ jobs:
           npm install
       - name: Build
         run: |
-<<<<<<< HEAD
-          npm run build 
-=======
           npm run build
->>>>>>> 7c7097d4e6425360889ad04b8d43394493144578
-          ls
 
       - name: Deploy to ecs server
         uses: easingthemes/ssh-deploy@v2.1.5
