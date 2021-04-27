@@ -23,9 +23,19 @@ layout: about
 你可以在以下平台找到我：
 
 微信：penghonghao95
-微信公众号：效率工具指南（ID：PengTalk15）
+微信公众号：效率工具指南（ID：PengTalk15）   
+
+![微信公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/04/18/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)    
+
 知乎：[彭宏豪](https://www.zhihu.com/people/angola-84)         
 
+## 🔗 友情链接   
+
+* [逸佳君博客 | 人生四件事：读书/写作/赚钱/看世界](http://yijiaup.com)    
+
+有博客且志同道合的朋友，欢迎来交换友链。     
 
 > 本文作者：彭宏豪      
-> 版权声明： 本博客所有文章除特别声明外，转载请注明出处！
+> 版权声明： 本博客所有文章除特别声明外，转载请注明出处！     
+
+
