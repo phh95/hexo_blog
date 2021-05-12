@@ -106,4 +106,3 @@ deploy:
   type: git
   repo: git@106.55.41.29:/home/git/hexo.git
   branch: master
-
