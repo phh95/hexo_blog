@@ -103,3 +103,8 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
     </div>
   </div>
 <% } %>
+
+
+<% if(config.leancloud_visitors.enable){ %>阅读数:
+  <span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次
+<% } %>  
