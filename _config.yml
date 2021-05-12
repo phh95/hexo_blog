@@ -107,8 +107,3 @@ deploy:
   repo: git@106.55.41.29:/home/git/hexo.git
   branch: master
 
-# add post views
-leancloud_visitors:
-  enable: true
-  app_id: mFS2oVoiTOElp63tFewejr7m-gzGzoHsz   
-  app_key: 0HcqFXhoeStKHmFebO3wbd01
