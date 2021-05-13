@@ -11,7 +11,7 @@
 # 全局
 # Site
 #---------------------------
-favicon: /img/favicon.png # 网站标签页的 icon
+favicon: /img/blogicon.png # 网站标签页的 icon
 
 apple_touch_icon: /img/favicon.png # 用于苹果设备的 icon
 
@@ -377,7 +377,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
-  avatar: /img/avatar.png # 头像
+  avatar: /img/blogicon.png # 头像
   name: 彭宏豪   
   introduce: '新媒体人，喜欢写写东西' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
