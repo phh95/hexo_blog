@@ -119,7 +119,7 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
   enable: true
@@ -407,19 +407,19 @@ links:
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
-    - {
+    #- {
       title: 'Fluid Blog',
       intro: '主题博客',
       link: 'https://hexo.fluid-dev.com/',
       image: '/img/favicon.png'
     }
-    - {
-      title: 'Fluid Docs',
-      intro: '主题使用指南',
-      link: 'https://hexo.fluid-dev.com/docs/',
+    #- {
+      title: '逸佳君博客',
+      intro: '专注SEO优化、学习',
+      link: 'http://www.yijiaup.com/',
       image: '/img/favicon.png'
     }
-    - {
+    #- {
       title: 'Fluid Repo',
       intro: '主题 GitHub 仓库',
       link: 'https://github.com/fluid-dev/hexo-theme-fluid',
