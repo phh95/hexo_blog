@@ -407,24 +407,14 @@ links:
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
-    #- {
-      title: 'Fluid Blog',
-      intro: '主题博客',
-      link: 'https://hexo.fluid-dev.com/',
-      image: '/img/favicon.png'
-    }
-    #- {
+
+    - {
       title: '逸佳君博客',
       intro: '专注SEO优化、学习',
       link: 'http://www.yijiaup.com/',
       image: '/img/favicon.png'
     }
-    #- {
-      title: 'Fluid Repo',
-      intro: '主题 GitHub 仓库',
-      link: 'https://github.com/fluid-dev/hexo-theme-fluid',
-      image: '/img/favicon.png'
-    }
+    
 
 
 #---------------------------
