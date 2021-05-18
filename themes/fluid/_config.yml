@@ -416,6 +416,12 @@ links:
       image: ''
     }
 
+    - {
+      title: '遍历分形',
+      intro: '不断试错，无限迭代',
+      link: 'https://blog.tagly.cn/',
+    }
+
 rss: /atom.xml
     
 

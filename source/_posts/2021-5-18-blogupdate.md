@@ -1,5 +1,5 @@
 ---
-title: 又优化了一下自己的博客          
+title: 你可以用 RSS 订阅我的博客了          
 date: 2021-5-18 00:00:00    
 tags: [写作,博客,RSS]             
 ---
@@ -51,7 +51,7 @@ Hexo 主题「hexo-theme-fluid」配置文档：
 
 ## 添加 RSS 订阅链接
 
-虽然之前写过一篇介绍[通过 RSS 来订阅多个的内容平台]()的文章，但我自己却没有为自己的博客生成 RSS 订阅链接的意识🤦‍♂️
+虽然之前写过一篇介绍[通过 RSS 来订阅多个的内容平台](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649904885&idx=1&sn=4cf0407adfa94e0e855ca3a5bc3bda20&chksm=83a852d8b4dfdbce023212961dfb446fc4fd8a8e595ea762ad8711602dd9c551811cdff19ca6&token=1051004415&lang=zh_CN#rd)的文章，但我自己却没有为自己的博客生成 RSS 订阅链接的意识🤦‍♂️
 
 想起来要给博客添加 RSS 订阅链接，还是推特上一位网友给我提的。
 
