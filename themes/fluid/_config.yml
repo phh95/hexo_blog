@@ -410,10 +410,10 @@ links:
   items:  # intro 与 image 可省略
 
     - {
-      title: '逸佳君博客',
-      intro: '专注SEO优化、学习',
-      link: 'http://www.yijiaup.com/',
-      image: ''
+      title: 'tomorrow505',    
+      intro: '心之所向，敝履以往',  
+      link: 'https://tomorrow505.xyz/',
+      image: 'https://tomorrow505.xyz/img/main.jpg'   
     }
 
     - {
