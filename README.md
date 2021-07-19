@@ -1,8 +1,8 @@
 ## My Hexo Blog 彭宏豪的个人博客     
 
-Website：http://www.penghh.fun 
-About Me：http://www.penghh.fun/about/    
-RSS Subscribe My Blog：https://www.penghh.fun/atom.xml     
+Website：http://www.penghh.fun     
+About Me：http://www.penghh.fun/about/        
+RSS Subscribe My Blog：https://www.penghh.fun/atom.xml       
 
 ## 搭建方法   
 
