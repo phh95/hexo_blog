@@ -299,10 +299,7 @@ gitalk:
 valine:
   appid: jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz   # 从 LeanCloud 的应用中得到的 appId
   appkey: W1C4SSU2QtkkD5pD5uSCV2Hi   # 从 LeanCloud 的应用中得到的 APP Key
-  placeholder: 
-  🌅ヾﾉ≧∀≦)o快来评论一下吧，填写昵称和邮箱直接评论即可      
-
-  ✅正确填写邮箱，可以收到回复通知📧，也方便后续交流😋  # 评论框占位提示符   
+  placeholder: 🌅ヾﾉ≧∀≦)o快来评论一下吧，填写昵称和邮箱直接评论即可<br />✅正确填写邮箱，可以收到回复通知📧，也方便后续交流😋  # 评论框占位提示符   
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
   avatar: retro # Gravatar 头像展示方式
   meta: ['nick', 'mail', 'link']  # 评论者相关属性
