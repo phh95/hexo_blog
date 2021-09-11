@@ -3,7 +3,6 @@ title: Notion 使用技巧 | Notion 中文版在路上了
 date: 2021-9-10 20:00:00       
 tags: [Notion,使用技巧]                               
 ---    
-# title：Notion 使用技巧
 
 本文首发于公众号「[效率工具指南](https://mp.weixin.qq.com/s/2jafiG79PYM6BvRct0WpHA)」     
 文/彭宏豪
