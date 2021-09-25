@@ -112,4 +112,11 @@ deploy:
 feed:
   type: atom
   path: atom.xml
-  limit: false
+  limit: false     
+
+# 音乐播放器插件
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js  # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  meting: true       # MetingJS 支持
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)

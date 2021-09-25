@@ -424,9 +424,7 @@ links:
 
 rss: /atom.xml     
 
-# 开启音乐插件 Aplayer   
-aplayer:
-  enable: true    
+
     
 
 
