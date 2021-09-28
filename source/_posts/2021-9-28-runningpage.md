@@ -56,8 +56,8 @@ GitHub 项目「running_page」地址：
 会使用 Git 命令的朋友，可以通过 Git 将远端的代码文件克隆到电脑本地：    
 
 ```
-git clone https://github.com/yihong0618/running_page.git   
-```
+git clone https://github.com/yihong0618/running_page.git               
+```       
 
 如果你不会使用 Git 命令，可以通过仓库右上角的 **Download** 按钮下载所有文件的压缩包，记得要对文件进行解压。
 
@@ -67,11 +67,11 @@ git clone https://github.com/yihong0618/running_page.git
 
 下载文件之后，我们要**终端**（Windows 上称为 **cmd** 或者 **Powershell**）中逐行运行下面的命令。   
 
-```
+```     
 pip3 install -r requirements.txt
 yarn install
 yarn develop
-```
+```      
 
 运行之前，请确保你当前所在的路径，是代码文件夹所在的位置。  
 
@@ -81,25 +81,25 @@ yarn develop
 
 因此，在运行前面的 3 个命令之前，我需要先使用 `cd` 命令，进入到对应的路径下方。  
 
-```
-cd workspace/running_page/running_page
-```  
+```   
+cd workspace/running_page/running_page      
+```            
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327559729271.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327559729271.jpg)      
 
-进到正确的路径下，再逐次运行前面的 3 个命令。  
+进到正确的路径下，再逐次运行前面的 3 个命令。     
 
 不过，由于不同电脑的**环境配置**存在着差异，在运行那 3 个命令的过程中，你可能也会像我一样，遇到命令运行后提示错误的情况。  
 
 这里给出我在运行这 3 个命令的过程中，遇到的 3 个问题及相应的解决方法：    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327561907413.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327561907413.jpg)      
 
 ## 查看网页的雏形
 
 前面 3 个命令运行无误的话，最后可以在终端中看到下图的提示：在浏览器中打开网页 `http://localhost:8000/`，就可以看到网站的雏形。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327562571213.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327562571213.jpg)     
 
 网站雏形的数据来自项目的原作者，为了得到我们自己专属的网站，还需要修改和删除一些文件。  
 
@@ -109,58 +109,59 @@ cd workspace/running_page/running_page
 
 首先打开 `.github/workflows` 下的 `run_data_sync.yml` 文件，定位到第 22 行代码的位置。  
 
-`RUN_TYPE`填入你平时在用的运动 App，例如 keep，下面的 ATHLETE、TITLE、GITHUB_NAME、GITHUB_EMAIL，分别更改为自己的昵称、最终呈现在网站的热力图的标题、GitHub ID 和邮箱。
+`RUN_TYPE`填入你平时在用的运动 App，例如 keep，下面的 ATHLETE、TITLE、GITHUB_NAME、GITHUB_EMAIL，分别更改为自己的昵称、最终呈现在网站的热力图的标题、GitHub ID 和邮箱。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327569561383.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327569561383.jpg)     
 
-例如我将 TITLE 设置为 Phh95 Running，最终就会呈现为热力图顶部的标题。  
+例如我将 TITLE 设置为 Phh95 Running，最终就会呈现为热力图顶部的标题。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327573662968.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327573662968.jpg)     
 
-接着定位到代码的 117 行，这里需要**修改一下变量的名称**，将 secrets 后面的 GITHUB_TOKEN 修改为 **G_T**。  
+接着定位到代码的 117 行，这里需要**修改一下变量的名称**，将 secrets 后面的 GITHUB_TOKEN 修改为 **G_T**。     
 
-这里之所以要修改变量的名称，是因为 GitHub 不允许以 GITHUB 为开头来命名密钥。       
+这里之所以要修改变量的名称，是因为 GitHub 不允许以 GITHUB 为开头来命名密钥。          
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327574744522.jpg)
 
-打开 `gatsby-config.js` 文件，修改下图框选出来的部分参数：   
+打开 `gatsby-config.js` 文件，修改下图框选出来的部分参数：     
 
 * siteTitle：跑步网站的标题，默认是 Running Page   
 * siteUrl：跑步网站的网址，这里先不填，后续我们通过 vercel 部署得到网址之后，再来填写   
 * logo：网站 logo 的图床链接     
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327872031973.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327872031973.jpg)    
 
-* navLinks：网站右上角的两个链接，一个是 **Blog**，一个是 **About**。如果你有个人博客的话，可以将 Blog 的 url 替换成自己的博客网站。    
+* navLinks：网站右上角的两个链接，一个是 **Blog**，一个是 **About**。如果你有个人博客的话，可以将 Blog 的 url 替换成自己的博客网站。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327875646190.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327875646190.jpg)    
 
-接着来到 assets 文件夹，只保留其中的 3 个文件：`start.svg`、`end.svg`、`grid.svg`，将其余的 svg 文件删除。   
+接着来到 assets 文件夹，只保留其中的 3 个文件：`start.svg`、`end.svg`、`grid.svg`，将其余的 svg 文件删除。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327577134931.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327577134931.jpg)     
 
 接着来到 scripts 文件夹，删除其中的 `data.db` 文件。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327578879290.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327578879290.jpg)     
 
-来到 `src/static` 文件夹，删除其中的 `activities.json` 文件。
+来到 `src/static` 文件夹，删除其中的 `activities.json` 文件。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327579742212.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327579742212.jpg)     
 
 ## 导出运动数据
 
-前面删除的文件中，包含了作者原先的运动数据，为了最后可以在网站上看到自己的运动数据，我们还需要**从运动 App 中导出我们的运动数据**。   
+前面删除的文件中，包含了作者原先的运动数据，为了最后可以在网站上看到自己的运动数据，我们还需要**从运动 App 中导出我们的运动数据**。      
 
 作者在 README 文档中，对不同运动 App 如何导出数据，也进行了相关的说明。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327870690965.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327870690965.jpg)     
 
-以 **keep** App 为例，在**终端**中运行下方的命令，就会在代码文件夹中的相应位置，生成我们需要的运动数据，具体体现为文件夹中新增了两个文件，分别是 `activities.json` 和 `data.db` 文件。   
+以 **keep** App 为例，在**终端**中运行下方的命令，就会在代码文件夹中的相应位置，生成我们需要的运动数据，具体体现为文件夹中新增了两个文件，分别是 `activities.json` 和 `data.db` 文件。      
 
-```
-python3 scripts/keep_sync.py 注册keep账号的手机号 keep账号的密码
-```
+```       
+python3 scripts/keep_sync.py 注册keep账号的手机号 keep账号的密码           
+```       
+
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327876319969.jpg)
 
@@ -230,9 +231,9 @@ python3 scripts/keep_sync.py 注册keep账号的手机号 keep账号的密码
 
 ## 写在最后  
 
-为了弄出这个网站，懂技术的人可能花 20 多分钟就搞定了，不懂技术的我，用了 20 多分钟几倍的时间才勉强弄出来，中间还向项目的原作者问了好几个问题，在此要感谢作者的耐心解答❤️。   
+为了弄出这个网站，懂技术的人可能花 20 多分钟就搞定了，不懂技术的我，用了 20 多分钟几倍的时间才勉强弄出来，中间还向项目的原作者问了好几个问题，在此要感谢作者的耐心解答❤️。      
 
-整个过程下来，我游走于 想放弃 与 不放弃 之间，做一会停一会，就像玩自己不擅长的游戏那样，很有挫败感，也总在怀疑自己是不是太辣鸡了。。。不适合搞这个，害。   
+整个过程下来，我游走于 想放弃 与 不放弃 之间，做一会停一会，就像玩自己不擅长的游戏那样，很有挫败感，也总在怀疑自己是不是太辣鸡了。。。不适合搞这个，害。       
 
 以上，就是本次想和你分享的内容。   
 
