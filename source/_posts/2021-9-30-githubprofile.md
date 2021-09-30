@@ -47,10 +47,7 @@ Hello 各位早上好，今天是国庆小长假前的最后一个工作日。
 为方便你使用，我将原作者的代码复制到了下面：     
 
 
-```yml    
-
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
-
+```yml      
 name: Generate Snake
 
 on:
@@ -79,9 +76,7 @@ jobs:
         with:
           branch: main
           message: 'Generate Contribution Snake'      
-  
 ```     
-
 
 
 需要注意的是，我们需要将这个代码复制到与自己的 GitHub ID 同名仓库的 `.github/workflows` 路径下。    
