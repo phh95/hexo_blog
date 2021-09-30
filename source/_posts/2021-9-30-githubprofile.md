@@ -47,7 +47,8 @@ Hello 各位早上好，今天是国庆小长假前的最后一个工作日。
 为方便你使用，我将原作者的代码复制到了下面：     
 
 
-```               
+```yml    
+
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
 
 name: Generate Snake
@@ -78,10 +79,8 @@ jobs:
         with:
           branch: main
           message: 'Generate Contribution Snake'      
-```        
-
-
-
+  
+```     
 
 
 
