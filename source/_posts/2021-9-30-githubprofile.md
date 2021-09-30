@@ -91,9 +91,9 @@ jobs:
 
 由于 README 文档是用 **Markdown** 格式进行编辑，引入 svg 文件需要使用下面这种格式。      
 
-```
-![](https://raw.githubusercontent.com/这里更换为你的 GitHub ID/这里更换为你的 GitHub ID/main/assets/github-contribution-grid-snake.svg)        
-```
+```markdown       
+![](https://raw.githubusercontent.com/这里更换为你的 GitHub ID/这里更换为你的 GitHub ID/main/assets/github-contribution-grid-snake.svg)              
+```      
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/30/16329676198923.jpg)
 
