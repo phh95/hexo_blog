@@ -11,7 +11,7 @@ Hello 各位早上好。
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/28/16327524532925.jpg)
 
 我的运动记录 Running Page：  
-*https://running-page-three.vercel.app/*    
+*https://running-page-jet.vercel.app/*        
 
 顺提一提，之前有一段时间我用的是 Apple Watch 的「健身记录」来记录跑步数据，有不少数据无法同步到 Keep 中，导致网站上显示的 2021 年运动记录只有 28 次。  
 
