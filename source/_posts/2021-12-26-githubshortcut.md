@@ -98,7 +98,7 @@ Hello 各位好。
 * 你的 GitHub 仓库名称  
 * 你在前面操作中获得的 Token   
 
-粘贴修改好的语句，按下 Enter 键，下方会返回 ID，这个 ID 会复制到本地的 txt 或者 word 中，等下会用到。  
+粘贴修改好的语句，按下 Enter 键，下方会返回 ID，这个 ID 可以复制到本地的 txt 或者 word 中，等下会用到。  
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/12/26/16405151424900.jpg)
 
