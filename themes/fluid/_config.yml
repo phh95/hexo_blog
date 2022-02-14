@@ -199,6 +199,10 @@ post:  # 部分配置同时控制自定义页面，注意备注
   banner_img: /img/default.png
   banner_img_height: 70  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
+  # categories 配置开启章节显示
+  categories: 
+    # 设置为 true 表示全局开启，为 false 可以在每篇文章进行单独设置
+    enable: false
   meta:  # 文章标题下方的信息
     author:  # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
       enable: false
@@ -249,6 +253,10 @@ post:  # 部分配置同时控制自定义页面，注意备注
     enable: true  # 开启评论
     type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
 
+# 建议配置
+category:
+  order_by: "name" # 章节根据名称正序
+  post_order_by: "date" # 文章根据发布时间正序
 
 #---------------------------
 # 评论
