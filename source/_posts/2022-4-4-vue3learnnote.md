@@ -499,7 +499,7 @@ key 的值是一个函数或者对象。
 
 给计算属性传参（赋值）的时候，会调用计算属性的 setter 方法。       
 
-``` js    
+``` js   
 computed: {
     fullName: {
         set: function(newValue) {
@@ -510,12 +510,11 @@ computed: {
         }
     }
 }
-
-```      
+```
 
 下面是计算属性的简略写法（只用到 getter 方法）：    
 
-```js        
+``` js   
 computed: {
     fullName() {
         return this.firstName + " " + this.lastName      
@@ -1217,9 +1216,9 @@ npm install copy-webpack-plugin@9.0.0 -D
 
 在 `webpack.config.js` 中引入插件：  
 
-```js
+``` js
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-```  
+```
 
 接着在下面的插件中 new 一个插件：  
 
@@ -1280,7 +1279,7 @@ npx babel demo.js --out-file test.js
 运行 babel 时，转换箭头函数，就需要配置用到的插件：  
 
 ```
-npx babel demo.js --out-file test.js --plugins=@babel/plugin-transform-arrow-functions          
+npx babel demo.js --out-file test.js --plugins=@babel/plugin-transform-arrow-functions
 ```
 
 babel 转换 ES6 块级作用域插件：transform-block-scoping   
@@ -1337,11 +1336,11 @@ babel-loader：将 Babel 和 Webpack 结合起来，加载所有 js 结尾的文
 
 ```
 npm install babel-loader -D   
-```   
+```
 
 如果前面没有安装过 @babel/core，在安装 babel-loader 时也要同时安装：   
 
-``` 
+```
 npm install babel-loader @babel/core -D   
 ```
 
@@ -1375,7 +1374,7 @@ npm install babel-loader @babel/core -D
 
 ```
 npm install vue 
-``` 
+```
 
 这一次不需要在 vue 后面加上 `-D` 的参数，因为 Vue 不仅是在开发时需要用到，项目正式上线的时候，也会用到 Vue。  
 
@@ -1572,7 +1571,6 @@ HMR 原理图
 ### Proxy  
 
 
-
 ### Webpack 的 resolve 模块解析配置  
 
 resolve 用于设置模块如何被解析：   
@@ -1594,7 +1592,7 @@ webpack 能解析三种文件路径：
 
 ```
 import { sum } from "./js/math";    
-```  
+```
 
 如何确定导入的 math 是一个文件还是文件夹呢？   
 
