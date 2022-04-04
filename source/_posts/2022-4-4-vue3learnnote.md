@@ -90,11 +90,10 @@ CDN 称之为内容分发网络（Content Delivery Network 或 Content Distribut
 
 Vue 的 CDN 引入：   
 
-```html   
+``` html   
 
 <script src="https://unpkg.com/vue@next"></script>   
-
-```     
+```        
 
 ## MVVM 模型  
 
@@ -186,7 +185,6 @@ Vue 的源代码是通过 yarn 进行管理。
 ```        
 
 npm install yarn -g    
-
 ```                  
 
 从 GitHub 仓库直接下载 Vue3 源码的压缩包，需要在终端中安装一些额外的东西： 
@@ -196,7 +194,6 @@ npm install yarn -g
 ```      
 
 yarn install      
-
 ```              
 
 调试代码的步骤：         
