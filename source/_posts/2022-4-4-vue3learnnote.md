@@ -90,9 +90,11 @@ CDN 称之为内容分发网络（Content Delivery Network 或 Content Distribut
 
 Vue 的 CDN 引入：   
 
-```html
-<script src="https://unpkg.com/vue@next"></script>
-```
+```html   
+
+<script src="https://unpkg.com/vue@next"></script>   
+
+```     
 
 ## MVVM 模型  
 
@@ -145,14 +147,15 @@ methods 属性：传入一个对象，在这个对象中可以定义很多方法
 
 如果使用箭头函数，这个 this 会指向 window，而不是 data 字段中对象返回的属性。   
 
-```js
+``` js    
+
 methods: {
     btnClick: () => {
         console.log(this);
     }
 }
 
-```
+```      
 
 为什么是 window 呢？  
 
@@ -180,17 +183,21 @@ Vue 的源代码是通过 yarn 进行管理。
 
 终端需要安装 yarn，安装的命令：             
 
-```       
-npm install yarn -g
+```        
+
+npm install yarn -g    
+
 ```                  
 
 从 GitHub 仓库直接下载 Vue3 源码的压缩包，需要在终端中安装一些额外的东西： 
 
 进入 Vue3 源码解压后所在的路径，运行命令     
 
+```      
+
+yarn install      
+
 ```              
-yarn install       
-```            
 
 调试代码的步骤：         
 
@@ -232,11 +239,13 @@ React 的开发模式（了解）：
 
 jsx 语法：将 js 和 html 融合在一起的书写方式  
 
-``` js        
+``` js      
+
 function() {
     return <div></div>    
-} 
-```           
+}    
+
+```         
 
 Vue 也支持 jsx 的开发模式：  
 
@@ -246,13 +255,15 @@ Vue 也支持 jsx 的开发模式：
 
 下面是模板语法的例子：   
 
-``` html          
+``` html       
+
 <template>
     <div @click v-bind v-once>
     {{}}
     </div>
-</template>
-```     
+</template>      
+
+```       
 
 ### v-bind 的属性绑定       
 
