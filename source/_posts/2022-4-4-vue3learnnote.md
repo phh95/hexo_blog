@@ -178,31 +178,31 @@ GitHub 地址：https://github.com/vuejs/core
 
 Vue 的源代码是通过 yarn 进行管理。  
 
-终端需要安装 yarn，安装的命令：  
+终端需要安装 yarn，安装的命令：      
 
 ```
 npm install yarn -g
-```  
+```           
 
 从 GitHub 仓库直接下载 Vue3 源码的压缩包，需要在终端中安装一些额外的东西： 
 
 进入 Vue3 源码解压后所在的路径，运行命令
 
-```
-yarn install  
-```
+```    
+yarn install     
+```          
 
-调试代码的步骤：   
+调试代码的步骤：         
 
-勘误：下面的那一行代码，位于 `package.json` 文件中。  
+勘误：下面的那一行代码，位于 `package.json` 文件中。    
 
 修改之后，运行命令 `yarn dev`，执行打包操作。       
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16470587663007.jpg)
 
-## Vue 基础 - 模板语法
+## Vue 基础 - 模板语法    
 
-### VS Code 添加代码片段   
+### VS Code 添加代码片段         
 
 生成代码片段的在线工具：https://snippet-generator.app/  
 
@@ -223,7 +223,7 @@ VS Code 开启自动保存的方法：
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16470765239563.jpg)
 
-### 模板语法   
+### 模板语法         
 
 React 的开发模式（了解）：  
 
@@ -232,11 +232,11 @@ React 的开发模式（了解）：
 
 jsx 语法：将 js 和 html 融合在一起的书写方式  
 
-```js
+```js        
 function() {
     return <div></div>    
 }
-```
+```      
 
 Vue 也支持 jsx 的开发模式：  
 
@@ -246,15 +246,15 @@ Vue 也支持 jsx 的开发模式：
 
 下面是模板语法的例子：   
 
-```html
+```html       
 <template>
     <div @click v-bind v-once>
     {{}}
     </div>
 </template>
-```   
+```     
 
-### v-bind 的属性绑定   
+### v-bind 的属性绑定       
 
 Vue2 template模板中只能有一个根元素，多个元素得包裹到一个div标签里； 
 Vue3 允许template模板中有多个根元素。   
@@ -276,7 +276,7 @@ v-bind:style 绑定 CSS 内联样式。
 
 CSS property 名可以用**驼峰式**(camelCase)或**短横线分隔**(kebab-case)来命名。      
 
-绑定 class 有两种方式：   
+绑定 class 有两种方式：     
 
 * 对象语法
 * 数组语法   
@@ -1802,9 +1802,9 @@ Vite 在处理 Vue 3 单文件组件(`App.vue` 文件)之前，需要安装插�
 
 完成开发后，在将项目部署到服务器之前，需要对项目进行打包（构建），Vite 也提供了打包的命令：  
 
-```
+```    
 npx vite build    
-```
+```    
 
 测试打包之后的文件是否有问题，可以运行另外一个命令：  
 
