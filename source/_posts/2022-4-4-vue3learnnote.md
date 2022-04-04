@@ -178,7 +178,7 @@ GitHub 地址：https://github.com/vuejs/core
 
 Vue 的源代码是通过 yarn 进行管理。  
 
-终端需要安装 yarn，安装的命令：      
+终端需要安装 yarn，安装的命令：             
 
 ```          
 npm install yarn -g
