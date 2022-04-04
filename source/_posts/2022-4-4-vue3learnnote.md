@@ -1296,8 +1296,7 @@ npm install @babel/plugin-transform-block-scoping -D
 
 ```
 npx babel demo.js --out-file test.js --plugins=@babel/plugin-transform-arrow-functions,@babel/plugin-transform-block-scoping
-```   
-
+```
 
 ### Babel 的预设 preset  
 
@@ -1391,7 +1390,7 @@ Vue 有多个版本，大致分为两个：
 Vue 和 Webpack 一起使用，引入时需要使用包含 compiler 的 Vue 版本：   
 
 ```
-`import { createApp } from 'vue/dist/vue.esm-bundler'`
+import { createApp } from 'vue/dist/vue.esm-bundler'
 ```
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16483517602689.jpg)
