@@ -90,10 +90,10 @@ CDN 称之为内容分发网络（Content Delivery Network 或 Content Distribut
 
 Vue 的 CDN 引入：   
 
-```    
-
-<script src="https://unpkg.com/vue@next"></script>   
 ```        
+
+<script src="https://unpkg.com/vue@next"></script>       
+```          
 
 ## MVVM 模型  
 
@@ -258,9 +258,8 @@ Vue 也支持 jsx 的开发模式：
     <div @click v-bind v-once>
     {{}}
     </div>
-</template>      
-
-```       
+</template>        
+```           
 
 ### v-bind 的属性绑定       
 
@@ -349,7 +348,8 @@ Vue 提供了下面的指令来进行条件判断：
 
 如果我们希望批量显示/隐藏多个元素，一般是在 template 中使用 div 元素进行包裹，但这样用于包裹的 div 最终会被渲染出来，增加了一个额外的 div 标签。    
 
-```html
+``` html   
+
 <template>
     <div v-if="isShow">
         <h2>哈哈哈哈</h2>
@@ -362,8 +362,8 @@ Vue 提供了下面的指令来进行条件判断：
         <h2>呵呵呵呵</h2>
         <h2>呵呵呵呵</h2>
     </div>
-</template>
-```
+</template>     
+```         
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16471904822289.jpg)
 
@@ -1689,18 +1689,20 @@ vue create 项目的名称
 
 在 Mac 电脑上使用 `vue create 项目的名称` 创建项目可能会报错，报错信息：  
 
-```
+```       
+
 gyp: No Xcode or CLT version detected!   
-```
+```     
 
 解决方法：   
 
 在终端分别输入两行命令  
 
-```
+```   
+
 sudo rm -rf $(xcode-select -print-path)   
 sudo xcode-select --install     
-```
+```       
 
 之后重新运行创建 vue 项目的命令，覆盖之前创建的东西。   
 
