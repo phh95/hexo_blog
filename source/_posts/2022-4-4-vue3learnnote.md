@@ -90,10 +90,9 @@ CDN 称之为内容分发网络（Content Delivery Network 或 Content Distribut
 
 Vue 的 CDN 引入：   
 
-```        
-
+``` html
 <script src="https://unpkg.com/vue@next"></script>       
-```          
+```
 
 ## MVVM 模型  
 
