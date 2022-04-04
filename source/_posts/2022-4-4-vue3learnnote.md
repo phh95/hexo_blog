@@ -180,16 +180,16 @@ Vue 的源代码是通过 yarn 进行管理。
 
 终端需要安装 yarn，安装的命令：      
 
-```
+```          
 npm install yarn -g
-```           
+```                  
 
 从 GitHub 仓库直接下载 Vue3 源码的压缩包，需要在终端中安装一些额外的东西： 
 
 进入 Vue3 源码解压后所在的路径，运行命令
 
-```    
-yarn install     
+```       
+yarn install       
 ```          
 
 调试代码的步骤：         
@@ -444,7 +444,7 @@ diff 算法用来比较新旧两个 VNode 列表。
 
 比较两个新旧节点的类型 type 和 key 是否相同。  
 
-type 和 key 都一样的话，节点是不需要进行更新的。   
+type 和 key 都一样的话，节点是不需要进行更新的。         
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16475309445882.jpg)
 
@@ -453,7 +453,7 @@ type 和 key 都一样的话，节点是不需要进行更新的。
 
 最后一步：新旧节点的排序比较混乱，尽可能地移动节点，移除新节点中没有的旧节点，新增旧节点中没有的新节点。  
 
-尽可能在旧的节点列表里面，找到新的列表中对应的节点，比如新的节点里面有一个 h，就会尽可能地在旧节点里面找到 h。  
+尽可能在旧的节点列表里面，找到新的列表中对应的节点，比如新的节点里面有一个 h，就会尽可能地在旧节点里面找到 h。      
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/04/04/16475342142617.jpg)
 
@@ -504,7 +504,7 @@ key 的值是一个函数或者对象。
 
 给计算属性传参（赋值）的时候，会调用计算属性的 setter 方法。       
 
-```js 
+```js       
 computed: {
     fullName: {
         set: function(newValue) {
@@ -516,21 +516,19 @@ computed: {
     }
 }
 
-```
+```      
 
 下面是计算属性的简略写法（只用到 getter 方法）：    
 
-```js
+```js        
 computed: {
     fullName() {
         return this.firstName + " " + this.lastName      
     }
 }
-```  
+```    
 
-
-
-### 认识侦听器 watch   
+### 认识侦听器 watch        
 
 在某些情况下，我们希望在**代码逻辑**中监听某个数据的变化，这个时候就需要用侦听器 watch 来完成了。     
 
