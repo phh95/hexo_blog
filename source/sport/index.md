@@ -1,7 +1,13 @@
 ---
-title: sport
+title: 我的跑步记录
 date: 2022-05-24 08:50:53
 ---  
 
-这是我的跑步数据，可以查看： https://running-page-ruddy-eight.vercel.app/     
+## 我的跑步数据   
+
+我的跑步数据，点击查看 ▶▶ https://running-page-ruddy-eight.vercel.app/    
+
+## 记录跑步数据网站搭建方法
+
+如果你也想搭建一个类似的记录跑步数据的网站，可以参考我之前写过的一篇文章 ▶▶ [回看自己过去 4 年的运动数据，是一种什么样的体验？](https://www.penghh.fun/2021/09/28/2021-9-28-runningpage/)     
 
