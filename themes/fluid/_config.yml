@@ -119,7 +119,8 @@ navbar:
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }     
+    - { key: 'sport', link: '/sport/', icon: 'iconfont icon-sport-fill' }      #新增的运动页面   
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
@@ -385,6 +386,11 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
     - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
     - { class: 'iconfont icon-rss-fill', link: 'https://www.penghh.fun/atom.xml', tip: 'RSS' }   
     - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
+
+sport:  #自定义的运动页面
+  banner_img: /img/default.png
+  banner_img_height: 60  # available: 0 - 100
+  banner_mask_alpha: 0.3  # available: 0 - 1.0
 
 
 #---------------------------
