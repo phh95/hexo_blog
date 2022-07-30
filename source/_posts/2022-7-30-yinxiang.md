@@ -123,7 +123,7 @@ https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to
 
 ```
 /Applications/Python\ 3.9/Install\ Certificates.command      
-```  
+```
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591885073911.jpg)
 
