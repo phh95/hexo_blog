@@ -1,0 +1,145 @@
+---
+title: 浏览器插件Open With+Mac下载工具Downie，一键下载网页视频                    
+date: 2022-8-12 01:13:00               
+tags: [浏览器插件,下载,Downie]                                                                                   
+--- 
+
+本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/LGbFGQvs3yYBG8GSMjQyaA)」           
+文/彭宏豪     
+
+
+
+Hello 各位好，我是小豪。   
+
+相信用过 Windows 电脑的朋友，对下图的电脑询问「你要以何方式打开 XX 文件」的弹窗并不陌生，这个窗口通常出现在：  
+
+我们没有设置打开这种文件的默认应用，或是安装了一个新的应用后，原先打开这种文件的默认应用被篡改，系统需要重新进行确认。    
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602309319698.jpg)
+
+而如果把这里的本地文件换成我们天天在用的**网页**，是否可以实现在浏览器之外，使用其他的软件打开当前的网页呢？   
+
+——答案是可以的。   
+
+但实现了这个操作，你可能会问：这个操作有什么用吗？或是有什么使用场景呢？   
+
+目前我找到了 2 个比较有用的使用场景：  
+
+* 在下载工具 Downie 中打开当前的网页，实现快速下载      
+* 在登录了另外一个知乎账号的浏览器打开当前的知乎页面，查看另一个账号是否回答了这个问题（工作上的需要）    
+
+这两个使用场景，其实有一个共同的地方，就是将原本的「复制当前网页链接，在另外一个应用粘贴复制的链接」的操作简化了，只需要借助一个**浏览器插件 Open With**，就能自动帮我们完成这一个过程。 
+
+这么说还是有点抽象，来说一下前面说到的第 1 个使用场景——      
+
+假设我要使用下载工具 Downie 下载一个 B 站的视频，按照传统的操作应该是这样子的：先复制浏览器地址栏的视频链接，再打开 Downie，在软件中执行粘贴链接的操作，就能开始下载视频。  
+
+而当我在浏览器安装了 Open With 插件，同样是要下载这个视频，只需要：右击页面的空白处，选择「Open With >> Downie」，也就是使用 Downie 打开当前的网页，就会自动唤醒本地安装的 Downie，自动在软件中开启视频下载。   
+
+说这么多，其实是想表达：**这个插件可以让人变得更懒**，想下载视频，连复制链接的操作都可以省掉，让程序自动帮我们完成。          
+ 
+![2022-08-11 23.40.59](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/20220811-234059.gif)
+
+用着 Windows 电脑的同学，把这里的 Downie 替换为 IDM，也能实现相同的效果。   
+
+
+需要说明的是，最早知道这个操作，还是从我喜欢的一个公众号「奔跑中的奶酪」，人称「奶大」的博主那里看到的。  
+
+之前他写了一篇很详细的文章，不过后来他把文章删掉了，没看过的人可能也见不到了，而且这里我还想补充那篇文章中没提及的一个问题的解决方法。   
+
+铺垫了这么多，来看一下如何实现这个快捷操作吧：  
+
+## 安装浏览器插件 Open With 
+
+首先要安装实现这个快捷操作的浏览器插件 Open With，这个插件支持火狐、Firefox 和 Opera 浏览器，最初有上架到 Chrome 应用商店，不过后来下架了。   
+
+因此，用着 Chrome 浏览器的朋友，如果想使用这个插件，可以扫描下方的二维码，在公众号「效率工具指南」后台回复【**ow**】，获取插件安装包。     
+
+![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+
+使用 Firefox 浏览器的朋友，可以从插件的 GitHub 项目页面找到安装链接：  
+
+https://github.com/darktrojan/openwith    
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602343911689.jpg)
+
+
+## 配置浏览器插件  
+
+对于使用 Mac 电脑的用户，在浏览器安装了 Open With 插件后，还需要额外对插件进行配置。   
+
+右击 Chrome 浏览器右上角的插件图标，选择「选项」，打开插件的设置页面。     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602350192081.jpg)
+
+点击左侧的蓝色文字「Click here to download」，下载一个 Python 脚本文件。     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602352833394.jpg)
+
+将下载的 Python 文件放到**资源库**的应用支持路径下，具体路径如下图所示：     
+
+`/Library/Application\ Support/Google/Chrome/`     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602357245967.jpg)
+
+接着打开 Mac 上的终端，在终端中依次输入如下两行命令：   
+
+`chmod u+x /Library/Application\ Support/Google/Chrome/open_with_mac.py`    
+
+输入上面的命令后，按下回车键，再输入下面的命令：  
+
+`/Library/Application\ Support/Google/Chrome/open_with_mac.py install`     
+
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602359059758.jpg)
+
+
+经过前面的操作后，就算是在 Mac 电脑上完整安装了这个插件。   
+
+接着回到插件的设置页面，点击下方的「Look for browsers」，插件就会扫描你在电脑上安装的所有浏览器，并将其添加到右侧的面板。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602362278293.jpg)
+
+经过这个操作后，去到 Chrome 浏览器中的任意一个页面，当你在页面空白处右击，选择 Open With，弹出的面板应该就会显示你电脑上安装的所有浏览器。  
+
+这时选择一个 Chrome 之外的浏览器，就会在另外一个浏览器中打开当前的页面。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602363955782.jpg)
+
+而如果你想在这个面板中添加额外的应用，例如前面提到的下载工具 Downie 或者 IDM，就需要再次回到插件的设置页面。   
+
+点击下方的「Add browser」，添加新的浏览器。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602365874491.jpg)
+
+在弹出的配置面板，有两个需要填入文本的字段：  
+
+* Name：输入应用的名称，例如我想添加 Downie，就把它命名为 Downie   
+* Command：这里要输入应用所在的路径，Mac 电脑应用安装的路径是一致的，因此输入 `/Application/应用名称.app`    
+
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602366622826.jpg)
+
+这样配置之后，Open With 插件就会多出一个 Downie 的备选项，这样我们就可以在 Downie 中打开当前的网页。  
+
+如果当前的网页恰好是视频页面，Downie 就会自动下载页面中的视频，真正实现许多人梦寐以求的「一键下载」。   
+
+
+科技，让人变得更懒了！   
+还不错。   
+
+
+
+## 欢迎关注     
+
+以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
+
+![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)         
+
+
+
+
+  
+
+ 
+
