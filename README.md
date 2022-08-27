@@ -10,7 +10,7 @@ RSS Subscribe My Blog：https://www.penghh.fun/atom.xml
 
 ## Contact Me 联系我    
 
-* 微信公众号：效率工具指南   
+* 微信公众号：[效率工具指南](https://sourl.cn/xcjbf4)            
 * 知乎：[彭宏豪](https://www.zhihu.com/people/angola-84)    
 * 📮：[penghonghao2016@gmail.com](mailto:penghonghao2016@gmail.com)    
 
