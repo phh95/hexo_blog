@@ -416,6 +416,13 @@ links:
   items:  # intro 与 image 可省略
 
     - {
+    title: '张洪Heo',
+    intro: '分享设计与科技生活',
+    link: 'https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png',
+    image: 'https://blog.zhheo.com/'   
+    }
+
+    - {
       title: 'tomorrow505',    
       intro: '心之所向，敝履以往',  
       link: 'https://tomorrow505.xyz/',
