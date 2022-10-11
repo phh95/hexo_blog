@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 彭宏豪的个人博客   
-subtitle: 效率工具指南   
-description: 软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体      
+title: 效率工具指南
+subtitle: 数码软件爱好者
+description: 软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体
 keywords: 效率工具,软件,Macbook,前端,工具,App,博客,写作
 author: Angola Peng
-language: zh-CN   
-timezone: ''
+language: zh-CN
+timezone: ""
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://penghh.fun   
+url: https://penghh.fun
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -48,21 +48,21 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -82,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid   
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -107,16 +107,15 @@ deploy:
   repo: git@106.55.41.29:/home/git/hexo.git
   branch: master
 
-
 #订阅RSS
 feed:
   type: atom
   path: atom.xml
-  limit: false     
+  limit: false
 
 # 音乐播放器插件
 aplayer:
-  cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js  # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
   style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
-  meting: true       # MetingJS 支持
+  meting: true # MetingJS 支持
   meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
