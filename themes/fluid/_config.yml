@@ -22,8 +22,8 @@ force_https: false  # 强制所有链接升级为 HTTPS（适用于图片等资�
 code:  # 代码块相关的配置
   copy_btn: true  # 是否开启复制代码的按钮
   highlight:  # 代码高亮
-    enable: true     
-    line_number: true      # 代码行号   
+    enable: true
+    line_number: true      # 代码行号
     lib: 'highlightjs'  # 实现高亮的库，可选：highlightjs | prismjs，对应下面的配置项
     highlightjs:
       style: 'Github Gist'  # 高亮样式见：https://highlightjs.org/static/demo/  在页面挑选 style 填入
@@ -94,7 +94,7 @@ web_analytics:  # 网页访问统计
   cnzz:  # 友盟/cnzz 站点统计 web_id，参见 https://web.umeng.com/main.php?c=site&a=show
   leancloud:  # LeanCloud 计数统计，可用于 PV UV 展示，如果 web_analytics.enable 没有开启，PV UV 展示只会查询，不会增加
     app_id: mFS2oVoiTOElp63tFewejr7m-gzGzoHsz
-    app_key: 0HcqFXhoeStKHmFebO3wbd01     
+    app_key: 0HcqFXhoeStKHmFebO3wbd01
     server_url:  # REST API 服务器地址，国际版不填
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
@@ -119,8 +119,8 @@ navbar:
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }     
-    - { key: 'sport', link: '/sport/', icon: 'iconfont icon-map' }      #新增的运动页面   
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
+    - { key: 'sport', link: '/sport/', icon: 'iconfont icon-map' }      #新增的运动页面
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
@@ -149,12 +149,12 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '  # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   statistics:  # 展示网站的 PV、UV 统计数
-    enable: true  
+    enable: true
     source: "leancloud"  # 统计数据来源，可选：busuanzi | leancloud，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
     pv_format: "总访问量 {} 次"  # 显示的文本，{}是数字的占位符（必须包含)，下同
     uv_format: "总访客数 {} 人"
   beian:  # The footer of China's website policy, other areas keep disable
-    enable: true   
+    enable: true
     icp_text: 粤ICP备2020100125号-1  # ICP证号
     police_text:   # 公安备案号，不填则只显示ICP
     police_code: https://beian.miit.gov.cn/     # 公安备案的编号，用于URL跳转查询
@@ -215,7 +215,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
       format: "{} 分钟"
       words: 100  # 每分钟阅读多少字，如果是技术文章，建议降低
     views:  # 阅读次数
-      enable: enable   
+      enable: enable
       source: "leancloud"  # 统计数据来源，可选：busuanzi | leancloud，使用 leancloud 需要在 web_analytics 中设置 api 参数，使用 busuanzi 注意可能间歇抽风
       format: "{} 次"
   updated:  # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
@@ -232,7 +232,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
   prev_next:  # 文章底部上一篇下一篇功能
     enable: true
   custom:  # 文章底部自定义内容
-    enable: false  
+    enable: false
     content: '<img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
   image_zoom:  # 文章图片可点击放大
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `image_zoom: true`，并且图片使用该格式插入：<img src="..." zoom />
@@ -300,7 +300,7 @@ gitalk:
 valine:
   appid: jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz   # 从 LeanCloud 的应用中得到的 appId
   appkey: W1C4SSU2QtkkD5pD5uSCV2Hi   # 从 LeanCloud 的应用中得到的 APP Key
-  placeholder: 🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o      # 评论框占位提示符   
+  placeholder: 🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o      # 评论框占位提示符
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
   avatar: retro # Gravatar 头像展示方式
   meta: ['nick', 'mail', 'link']  # 评论者相关属性
@@ -379,12 +379,12 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   avatar: /img/blogicon.png # 头像
-  name: 彭宏豪   
+  name: 彭宏豪
   introduce: '新媒体人，喜欢写写东西' # 支持 HTML
   icons: # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，class 代表图标的 css class
     - { class: 'iconfont icon-github-fill', link: 'https://github.com/phh95', tip: 'GitHub' }
     - { class: 'iconfont icon-douban-fill', link: 'https://douban.com', tip: '豆瓣' }
-    - { class: 'iconfont icon-rss-fill', link: 'https://www.penghh.fun/atom.xml', tip: 'RSS' }   
+    - { class: 'iconfont icon-rss-fill', link: 'https://www.penghh.fun/atom.xml', tip: 'RSS' }
     - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.png' }  # 添加 qrcode 后，点击不再跳转，而是悬浮二维码，需要指定 image
 
 sport:  #自定义的运动页面
@@ -419,14 +419,21 @@ links:
     title: '张洪Heo',
     intro: '分享设计与科技生活',
     link: 'https://blog.zhheo.com/',
-    image: 'https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png'   
+    image: 'https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png'
     }
 
     - {
-      title: 'tomorrow505',    
-      intro: '心之所向，敝履以往',  
+      title: '全网漫游指南',
+      intro: '继承《全球概览》的分享精神，让互联网探索重新变得有趣',
+      link: 'https://tagly.notion.site/',
+      image: 'https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/hu-lian-wang-man-you-zhi-nan.png'
+    }
+
+    - {
+      title: 'tomorrow505',
+      intro: '心之所向，敝履以往',
       link: 'https://tomorrow505.xyz/',
-      image: 'https://tomorrow505.xyz/img/main.jpg'   
+      image: 'https://tomorrow505.xyz/img/main.jpg'
     }
 
     - {
@@ -435,7 +442,7 @@ links:
       link: 'https://blog.tagly.cn/',
     }
 
-rss: /atom.xml     
+rss: /atom.xml
 
 aplayer:
   cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js  # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
@@ -444,7 +451,7 @@ aplayer:
   meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
 
 
-    
+
 
 
 #---------------------------
@@ -505,4 +512,4 @@ static_prefix:
 
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/
 
-  hint: /lib/hint/     
+  hint: /lib/hint/
