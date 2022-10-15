@@ -1,5 +1,5 @@
 ---
-title: 思维导图软件幕布批量导出Markdown【效率工具指南】                                
+title: 思维导图软件幕布导出Markdown【效率工具指南】                                
 date: 2022-10-11 15:03:00               
 tags: [幕布,思维导图软件,Markdown,插件]                                                                                   
 ---  
