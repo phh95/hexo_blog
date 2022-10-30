@@ -1,10 +1,11 @@
 ---
-title: 下载B站视频的方法汇总                              
+title: 如何将b站上的视频下载到本地？5个下载B站视频的好用工具！                              
 date: 2022-2-11 10:57:00               
-tags: [B站,下载]                                                                                   
+tags: [B站,下载,Downie]                                                                                   
 --- 
 
-文/彭宏豪  
+本文首发于微信公众号「效率工具指南」   
+文/彭宏豪     
 
 ## 贝贝BiliBili
 
@@ -36,7 +37,7 @@ https://tools.miku.ac/bilibili_video_downloader/
 
 [多功能视频工具箱，免费良心还好用｜Quick Cut](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649919194&idx=1&sn=d51a53be3d5bdcb2f1c520800d55810e&chksm=83a88af7b4df03e137de5e218348c7f0cf34408d502605574b7ef859b28e4530b4c0dc8d37c4&token=855337760&lang=zh_CN#rd)       
 
-## 浏览器插件
+## 浏览器插件「B站下载助手」     
 
 插件名称：B站下载助手
 
@@ -52,7 +53,10 @@ https://tools.miku.ac/bilibili_video_downloader/
 
 ![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/02/11/16445850605450.jpg)
 
-目前这款浏览器插件已从应用商店下架，无法直接安装，有需要的朋友，可以点击下方的卡片，在公众号「效率工具指南」后台回复「B站」，获取插件安装包。  
+目前这款浏览器插件已从应用商店下架，无法直接安装，有需要的朋友，可以扫描下方的二维码，在公众号「效率工具指南」后台回复「B站」，获取插件安装包。        
+
+![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
+
 
 ## Downie
 
@@ -71,7 +75,7 @@ https://software.charliemonroe.net/downie/
 
 除了本文介绍的工具，我之前在另外一篇文章中，还介绍其他的下载 B 站视频的方法，感兴趣的可以戳下方👇的链接：
 
-[以为是使用浏览器的高手，看了这些才知道我是个弟弟](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649908756&idx=1&sn=3b0d554a0cb7e228adb3b21fdc2eab1d&chksm=83a86239b4dfeb2f2a9aa85501bd61ed373070a802baee26f51d92faa2e963b21a9189b114a5&token=855337760&lang=zh_CN#rd)  
+[以为是使用浏览器的高手，看了这些才知道我是个弟弟](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649908756&idx=1&sn=3b0d554a0cb7e228adb3b21fdc2eab1d&chksm=83a86239b4dfeb2f2a9aa85501bd61ed373070a802baee26f51d92faa2e963b21a9189b114a5&token=855337760&lang=zh_CN#rd)    
 
 
 ## 欢迎关注     
