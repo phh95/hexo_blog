@@ -1,5 +1,5 @@
 ---
-title: Mac截图软件Xnapper，截图美化必备工具【效率工具指南】     
+title: Mac截图软件Xnapper，截图美化样机工具【效率工具指南】     
 date: 2023-1-3 23:55:00               
 tags: [Mac,截图软件,样机工具]                                                                               
 ---
