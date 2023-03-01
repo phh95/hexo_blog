@@ -1,0 +1,1319 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    微信小程序开发学习笔记 - 以网易云音乐小程序项目为例 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-06-26 12:06" pubdate>
+        2022年6月26日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      10.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      112
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">微信小程序开发学习笔记 - 以网易云音乐小程序项目为例</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p><em>注：笔记来自 coderwhy 老师的视频教程<a target="_blank" rel="noopener" href="https://ke.qq.com/course/4162214#term_id=104318954">小程序音乐项目开发实战-大神coderwhy新课</a></em>    </p>
+<p><em>笔记编辑者：彭宏豪</em>    </p>
+<h2 id="项目成果展示"><a href="#项目成果展示" class="headerlink" title="项目成果展示"></a>项目成果展示</h2><p>最后制作出来的音乐小程序，可以查看我发布在 B 站上的视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1CY411N7JJ">学着做了一个音乐小程序｜前端开发【效率工具指南】</a>    </p>
+<h2 id="项目亮点"><a href="#项目亮点" class="headerlink" title="项目亮点"></a>项目亮点</h2><ul>
+<li>轮播图实现在不同尺寸设备上的适配      </li>
+<li>音乐播放页面在不同尺寸设备上的适配     </li>
+<li>小程序插槽无法像 Vue 一样设置默认值，可以使用 CSS 的条件判断巧妙地实现    </li>
+<li>数据多页面共享和状态管理（难点）      </li>
+<li>防抖和节流（性能优化，难点，JS 高级，课程中没有详细展开讲解）      </li>
+<li>第三方 UI 组件库 Vant 的使用    </li>
+<li>毛玻璃效果的制作    </li>
+<li>事件冒泡和阻止冒泡      </li>
+<li>项目常量数据的管理    </li>
+<li>代码分包       </li>
+<li>📦「封装」和「抽取」思想      </li>
+</ul>
+<h2 id="项目中用到的工具"><a href="#项目中用到的工具" class="headerlink" title="项目中用到的工具"></a>项目中用到的工具</h2><ul>
+<li><p>代码编辑器：微信官方提供的「微信开发者工具」     </p>
+</li>
+<li><p>浏览器插件：FeHelper   </p>
+</li>
+</ul>
+<p>FeHelper 可以对服务器请求返回的 JSON 数据进行美化（格式化），美化后的效果，就和我们在「微信开发者工具」控制台 <code>console.log</code> 打印的内容外观一致了，看起来更舒服。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566068661368.jpg" srcset="/img/loading.gif"></p>
+<p>顺便来看一下安装 FeHelper 插件之前，服务器返回的 JSON 数据的样式，作为对比：     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566070159756.jpg" srcset="/img/loading.gif"></p>
+<ul>
+<li>正则表达式：正则表达式是字符串的匹配利器，在项目「解析歌词」的部分会用到。   </li>
+</ul>
+<h2 id="各大厂商支持小程序的原因"><a href="#各大厂商支持小程序的原因" class="headerlink" title="各大厂商支持小程序的原因"></a>各大厂商支持小程序的原因</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-3.png" srcset="/img/loading.gif" alt="image -3-"></p>
+<h2 id="小程序是由谁来开发？"><a href="#小程序是由谁来开发？" class="headerlink" title="小程序是由谁来开发？"></a>小程序是由谁来开发？</h2><p>小程序的定位：介于原生 App 和手机 H5 页面之间的一个产品定位。<br>小程序的技术特点，决定了由前端工程师来开发</p>
+<h2 id="开发小程序的技术选型"><a href="#开发小程序的技术选型" class="headerlink" title="开发小程序的技术选型"></a>开发小程序的技术选型</h2><ul>
+<li>原生小程序开发</li>
+<li>小程序框架<ul>
+<li>mpvue</li>
+<li>wepy</li>
+<li>两个跨端方案开发小程序<ul>
+<li>uni-app：基于 Vue 开发的框架</li>
+<li>taro：由京东团队开发维护</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-4.png" srcset="/img/loading.gif" alt="image -4-"></p>
+<p>下图的 RN 是 React Native 的缩写，开发好之后可以发布为 iOS 和 Android 应用</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-5.png" srcset="/img/loading.gif" alt="image -5-"></p>
+<p>uni-app 和 taro 开发原生 App：</p>
+<ul>
+<li>无论是适配原生小程序还是原生 App，框架都有较多的适配问题，所以还是需要多了解原生的开发知识</li>
+<li>产品使用体验整体相较于原生 App 差很多</li>
+<li>也有其他的技术选型来开发原生 App：ReactNative、<strong>Flutter（体验也比较好）</strong></li>
+</ul>
+<p>作为前端工程师，不建议大家把过多精力放在原生开发上面，目前基本只有大厂才会开发原生 App，而很多小公司会开发小程序或 H5 页面。 </p>
+<h2 id="小程序开发的预备知识"><a href="#小程序开发的预备知识" class="headerlink" title="小程序开发的预备知识"></a>小程序开发的预备知识</h2><p>小程序的核心技术主要是 3 个：</p>
+<ul>
+<li>页面布局：WXML</li>
+<li>页面样式：WXSS，几乎就是 CSS（某些不支持，某些进行了增强，但基本是一致的）</li>
+<li>页面脚本：JS + WXS(WeixinScript)</li>
+</ul>
+<p>如果之前已经掌握了 Vue 或者 React 等框架开发，那么学习小程序是更简单的，因为里面的核心思想都是一致的（比如<strong>组件化开发、数据响应式、mustache 语法、事件绑定</strong>等）</p>
+<h2 id="微信小程序的双线程架构"><a href="#微信小程序的双线程架构" class="headerlink" title="微信小程序的双线程架构"></a>微信小程序的双线程架构</h2><ul>
+<li>视图线程</li>
+<li>逻辑线程</li>
+</ul>
+<p>这两个线程通过底层的 WeixinJSBridge 进行通讯</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-6.png" srcset="/img/loading.gif" alt="image -6-"></p>
+<h2 id="注册账号-申请-AppID"><a href="#注册账号-申请-AppID" class="headerlink" title="注册账号 - 申请 AppID"></a>注册账号 - 申请 AppID</h2><p>每个小程序都需要有一个唯一的 ID<br>前往 mp.weixin.qq.com 申请</p>
+<h2 id="开发微信小程序的工具"><a href="#开发微信小程序的工具" class="headerlink" title="开发微信小程序的工具"></a>开发微信小程序的工具</h2><ul>
+<li>微信开发者工具：官方提供的工具，必须下载、安装</li>
+<li>VS Code</li>
+</ul>
+<h3 id="使用-VS-Code-开发"><a href="#使用-VS-Code-开发" class="headerlink" title="使用 VS Code 开发"></a>使用 VS Code 开发</h3><p>推荐一些 VS Code 插件：</p>
+<ul>
+<li>WXML - Language Service</li>
+<li>小程序开发助手</li>
+<li>wechat-snippet</li>
+</ul>
+<p>注：这些插件都是差不多的，不需要全部安装，老师推荐安装第一个插件就够了</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-7.png" srcset="/img/loading.gif" alt="image -7-"></p>
+<h2 id="小程序项目结构"><a href="#小程序项目结构" class="headerlink" title="小程序项目结构"></a>小程序项目结构</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-8.png" srcset="/img/loading.gif" alt="image -8-"></p>
+<h2 id="去除控制台的警告⚠️信息"><a href="#去除控制台的警告⚠️信息" class="headerlink" title="去除控制台的警告⚠️信息"></a>去除控制台的警告⚠️信息</h2><p>打开项目的 <code>project.config.json</code> 文件，在其中增加一个配置信息 <code>&quot;checkSiteMap&quot;: flase</code>，就可以去掉控制台的警告信息了。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-9.png" srcset="/img/loading.gif" alt="image -9-"></p>
+<h2 id="微信小程序基础库"><a href="#微信小程序基础库" class="headerlink" title="微信小程序基础库"></a>微信小程序基础库</h2><p>我们编写的代码，其实是运行在微信小程序 SDK 之上的，SDK 是 Soft Development Kit 的缩写，即<strong>软件开发工具包</strong>，SDK 是集成在微信 App 中的。</p>
+<p>这里提到的 SDK 其实就是微信小程序的基础库。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-10.png" srcset="/img/loading.gif" alt="image -10-"></p>
+<p>基础库是会随着时间不断更新的，因此会衍生出多个版本：</p>
+<ul>
+<li>增加功能</li>
+<li>修复 bug</li>
+</ul>
+<p>微信版本不同，其中包含的微信小程序基础库版本是不同的。</p>
+<p>灰度发布：也叫金丝雀发布。<br>全量发布</p>
+<h2 id="向服务器请求数据"><a href="#向服务器请求数据" class="headerlink" title="向服务器请求数据"></a>向服务器请求数据</h2><p>await 必须放到 async 异步函数里面。<br>这种方式不是在所有地方都可以使用的，在某些地方使用可能会影响性能。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-11.png" srcset="/img/loading.gif" alt="image -11-"></p>
+<h2 id="小程序的视频无法播放"><a href="#小程序的视频无法播放" class="headerlink" title="小程序的视频无法播放"></a>小程序的视频无法播放</h2><p>遇到小程序中的视频无法播放，可能是因为向服务器请求数据时验证不通过，我们需要在 video 组件中增加一个推荐策略的属性 <code>referrer-policy</code>，这个属性的默认值是 no-referrer，我们要把它设置为 origin。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-12.png" srcset="/img/loading.gif" alt="image -12-"></p>
+<h2 id="对-wxml-的数据进行格式化"><a href="#对-wxml-的数据进行格式化" class="headerlink" title="对 wxml 的数据进行格式化"></a>对 wxml 的数据进行格式化</h2><p>wxml 页面从服务器请求得到的视频播放量、时间（单位为毫秒 ms），转换为 XX 万播放量、几分几秒，不能直接在 wxml 的 mustache 语法使用过滤器 filter。</p>
+<p>对 wxml 的数据进行格式化，需要用到 wxs，wxs 本质上也是 js，只不过不支持 ES6 语法，只能用 ES5。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-13.png" srcset="/img/loading.gif" alt="image -13-"></p>
+<p>在 utils 文件中创建一个 <code>format.wxs</code> 文件，里面定义了一个函数 formatCount，用来转换视频播放量。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-14.png" srcset="/img/loading.gif" alt="image -14-"></p>
+<p>接着在 wxml 文件中使用 wxs 标签引用 wxs 文件，wxs 标签需要添加一个 module 属性，属性值是可以自定义的，可以是 tools，也可以是 format。<br>在需要调用 formatCount 函数的位置，使用 module 属性值中的方法。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-15.png" srcset="/img/loading.gif" alt="image -15-"></p>
+<h2 id="将-wxml-中的组件抽取成一个单独的组件"><a href="#将-wxml-中的组件抽取成一个单独的组件" class="headerlink" title="将 wxml 中的组件抽取成一个单独的组件"></a>将 wxml 中的组件抽取成一个单独的组件</h2><p>小程序中创建的组件，同样需要包含 4 个文件——js、json、wxml、wxss</p>
+<p>创建组件时，右击选择「新建 Component」，会一次性创建 4 个文件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-37.png" srcset="/img/loading.gif" alt="image -37-"></p>
+<p>组件的 <code>index.js</code> 文件 Component 包含 properties 和 data，这两者的区别在于：</p>
+<p>data 和页面一样，是用来存放组件内部的数据的；properties 用来<strong>存放外界传过来的数据</strong>，譬如服务器请求得到的数据，</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-38.png" srcset="/img/loading.gif" alt="image -38-"></p>
+<p>properties 会接收外部传入的 item 对象。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-39.png" srcset="/img/loading.gif" alt="image -39-"></p>
+<h2 id="在小程序中使用自定义的组件"><a href="#在小程序中使用自定义的组件" class="headerlink" title="在小程序中使用自定义的组件"></a>在小程序中使用自定义的组件</h2><p>在小程序页面使用自定义的组件时，需要先对组件进行注册，来到小程序页面的 json 文件。</p>
+<p>注册组件的写法：<br><code>&quot;组件名&quot;: &quot;组件的路径&quot;</code><br>组件路径最末尾不要加后缀。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-40.png" srcset="/img/loading.gif" alt="image -40-"></p>
+<p>在 wxml 页面使用我们自定义的组件   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-41.png" srcset="/img/loading.gif" alt="image -41-"></p>
+<h2 id="小程序页面上拉加载更多数据"><a href="#小程序页面上拉加载更多数据" class="headerlink" title="小程序页面上拉加载更多数据"></a>小程序页面上拉加载更多数据</h2><p>在页面的 js 文件中，使用生命周期 <code>onReachBottom</code> 监听。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-42.png" srcset="/img/loading.gif" alt="image -42-"></p>
+<p>上拉加载数据时，可以在导航栏增加一点细节，譬如增加「加载数据」时的转圈动画<br>需要用到 <code>wx.showNavigationBarLoading()</code><br>数据完成加载后，要把加载动画隐藏，否则加载动画会一直显示在顶部的导航栏，调用 <code>wx.hideNavigationBarLoading()</code>   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-43.png" srcset="/img/loading.gif" alt="image -43-"></p>
+<h2 id="小程序页面下拉刷新"><a href="#小程序页面下拉刷新" class="headerlink" title="小程序页面下拉刷新"></a>小程序页面下拉刷新</h2><p>小程序页面默认情况下是不允许下拉刷新的，需要在页面的 json 文件中，将 enablePullDownRefresh 配置为 true，才可以实现下拉刷新。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-44.png" srcset="/img/loading.gif" alt="image -44-"></p>
+<p>同时，要在 json 中配置 <code>backgroundTextStyle</code> ，将默认的 light 更改为 dark，在下拉刷新时才能看见 3 个小点点。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-45.png" srcset="/img/loading.gif" alt="image -45-"></p>
+<p>当偏移量为 0 时，停止下拉刷新的动效，让动效尽快结束。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-46.png" srcset="/img/loading.gif" alt="image -46-"></p>
+<h2 id="点击组件跳转到新的页面"><a href="#点击组件跳转到新的页面" class="headerlink" title="点击组件跳转到新的页面"></a>点击组件跳转到新的页面</h2><p>新的需求：点击视频页面的小卡片（组件/item），进入视频详情页。</p>
+<p>这时我们就要监听 item 的点击，有两种方式：</p>
+<ul>
+<li>组件内部监听点击</li>
+<li>直接监听组件的点击（组件可以直接绑定事件的）</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-47.png" srcset="/img/loading.gif" alt="image -47-"></p>
+<h3 id="组件内部监听点击事件"><a href="#组件内部监听点击事件" class="headerlink" title="组件内部监听点击事件"></a>组件内部监听点击事件</h3><p>来到自定义组件的 wxml 页面，给类名为 item 的 view 组件添加 bindtap，监听点击事件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-48.png" srcset="/img/loading.gif" alt="image -48-"></p>
+<h3 id="直接监听组件的点击"><a href="#直接监听组件的点击" class="headerlink" title="直接监听组件的点击"></a>直接监听组件的点击</h3><p>在我们自定义的组件 <code>video-item-v1</code> 添加 bindtap 属性，可以直接监听组件的点击。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-49.png" srcset="/img/loading.gif" alt="image -49-"></p>
+<p>我们点击不同的组件，会跳转到不同的详情页，那我们如何知道具体是点击了哪个页面呢？<br>——这里需要在 wxml 中给组件添加一个额外的属性 data-item。<br>之后在事件处理时，我们就可以通过 data-item 绑定的 item，拿到所点击的组件的 id，就可以知道用户到底是点击了哪一个组件。<br>这种拿到 id 的方法，并不是小程序独有的，而是 html 提供的能力。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-50.png" srcset="/img/loading.gif" alt="image -50-"></p>
+<h2 id="在小程序引入第三方-UI-库-Vant"><a href="#在小程序引入第三方-UI-库-Vant" class="headerlink" title="在小程序引入第三方 UI 库 Vant"></a>在小程序引入第三方 UI 库 Vant</h2><p>进入项目所在的路径，在终端输入 <code>npm init -y</code> 生成 <code>package.json</code> 文件。<br>如果项目中包含了中文名称的文件夹，使用上面的命令会无法生成 json 文件，需要使用命令 <code>npm init</code> 。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-51.png" srcset="/img/loading.gif" alt="image -51-"></p>
+<p>通过 npm 安装 Vant：</p>
+<pre><code class="hljs bash">npm install @vant/weapp</code></pre>
+
+<p>安装之后，项目文件夹会多出一个 <code>node_modules</code> 文件夹，里面就包含了我们刚安装的 Vant 库。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-52.png" srcset="/img/loading.gif" alt="image -52-"></p>
+<p><code>node_modules</code> 中的 Vant 库在小程序中无法直接使用，还需要经过构建 npm 的环节，构建之后，项目路径会生成一个新的文件夹 <code>miniprogram_npm</code> 。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-53.png" srcset="/img/loading.gif" alt="image -53-"></p>
+<p>完成构建之后，就可以开始使用 Vant 库了。<br>在想要使用 Vant 库的页面的 json 文件中，注册需要用到的组件，譬如其中的搜索框组件 <code>van-search</code>。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-54.png" srcset="/img/loading.gif" alt="image -54-"></p>
+<p>接着在 wxml 文件中使用 <code>van-search</code> 组件，编译之后就能看到搜索框了。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-55.png" srcset="/img/loading.gif" alt="image -55-"></p>
+<h2 id="小程序轮播图组件"><a href="#小程序轮播图组件" class="headerlink" title="小程序轮播图组件"></a>小程序轮播图组件</h2><p>小程序轮播图组件 swiper 默认的高度为 150px。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-56.png" srcset="/img/loading.gif" alt="image -56-"></p>
+<p>换到 iPhone5 小尺寸的手机上，轮播图组件高度依旧为 150px，原本位于图片上方的指示点就会显示在图片下方，看起来非常丑陋。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-57.png" srcset="/img/loading.gif" alt="image -57-"></p>
+<p>解决适配的问题，稍微有些麻烦。<br>解决的方法：轮播图组件的高度应该和图片的高度是一致的。<br>问题是：如何获取图片的高度（<strong>如何获取一张网络请求得到的图片的高度</strong>）。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-58.png" srcset="/img/loading.gif" alt="image -58-"></p>
+<p>这里需要注意的是，只有当图片完成加载，我们才能拿到网络图片的高度。</p>
+<p>小程序的图片组件 image 有一个事件监听 <code>bindload</code>，可以在图片完成加载时，自动触发事件。</p>
+<p>bindload 绑定了 handleSwiperImageLoaded 后，拿到的是图片原始的宽度和高度。</p>
+<p>但我们这里想要的是 image 组件的高度，问题又转变成了：如何获取 image 组件的高度？<br>——需要用到小程序的 API <code>createSelectorQuery</code></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-59.png" srcset="/img/loading.gif" alt="image -59-"></p>
+<h2 id="请求次数过多的处理方法"><a href="#请求次数过多的处理方法" class="headerlink" title="请求次数过多的处理方法"></a>请求次数过多的处理方法</h2><p>请求次数过多，会造成性能的负担，这里有两种可供选择的方法：</p>
+<ul>
+<li>防抖</li>
+<li>节流</li>
+</ul>
+<h2 id="setData-是同步的还是异步的？"><a href="#setData-是同步的还是异步的？" class="headerlink" title="setData 是同步的还是异步的？"></a>setData 是同步的还是异步的？</h2><p>在小程序的 js 文件中，我们经常会用到 setData 来给 data 对象中的变量设置值。</p>
+<pre><code class="hljs javascript">data: &#123;
+  banners: []
+&#125;
+
+
+<span class="hljs-built_in">this</span>.setData(&#123; <span class="hljs-attr">banners</span>: res.banners &#125;)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.data.banners)</code></pre>
+<p>如果 setData 是同步的，setData 设置了 banner 的值，下面的打印语句可以拿到最新设置的 banners 的值。<br>如果 setData 是异步的，setData 可能还没执行完设置值的语句，下面的打印语句就开始运行了，因为是<strong>异步的，setData 没执行完，并不会阻塞后面的打印语句</strong>，因此打印语句不一定能拿到最新设置的 banners 的值。</p>
+<p>其实，setData 在设置 data 数据时，是同步的。<br>而通过最新的 data 数据对 wxml 进行渲染，渲染的过程 setData 是异步的。</p>
+<p>setData 在设置 data 数据时，之所以是同步的，可能是为了方便我们在第 7 行打印语句中拿到最新设置的 banners 值。</p>
+<h2 id="为轮播图组件设置圆角"><a href="#为轮播图组件设置圆角" class="headerlink" title="为轮播图组件设置圆角"></a>为轮播图组件设置圆角</h2><p>设置圆角，需要用到 wxss 中的 <code>border-radius</code>，但这个属性设置的圆角在某些手机系统上不起作用，是因为手机系统使用 web-view 来渲染类似 html 的页面时，会存在适配的问题（web-view 的 bug）。</p>
+<p>解决这个 bug 的方法，添加额外的样式 transform</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.banner</span> &#123;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10</span>rpx;
+  <span class="hljs-attribute">overflow</span>: hidden;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0</span>);  
+&#125;</code></pre>
+
+<h2 id="区域标题自定义组件-area-header"><a href="#区域标题自定义组件-area-header" class="headerlink" title="区域标题自定义组件 area-header"></a>区域标题自定义组件 area-header</h2><p>自定义组件 <code>area-header</code> 配置好了左侧 title 的默认值，我们可以在使用的时候，为 title 设置新的值，就可以替换到默认的值。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-60.png" srcset="/img/loading.gif" alt="image -60-"></p>
+<h2 id="小程序插槽"><a href="#小程序插槽" class="headerlink" title="小程序插槽"></a>小程序插槽</h2><p>为什么要使用插槽？</p>
+<p>我们封装的区域标题组件，右侧的内容，在不同的场景下，显示的内容是不一样的（内容会动态变化的），如果想要让封装的组件更加灵活，就需要用到插槽。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-61.png" srcset="/img/loading.gif" alt="image -61-"></p>
+<p>不像 Vue，<strong>微信小程序无法给插槽 slot 设置默认值</strong>，但还是有相应的解决方法的，主要有两种：  </p>
+<ul>
+<li>js</li>
+<li>css：通过 CSS 伪类和连接器来解决</li>
+</ul>
+<p>我们在封装的组件 area-header 中预留了插槽的位置，如何实现 <strong>插槽默认值</strong> 和 <strong>在使用组件时往插槽插入内容</strong> 的<strong>互斥显示</strong>呢？</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-62.png" srcset="/img/loading.gif" alt="image -62-"></p>
+<p>下面介绍基于 css 样式来解决这个问题的方法：</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-63.png" srcset="/img/loading.gif" alt="image -63-"></p>
+<p>使用自定义组件 area-header，不往插槽中插入内容时，就会显示插槽的默认值 <code>更多 &gt;</code>。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-64.png" srcset="/img/loading.gif" alt="image -64-"></p>
+<h2 id="在小程序中使用多个插槽"><a href="#在小程序中使用多个插槽" class="headerlink" title="在小程序中使用多个插槽"></a>在小程序中使用多个插槽</h2><p>在一个小程序页面中使用多个插槽，可以像在 Vue 里一样，使用具名插槽，给每个插槽 slot 添加一个 name 属性，对插槽进行区分。</p>
+<p>同时，<strong>当你在一个页面中使用多个插槽，需要在页面的 js 文件额外配置一个 options 字段</strong>，将 <code>multipleSlots</code>配置为 true。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-65.png" srcset="/img/loading.gif" alt="image -65-"></p>
+<h2 id="小程序多页面的状态管理"><a href="#小程序多页面的状态管理" class="headerlink" title="小程序多页面的状态管理"></a>小程序多页面的状态管理</h2><p>学习这个知识，是为了实现数据在多页面间共享（即多个页面会用到一份数据）的功能。</p>
+<p>页面间的通讯包含两部分：</p>
+<ul>
+<li><strong>跨页面之间事件的传递</strong>：页面发出一个事件 event，其他的页面会进行监听。现在有很多的库来帮我们实现跨页面之间事件的传递，例如 mitt，mitt 库实际上就是<strong>事件总线</strong>。事件总线的库一般只负责帮助我们传递事件，并<strong>不会管理状态</strong>。</li>
+<li>跨页面之间数据的共享和响应（<strong>状态共享</strong>）：页面会共享出一些数据（产生一些共享数据），其他页面可以使用这些数据，并且当共享的数据发生变化时，其他用到了共享数据的页面也会做出响应，自动更新数据。</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-66.png" srcset="/img/loading.gif" alt="image -66-"></p>
+<p>在不同的框架中，采用的不同方案来完成<strong>数据的共享</strong>：</p>
+<ul>
+<li>Vue 框架：Vuex（即 Vue 路由）</li>
+<li>React：redux、react-redux</li>
+<li>微信小程序<ul>
+<li>方案一：把需要共享的数据放到全局的 <code>app.js</code> 中，在文件里面增加一个 globalData 的属性</li>
+<li>其他方案：官方目前没有提供更好的方案；GitHub 有一些解决方案，但不够好。</li>
+<li>更多方案：使用 coderwhy 老师写的库 <code>hy-event-store</code>，一个基于事件的全局状态管理工具，不仅可以在小程序中使用，也可以在 Vue、React 中使用。项目地址：<a target="_blank" rel="noopener" href="https://github.com/coderwhy/hy-event-store">https://github.com/coderwhy/hy-event-store</a>    </li>
+</ul>
+</li>
+</ul>
+<p><strong>方案一</strong></p>
+<p>app.js -&gt; globalData: { name: phh }<br>其他页面想使用共享的数据 -&gt; getApp().globalData.name 就可以拿到共享的数据<br>这种方案有一个致命的缺点：<strong>数据不是响应式的</strong>（不能根据最新的数据，去渲染页面）</p>
+<p>方案一实际上只能共享数据，无法做到响应式。</p>
+<h2 id="小程序状态管理第三方库-hy-event-store"><a href="#小程序状态管理第三方库-hy-event-store" class="headerlink" title="小程序状态管理第三方库 hy-event-store"></a>小程序状态管理第三方库 hy-event-store</h2><p>安装 hy-event-store 库：</p>
+<pre><code class="hljs bash">npm install hy-event-store</code></pre>
+
+<p>当我们用 npm 安装了新的包之后，需要构建一下 npm。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-67.png" srcset="/img/loading.gif" alt="image -67-"></p>
+<p>在根目录下创建一个文件夹 store，用来存放共享的数据。其中的 <code>index.js</code> 作为统一导出的出口。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-68.png" srcset="/img/loading.gif" alt="image -68-"></p>
+<p>在需要用到共享数据的页面的 js 文件，在 onLoad 生命周期<strong>发起共享数据的请求</strong>和<strong>从 store 获取共享数据</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-69.png" srcset="/img/loading.gif" alt="image -69-"></p>
+<h2 id="推荐歌曲列表自定义组件-song-item-v1"><a href="#推荐歌曲列表自定义组件-song-item-v1" class="headerlink" title="推荐歌曲列表自定义组件 song-item-v1"></a>推荐歌曲列表自定义组件 song-item-v1</h2><p>自定义组件 song-item-v1 用到了 mustache 语法，需要将页面请求得到的数据，通过设置的 item 属性传递给自定义组件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-70.png" srcset="/img/loading.gif" alt="image -70-"></p>
+<p>自定义组件的 js 文件中的 properties 属性，接收数据。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-71.png" srcset="/img/loading.gif" alt="image -71-"></p>
+<h2 id="全局共享数据"><a href="#全局共享数据" class="headerlink" title="全局共享数据"></a>全局共享数据</h2><p>我们在做项目的过程当中，可能会在不同页面中用到手机的屏幕宽度，出于这个考虑，我们可以把这个数据放在 <code>app.js</code> 中。 </p>
+<p><code>wx.getSystemInfoSync</code>API 可以拿到当前手机设备的信息，例如手机屏幕的宽度和高度。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-72.png" srcset="/img/loading.gif" alt="image -72-"></p>
+<p>把获取到的手机屏幕宽度和高度数据，存入全局对象 <code>globalData</code> 中。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-73.png" srcset="/img/loading.gif" alt="image -73-"></p>
+<p>如何在组件中使用全局共享的数据？</p>
+<p>两个步骤：</p>
+<ul>
+<li>使用 getApp() 方法获取全局对象 app；</li>
+<li>在 data 中使用全局对象的方法，就能得到我们刚刚获取的 screenWidth</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-74.png" srcset="/img/loading.gif" alt="image -74-"></p>
+<p>拿到屏幕宽度后，我们可以给 scroll-view 组件设置行内样式 <code>style=&quot;width: &#123;&#123;screenWidth&#125;&#125;px&quot;</code>，这样 scroll-view 组件的宽度就和手机屏幕宽度是一致的。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-75.png" srcset="/img/loading.gif" alt="image -75-"></p>
+<p>同样是让 scroll-view 组件宽度等于屏幕宽度，还有另外一种<strong>更为简单的方法</strong>：</p>
+<p>把 scroll-view 组件的宽度设置为 <strong>100 vw</strong>，等于视口的宽度，即整个屏幕的宽度。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-76.png" srcset="/img/loading.gif" alt="image -76-"></p>
+<p>另外一个全局共享数据的例子：</p>
+<p>我们需要根据不同的设备，动态地获取页面顶部状态栏的高度，由于这个动态获取状态栏高度的需求，可能在多个页面中都是会用到的，我们可以把它放到 <code>app.js</code> 文件中。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-77.png" srcset="/img/loading.gif" alt="image -77-"></p>
+<h2 id="编程语言-数据处理"><a href="#编程语言-数据处理" class="headerlink" title="编程语言 - 数据处理"></a>编程语言 - 数据处理</h2><p>coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终落实到的都是对数据的处理。<br>我们可以怎样地把数据组织得更合适一点<br>之后在另外一个地方就可以更加方便地使用这些数据</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-78.png" srcset="/img/loading.gif" alt="image -78-"></p>
+<p>数据结构：告诉你应该怎样更高效地组织数据<br>算法：在组织数据的过程当中，如何可以进行优化（优化获取或存储）</p>
+<h2 id="单行文本溢出隐藏显示-CSS"><a href="#单行文本溢出隐藏显示-CSS" class="headerlink" title="单行文本溢出隐藏显示 - CSS"></a>单行文本溢出隐藏显示 - CSS</h2><p>溢出隐藏显示为省略号</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-79.png" srcset="/img/loading.gif" alt="image -79-"></p>
+<h2 id="页面跳转时携带参数"><a href="#页面跳转时携带参数" class="headerlink" title="页面跳转时携带参数"></a>页面跳转时携带参数</h2><p>默认情况下，页面跳转 url 链接的写法为<br><code>url: &#39;/pages/detail-songs/index&#39;,</code></p>
+<p>如果跳转页面时需要携带参数，url 原本的单引号就要更改为 ``，且需要在 index 末尾增加参数  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-80.png" srcset="/img/loading.gif" alt="image -80-"></p>
+<p>在跳转的目标页面，我们可以在页面的 js 文件的 onLoad 生命周期，通过 <code>function(options) &#123;&#125;</code> 拿到携带过来的参数。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-81.png" srcset="/img/loading.gif" alt="image -81-"></p>
+<h2 id="CSS-制作毛玻璃效果"><a href="#CSS-制作毛玻璃效果" class="headerlink" title="CSS 制作毛玻璃效果"></a>CSS 制作毛玻璃效果</h2><p>毛玻璃效果由两个图层组成，一个是最下方的图片，一个是上层的半透明色块，给半透明色块加上模糊滤镜，就能得到想要的毛玻璃效果。<br>两个图层都采取<strong>相对定位</strong>，<code>z-index</code> 的值为 -1，半透明色块添加 <code>backdrop-filter: blur(5px)</code>，就能加上毛玻璃效果。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-82.png" srcset="/img/loading.gif" alt="image -82-"></p>
+<h2 id="搜索框的防抖操作"><a href="#搜索框的防抖操作" class="headerlink" title="搜索框的防抖操作"></a>搜索框的防抖操作</h2><p>在前端开发中涉及到搜索功能时，通常都要用到防抖操作。主要是对发送网络请求的函数进行防抖操作，减少对服务器的频繁请求。</p>
+<p>防抖函数的文件一般命名为 <code>debounce.js</code></p>
+<h2 id="搜索框监听用户按下了回车键-Enter"><a href="#搜索框监听用户按下了回车键-Enter" class="headerlink" title="搜索框监听用户按下了回车键 Enter"></a>搜索框监听用户按下了回车键 Enter</h2><p>在搜索框组件 <code>van-search</code> 绑定一个事件 <code>bind:search</code>，可以用来监听用户按下了回车键 Enter。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-83.png" srcset="/img/loading.gif" alt="image -83-"></p>
+<h2 id="搜索框固定定位"><a href="#搜索框固定定位" class="headerlink" title="搜索框固定定位"></a>搜索框固定定位</h2><p>当我们把顶部的搜索框设置为<strong>固定定位</strong>时，搜索框不占位置，下方的搜索结果会与浮在最上面的搜索框重叠在一起。</p>
+<p>解决方法：给页面设置一个 padding-top，padding-top 的数值等于搜索框的高度。</p>
+<p>还有一个细节，当我们为固定定位的搜索框设置了左右两侧的距离，它就会根据设置的距离，自动计算搜索框的宽度。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-84.png" srcset="/img/loading.gif" alt="image -84-"></p>
+<h2 id="自定义小程序页面顶部状态栏"><a href="#自定义小程序页面顶部状态栏" class="headerlink" title="自定义小程序页面顶部状态栏"></a>自定义小程序页面顶部状态栏</h2><p>小程序页面顶部的状态栏默认会显示系统的时间和电量，我们制作的音乐播放页面，想让播放页充满整个页面，就需要在页面的 json 中添加配置 <code>&quot;navigationStyle&quot;: &quot;custom&quot;</code>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-85.png" srcset="/img/loading.gif" alt="image -85-"></p>
+<h2 id="获取不同机型（设备）状态栏的高度"><a href="#获取不同机型（设备）状态栏的高度" class="headerlink" title="获取不同机型（设备）状态栏的高度"></a>获取不同机型（设备）状态栏的高度</h2><p>这里的获取分成两种场景：</p>
+<ul>
+<li>页面获取</li>
+<li>自定义组件获取</li>
+</ul>
+<p>页面获取，要把获取状态栏高度的函数写在页面 js 的 onLoad 生命周期中。<br>组件获取，通常情况下把获取状态栏高度的函数，写在组件的 lifetimes 生命周期中。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-86.png" srcset="/img/loading.gif" alt="image -86-"></p>
+<h2 id="小程序分页效果"><a href="#小程序分页效果" class="headerlink" title="小程序分页效果"></a>小程序分页效果</h2><p>点击页面顶部的 Tab，或是左右滑动可以切换到不同的页面，这种分页效果该怎么实现呢？</p>
+<p>有 3 种方案：</p>
+<ul>
+<li>自己封装分页</li>
+<li>使用第三方组件</li>
+<li>使用小程序内置组件 swiper（类似轮播图）</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-87.png" srcset="/img/loading.gif" alt="image -87-"></p>
+<h2 id="项目中的「常量」管理"><a href="#项目中的「常量」管理" class="headerlink" title="项目中的「常量」管理"></a>项目中的「常量」管理</h2><p>不建议在 js 文件中直接使用「常量」进行运算，因为之后想要对常量进行更改，如果项目多个地方都用到了一个常量，就要在多处进行修改，维护起来比较麻烦。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-88.png" srcset="/img/loading.gif" alt="image -88-"></p>
+<p>对「常量」的处理方法有两种：</p>
+<p>一种是在项目中建立一个专门用来存放常量的文件夹，例如下图的 constants 文件夹，里面有一个用于存放设备信息（常量）的 <code>device-const.js</code> 文件，导出我们需要用到的导航栏高度 44。</p>
+<p>这种常量的管理方法常用于<strong>项目中有比较多常量</strong>的场景。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-89.png" srcset="/img/loading.gif" alt="image -89-"></p>
+<p>另外一种是将用到的常量放在全局的 <code>app.js</code> 文件，并对其初始化，在需要使用的时候，通过 getApp() 函数调用。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-90.png" srcset="/img/loading.gif" alt="image -90-"></p>
+<h2 id="页面在不同设备上的适配"><a href="#页面在不同设备上的适配" class="headerlink" title="页面在不同设备上的适配"></a>页面在不同设备上的适配</h2><p>音乐播放页面在不同型号的设备上，会因为<strong>屏幕高度的不同</strong>涉及到适配的问题。</p>
+<p>这里我们采取的布局方式是，整个页面采用 flex 布局，flex-direction 设置为 column，即垂直方向为主轴，其他的部分都是由文字内容的大小、icon 图标的高度、内外边距撑起来的，而剩下两块——专辑的封面和歌词的高度，是由屏幕的高度来动态决定的，即它们的高度之和等于 屏幕高度 - 所有其他元素的高度之和，再由设置的 flex 数值来分配剩余的高度，譬如我们这里把专辑封面高度的比例设置为 4，歌词高度的比例设置为 1。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-91.png" srcset="/img/loading.gif" alt="image -91-"></p>
+<h2 id="小程序播放音乐"><a href="#小程序播放音乐" class="headerlink" title="小程序播放音乐"></a>小程序播放音乐</h2><p>小程序的 audio 组件已经停止维护了。<br>想要在小程序中添加音乐，需要使用能力更强的 <code>wx.createInnerAudioContext</code> API。</p>
+<pre><code class="hljs bash">const audioContext = wx.createInnerAudioContext() 
+
+// 设置音乐的 url 地址
+audioContext.src = <span class="hljs-string">&quot;url&quot;</span></code></pre>
+
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-92.png" srcset="/img/loading.gif" alt="image -92-"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-93.png" srcset="/img/loading.gif" alt="image -93-"></p>
+<h2 id="歌词解析"><a href="#歌词解析" class="headerlink" title="歌词解析"></a>歌词解析</h2><p>课程视频：<a target="_blank" rel="noopener" href="https://ke.qq.com/webcourse/4162214/104318954#taid=12375291137589926&vid=387702294493689826">播放器暂停、上一首、下一首、进度控制（2）</a></p>
+<p>我们从服务器请求得到的歌词，是放在一个大的字符串 lyric 里面，需要先对这个大的字符串进行分割，分割成一行行的歌词。   </p>
+<p>通过每句歌词之间的换行符 <code>\n</code> 进行分割：   </p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> lyricString = res.lrc.lyric   
+<span class="hljs-keyword">const</span> lyricSingle = lyricString.split(<span class="hljs-string">&quot;\n&quot;</span>)</code></pre>
+
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566068661368.jpg" srcset="/img/loading.gif"></p>
+<p>split() 方法分割之后得到的一个数组，数组里面的每个元素是一个字符串，由时间和歌词组成。  </p>
+<p>[“[00:00.000] 作词 : 唐恬”, “[00:00.576] 作曲 : 钱雷”, ……]    </p>
+<p>用 for……of 遍历上面的数据，可以得到一行行的字符串 </p>
+<pre><code class="hljs js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> lineString <span class="hljs-keyword">of</span> lyricSingle) &#123;
+    <span class="hljs-comment">// [00:00.000] 作词 : 唐恬</span>
+    <span class="hljs-built_in">console</span>.log(lineString)
+&#125;</code></pre>
+
+<p>得到一个个字符串之后，我们要对字符串进行拆分，取出里面的时间 <code>00:00.000</code> 和歌词文本「作词 : 唐恬」。   </p>
+<p>取出时间比较麻烦，这里需要用到<strong>正则表达式</strong>。  </p>
+<pre><code class="hljs js"><span class="hljs-comment">// 我们想要匹配的是 [00:00.000]</span>
+<span class="hljs-keyword">const</span> timeRegExp = <span class="hljs-regexp">/\[(\d&#123;2&#125;):(\d&#123;2&#125;)\.(\d&#123;2,3&#125;)\]/</span>     
+</code></pre>
+
+<p>正则表达式要使用 <code>/ /</code> 进行包裹。  </p>
+<p>方括号 [] 在正则表达式中是有特殊含义的，比如当我们想匹配 a 到 z 的字母，就会写 [a-z]，在中括号里会写上<strong>匹配的范围</strong>。</p>
+<p>这里想匹配的时间左右两侧有中括号，因此在匹配的时候，需要在中括号前面加上转义的反斜杆 \。   </p>
+<p>时间左右两侧的中括号匹配出来之后，我们就可以写里面想匹配的时间（分、秒、毫秒），每一块的匹配在正则表达式中使用小括号 <code>()</code> 进行分割。   </p>
+<p>这里需要注意的是，英文句号 <code>.</code> 在正则表达式中也有特殊含义，因此要在英文句号前面加多一个反斜杆。  </p>
+<p>接着我们就可以逐一写每一个小括号里面的匹配规则了：  </p>
+<p>匹配分钟：(\d{2})</p>
+<p>(\d)，<code>\d</code> 表示<strong>匹配数字</strong>，也可以写成 [0-9]，但这种形式有点长，我们更倾向于写更简短的 <code>\d</code>。  </p>
+<p>在 <code>\d</code> 后面加上 <code>&#123;2&#125;</code> 表示我们想匹配两个数字。  </p>
+<p>匹配秒钟：(\d{2})</p>
+<p>匹配毫秒：(\d{2,3})</p>
+<p>毫秒有些特殊，既有两个数字，也有 3 个数字的情况。  </p>
+<p>[00:02.304]<br>[00:04.92]   </p>
+<p><code>\d</code> 后面的规则需要改一改，写成 {2,3}，匹配两到三个，匹配 2 个或 3 个数字。  </p>
+<p>⚠️ 注意：<strong>正则表达式中不能随意加空格</strong>，{2,3} 和 {2, 3} 在正则表达式中是不一样的。   </p>
+<p>写好正则表达式之后，可以<strong>使用正则表达式对字符串进行执行</strong>，匹配出我们想要的东西。   </p>
+<p>执行的意思是，我们要用正则表达式 timeRegExp 去匹配字符串 lineString 中的东西了。   </p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> timeRegExp = <span class="hljs-regexp">/\[(\d&#123;2&#125;):(\d&#123;2&#125;)\.(\d&#123;2,3&#125;)\]/</span>   
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> lineString <span class="hljs-keyword">of</span> lyricSingle) &#123;
+    <span class="hljs-comment">// [00:00.000] 作词 : 唐恬</span>
+    <span class="hljs-built_in">console</span>.log(lineString)  
+    <span class="hljs-keyword">const</span> timeResult = timeRegExp.exec(lineString)
+    <span class="hljs-built_in">console</span>.log(timeResult)
+&#125;
+</code></pre>
+
+<p>打印正则表达式匹配出来的结果 timeResult，会发现匹配结果是一个个的数组。   </p>
+<p>每个数组中第 2、第 3、第 4 个元素，就是我们想要的分钟、秒钟、毫秒。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16567361817322.jpg" srcset="/img/loading.gif"></p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> minute = timeResult[<span class="hljs-number">1</span>] * <span class="hljs-number">60</span> * <span class="hljs-number">1000</span>  
+<span class="hljs-keyword">const</span> second = timeResult[<span class="hljs-number">2</span>] * <span class="hljs-number">1000</span>
+<span class="hljs-keyword">const</span> millisecond = timeResult[<span class="hljs-number">3</span>]</code></pre>
+
+<p>这里还需要分别把分钟、秒转换为毫秒，等会方便与进度条的 currentTime（单位为毫秒） 相匹配。     </p>
+<blockquote>
+<p>一个 JS 的知识点：JS 中，数字字符串（例如我们这里拿到的 “02” 就是一个数字字符串）与一个数字相乘时，数字字符串会隐式转换为一个数字，就可以正常运算了。      </p>
+</blockquote>
+<p>最后匹配到的毫秒，比较特殊，有两位数字，也有三位数字的情况：  </p>
+<p>三位数字 304 是正常的毫秒，不需要作任何处理。</p>
+<p><strong>两位数字 92，需要先乘以 10，才能真正转换成毫秒</strong>，92 完整的写法应该是 920 ms，因此这里需要进行判断，可以使用三元运算符：   </p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> millisecond = timeResult[<span class="hljs-number">3</span>].length === <span class="hljs-number">2</span> ? timeResult[<span class="hljs-number">3</span>] * <span class="hljs-number">10</span> : timeResult[<span class="hljs-number">3</span>] * <span class="hljs-number">1</span></code></pre>
+
+<p>三元运算符的含义是，如果毫秒字符串的长度为 2，那么就乘以 10，转换为真正的毫秒，否则的话，就让<strong>毫秒字符串乘以 1，转换为数字类型的毫秒</strong>。   </p>
+<p>拿到时间之后，我们再来拿字符串 lineString <code>[00:00.000] 作词 : 唐恬</code> 中剩下的歌词文本「作词 : 唐恬」。  </p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> lyricText = lineString.replace(timeResult[<span class="hljs-number">0</span>], <span class="hljs-string">&quot;&quot;</span>)  
+
+<span class="hljs-comment">// 另外一种写法</span>
+<span class="hljs-comment">// const lyricText = lineString.replace(timeRegExp, &quot;&quot;)</span></code></pre>
+
+<p>replace() 方法可以接收两种参数：  </p>
+<ul>
+<li>字符串  </li>
+<li>正则表达式  </li>
+</ul>
+<p>timeResult[0] 是正则表达式匹配结果的第一个元素，值为 <code>[00:00.000]</code>，将整个字符串前面的时间戳替换为空字符串，就能得到剩下的歌词文本了。 </p>
+<h2 id="匹配歌词"><a href="#匹配歌词" class="headerlink" title="匹配歌词"></a>匹配歌词</h2><p>对歌词进行解析，我们就可以得到包含有时间和歌词文本的数组 lyricInfos，数组中的每一个元素是对象类型：  </p>
+<p>[{time: 0, text: “作词：唐恬”}, {time: 576, text: “作曲：钱雷”}, ……]   </p>
+<p>接下来，我们要根据当前播放的音乐进度 currentTime，与 lyricInfos 中的 time 进行匹配，得到对应的歌词。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/gen-ju-shi-jian-cha-zhao-ge-ci-de-fen-xi.png" srcset="/img/loading.gif" alt="根据时间查找歌词的分析"></p>
+<h2 id="歌词自动滚动"><a href="#歌词自动滚动" class="headerlink" title="歌词自动滚动"></a>歌词自动滚动</h2><p>歌词滚动，是用小程序自带的 scroll-view 组件制作的。</p>
+<p>想给开头和结尾的歌词设置一个空白，不能直接给 scroll-view 的第一行歌词（第一个 item）设置 margin-top 或 padding-top，因为这样设置的话，会导致上滑的歌词被设置的空白区域遮盖掉，无法看到歌词滚动到屏幕顶部自动消失的效果。<br>比较好的实现方法是：<strong>给遍历的 item 设置一个动态样式（动态的 css 样式）</strong>，根据歌词的索引值来设置样式，第一行歌词的索引值为 0，设置 padding-top，最后一行歌词的索引值为 <code>歌词所在的数组长度 - 1</code>，设置 padding-bottom。 </p>
+<pre><code class="hljs css">style=&quot;padding-top: &#123;&#123;index==0? (contentHeight/2-80): 0&#125;&#125;px; 
+padding-bottom: &#123;&#123;index==lyricInfos.length-1? (contentHeight/2+80): 0&#125;&#125;px&quot;</code></pre>
+
+<p>注意：这里的 contentHeight 是整个 scroll-view 的高度。之所以添加了 <code>contentHeight/2-80</code> 这样的运算，是想让程序可以根据不同的手机屏幕高度，自适应设置不同大小的 padding-top 和 padding-bottom。</p>
+<p>想要实现<strong>歌词自动滚动</strong>，可以给 scroll-view 组件设置 scroll-top 属性，属性需要绑定一个动态变化的值 lyricScrollTop。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-94.png" srcset="/img/loading.gif" alt="image -94-"></p>
+<p>动态变化的值 lyricScrollTop，是由歌词的索引值和每行歌词的高度 35px 相乘得来的。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-95.png" srcset="/img/loading.gif" alt="image -95-"></p>
+<h2 id="点击左侧按钮返回上一页"><a href="#点击左侧按钮返回上一页" class="headerlink" title="点击左侧按钮返回上一页"></a>点击左侧按钮返回上一页</h2><p>左侧按钮位于我们自行封装的 nav-bar 组件中，我们给左侧的 left 区域绑定一个 handleLeftClick 事件。<br>在 nav-bar 组件的 js 文件中，只把点击的事件发射出去，而不直接写返回上一页的逻辑，因为我们要让使用 nav-bar 组件的页面自行决定点击后的逻辑，如此一来也能让 nav-bar 组件更具备扩展性。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-96.png" srcset="/img/loading.gif" alt="image -96-"></p>
+<p>来到使用 nav-bar 组件的音乐播放页面 music-player，我们在 nav-bar 组件监听内部发射出来的 click 事件，并绑定一个函数 handleBackBtnClick。<br>在函数里面调用小程序的 API <code>wx.navigateBack()</code>，就能返回上一页。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-97.png" srcset="/img/loading.gif" alt="image -97-"></p>
+<h2 id="阻止事件向上冒泡"><a href="#阻止事件向上冒泡" class="headerlink" title="阻止事件向上冒泡"></a>阻止事件向上冒泡</h2><p>在 HTML 中常用的做法：传入 event 对象，调用 event 对象的 stopPropagation() 方法。<br>但是小程序中是不支持这个做法的。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-98.png" srcset="/img/loading.gif" alt="image -98-"></p>
+<p>小程序中捕捉到一个事件后，不想让它向上冒泡，我们监听的方法要从 bindtap 更换为 catchtap。<br>这样当我们点击右侧的 播放/暂停 按钮，就不会触发进入播放详情页的操作。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-99.png" srcset="/img/loading.gif" alt="image -99-"></p>
+<p>小程序有自己的捕获和冒泡机制的，跟在 JS 中的写法稍微有一点点不一样。</p>
+<h2 id="小程序后台播放的-API（背景音频）"><a href="#小程序后台播放的-API（背景音频）" class="headerlink" title="小程序后台播放的 API（背景音频）"></a>小程序后台播放的 API（背景音频）</h2><p>什么时候属于后台播放？<br>——点击右上角的胶囊按钮，关闭小程序，或是从微信返回到手机桌面</p>
+<p>使用 API <code>wx.getBackgroundAudioManager</code>  </p>
+<p>将我们之前使用 <code>wx.createInnerAudioContext</code>创建的音频上下文对象，更改为 <code>wx.getBackgroundAudioManager</code>。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-100.png" srcset="/img/loading.gif" alt="image -100-"></p>
+<p>使用 <code>wx.getBackgroundAudioManager</code> 有两个必须配置的参数：</p>
+<ul>
+<li>在 App 的全局 json 文件<code>app.json</code> 中增加字段 <code>requireBackgroundModes</code> 字段</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102556119.png" srcset="/img/loading.gif" alt="image - 2022-06-26T102556.119"></p>
+<ul>
+<li>在使用到 <code>wx.getBackgroundAudioManager</code> 的 js 文件中配置 title 属性，这个属性代表音乐的名称。</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102612212.png" srcset="/img/loading.gif" alt="image - 2022-06-26T102612.212"></p>
+<h2 id="小程序登录功能"><a href="#小程序登录功能" class="headerlink" title="小程序登录功能"></a>小程序登录功能</h2><p>当用户登录小程序，我们可以拿到这个用户身份的唯一标识 openid，<strong>openid 是用户身份的唯一标识</strong>。<br>每个微信用户的 openid 是唯一的，不会重复</p>
+<p><strong>微信小程序获取用户的 openid，是不需要经过用户授权的</strong><br>unionid：在多个平台共享 id</p>
+<h3 id="小程序用户登录的流程"><a href="#小程序用户登录的流程" class="headerlink" title="小程序用户登录的流程"></a>小程序用户登录的流程</h3><p>涉及到 3 个角色——小程序（客户端）、开发者服务器（开发小程序的公司的服务器）、微信接口服务（微信的服务器）</p>
+<p>步骤：</p>
+<ol>
+<li>在小程序中拿到一个临时的 code，调用 API <code>wx.login</code> 可以拿到临时的 code</li>
+<li>把这个 code 传递给公司的服务器</li>
+<li>公司服务器拿到 code 之后，准备齐 3 个东西（code、小程序后台的 appid 和 appsecret 参数）</li>
+<li>公司服务器向微信服务器发送网络请求，携带前面的 3 个参数（服务器发送网络请求）</li>
+<li>微信服务器向公司服务器返回 <strong>openid</strong> 和 session_key </li>
+</ol>
+<p>完成前面的步骤，用户是无感知的，不知道自己已经登录过了<br>那应该怎么让用户知道自己已经登录过了呢？<br>将 openid + session_key + 其他信息，生成一个新的东西——公司服务器的 token</p>
+<ol start="6">
+<li>接着将这个 token 返回给微信小程序</li>
+</ol>
+<p>小程序端获取到服务器返回的 token（这个 token 可以保存到本地的缓存 storage 中），用户进行各种操作——<strong>收藏、喜欢</strong>或者<strong>评论</strong>等，将这个 token 发送给公司的服务器</p>
+<ol start="7">
+<li>公司的服务器拿到小程序发送的 token</li>
+</ol>
+<p>解析 token 得到 openid、session_key<br>在数据库中保存用户的操作行为</p>
+<ol start="8">
+<li>假设用户换了另外一部手机</li>
+</ol>
+<p>判断小程序本地的缓存有没有 token<br>没有 token 的话，<strong>使用原始的登录流程</strong>，就是把前面的步骤重新走一遍<br>如果有 token<br>需要先判断一下 token 是否过期了<br>没有过期的话，直接使用<br>过期了的话，重新走一遍登录流程</p>
+<p>下图中的「自定义登录态」，就是公司服务器生成的 token。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102629475.png" srcset="/img/loading.gif" alt="image - 2022-06-26T102629.475"></p>
+<h3 id="用户什么时候需要重新登录呢？"><a href="#用户什么时候需要重新登录呢？" class="headerlink" title="用户什么时候需要重新登录呢？"></a>用户什么时候需要重新登录呢？</h3><ul>
+<li>小程序本地缓存的 token 为空</li>
+<li>token 已失效，或者 token 不是一个有效值  </li>
+<li>session_key 失效   </li>
+</ul>
+<p>这里之所以涉及到 session_key，是因为生成 access token 需要有至少 2 个参数：openid 和 session_key 。  </p>
+<h3 id="判断-token-是否过期的两种方式"><a href="#判断-token-是否过期的两种方式" class="headerlink" title="判断 token 是否过期的两种方式"></a>判断 token 是否过期的两种方式</h3><p>第一种方式：在请求一些其他接口的时候，譬如请求收藏接口、评论接口等，在请求的 header 中携带 token，让服务器来判断 token 是否过期了。</p>
+<p>第二种方式：当用户启动小程序，在 app.js 的 onLaunch 中判断 token 是否过期。</p>
+<p>需要注意的是，微信给我们返回的 session_key 也是会过期的，在登录时也要判断一下 session_key 是否过期了，如果过期了，也要重新登录。   </p>
+<p>session_key 的有效期是不确定的，微信官方并没有说明 session_key 的有效期，它的有效期与用户是否频繁使用小程序有关：如果用户频繁使用我们的小程序，它的有效期会比较长一点。  </p>
+<h3 id="获取其他用户信息"><a href="#获取其他用户信息" class="headerlink" title="获取其他用户信息"></a>获取其他用户信息</h3><p>openid 是用户身份的唯一标识，它不携带其他信息，不包含用户的昵称、头像。  </p>
+<p>openid 是识别这个用户的身份，而不是拿到这个用户的更多信息。  </p>
+<p>获取其他用户信息，需要用到 API <code>wx.getUserProfile</code>。  </p>
+<p>在使用这个 API 时需要注意，它直接放在 <code>app.js</code> 中是无效的，它需要<strong>在一个事件之后才能触发获取用户头像和昵称</strong>的，例如绑定在页面按钮的点击事件中，当我们点击了按钮，页面下方才会弹出是否授权的窗口。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561726429178.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561695117607.jpg" srcset="/img/loading.gif"></p>
+<h3 id="unionid"><a href="#unionid" class="headerlink" title="unionid"></a>unionid</h3><p>unionid：也是唯一标识，作为在微信的多个平台进行授权时，相同的 id。  </p>
+<p>openid：仅仅是微信用户在同一个小程序里面多次登录的时候，它的一个身份标识。  </p>
+<p>假设我们的产品不仅有小程序端，也有公众号端、H5 页面（第三方登录、微信登录），用户在不同端之间的操作行为，如何实现数据的共享呢？   </p>
+<p>这时就需要用到 unionid。  </p>
+<p>有了 unionid，用户使用同一个微信在不同的平台上登录，我们就可以通过 unionid 识别出这是同一个用户。  </p>
+<p>获取 unionid，需要前往<strong>微信开放平台</strong>注册相应的账号，获取开放平台提供的 SDK。  </p>
+<h3 id="国内-App-用户登录的常见设计（用户身份多平台共享）"><a href="#国内-App-用户登录的常见设计（用户身份多平台共享）" class="headerlink" title="国内 App 用户登录的常见设计（用户身份多平台共享）"></a>国内 App 用户登录的常见设计（用户身份多平台共享）</h3><p>用户身份多平台共享：  </p>
+<ul>
+<li>账号绑定</li>
+<li>手机号绑定（现在最常用的）     </li>
+</ul>
+<p>初次打开刚下载的 App，通常都会让你进行登录，登录方式一般会提供多种第三方登录，比如：  </p>
+<ul>
+<li>QQ 登录   </li>
+<li>微信登录    </li>
+<li>微博登录  </li>
+</ul>
+<p>假设我们选择了微信登录，跳到微信授权后再返回 App，接下来可能还会遇到另外一步操作——<strong>绑定账号</strong>，绑定账号也有多种情况：  </p>
+<ul>
+<li>绑定用户名 userid</li>
+<li>用户邮箱   </li>
+<li>用户手机号（非常常见的）</li>
+</ul>
+<p>在前面的微信登录操作，我们可以拿到 openid 或者 unionid，与后面「绑定账号」的步骤获取的一项信息进行绑定，比如将 unionid 与手机号进行绑定，这样不管你之后是使用 unionid 登录，还是使用手机号登录，我们都可以知道这是同一个用户，可以更好地实现用户数据在多个平台间的共享。   </p>
+<p>不过需要注意的是，个人开发者是无法通过微信小程序拿到用户的手机号的。   </p>
+<p>截图地址：<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html">https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html</a><br><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561727312023.jpg" srcset="/img/loading.gif"></p>
+<p>如果是个人开发者账号，绑定获取手机号的事件，会打印一个错误信息，提示「没有获取的权限」。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561732384096.jpg" srcset="/img/loading.gif"></p>
+<p>不过即便是公司主体的开发者账号，拿到的也不是手机号，而是一个动态的 code，要想真正拿到用户手机号码，我们还需要在公司服务器向微信服务器发起请求，发起请求的时候，需要携带两个参数，一个是 access_token，一个是动态的 code，请求之后微信会返回 phone_info 对象，里面就有用户的手机号。  </p>
+<h2 id="小程序分包"><a href="#小程序分包" class="headerlink" title="小程序分包"></a>小程序分包</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561736591917.jpg" srcset="/img/loading.gif"></p>
+<p>第一次打开小程序必须下载的包，称为主包。<br>后面才需要用到的包，称为分包。  </p>
+<p>主包尽可能地小一些，把暂时用不到的都放到分包里面，再在需要用到的时候进行下载。  </p>
+<p>小程序的限制：  </p>
+<ul>
+<li>单个分包/主包大小不能超过 2MB</li>
+<li>整个小程序所有分包大小不超过 20MB</li>
+</ul>
+<p>分包操作：  </p>
+<ul>
+<li>将 3 个详情页分到一个包里面 packageDetail</li>
+<li>将播放页面单独分到一个包里面 packagePlayer</li>
+</ul>
+<p>需要注意的是，TabBar 对应的页面是不能进行分包操作的。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561746955305.jpg" srcset="/img/loading.gif"></p>
+<h3 id="分包预下载"><a href="#分包预下载" class="headerlink" title="分包预下载"></a>分包预下载</h3><p>加载完主包后，当小程序处于闲置状态，可以在后台预先下载分包，这个设计参考了 Webpack 中的「预加载和预获取」。   </p>
+<p>在 <code>app.js</code> 中添加一个预下载的规则，指明当进入某个页面后，预下载哪些分包。  </p>
+<p>譬如下面的代码，是在进入 home-music 页面后，预下载两个分包 packageDetail 和 packagePlayer。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561756826579.jpg" srcset="/img/loading.gif"></p>
+<h2 id="项目为何要用到-Vant-组件库？"><a href="#项目为何要用到-Vant-组件库？" class="headerlink" title="项目为何要用到 Vant 组件库？"></a>项目为何要用到 Vant 组件库？</h2><ul>
+<li>学习如何在小程序中引用一些 UI 组件库，来减少开发量</li>
+<li>npm 包的使用</li>
+<li>van-search 搜索组件</li>
+</ul>
+<h2 id="组件按需注入"><a href="#组件按需注入" class="headerlink" title="组件按需注入"></a>组件按需注入</h2><p>代码按需注入，俗称懒加载。   </p>
+<p>启用组件按需注入，也就是在小程序中优先注入必须要用的组件，暂时未用到的组件之后注入，可以显著提高小程序的启动性能，配置起来也非常简单。  </p>
+<p>只需要在项目的 <code>app.json</code> 中添加下面的一行配置，就能启用啦：   </p>
+<pre><code>&quot;lazyCodeLoading&quot;: &quot;requiredComponents&quot;  </code></pre>
+<h2 id="骨架屏"><a href="#骨架屏" class="headerlink" title="骨架屏"></a>骨架屏</h2><p>骨架屏：展示一个页面骨架，而不含有实际的页面。  </p>
+<p>骨架屏在页面白屏的时候，给了用户及时的反馈，减缓了用户焦急等待的一个情绪，这是它的意义所在。  </p>
+<p>点击开发者工具「模拟器」右下角的 … ，选择「生成骨架屏」。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/28/16562272511306.jpg" srcset="/img/loading.gif"></p>
+<p>骨架屏的详细使用，可以参考微信团队提供的视频教程： <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/community/business/doc/000086539b40682ccddd8b71551c0d">https://developers.weixin.qq.com/community/business/doc/000086539b40682ccddd8b71551c0d</a>    </p>
+<p>骨架屏只是在页面加载时给用户更好的体验，并不能提高页面的加载速度，因此<strong>不能无节制地使用骨架屏</strong>，一般只给主页添加骨架屏效果。 </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/06/28/2022-6-28-mac/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何在Mac上快速切换窗口？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/10/2022-6-10-shimo/">
+                        <span class="hidden-mobile">如何批量导出石墨文档中的内容？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2022/06/26/2022-6-26-miniprogram/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "微信小程序开发学习笔记 - 以网易云音乐小程序项目为例&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

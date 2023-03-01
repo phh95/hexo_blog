@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    博客图床配置之七牛云 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-10-25 08:07" pubdate>
+        2020年10月25日 早上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      20
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">博客图床配置之七牛云</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>之前我曾写过一篇 Mac 上的 Markdown 写作工具——MWeb 相关的文章 《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/itLe10q1x4B6CBvApRTcCQ">电脑写作利器 MWeb｜如何使用第三方预览样式？</a>》，主要是讲如何在 MWeb 中使用第三方预览样式，让文章的预览视图看起来更舒服。    </p>
+<p>这一次我想写一下 MWeb 的图床配置问题，MWeb 内置了「<strong>发布服务</strong>」的功能，支持将本地编辑好的文章直接发布到 Wordpress、Medium、少数派等网站。</p>
+<p>但要想让整个过程一气呵成的话，我们需要先解决图床配置的问题，这样你发布的文章中的图片才不会出现丢失或上传失败的问题。  </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%A4%9A%E4%B8%AA%E5%B9%B3%E5%8F%B0.png" srcset="/img/loading.gif" alt="多个平台"></p>
+<p>在解决这个问题之前，我们需要先了解什么是图床？  </p>
+<h2 id="图床是什么？"><a href="#图床是什么？" class="headerlink" title="图床是什么？"></a>图床是什么？</h2><p>图床，可以理解为一个存放图片的网络空间或服务器，你发布到朋友圈的图片，别人之所以能看到，是因为你上传的图片放在了腾讯提供的网络空间上。</p>
+<p>这个网络空间充当了桥梁的角色，对已成为微信好友的人或设置为最多可见 10 张图片的陌生人开放，这样别人就看到了你发布在朋友圈的图片。   </p>
+<p>对应到写文章这件事，我们也需要将文章中用到的图片，上传到写作平台的图床（服务器），这样读者在读文章时才能顺利看到我们附上的图片。</p>
+<p>但如果你和我一样，会<strong>将一篇文章发布到不同的平台</strong>，例如将首发在公众号的文章发布到知乎，你大概率会遇到一个蛋疼的问题——粘贴到知乎编辑器的文章会出现多个「<strong>图片上传失败</strong>」的提示。</p>
+<p>之前为了解决这个问题，我的方法是：先将微信文章复制到简书，再从简书复制到知乎编辑器。这个方法几乎能完美解决图片上传失败，少数时候会遇到 Gif 上传失败的问题。</p>
+<p>说句题外话，从上面这种解决方法推测，微信为了避免被别的写作平台当成图床（避免被薅羊毛），它<strong>禁用了图片的外链引用</strong>，当它识别到当前的环境不是在微信体系内，图片就会显示失败，这就导致了图片上传失败的问题。  </p>
+<p>而现在，我有了一个更好的解决方法——<strong>将图片上传到自己的图床帐户中</strong>。这个方法可以省去上面「粘贴到简书」的中间步骤，简化整个流程，更重要的是，你可以更方便地将文章分发到多个平台，例如自己的个人博客或其他写作平台。   </p>
+<h2 id="有哪些可用的图床？"><a href="#有哪些可用的图床？" class="headerlink" title="有哪些可用的图床？"></a>有哪些可用的图床？</h2><h3 id="免费图床"><a href="#免费图床" class="headerlink" title="免费图床"></a>免费图床</h3><p>网上有不少人整理了多个免费的图床，但目前我用过的免费图床只有两个：路过图床和微博图床。   </p>
+<ul>
+<li>路过图床  <a target="_blank" rel="noopener" href="https://imgchr.com/">https://imgchr.com/</a><br>全球CDN加速, 支持外链, 原图保存, 最大单张支持10 MB   </li>
+<li>新浪微博图床  <a target="_blank" rel="noopener" href="https://www.crx4chrome.com/crx/17508/">https://www.crx4chrome.com/crx/17508/</a><br>为了让微博图床更易用，有人开发了一个浏览器插件「新浪微博图床」，支持选择/拖拽/粘贴上传图片，并生成图片地址、HTML、UBB 和 Markdown 等格式  </li>
+</ul>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A%E6%8F%92%E4%BB%B6.png" srcset="/img/loading.gif" alt="微博图床插件"><br>免费图床虽然可以不花钱，但我悲观地认为，大多免费且赚不了钱的服务终究走不了长远，也许未来的某一天，你就会突然收到「XX 关停」的通知。  </p>
+<p>如果你想更妥善地保存自己的图片数据，最好还是选择大一点或者收费的图床工具。  </p>
+<h3 id="收费图床"><a href="#收费图床" class="headerlink" title="收费图床"></a>收费图床</h3><ul>
+<li>七牛云  <a target="_blank" rel="noopener" href="https://www.qiniu.com/">https://www.qiniu.com/</a></li>
+</ul>
+<p>七牛云虽然是一个主打收费的服务，但它对所有注册的<strong>实名用户</strong>，还是免费提供了每月 10 GB 的存储空间、每月 10 GB 的 CDN 回源流量，具体可见下图。 </p>
+<p>其实我对这些术语也不是很清楚，但这些免费额度，对于一个没什么访问量的博客来说，已经够用了。  </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E4%B8%83%E7%89%9B%E4%BA%91%E4%BB%B7%E6%A0%BC%E8%B4%B9%E7%94%A8.png" srcset="/img/loading.gif" alt="七牛云价格费用"><br>了解更多关于七牛云计费方式的内容，可以参考官方的文档：<br><a target="_blank" rel="noopener" href="https://www.qiniu.com/prices/kodo?source=kodo">https://www.qiniu.com/prices/kodo?source=kodo</a></p>
+<p>首次使用七牛云，它会给每个人分配一个<strong>临时的测试域名</strong>，有效期为一个月，过期之后如果你还想使用七牛云作为图床的话，就需要自己去注册一个域名。  </p>
+<h3 id="MWeb-七牛云图床配置"><a href="#MWeb-七牛云图床配置" class="headerlink" title="MWeb 七牛云图床配置"></a>MWeb 七牛云图床配置</h3><p>MWeb 本身支持的图床服务较多，例如七牛云、腾讯云和阿里云等，还支持自定义更多图床。</p>
+<p><img src="http://cdn.penghh.fun/mweb/MWeb%E6%94%AF%E6%8C%81%E7%9A%84%E5%9B%BE%E5%BA%8A.png" srcset="/img/loading.gif" alt="MWeb支持的图床"><br>配置之前，我们先在浏览器打开七牛云的「控制台」，切换到「对象存储」，新建一个公开的空间，这里我将空间名称命名为 blog-picbed20，空间名称自行定义，后面会用到。   </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%88%9B%E5%BB%BA%E7%A9%BA%E9%97%B4.png" srcset="/img/loading.gif" alt="创建空间"></p>
+<p>打开创建好的空间，需要添加「CDN 加速域名」，域名的格式为「cdn.+自己注册的域名」，接着需要配置右侧的「CNAME」，将鼠标移动到 CNAME 上方，它会给出配置 CNAME 的指导。</p>
+<p><img src="http://cdn.penghh.fun/mweb/cname.png" srcset="/img/loading.gif" alt="cname"></p>
+<p>复制七牛云空间的 CNAME 值，接着打开你注册的域名的「DNS 解析页面」，因为我是在腾讯云注册的域名，这里打开的就是腾讯云的管理后台。 </p>
+<p>在解析列表中新增一条记录，主机记录为 cdn，记录类型选择 CNAME，记录值位置粘贴刚从七牛云得到的 CNAME 值。   </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%A2%9E%E5%8A%A0%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" srcset="/img/loading.gif" alt="增加解析记录"><br>完成这个步骤后，回到七牛云的控制台，刷新页面，直至 CDN 加速域名的状态显示为「成功」，则表示完成了七牛云的配置。   </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E6%88%90%E5%8A%9F.png" srcset="/img/loading.gif" alt="成功"><br>回到 MWeb，打开「偏好设置」，切换到「发布服务」，添加「七牛云存储」，API 地址选择离你较近的地区即可。</p>
+<p>空间名称：前面创建七牛云空间自定义的名称<br>域名：<a target="_blank" rel="noopener" href="http://cdn.+自己注册的域名/">http://cdn.+自己注册的域名</a></p>
+<p><img src="http://cdn.penghh.fun/mweb/MWeb%E9%85%8D%E7%BD%AE.png" srcset="/img/loading.gif" alt="MWeb配置"><br>而其中的 Access Key 和 Secret Key 则需要再次回到七牛云的后台获取，点击右上角的帐户头像，在弹出的菜单中，选择「密钥管理」，创建一个新的密钥。 </p>
+<p>下图的 AK 和 SK 分别对应 MWeb 里的 Access Key 和 Secret Key，分别粘贴到 MWeb 中相应的位置，就完成了 MWeb 中图片的配置。  </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%88%9B%E5%BB%BA%E5%AF%86%E9%92%A5.png" srcset="/img/loading.gif" alt="创建密钥"><br>借助 MWeb 集成的将本地图片上传到图床的功能，当你将文章从 MWeb 发布或粘贴到其他平台之前，先选择顶部的菜单「发布–把本地图片传至图床」。 </p>
+<p><img src="http://cdn.penghh.fun/mweb/15992331398624.jpg" srcset="/img/loading.gif" alt="-w629"></p>
+<p>在弹出的窗口中，选择「七牛云图床」，接着点击右下角的「上传本地图片」，MWeb 就会将本地的图片上传到七牛云图床，再自动返回图片上传到图床后的「<strong>远程地址</strong>」。    </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87.png" srcset="/img/loading.gif" alt="上传本地图片"></p>
+<p>此时如果你想将文档发布到公众号或知乎，先点击「复制带样式的 HTML」，再切换到发布内容的平台，使用 Command + V 粘贴，文章和图片也会随之过去了，一气呵成，不会出现图片丢失的问题。            </p>
+<p><img src="http://cdn.penghh.fun/mweb/15992333667413.jpg" srcset="/img/loading.gif" alt="-w583"><br>第一次看完整个配置，你可能会觉得非常麻烦，但就像老话说的「万事开头难」，开头的坑趟过去了，后面等着你的可能就是一马平川的广阔天地。</p>
+<p><strong>完成第一次稍微有些麻烦的配置，你就可以持续享受一次配置带来的多次收益</strong>，这某种程度上也可以算是一种「复利」行为，何乐而不为？  </p>
+<p>以上，希望有帮助。 </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/10/28/2020-10-28-post05/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《如何让你爱的人爱上你》摘录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/10/24/2020-10-24-post03/">
+                        <span class="hidden-mobile">做新媒体的几点体会</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2020/10/25/2020-10-25-post04/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "博客图床配置之七牛云&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

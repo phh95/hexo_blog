@@ -1,0 +1,828 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    Mac 使用技巧 01 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-11-20 00:00" pubdate>
+        2020年11月20日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">Mac 使用技巧 01</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发地址：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8RjUszGnObqTKLfrLi-FXw">Mac自带输入法如何输入「犇」和「焱」？Mac使用技巧</a>   </p>
+<h2 id="更改屏幕分辨率"><a href="#更改屏幕分辨率" class="headerlink" title="更改屏幕分辨率"></a>更改屏幕分辨率</h2><p>打开「系统偏好设置 &gt;&gt; 显示器」，可以更改显示器的分辨率。对于大屏幕的 Mac 电脑，由于文字比较小，一般需要适当地调低分辨率来放大文字。</p>
+<p>将分辨率切换到「缩放」，这里提供了 5 种分辨率，中间的选项是默认的分辨率，左侧「较大文字」对应较小的分辨率，右侧「更多空间」对应更大的分辨率，因而文字更小。</p>
+<p>为了放大电脑的文字，你可以选择默认选项左侧的两档分辨率，分别是 2048*1152 和 1600*900。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056173580452.jpg" srcset="/img/loading.gif" alt="-w704"><br>之前我以为分辨率就只有这五档可供选择，看了网上的内容，才知道其他分辨率选项被隐藏起来了。</p>
+<p>按住 Option，点击「缩放」，就可以查看被隐藏的分辨率选项，最低分辨率为 1280*720，如果你再勾选下方的「显示低分辨率模式」，就会看到，同一种分辨率还会分成两类，一类是正常分辨率，另一类是低分辨率。</p>
+<p>切换到低分辨率模式下，屏幕会看起来比较模糊，因此不建议使用。<br><img src="http://cdn.penghh.fun/mweb/16056183664124.jpg" srcset="/img/loading.gif" alt="-w704"></p>
+<h2 id="复制-VS-剪切"><a href="#复制-VS-剪切" class="headerlink" title="复制 VS 剪切"></a>复制 VS 剪切</h2><p>直接拖拽移动是剪切。<br>按住 Option 键拖拽是复制。</p>
+<p>当你拖拽一个文件，文件右下角出现一个绿色的加号时，代表复制操作。<br><img src="http://cdn.penghh.fun/mweb/%E6%8B%96%E6%8B%BD%E5%A4%8D%E5%88%B6.gif" srcset="/img/loading.gif" alt="拖拽复制"></p>
+<h2 id="调整桌面图标大小"><a href="#调整桌面图标大小" class="headerlink" title="调整桌面图标大小"></a>调整桌面图标大小</h2><p>在处于桌面的状态下，点击「显示」选项卡，选择「查看显示选项」。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056608939239.jpg" srcset="/img/loading.gif" alt="-w433"><br>在打开的窗口中，就可以看到调整桌面图标大小的选项，你可以根据电脑屏幕大小选择合适的图标大小。</p>
+<p>此外，勾选下方的「显示项目简介」，可以让你在不打开文件夹或不展开叠放文件的情况下，了解文件夹中或叠放文件包含的<strong>文件数量</strong>。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056628245983.jpg" srcset="/img/loading.gif" alt="-w272"></p>
+<p>桌面的「查看显示选项」与文件夹内部的「查看显示选项」设置是不共享的。</p>
+<p>如果你想让文件夹内的图片或视频在名称下方显示<strong>分辨率信息</strong>，需要按照前面类似的操作，点击状态栏的「显示 &gt;&gt; 查看显示选项」，勾选「显示项目简介」。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16057482358664.jpg" srcset="/img/loading.gif" alt="-w1146"></p>
+<h2 id="显示文件夹路径"><a href="#显示文件夹路径" class="headerlink" title="显示文件夹路径"></a>显示文件夹路径</h2><p>macOS 不像 Windows 系统，打开文件默认会在左上角显示文件夹路径，这对刚用 Mac 的人来说不是很习惯。</p>
+<p>在打开文件夹的状态下，点击状态栏的「显示 &gt;&gt; 显示路径栏」，快捷键为 Option + Command + P，<strong>文件夹底部</strong>就会显示当前文件所在的路径。</p>
+<p>双击路径中的某个文件夹名称，就会跳转到相应的文件夹中。</p>
+<p><img src="http://cdn.penghh.fun/mweb/%E6%98%BE%E7%A4%BA%E8%B7%AF%E5%BE%84%E6%A0%8F%E5%89%AF%E6%9C%AC.jpg" srcset="/img/loading.gif" alt="显示路径栏副本"></p>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>Command + Del：快速删除<br>Command + 空格：打开聚焦搜索<br>Command + Shift + G：前往文件夹，输入路径即可到达特定的文件夹<br><img src="http://cdn.penghh.fun/mweb/16051953205391.jpg" srcset="/img/loading.gif" alt="-w465"></p>
+<h2 id="管理开机启动项"><a href="#管理开机启动项" class="headerlink" title="管理开机启动项"></a>管理开机启动项</h2><p>为了让电脑开机后迅速进入最适合工作的状态，我们有时会将一些软件设置为「开机启动」。</p>
+<p>如果你想查看所有设置为开机启动的软件，可以打开「系统偏好设置 &gt;&gt; 用户与群组」，切换到「登录项」页面，就可以查看所有开机启动项。</p>
+<p>点击下方的 + 或 - 按钮，可以添加或删除不必要的开机启动项。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056624412092.jpg" srcset="/img/loading.gif" alt="-w704"><br>此外，切换到「密码」页面，将鼠标移动到用户名左侧的头像上，会出现「编辑」的按钮，点击可以修改开机页面显示的用户头像。</p>
+<p>这个用户头像与 Apple ID 的头像是不同的，修改这个头像并不会影响 Apple ID 的头像。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056625701806.jpg" srcset="/img/loading.gif" alt="-w704"></p>
+<h2 id="改变状态栏图标的位置"><a href="#改变状态栏图标的位置" class="headerlink" title="改变状态栏图标的位置"></a>改变状态栏图标的位置</h2><p>改变状态栏图标的位置：按住 Command 键，使用鼠标拖动改变图标的位置</p>
+<p><img src="http://cdn.penghh.fun/mweb/%E6%94%B9%E5%8F%98%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%8D%E7%BD%AE.gif" srcset="/img/loading.gif" alt="改变图标的位置"></p>
+<h2 id="聚焦搜索"><a href="#聚焦搜索" class="headerlink" title="聚焦搜索"></a>聚焦搜索</h2><p>查看路径：在聚焦搜索返回的结果中，选择任意一项，按住 Commad 键，可以查看文件所在的文件夹或应用安装的路径</p>
+<p>打开文件所在的位置：在搜索返回的结果中，按住 Command 键双击文件，可以打开文件所在的位置</p>
+<h2 id="神奇的Option键"><a href="#神奇的Option键" class="headerlink" title="神奇的Option键"></a>神奇的Option键</h2><p>查看更多信息：按住 Option 键点击任务栏的图标，可以查看更多信息，例如点击 Wifi 图标，可以查看 Wifi 的更多信息，例如 IP 地址、BSSID 等信息。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056212205170.jpg" srcset="/img/loading.gif" alt="-w328"><br>点击音量图标，面板会增加「输入」的控制项，在连接蓝牙耳机的情况下，你可以将输入设备由电脑的「麦克风」切换为「蓝牙耳机」。  </p>
+<p><img src="http://cdn.penghh.fun/mweb/16056213330569.jpg" srcset="/img/loading.gif" alt="-w326"></p>
+<p>关闭一个软件的多个窗口：按住 Option 键，点击窗口左上角的关闭按钮，可以同时关闭一个软件的多个窗口。  </p>
+<p><img src="http://cdn.penghh.fun/mweb/%E5%90%8C%E6%97%B6%E5%85%B3%E9%97%AD%E4%B8%80%E4%B8%AA%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%A4%9A%E4%B8%AA%E7%AA%97%E5%8F%A3.gif" srcset="/img/loading.gif" alt="同时关闭一个软件的多个窗口"></p>
+<h2 id="触发角"><a href="#触发角" class="headerlink" title="触发角"></a>触发角</h2><p>触发角是 Mac 屏保附带的功能，通过为屏幕四个角落设置不同的触发操作，当你将鼠标移动到屏幕角落时，它会执行相应的命令，例如让电脑快速进入屏保程序。  </p>
+<p>打开「系统偏好设置 &gt;&gt; 桌面与屏幕保护程序」，切换到「屏幕保护程序」页面，点击右下角的「触发角」。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056598115539.jpg" srcset="/img/loading.gif" alt="-w704"><br>打开的窗口会有四个下拉框，分别对应屏幕的四个角落，你可以从下拉框中选择不同的触发操作。</p>
+<p>如下图，我将屏幕右上角的触发操作设置为「启动屏幕保护程序」，当我将鼠标移动到右上角时，电脑就会运行屏保程序。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056603784633.jpg" srcset="/img/loading.gif" alt="-w702"><br>如果你觉得单纯通过鼠标移动到屏幕角落触发命令容易导致<strong>误操作</strong>的话，可以在选择触发命令时，同时按住 Option 或 Command 键，为触发操作添加一个额外的按键，减少误操作的情况。</p>
+<p>如下图，我在设置触发操作时按下了 Option，如此一来，当我将鼠标移动到屏幕右上角，且按下键盘的 Option 键时，电脑才会进入屏保程序。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16056605728240.jpg" srcset="/img/loading.gif" alt="-w738"></p>
+<h2 id="自带输入法输入不会读的字"><a href="#自带输入法输入不会读的字" class="headerlink" title="自带输入法输入不会读的字"></a>自带输入法输入不会读的字</h2><p>在 Windows 上，当你想输入你不知道拼音的「犇」字时，可在中文拼音的状态下，使用 u + niu + niu + niu 的拆字法，来达到间接输入「犇」的目的。</p>
+<p>而在 macOS 上，你也可以使用类似的操作来输入「犇」字：先输入 niu + niu + niu，接着按 Shift + 空格键，自带的输入法就会弹出唯一的备选字「犇」。</p>
+<p><img src="http://cdn.penghh.fun/mweb/16058002823333.jpg" srcset="/img/loading.gif" alt="-w728"></p>
+<p>如此一来，使用苹果自带的输入法输入一些可以拆解的字，是不是变得 So easy 了呢？</p>
+<p>以上，就是本次想和你分享的 Mac 使用技巧，希望对你有帮助。关于 Mac 的更多使用技巧，过段时间再见。   </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Mac/">Mac</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/11/22/2020-11-22-router/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">不要忽视长期陪伴你的东西</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/11/14/2020-11-14-bigsur/">
+                        <span class="hidden-mobile">更新完 Big Sur 之后，我觉得电脑越来越像手机了</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2020/11/20/2020-11-20-macOStips01/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Mac 使用技巧 01&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

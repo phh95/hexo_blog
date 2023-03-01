@@ -1,0 +1,901 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    Hexo博客SSL证书到期，如何免费续期更换【效率工具指南】 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-03-01 09:18" pubdate>
+        2023年3月1日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      31
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">Hexo博客SSL证书到期，如何免费续期更换【效率工具指南】</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发于微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ybhgs5YmmcBGTsZ3qqvFAA">效率工具指南</a>」<br>文/彭宏豪    </p>
+<p>Hello 各位好，我是小豪。    </p>
+<p>连续两年差不多这个时候，都会收到腾讯云☁️发来的一封邮件，告知我博客所用的 SSL 证书快到期了，让我提前续期证书，或是重新申请证书，以免影响到我的业务。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775986045262.jpg" srcset="/img/loading.gif"></p>
+<p>说影响到我的业务，其实也没那么夸张，毕竟我的博客没法赚钱，反而还要倒贴钱——<strong>每年租用服务器的费用、每个月的图床支出</strong>……对不能通过博客赚到钱的人来说，搭建博客反而是一种负担。             </p>
+<p>SSL 证书过期带来的直接影响，就是当有人打开网站时，浏览器会出现类似下图的提示，且网友不能看到网站的内容，必须得点击左下角的「高级」，再点击弹出的「继续访问」，才能访问网站。   </p>
+<p>因为增加了这一步操作，且考虑到不少人一看到这个风险提示就会下意识地关掉网页，因此对于业务性质的网站，SSL 证书过期会导致网站的 UV 极速下滑。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775991084503.jpg" srcset="/img/loading.gif"></p>
+<p>前面的铺垫简单解释了 SSL 证书的作用，接下来就以<a href="https://penghh.fun/">我的 Hexo 博客</a>为例，说下更换 SSL 证书的步骤：   </p>
+<h2 id="在腾讯云后台免费申请-SSL-证书"><a href="#在腾讯云后台免费申请-SSL-证书" class="headerlink" title="在腾讯云后台免费申请 SSL 证书"></a>在腾讯云后台免费申请 SSL 证书</h2><p>我的 Hexo 博客用的是腾讯云的服务器，因此这里需要去到腾讯云服务器的后台，其他云服务厂商的操作应该也是类似的。     </p>
+<p>打开腾讯云官网，点击顶部导航栏「产品」，在下方的搜索框输入 SSL，点击下方返回的 SSL 证书。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775996859705.jpg" srcset="/img/loading.gif"></p>
+<p>点击下方的「产品控制台」，进入 SSL 证书管理后台。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775997697867.jpg" srcset="/img/loading.gif"></p>
+<p>如果你和我的情况一样，之前申请的 SSL 证书快到期了，后台会有一个「快速续期」的选项，点击进入新的页面。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775973567537.jpg" srcset="/img/loading.gif"></p>
+<p>打开的页面会让我们选择 SSL 证书的签发机构，这里我选择的是免费证书，签发机构也只有一家——亚洲诚信。    </p>
+<p>如果是首次申请 SSL 证书，需要填入「证书绑定域名」，域名验证放方式选择「自动DNS验证」即可，输入你的邮箱，最后点击下方的「提交」按钮。     </p>
+<p>稍等一小会，没有遇到其他问题的话，它很快就会通过我们的申请。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775999861020.jpg" srcset="/img/loading.gif"></p>
+<p>SSL 证书审核通过后，点击腾讯云右上角的「站内信」，打开腾讯云给我们发的邮件，如下图，点击下方的蓝色按钮，前往证书管理控制台。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776001976927.jpg" srcset="/img/loading.gif"></p>
+<p>在打开的页面，找到下图的「手动部署」，点击蓝色的超链接，下载证书文件。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776002996368.jpg" srcset="/img/loading.gif"></p>
+<p>在 SSL 证书的下载页面，还需要根据服务器（后端服务）使用的语言，来选择要下载的文件。   </p>
+<p>这里就要根据自己博客的具体情况来选啦，我的 Hexo 博客服务器端使用的是 Nginx，因此这里就点击 Nginx 右侧的「下载」按钮。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776003630723.jpg" srcset="/img/loading.gif"></p>
+<p>下载下来会得到一个安装包，解压安装包，里面会有 4 个文件，但其实我们只需要用到其中的 2 个文件，分别是以 <code>.crt</code> 和 <code>.key</code> 为后缀的文件。        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776006285879.jpg" srcset="/img/loading.gif"></p>
+<h2 id="上传-SSL-证书前的准备"><a href="#上传-SSL-证书前的准备" class="headerlink" title="上传 SSL 证书前的准备"></a>上传 SSL 证书前的准备</h2><blockquote>
+<p>这一步有一点点麻烦，我在折腾的过程中也是卡在这一步了。    </p>
+</blockquote>
+<p>要将电脑本地的 SSL 证书文件上传到远端服务器，有多种方式，稍微硬核一点的方法是通过电脑的终端上传，但因为我不习惯使用命令行，而且缺少了图形化的界面，这会让我操作起来有点不踏实，生怕把原本正常的东西搞砸了🤦‍♂️    </p>
+<p>因此，这里我用的是一个叫 <strong>Royal TSX</strong> 的工具，我有点难说清这是一款什么样的软件，因此这个任务交给 Notion AI 来解释：    </p>
+<blockquote>
+<p>Royal TSX 是一款跨平台的远程桌面管理软件，支持 macOS、Windows、iOS 和 Android 系统。它可以管理多种远程桌面协议，包括 Microsoft Remote Desktop Protocol (RDP)、Apple Remote Desktop (ARD)、VNC、SSH 和 Telnet 等。</p>
+<p>通过 Royal TSX，用户可以轻松地连接和管理多个远程计算机和服务器，以及执行各种远程管理任务和操作，如文件传输、终端访问、进程管理和脚本执行等。</p>
+</blockquote>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776016671750.jpg" srcset="/img/loading.gif"></p>
+<p>Royal TSX 官网下载：<br><a target="_blank" rel="noopener" href="https://royalapps.com/ts/mac/download">https://royalapps.com/ts/mac/download</a>     </p>
+<p>简单来讲，这里会用到 Royal TSX 的 SSH 连接和文件传输（SFTP 连接）功能，将我们的电脑和远端的服务器连接起来，同时软件提供了图形化的界面，只要简单拖拽就能实现文件的上传和下载，更适合于没有计算机背景的人。   </p>
+<p>首次打开 Royal TSX，首页显示的 Getting started 给我们提供了使用软件的引导：  </p>
+<ul>
+<li>安装插件     </li>
+<li>创建一个文档      </li>
+<li>添加你的第一个连接      </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775461363039.jpg" srcset="/img/loading.gif"></p>
+<p>前面 Notion AI 在介绍 Royal TSX 时，说它可以管理多种远程桌面协议，软件能够支持多种协议，实际上是通过安装插件来实现的，<strong>要用到哪种协议，就给软件安装相对应的插件</strong>。  </p>
+<p>下面以 macOS 版本的 Royal TSX 为例，点击屏幕左上角的 Royal TSX，选择 Plugins。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776043585175.jpg" srcset="/img/loading.gif"></p>
+<p>点击插件面板上方的 Available Plugins，找到下面两个插件——Terminal 和 File Transfer，依次点击插件右侧的 Install 按钮，安装这两个插件。  </p>
+<p>安装插件之后，软件会提示重启软件，按照提示重启即可。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776045265102.jpg" srcset="/img/loading.gif"></p>
+<h3 id="SSH-连接"><a href="#SSH-连接" class="headerlink" title="SSH 连接"></a>SSH 连接</h3><p>点击左上角的 File 选项卡，选择 New Document，新建一个文档，接着按下 Command + S，会弹出一个保存的窗口，可设置文档的名称，你可以自定义文档名称，也可以保持默认的文档名 Connections。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776047432598.jpg" srcset="/img/loading.gif"></p>
+<p>单击选中刚创建的文档 Connections，点击左下角的加号 + ，在弹出的面板，选择 Terminal，打开一个终端。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776051302000.jpg" srcset="/img/loading.gif"></p>
+<p>右击刚创建的 Terminal，选择 Properties，打开属性面板。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776052760854.jpg" srcset="/img/loading.gif"></p>
+<p>打开的属性面板如下，要填入一些信息：  </p>
+<ul>
+<li>Display Name：可以给终端起个有辨识度的名字，方便与等下要添加的「文件传输」区分开来              </li>
+<li>Connection Type：连接类型选择 SSH 连接，后面的 Port 为端口，保持默认的 22 即可           </li>
+<li>Computer Name：这里需要输入服务器的公网 IP，这个可以从腾讯云服务器的管理后台查到🔍        </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776053921124.jpg" srcset="/img/loading.gif"></p>
+<p>接着将左侧切换到 Credentials 选项卡，这里同样要更改一下默认的配置：    </p>
+<p>将右侧的下拉选项更改为下图中的 Specify username and password，选择这个之后，还要在下方填入服务器的用户名和密码。   </p>
+<p>服务器的用户名默认为 root，如果你没改过的话，填入 root 即可，接着再输入服务器的登录密码，如果不慎忘记了登录密码，可以到腾讯云管理后台重置密码。   </p>
+<p>最后点击右下角的 Apply &amp; Close，应用当前的设置，同时关闭设置面板。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776057282966.jpg" srcset="/img/loading.gif"></p>
+<h3 id="SFTP-连接"><a href="#SFTP-连接" class="headerlink" title="SFTP 连接"></a>SFTP 连接</h3><p>再次选中文档 Connections，点击左下角的加号 + ，在弹出的面板，选择 File Transfer，添加文件传输。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776061136083.jpg" srcset="/img/loading.gif"></p>
+<p>和前面配置 SSH 连接一样，选中刚添加的 File Transfer 并右击，选择 Properties，打开属性面板。   </p>
+<ul>
+<li>Connection Type：连接类型选择 SFTP，端口为 22   </li>
+<li>Computer Name：同样是输入服务器的公网 IP     </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776063217811.jpg" srcset="/img/loading.gif"></p>
+<blockquote>
+<p>接下来的这一步就是我在折腾的时候卡住的地方，不确定其他人到这一步会不会也会被卡住，仅作为提示。   </p>
+</blockquote>
+<p>将左侧切换到 Credentials 选项卡，你可以像前面一样，通过用户名和密码实现 SFTP 连接。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776064180109.jpg" srcset="/img/loading.gif"></p>
+<p>在上面的设置面板填入用户名和密码时，它并不会立即进行校验，而是当我们右击刚添加的「文件传输」，选择 Connect 时，它才会对我们填入的服务器用户名和密码进行校验。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
+<p>在 SFTP 校验这一步，Royal TSX 给我弹出了一个错误的提示，说我输入的服务器用户名或密码有误……无法连接到远程的服务器。   </p>
+<blockquote>
+<p>如果你没有遇到这个错误提示，那下面的解决方法的部分可以直接跳过。     </p>
+</blockquote>
+<p>尝试了好几次，而且是在一位博主「老郭种树」发布的视频《<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xJ411y7mx/">【补充】Royal TSX SSH 密钥文件登录远程服务器</a>》的帮助下，我才找到了另一种解决方法。  </p>
+<p>除了通过用户名和密码，其实我们还可以通过<strong>密钥文件</strong>登录/连接到远程的服务器。     </p>
+<p>关于如何生成密钥文件，操作比较复杂，可以参考上面提到的视频，扫描二维码即可观看：   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
+<p>在本地生成密钥文件，同时将公钥和私钥上传到服务器的 <code>.ssh</code> 路径后，我们再次打开「文件传输」的属性面板，切换到 Credentials 选项卡。  </p>
+<p>点击 Private Key File，切换到使用密钥文件登录的方式：   </p>
+<p>将电脑本地路径 <code>user/用户名/.ssh</code> 下的私钥文件 <code>id_rsa</code> 拖拽添加到下方的 Private Key File 中，同时在下方输入生成密钥文件时所用的密码，这样就完成了密钥文件登录方式的配置。        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776075558350.jpg" srcset="/img/loading.gif"></p>
+<p>关闭设置面板，再次右击「文件传输」，选择 Connect，操作无误地话，这回就能正常连接到远端的服务器了。       </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
+<h2 id="将-SSL-证书文件上传到远端服务器"><a href="#将-SSL-证书文件上传到远端服务器" class="headerlink" title="将 SSL 证书文件上传到远端服务器"></a>将 SSL 证书文件上传到远端服务器</h2><p>完成 Royal TSX 的配置之后，接下来就是借助 Royal TSX，将本地的 SSL 证书文件上传到远端的服务器。   </p>
+<p>前面我们右击「文件传输」，选择 Connect 之后，会打开下图的界面，左侧是电脑本地的文件，右侧是远端服务上存放的文件。     </p>
+<p>在右侧的服务器根路径下，新建一个名为 ssl 的文件夹，进入文件夹，再创建一个名为 Nginx 的子文件夹。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776315863971.jpg" srcset="/img/loading.gif"></p>
+<p>打开 Nginx 文件夹，将本地的 2 个证书文件拖拽上传到文件夹中。   </p>
+<blockquote>
+<p>注：这里我对上传后的两个文件进行了重命名。    </p>
+</blockquote>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776319492396.jpg" srcset="/img/loading.gif"></p>
+<p>选中 Royal TSX 左侧的 Terminal(这里我将它重命名为「远程服务器」)，选择 Connect，打开一个黑乎乎的窗口。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776320779411.jpg" srcset="/img/loading.gif"></p>
+<p>在窗口中依次输入如下命令：   </p>
+<p>cd ssl/Nginx<br>chmod 755 penghh.crt<br>chmod 755 penghh.key<br>cd ../..<br>nginx -s reload      </p>
+<p>第 1 行命令，是进入到我们刚创建的 Nginx 文件夹中；<br>第 2、3 行命令，是将我们刚上传的两个 SSL 文件的权限提升到 755；<br>第 4 行命令，是从 Nginx 文件夹返回到服务器的根路径下；<br>第 5 行命令是重启服务。          </p>
+<p>完成以上操作后，就算是大工告成了。   </p>
+<p>此时去到浏览器，打开个人博客或网站，点击浏览器地址栏的小锁，按照下面的步骤，查看证书的截止日期，如果时长为一年，那就是换上了新的 SSL 证书啦！        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776327515485.jpg" srcset="/img/loading.gif"></p>
+<p>对不懂技术的人，折腾起来还是有点麻烦的，但最后决定把操作过程写出来，以后跟着这个操作，心里就有谱了。   </p>
+<h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
+<p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/SSL/">SSL</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/02/18/2023-2-18-online_document/">
+                        <span class="hidden-mobile">国内的在线文档工具--石墨文档、腾讯文档、语雀文档，选哪款好？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2023/03/01/2023-3-1-ssl/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Hexo博客SSL证书到期，如何免费续期更换【效率工具指南】&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

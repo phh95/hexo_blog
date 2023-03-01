@@ -1,0 +1,1154 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    前端框架 Vue3 学习笔记（二） - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-16 10:08" pubdate>
+        2022年7月16日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      61
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">前端框架 Vue3 学习笔记（二）</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>注：学习笔记来自 coderwhy 老师的 Vue3 课程。  </p>
+<h2 id="Vue3-组件化开发"><a href="#Vue3-组件化开发" class="headerlink" title="Vue3 组件化开发"></a>Vue3 组件化开发</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490467364421.jpg" srcset="/img/loading.gif"></p>
+<p>在 VS Code 中可以安装的两个提升 Vue 开发效率的插件：   </p>
+<ul>
+<li>Vue VSCode Snippets</li>
+<li>Vetur    </li>
+</ul>
+<p>安装 Vue VSCode Snippets 插件后，在 <code>App.vue</code> 文件中输入 <code>vbase-css</code>，就可以快速插入下面的代码片段：     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490463789945.jpg" srcset="/img/loading.gif"></p>
+<p>想在 <code>App.vue</code> 中使用其他的组件(拆分出去的组件)，例如 <code>Header.vue</code>、<code>Main.vue</code>、<code>Footer.vue</code>，有两种方法：   </p>
+<ul>
+<li>把 <code>Header.vue</code>、<code>Main.vue</code>、<code>Footer.vue</code> 注册成全局组件（不推荐）     </li>
+<li>局部注册</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490525310249.jpg" srcset="/img/loading.gif"></p>
+<h2 id="组件的通信"><a href="#组件的通信" class="headerlink" title="组件的通信"></a>组件的通信</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490537753776.jpg" srcset="/img/loading.gif"></p>
+<p>父子组件间的通信：  </p>
+<ul>
+<li>父组件传递给子组件：通过 props 属性；    </li>
+<li>子组件传递给父组件：通过 $emit 触发事件。   </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490624835915.jpg" srcset="/img/loading.gif"></p>
+<h3 id="父组件传递给子组件"><a href="#父组件传递给子组件" class="headerlink" title="父组件传递给子组件"></a>父组件传递给子组件</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490626628599.jpg" srcset="/img/loading.gif"></p>
+<p>父组件传递给子组件 - <strong>字符串数组</strong>     </p>
+<p>这里的字符串数组，指的是：<strong>子组件的 props 字段传入的是一个数组</strong>。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490642820092.jpg" srcset="/img/loading.gif"></p>
+<p>父组件传递给子组件 - <strong>对象类型</strong>     </p>
+<p>子组件的 props 的值为对象类型时，可以对传入属性的值做更多的限制：  </p>
+<ul>
+<li>比如指定传入的 attribute 的类型    </li>
+<li>指定传入的 attribute 是否必传     </li>
+<li>指定的 attribute 没有传入值时，它的默认值 default         </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490701610690.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490781070827.jpg" srcset="/img/loading.gif"></p>
+<p>传入 attribute 的值可以是哪些类型？   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490767000197.jpg" srcset="/img/loading.gif"></p>
+<p>在 vue 文件，template 元素中的属性采用驼峰命名法是没问题的，因为 template 的代码是由 vue-loader 解析的，而不是由浏览器解析。</p>
+<p>但建议还是采用 短横线分隔命名 的命名方式。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16490825001812.jpg" srcset="/img/loading.gif"></p>
+<h3 id="非Prop的Attribute"><a href="#非Prop的Attribute" class="headerlink" title="非Prop的Attribute"></a>非Prop的Attribute</h3><p>当我们传递给一个组件某个属性，但是该属性并没有定义对应的 props 或者 emits，就称之为 非Prop的Attribute。  </p>
+<p>常见的包括 class、style、id 属性等。   </p>
+<p>这里需要注意：<br>div 元素都有 class 属性；而自定义的组件，例如 <code>&lt;show-message&gt;</code> 是没有 class 属性的。  </p>
+<p>非Prop的Attribute 有 3 种情况：   </p>
+<ul>
+<li>当(子)组件有单个根节点时，非Prop的Attribute将自动添加到根节点的 Attribute 中。这个称为 Attribute 继承。   </li>
+<li>如果不希望(子)组件的根元素继承 attribute，可以在(子)组件中设置 <code>inheritAttrs: false</code>。  </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491198403110.jpg" srcset="/img/loading.gif"></p>
+<ul>
+<li>多个根节点的 attribute：</li>
+</ul>
+<p>这里的多个根节点，是指子组件的 template 包含的多个标签，没有包裹到一个 div 标签里面。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491206777172.jpg" srcset="/img/loading.gif"></p>
+<h3 id="子组件传递给父组件"><a href="#子组件传递给父组件" class="headerlink" title="子组件传递给父组件"></a>子组件传递给父组件</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491443014769.jpg" srcset="/img/loading.gif"></p>
+<p>案例：子组件中创建两个按钮，当按钮发生点击后，父组件中的 counter 计数器的数字相应发生变化。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491389406671.jpg" srcset="/img/loading.gif"></p>
+<p><code>this.$emit()</code> 除了可以给父组件传递事件，还可以传递其他的参数，例如下图的 this.num。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491436847595.jpg" srcset="/img/loading.gif"></p>
+<h2 id="非父子组件的通信"><a href="#非父子组件的通信" class="headerlink" title="非父子组件的通信"></a>非父子组件的通信</h2><p>非父子组件的通信，主要有两种方式：  </p>
+<ul>
+<li>Provide/Inject   </li>
+<li>Mitt 全局事件总线    </li>
+</ul>
+<h3 id="Provide-和-Inject"><a href="#Provide-和-Inject" class="headerlink" title="Provide 和 Inject"></a>Provide 和 Inject</h3><p>Provide/Inject 用于非父子组件之间共享数据：   </p>
+<ul>
+<li>比如有一些深度嵌套的组件（层级比较深），子组件想要获取父组件的部分内容；   </li>
+<li>在这种情况下，如果我们仍然将 props 沿着组件链逐级传递下去，就会非常的麻烦；   </li>
+</ul>
+<p>对于这种情况，我们可以使用 Provide 和 Inject：    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16491743528708.jpg" srcset="/img/loading.gif"></p>
+<p>从父组件向孙组件传递数据，最简单的用法，父组件的 provide 字段传入一个对象，孙组件的 inject 字段传入对象的 key。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16492032723206.jpg" srcset="/img/loading.gif"></p>
+<p>如果父组件的 provide 需要<strong>用到来自 data 字段的数据</strong>，那么原先传入 provide 的对象就需要改写成一个函数。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16492595713475.jpg" srcset="/img/loading.gif"></p>
+<p>如果我们希望父组件 provide 提供的数据变成<strong>响应式</strong>，一般会用到 computed 函数，当传入的参数发生变化时(依赖发生变化)，computed 就会重新计算一个新的值。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16492642016632.jpg" srcset="/img/loading.gif"></p>
+<p>computed 函数返回的是一个 ref 对象。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16492602515142.jpg" srcset="/img/loading.gif"></p>
+<h3 id="全局事件总线-mitt-库"><a href="#全局事件总线-mitt-库" class="headerlink" title="全局事件总线 mitt 库"></a>全局事件总线 mitt 库</h3><p>eventBus：事件总线   </p>
+<p>总线这个概念来源于操作系统。  </p>
+<p>需要安装第三方库 mitt：  </p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> mitt</code></pre>
+
+<p>安装 mitt 库之后，在根目录创建一个文件 <code>eventbus.js</code>，导入 mitt 函数。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16493478849077.jpg" srcset="/img/loading.gif"></p>
+<p>案例需求：当我们点击 About 组件中的按钮时，HomeConnect 组件可以监听到点击事件。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16493481477101.jpg" srcset="/img/loading.gif"></p>
+<p>About 和 HomeConnect 两个组件都要引入前面安装的 mitt 库。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16493770715963.jpg" srcset="/img/loading.gif"></p>
+<p>发射多个事件，可以使用通配符接收所有事件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16493792161633.jpg" srcset="/img/loading.gif"></p>
+<h3 id="mitt-的事件取消"><a href="#mitt-的事件取消" class="headerlink" title="mitt 的事件取消"></a>mitt 的事件取消</h3><p>取消掉之前注册的函数监听    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16493793602777.jpg" srcset="/img/loading.gif"></p>
+<h2 id="插槽-Slot"><a href="#插槽-Slot" class="headerlink" title="插槽 Slot"></a>插槽 Slot</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494385809566.jpg" srcset="/img/loading.gif"></p>
+<p>插槽的使用过程其实是<strong>抽取共性、预留不同</strong>；<br>会将<strong>共同的元素、内容</strong>封装在组件内；<br>同时会将不同的元素使用 Slot 作为占位，让外部决定到底显示什么样的元素。   </p>
+<p>如何使用插槽呢？  </p>
+<ul>
+<li>Vue 中将 <code>&lt;slot&gt;</code> 元素作为<strong>承载分发内容</strong>的出口；   </li>
+<li>在封装组件中，使用特殊的元素 <code>&lt;slot&gt;</code> 就可以为封装组件开启一个插槽；   </li>
+<li>该插槽插入什么内容取决于<strong>父组件</strong>如何使用。   </li>
+</ul>
+<h2 id="插槽的基本使用"><a href="#插槽的基本使用" class="headerlink" title="插槽的基本使用"></a>插槽的基本使用</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494403283741.jpg" srcset="/img/loading.gif"></p>
+<h3 id="插槽的默认内容"><a href="#插槽的默认内容" class="headerlink" title="插槽的默认内容"></a>插槽的默认内容</h3><p>使用多个插槽，每个插槽分别显示不同的内容。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494728351719.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494730576793.jpg" srcset="/img/loading.gif"></p>
+<p>动态插槽名：有时候在一些高级组件中，我们给 <code>&lt;slot&gt;</code> 的插槽名 name 属性赋的值不是写死的，会通过一个配置文件来传入一个值。   </p>
+<p>使用动态插槽名的时候，template 元素的 v-slot 绑定的插槽名需要加一个 []，因为这绑定的是一个<strong>变量</strong>。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494742327221.jpg" srcset="/img/loading.gif"></p>
+<p>具名插槽的缩写</p>
+<p><code>v-slot:</code>可以简写为一个井号 #。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494744045184.jpg" srcset="/img/loading.gif"></p>
+<h2 id="渲染作用域"><a href="#渲染作用域" class="headerlink" title="渲染作用域"></a>渲染作用域</h2><p>Vue 有一个渲染作用域的概念。  </p>
+<p>看下面的一个小例子：  </p>
+<p>button 虽然最终会替换掉插槽中的 slot 元素（button 的内容虽然最终会显示在 slot 的位置），但它是在 <code>App.vue</code> 中完成编译的，不能调用子组件 data 中的 title。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494772045221.jpg" srcset="/img/loading.gif"></p>
+<p>如果父组件想使用来自子组件的数据，需要用到作用域插槽。   </p>
+<h3 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h3><p>在用到一些第三方 UI 库，或者封装高级组件的时候会用到作用域插槽。   </p>
+<p>父组件可以自由控制子组件插槽最终的显示效果。   </p>
+<p>这里的 slotProps 可以更换为其他的名字，但通常情况下就是使用 slotProps。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494880092964.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494901817611.jpg" srcset="/img/loading.gif"></p>
+<p>独占默认插槽的缩写   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494902855215.jpg" srcset="/img/loading.gif"></p>
+<p>默认插槽 default 和具名插槽混合     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16494903178859.jpg" srcset="/img/loading.gif"></p>
+<h2 id="动态组件"><a href="#动态组件" class="headerlink" title="动态组件"></a>动态组件</h2><p>需求：当我们点击父组件中的 3 个按钮时，下方的子组件（页面）会跟着切换。   </p>
+<p>实现需求的 3 个方法：  </p>
+<ul>
+<li>使用条件判断   </li>
+<li>使用动态组件    </li>
+<li>使用 Vue 路由（对简单需求来说，路由的方法比较复杂，没必要）     </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495962266742.jpg" srcset="/img/loading.gif"></p>
+<p>动态组件：  </p>
+<p><strong>component 是 Vue 内置的组件</strong>，通过绑定 is 属性可以实现子组件间的切换。  </p>
+<p>这种方法，相比条件判断更为简洁。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495964525735.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495966747791.jpg" srcset="/img/loading.gif"></p>
+<h2 id="认识-keep-alive"><a href="#认识-keep-alive" class="headerlink" title="认识 keep-alive"></a>认识 keep-alive</h2><p>keep-alive 是 Vue 内置的组件，不需要自行定义。</p>
+<p>前面点击按钮切换子组件的案例中，每次切换不同的子组件时，原先创建的子组件都会被销毁。  </p>
+<p>如果我们想在切换的时候，保留当前子组件的状态，例如保留我们在子组件中输入的内容、或是点击按钮累计得到的数字，这时就需要用到 keep-alive。  </p>
+<p>它可以将子组件销毁之前的状态<strong>缓存</strong>起来，这样当我们再次切换回子组件的时候，就可以看到切换前的状态啦。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495972046498.jpg" srcset="/img/loading.gif"></p>
+<p>keep-alive 的属性   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495976097574.jpg" srcset="/img/loading.gif"></p>
+<p>keep-alive 配置 include 或 exclude 属性时，需要在组件中添加一个 name 字段，指明组件的名称。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16495979933786.jpg" srcset="/img/loading.gif"></p>
+<p>keep-alive 不设置 include 属性时，默认都是会缓存的。    </p>
+<h2 id="Webpack-的代码分包"><a href="#Webpack-的代码分包" class="headerlink" title="Webpack 的代码分包"></a>Webpack 的代码分包</h2><p>运行 <code>npm run build</code> 对项目进行打包时，会得到两个 js 文件，一个是 <code>app.js</code>，一个是 <code>chunk.js</code>。   </p>
+<p>随着我们自己编写的代码逻辑变多，打包得到的 <code>app.js</code> 文件会越来越大，在生产环境中会影响用户体验。   </p>
+<p>对于一些不需要立即使用的组件，可以单独对它们进行拆分，拆分成一些小的代码块 <code>chunk.js</code>，会在需要用到的时候从服务器加载下来。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16497216154479.jpg" srcset="/img/loading.gif"></p>
+<p>打包生成的 <code>chunck-vendors.js</code> 文件，里面是项目用到的第三方的包，例如 vuejs、vue-router、axios。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16497205861230.jpg" srcset="/img/loading.gif"></p>
+<p>为了缩小 <code>app.js</code> 的体积，我们可以使用 Webpack 的<strong>分包</strong>操作，将我们自己编写的代码单独打包为一个文件，而不是都打包到 <code>app.js</code> 文件中。      </p>
+<p>通过 <strong>import 函数</strong>导入的模块，后续 Webpack 对其进行打包时就会进行分包的操作。   </p>
+<p>在打包后得到的 dist 文件夹中会多出一个 chunk-哈希值 的 js 文件。     </p>
+<blockquote>
+<p>import 函数的返回值是一个 Promise，就可以用 then 方法。   </p>
+</blockquote>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16497210627347.jpg" srcset="/img/loading.gif"></p>
+<p>讲这个知识点有什么用呢？  </p>
+<p><strong>Vue 的异步组件，就是基于 import 函数来实现</strong>。    </p>
+<h2 id="Vue-异步组件"><a href="#Vue-异步组件" class="headerlink" title="Vue 异步组件"></a>Vue 异步组件</h2><p>对 Vue 组件（<code>.vue</code> 文件）利用 Webpack 进行分包，需要用到<strong>异步组件</strong>。   </p>
+<p>从 Vue 框架中导入一个函数 defineAsyncComponent。   </p>
+<p>调用函数 defineAsyncComponent 时，可以传入两种类型的参数：   </p>
+<ul>
+<li>工厂函数（更常用）    </li>
+<li>传入一个对象类型  </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501155712423.jpg" srcset="/img/loading.gif"></p>
+<p>defineAsyncComponent 函数传入工厂函数的写法：  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501158350467.jpg" srcset="/img/loading.gif"></p>
+<p>defineAsyncComponent 函数传入对象的写法：  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501165436309.jpg" srcset="/img/loading.gif"></p>
+<p>直接编写异步组件的情况比较少，一般是在配置路由的时候，把路由中的组件配置成异步组件。  </p>
+<h2 id="异步组件和-Suspense-结合使用"><a href="#异步组件和-Suspense-结合使用" class="headerlink" title="异步组件和 Suspense 结合使用"></a>异步组件和 Suspense 结合使用</h2><p>Suspense 是悬念、悬而未决的意思。   </p>
+<p>Suspense 是 Vue 内置的全局组件，有两个插槽：  </p>
+<p>如果 default 插槽内的异步组件可以正常显示，那么就显示 default 插槽的内容；<br>如果 default 异步组件暂时无法显示，那么就会显示 fallback 的内容。   </p>
+<p>下图的 <code>&lt;loading /&gt;</code> 是自定义的组件加载过程中会在页面显示的占位组件。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501171202222.jpg" srcset="/img/loading.gif"></p>
+<h2 id="refs-的使用"><a href="#refs-的使用" class="headerlink" title="refs 的使用"></a>refs 的使用</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501322219202.jpg" srcset="/img/loading.gif"></p>
+<p>获取组件内的元素 h2 或者子组件实例 nav-bar  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501328215886.jpg" srcset="/img/loading.gif"></p>
+<p>子组件获取父组件或根组件，需要使用 $parent 和 $root。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501613425848.jpg" srcset="/img/loading.gif"></p>
+<p>子组件 <code>NavBar.vue</code> 获取父组件 <code>App.vue</code> 的代码写法。   </p>
+<p>这个比较少用，稍微了解一下就好。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501616500921.jpg" srcset="/img/loading.gif"></p>
+<h2 id="认识生命周期"><a href="#认识生命周期" class="headerlink" title="认识生命周期"></a>认识生命周期</h2><p>什么是生命周期？   </p>
+<p>每个组件都可能会经历从<strong>创建、挂载、更新、卸载</strong>等一系列的过程。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501645437477.jpg" srcset="/img/loading.gif"></p>
+<h3 id="生命周期的流程"><a href="#生命周期的流程" class="headerlink" title="生命周期的流程"></a>生命周期的流程</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16501778891709.jpg" srcset="/img/loading.gif"></p>
+<h3 id="缓存组件的生命周期"><a href="#缓存组件的生命周期" class="headerlink" title="缓存组件的生命周期"></a>缓存组件的生命周期</h3><p>缓存组件指的是 keep-alive。  </p>
+<p>前面说到，keep-alive 可以保存 A 组件在切换之前的状态，之后重新用到 A 组件的时候，可以直接看到组件切换前保存的数据。  </p>
+<p>这个过程意味着，从 A 组件切换到 B 组件的时候，A 组件不会被销毁，因而<strong>不会调用 unmounted()**；从 B 组件切换回 A 组件的时候，A 组件不需要重新创建，因此</strong>也不会调用生命周期中的 created()**。  </p>
+<p>对于这两种情况，我们会使用另外两个生命周期函数：  </p>
+<ul>
+<li>activated()   </li>
+<li>deactivated()   </li>
+</ul>
+<p>还是上面的例子，当我们从 A 组件切换到 B 组件时，会调用 deactivated()；从 B 组件切换回 A 组件时，会调用 activated()。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16502085029627.jpg" srcset="/img/loading.gif"></p>
+<h2 id="组件的-v-model"><a href="#组件的-v-model" class="headerlink" title="组件的 v-model"></a>组件的 v-model</h2><p>这部分内容有点难。    </p>
+<p>自定义组件的 v-model：  </p>
+<p>等价于两个步骤，v-bind 绑定 modelValue，同时绑定一个事件 update。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16503280438972.jpg" srcset="/img/loading.gif"></p>
+<p>自定义组件 PhInput 中，使用 props 接收来自父组件传入的 modelValue。   </p>
+<p>自定义组件中的 input 元素使用双向绑定 v-model，需要用到<strong>计算属性 computed</strong>。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16503285313164.jpg" srcset="/img/loading.gif"></p>
+<h2 id="Vue3-过渡-amp-动画实现"><a href="#Vue3-过渡-amp-动画实现" class="headerlink" title="Vue3 过渡&amp;动画实现"></a>Vue3 过渡&amp;动画实现</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505582043721.jpg" srcset="/img/loading.gif"></p>
+<p>如果我们希望给<strong>单元素或者组件</strong>实现过渡动画，可以使用 <strong>transition 内置组件</strong>来完成动画。   </p>
+<p>一个简单的例子：点击按钮，实现文字淡入淡出的效果   </p>
+<p>将添加动画的元素包裹在内置组件 transition 中   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505606064971.jpg" srcset="/img/loading.gif"></p>
+<h3 id="Vue-的-transition-动画"><a href="#Vue-的-transition-动画" class="headerlink" title="Vue 的 transition 动画"></a>Vue 的 transition 动画</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505608501704.jpg" srcset="/img/loading.gif"></p>
+<h3 id="transition-组件的原理"><a href="#transition-组件的原理" class="headerlink" title="transition 组件的原理"></a>transition 组件的原理</h3><p>transition 组件的原理，需要了解，面试有可能会问到。  </p>
+<p>下图的 DOM 插件、删除操作，就对应我们前面的显示和隐藏。如果 Vue 没有找到 JS 钩子或者 CSS 过渡/动画，显示和隐藏就会立即执行，不会有淡入或淡出的效果。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505862207763.jpg" srcset="/img/loading.gif"></p>
+<h3 id="过渡动画-class"><a href="#过渡动画-class" class="headerlink" title="过渡动画 class"></a>过渡动画 class</h3><p>实现过渡动画，常用的 6 个 class：   </p>
+<p>没有给 transition 组件添加 name 属性的时候，那么所有的 class 是以 v- 作为默认前缀。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505869370996.jpg" srcset="/img/loading.gif"></p>
+<p>Vue 官方提供的示意图，帮助我们理解内置动画的原理：   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16505872101269.jpg" srcset="/img/loading.gif"></p>
+<h3 id="过渡-CSS-动画"><a href="#过渡-CSS-动画" class="headerlink" title="过渡 CSS 动画"></a>过渡 CSS 动画</h3><p>前面是通过 transition(过渡) 来实现动画效果，另外我们也可以通过 animation 来实现。  </p>
+<p>过渡动画 transition 本质上是定义了两帧，第一帧是透明度为 0，第二帧是透明度为 1，即从透明度为 0 到透明度为 1。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16568600121665.jpg" srcset="/img/loading.gif"></p>
+<p>使用 animation 动画，不需要像前面使用 transition 过渡动画那样定义 v-enter-from 和 v-leave-to，<strong>只需要定义 v-enter-active 和 v-leave-active</strong>。        </p>
+<p>使用 <code>@keyframes</code> 定义帧动画，后面的 bounce 是帧动画的名称，可以自定义。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507014426769.jpg" srcset="/img/loading.gif"></p>
+<p>过渡动画 transition 和 CSS 动画是可以同时存在的，即一个元素可以同时设置过渡动画和 CSS 动画。</p>
+<p>同时设置了过渡动画和 CSS 动画，如果两个动画的时长是不一致的，就会出现某一个动画执行结束时，另外一个动画还没有结束，导致最终呈现的动画出现一些问题。  </p>
+<p>这时我们可以在 transition 组件中添加一个额外的属性 type，指定时长更长的动画，保证添加的两个动画可以正常结束。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16568919118991.jpg" srcset="/img/loading.gif"></p>
+<p>transition 组件使用 duration 属性来指定过渡的时间，duration 可以传入两种类型的值，一个是 number 数字类型，一个是对象类型。  </p>
+<p>使用数字类型时，duration 属性前面需要加多一个英文的冒号: ，表示值为 number 类型而非 string 类型。   </p>
+<p>设置了 duration 属性后，在 <code>&lt;style&gt;</code> 标签中设置的过渡时间就会失效。    </p>
+<p>duration 设置的时长单位为毫秒。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507054945056.jpg" srcset="/img/loading.gif"></p>
+<h3 id="transition-过渡的-mode-属性"><a href="#transition-过渡的-mode-属性" class="headerlink" title="transition 过渡的 mode 属性"></a>transition 过渡的 mode 属性</h3><p>点击按钮实现两个元素来回切换，需要设置一个 mode 属性，否则一个元素消失的同时，另外一个元素会进来，两个动画的执行没有先后顺序，整体的动画会看起来很丑。        </p>
+<p>mode 有两个值，一个是 out-in，一个是 in-out，前者是上一个元素消失后，下一个元素才出来；后者是下一个元素进来之后，上一个元素才消失。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507064244859.jpg" srcset="/img/loading.gif"></p>
+<p>上面两个 h2 元素切换的例子，也可以把两个 h2 元素替换为两个组件：  </p>
+<p><strong>组件间的切换需要用到动态组件</strong>，使用 Vue 内置的 component 组件，is 绑定一个三元表达式。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507081389316.jpg" srcset="/img/loading.gif"></p>
+<h3 id="apear-初次渲染"><a href="#apear-初次渲染" class="headerlink" title="apear 初次渲染"></a>apear 初次渲染</h3><p>默认情况下，初次渲染（刷新页面的时候）是不会有动画的，如果希望初次渲染也有动画，可以在 transition 组件中添加一个 appear 属性。   </p>
+<p>这里的 appear 是 <code>:appear=&quot;true&quot;</code> 的缩写。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507191568653.jpg" srcset="/img/loading.gif"></p>
+<h3 id="第三方动画库-animate-css"><a href="#第三方动画库-animate-css" class="headerlink" title="第三方动画库 animate.css"></a>第三方动画库 <code>animate.css</code></h3><p>跨平台：做了很多 CSS 的兼容。   </p>
+<p>如何使用 Animate 库呢？   </p>
+<ul>
+<li>安装 <code>animate.css</code> 库    </li>
+<li>导入 <code>animate.css</code> 库的样式    </li>
+<li>使用 animation 动画或者 animate 提供的类   </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16507197233393.jpg" srcset="/img/loading.gif"></p>
+<p>安装动画库：  </p>
+<p>打开终端，在项目根目录下输入</p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> animate.css</code></pre>
+
+<p>安装好之后，在入口文件 <code>main.js</code> 中导入 <code>animate.css</code>。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570402403705.jpg" srcset="/img/loading.gif"></p>
+<p><code>animate.css</code> 库有两种用法：   </p>
+<ul>
+<li>在 v-enter-active 和 v-leave-active 中配置 animation 名称、时长和动画模式（帧动画）     </li>
+<li>直接使用库定义好的 class         </li>
+</ul>
+<p>如果是第一种用法，在 <code>App.vue</code> 中给 transition 组件添加 name 属性，在样式部分配置 v-enter-active 和 v-leave-active，设置 animation 帧动画。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570424603009.jpg" srcset="/img/loading.gif"></p>
+<p>帧动画的名称或效果，可从网站 <code>https://animate.style/</code> 查看，点击对应的动画名称，可以预览动画的效果。  </p>
+<p>确认想要使用的效果，可以<strong>复制动画的名称</strong>，并在 <code>App.vue</code> 的样式，给帧动画设置动画时长和动画模式。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570423814544.jpg" srcset="/img/loading.gif"></p>
+<p>第二种使用 <code>animate.css</code> 库的方法：直接使用动画库帮我们定义好的 class。     </p>
+<p>通过这种方式使用 <code>animate.css</code> 库，我们不需要给 transition 组件添加 name 属性。   </p>
+<p>点击动画名称右侧的「复制」按钮，可以复制动画对应的 class 类名。       </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509009718186.jpg" srcset="/img/loading.gif"></p>
+<p>将 class 分别粘贴到 <code>enter-active-class</code> 和 <code>leave-active-class</code>，就可以应用动画了。  </p>
+<p>不过每一个动画的前面都要加多一个 <code>animate__animated</code>，才能真正让动画生效。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509010733571.jpg" srcset="/img/loading.gif"></p>
+<p>之所以每个类名前面要加上 <code>animate__animated</code>，是因为在 <code>animate.css</code> 库中，这个类名<strong>定义了动画的持续时间</strong>，有了时间，动画才能真正生效。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570436479959.jpg" srcset="/img/loading.gif"></p>
+<p>如果想对 <code>animate.css</code> 库中的动画进行反转，可以在 <code>App.vue</code> 的样式部分，给动画的类名添加 animation-direction 属性，设置反转。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570438163522.jpg" srcset="/img/loading.gif"></p>
+<p>如果同时存在自定义的 class，以及 name 定义的 class，那么<strong>自定义 class 的优先级是更高的</strong>。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509013060383.jpg" srcset="/img/loading.gif"></p>
+<h3 id="认识-gsap-库"><a href="#认识-gsap-库" class="headerlink" title="认识 gsap 库"></a>认识 gsap 库</h3><p>gsap 是一个使用 JS 编写的动画库。   </p>
+<p>之所以要使用 JS 动画库，是因为前面介绍的 CSS 动画库<strong>不够灵活</strong>，在涉及样式的值需要发生变化，或是比较复杂的动画时，CSS 动画库用起来就不够方便。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509016069178.jpg" srcset="/img/loading.gif"></p>
+<p>安装 gsap 库的命令：   </p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> gsap</code></pre>
+
+<p>在 <code>App.vue</code> 的 script 标签中导入 gsap 库：   </p>
+<pre><code class="hljs clean"><span class="hljs-keyword">import</span> gsap <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gsap&#x27;</span>;</code></pre>
+
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16516524871642.jpg" srcset="/img/loading.gif"></p>
+<p>transition 组件在帮助我们执行动画的时候，它其实会回调很多动画生命周期的钩子。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509899632408.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16509912640720.jpg" srcset="/img/loading.gif"></p>
+<p>before-enter 相当于动画进入之前：v-enter-from<br>enter 相当于动画进入之时：v-enter-active<br>after-enter 相当于动画进入之后：v-enter-to   </p>
+<p>before-leave 相当于离开之前：v-leave-from<br>leave：v-leave-active<br>after-leave：v-leave-to     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16570680847413.jpg" srcset="/img/loading.gif"></p>
+<p>在这些钩子中使用 gsap 库，gsap 库常用的两个方法——from 和 to。    </p>
+<p>使用 gsap 库对应的 api：  </p>
+<p>传入钩子 <code>enter()&#123;&#125;</code> 的 el，是 element 的缩写。   </p>
+<p><code>gsap.from()</code> 需要传入两个参数，一个是 target，指定我们要把动画设置在哪个元素上；一个是对象。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16516527417648.jpg" srcset="/img/loading.gif"></p>
+<p>gsap 官网提供的 JS 和 CSS 对照表：  </p>
+<p>左侧是 gsap 库中 JS 的写法，右侧是对应的 CSS 样式含义。       </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16571299889315.jpg" srcset="/img/loading.gif"></p>
+<p>在使用 js 动画的时候，一般会给组件添加 <code>:css=&quot;false&quot;</code>，让 Vue 跳过 CSS 的检测，让我们原先给组件添加的 CSS 动画失效。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16571303073283.jpg" srcset="/img/loading.gif"></p>
+<h3 id="小案例：gsap-实现数字滚动递增动画"><a href="#小案例：gsap-实现数字滚动递增动画" class="headerlink" title="小案例：gsap 实现数字滚动递增动画"></a>小案例：gsap 实现数字滚动递增动画</h3><p>这个动画，在很多后台管理系统中会用到。   </p>
+<p>监听器 watch，用来监听 counter 的变化，当 counter 发生变化，showNumber 也会随之发生变化，不过因为我们给 showNumber 设置了过渡时间 duration，它会随着时间流逝一点点地变成和 counter 一样的值，这样就实现了数字滚动递增动画的效果。   </p>
+<p>这里还有一个小细节，数字滚动变化的时候，它不是整数而是小数，为了得到整数，可以在后面加多 toFixed(0)，保证取整。    </p>
+<p>注意：这里用到的计算属性并不是必须的。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16516539070525.jpg" srcset="/img/loading.gif"></p>
+<h3 id="列表的过渡"><a href="#列表的过渡" class="headerlink" title="列表的过渡"></a>列表的过渡</h3><p>使用 Vue 内置的 <code>&lt;transition-group&gt;</code> 组件。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16572149100850.jpg" srcset="/img/loading.gif"></p>
+<p>动画案例中讲到了一个类似算法的东西：如何实现在数组中随机插入一个数字？   </p>
+<p>需要生成一个随机数，同时用到数据的 splice() 方法。     </p>
+<p><code>Math.random()</code> 可以随机生成 [0,1) 区间的小数。    </p>
+<p><code>Math.random()</code> 乘以数组的长度 length=10，可以得到 [0,10) 之间的随机数。  </p>
+<p>再在最后<strong>向下取整</strong> <code>Math.floor(Math.radom() * this.number.length)</code>，可以得到 0 到 10 之间的整数，不包括 10，这些数字其实就对应数组的<strong>索引值</strong>，后面结合数组的 splice() 方法，在数组中随机的位置插入数字。        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573392061241.jpg" srcset="/img/loading.gif"></p>
+<p>插入的数字会从下而上，删除的数字会从上而下，与此同时，如果我们想让数字在（左右）移动时，也能有动画，该怎么做呢？   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573397728519.jpg" srcset="/img/loading.gif"></p>
+<p>可以在样式中多增加一个 v-mode，过渡 transition 设置的是位移动画。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573405656930.jpg" srcset="/img/loading.gif"></p>
+<p>当然，即便在样式中加上 v-move，在移除数字的时候，向左移动的数字还是没有动画的，这是因为被移除的数字，它是块级元素，在移除的过程中依旧会<strong>占据位置</strong>，导致右侧的数字想移动的时候被「挡」住了，只能等到数字移除后，一瞬间跳过去，就看不到我们想要的<strong>慢慢向左的移动动画</strong>。    </p>
+<p>为了解决这个问题，我们可以额外给 v-leave-active 增加一个绝对定位，由于绝对定位的元素会脱离标准流，不会占据位置，这样就让能右侧的数字可以正常向左👈移动了。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573403560090.jpg" srcset="/img/loading.gif"></p>
+<h3 id="打乱数字"><a href="#打乱数字" class="headerlink" title="打乱数字"></a>打乱数字</h3><p>给现有的动画案例，再添加一个额外的效果：<strong>打乱数组中所有元素的位置</strong>，也叫洗牌，英文是 shuffle。  </p>
+<p>这需要用到一个第三方库 <strong>lodash</strong>，使用 npm 安装 lodash 库。   </p>
+<pre><code class="hljs autohotkey">npm install lodash    
+```    
+
+安装之后，在 js 部分导入 lodash 库：   
+</code></pre>
+<p>import _ from ‘lodash’;   </p>
+<pre><code>
+使用 _ 中的 shuffle() 方法，传入数组，将得到的值重新赋值给数组，就能打乱数组中元素的位置。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573414229513.jpg)
+
+### 列表的交错过渡动画案例
+
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16573464340722.jpg)
+
+
+当我们在 input 输入框中输入英文字母（关键词 keyword）时，下面的无序列表只显示包含英文字母的文本。 
+
+为实现过滤的效果，我们要用到 filter 高阶函数。 
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16574475189848.jpg)
+
+其中的 indexOf() 可以返回我们输入的英文字母在字符串中首次出现的位置。  
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16574473537414.jpg)
+
+这个案例中，制作动画用到了生命周期钩子，`beforeEnter() &#123;&#125;` 只需要传入 el 参数，不像 enter 和 leave 钩子需要传入 done 参数。     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16574481638520.jpg)
+
+
+
+
+
+</code></pre>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Vue/">Vue</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/07/16/2022-7-16-canonandobs/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">佳能相机M50如何用作直播摄像头？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/07/09/2022-7-9-videocompress/">
+                        <span class="hidden-mobile">如何将视频压缩到指定的大小？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2022/07/16/2022-7-16-vue3learnnote2/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "前端框架 Vue3 学习笔记（二）&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

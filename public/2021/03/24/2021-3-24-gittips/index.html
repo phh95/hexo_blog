@@ -1,0 +1,887 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    搭建博客可能会用到的 Git 命令 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-03-24 22:35" pubdate>
+        2021年3月24日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">搭建博客可能会用到的 Git 命令</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>2019 年为了学习使用 GitHub Pages 搭建博客，我在一个 App 上买了一门和 GitHub 有关的课，但主要看了其中一讲：  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/03/24/16165915158049.jpg" srcset="/img/loading.gif" alt="-w1266">学完这一讲之后，我还写了一篇简短的搭建博客的文章： </p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/es2mvKMy00lfasYJsjEJJg">不懂技术，如何搭建个人博客？</a>   </p>
+<p>课程剩下的其他内容，就被我晾在一边了。上个月看到这个 App 提醒我好久没学习了，提醒的文案也很皮，「<strong>21 天了，似乎养成了不学习的习惯</strong>」，哈哈哈哈哈哈。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/03/24/img8559.jpeg" srcset="/img/loading.gif" alt="IMG_8559"></p>
+<p>买了课程没看，心里有点愧疚，就开始捡起来看一些，顺便做了一下笔记（别说了，主要是不知道今天发点啥，强行用学习笔记来凑数）。  </p>
+<p>以下内容主要来自「极客时间」的课程《Git 三剑客》，这里的三剑客是指：  </p>
+<ul>
+<li>Git</li>
+<li>GitHub</li>
+<li>GitLab  </li>
+</ul>
+<p>我整理了一些在课程中用到的 Git 命令，对程序员可能是小菜一碟，可能对想搭建博客的朋友有帮助：</p>
+<p>运行这些命令，需要有一个<strong>环境</strong>，这个环境就是电脑的「<strong>终端</strong>」，Windows 上打开「运行」，输入「cmd」，同样可以打开终端。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/03/24/16165937767585.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p>Git 下载地址：<br><em><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></em></p>
+<h2 id="安装-Git-之后，查看是否正确安装"><a href="#安装-Git-之后，查看是否正确安装" class="headerlink" title="安装 Git 之后，查看是否正确安装"></a>安装 Git 之后，查看是否正确安装</h2><p>git –version</p>
+<p>这个命令也可以简写成 git –v</p>
+<h2 id="创建一个新的仓库并初始化"><a href="#创建一个新的仓库并初始化" class="headerlink" title="创建一个新的仓库并初始化"></a>创建一个新的仓库并初始化</h2><p>git init hexo_blog    </p>
+<h2 id="添加到暂存区"><a href="#添加到暂存区" class="headerlink" title="添加到暂存区"></a>添加到暂存区</h2><p>git add index.html   </p>
+<p>注：add 后面加上做出变更的文件   </p>
+<p>这里简单说一下 Git 的工作方式（或者说工作流程）：</p>
+<ul>
+<li>当前正在编辑的文件，处于工作目录（<strong>工作区</strong>）</li>
+<li>编辑好但待提交的文件，可以暂时添加到<strong>暂存区</strong>，这相当于是一个<strong>中间态</strong>，既可以向前一步作提交（commit），也可以向后一步，回退或覆盖<strong>工作区</strong>，这个方式有点像是 PS 里的「历史记录」面板，可以比较灵活地进行变更。  </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/03/24/16165942783235.jpg" srcset="/img/loading.gif" alt="-w819"></p>
+<h2 id="将编辑好的内容-push-到-GitHub"><a href="#将编辑好的内容-push-到-GitHub" class="headerlink" title="将编辑好的内容 push 到 GitHub"></a>将编辑好的内容 push 到 GitHub</h2><p>git add .<br>git commit -m”附带的信息，例如在某个时间点编辑了博客”<br>git push    </p>
+<p>这三个命令，是搭建好博客之后，每次发布文章时，都需要用到的命令。看完这篇文章，其他的 Git 命令都可以忘记，除了这三条。      </p>
+<h2 id="查看-Git-工作目录和暂存区的状态"><a href="#查看-Git-工作目录和暂存区的状态" class="headerlink" title="查看 Git 工作目录和暂存区的状态"></a>查看 Git 工作目录和暂存区的状态</h2><p>命令：git status   </p>
+<p>遇到未被 Git 管理的文件或文件夹，可以使用 add 命令将其纳入到 Git 的管理之下。   </p>
+<p>例如：git add index.html images    </p>
+<p>注：add 后面可以加文件，也可以加文件夹 📁，上面的 index.html 是文件名，images 是文件夹。   </p>
+<h2 id="查看-Git-变更的记录"><a href="#查看-Git-变更的记录" class="headerlink" title="查看 Git 变更的记录"></a>查看 Git 变更的记录</h2><p>这个有点像是 PS 里面的「<strong>历史记录面板</strong>」，记录了你做出的所有变更。     </p>
+<p>命令：git log   </p>
+<h2 id="清理一下终端当前显示的内容"><a href="#清理一下终端当前显示的内容" class="headerlink" title="清理一下终端当前显示的内容"></a>清理一下终端当前显示的内容</h2><p>命令：clear    </p>
+<h2 id="新建文件夹的命令"><a href="#新建文件夹的命令" class="headerlink" title="新建文件夹的命令"></a>新建文件夹的命令</h2><p>命令：mkdir+空格+文件夹名称   </p>
+<h2 id="创建一个新的文件"><a href="#创建一个新的文件" class="headerlink" title="创建一个新的文件"></a>创建一个新的文件</h2><p>echo “hello,world” &gt; readme</p>
+<p>创建一个 readme 文件，里面的内容为 hello,world    </p>
+<h2 id="查看-Git-最近-N-次的日志"><a href="#查看-Git-最近-N-次的日志" class="headerlink" title="查看 Git 最近 N 次的日志"></a>查看 Git 最近 N 次的日志</h2><p>git log -n   </p>
+<p>如果之前提交过很多次，git log 不附带参数的话，会返回一长串日志，不便于观看     </p>
+<h2 id="在终端中查看文件内容或编辑文件"><a href="#在终端中查看文件内容或编辑文件" class="headerlink" title="在终端中查看文件内容或编辑文件"></a>在终端中查看文件内容或编辑文件</h2><p>命令：vi+空格+文件名  </p>
+<p>例如你想在终端中编辑一个名为 <code>style.css</code> 的文件，可以运行命令 </p>
+<p>vi <code>style.css</code>     </p>
+<p>在 Vim 编辑器中编辑好文件，该如何退出呢？   </p>
+<p>按下 ESC 键，在终端底部输入不同的命令，命令对应的含义如下：</p>
+<p>:w!     保存<br>:wq!    保存并退出编辑(w 代表写入，q 代表退出)          </p>
+<h2 id="从某个子路径直接退回到根目录下"><a href="#从某个子路径直接退回到根目录下" class="headerlink" title="从某个子路径直接退回到根目录下"></a>从某个子路径直接退回到根目录下</h2><p>命令：cd ../    </p>
+<h2 id="查看当前路径已有的文件和文件夹"><a href="#查看当前路径已有的文件和文件夹" class="headerlink" title="查看当前路径已有的文件和文件夹"></a>查看当前路径已有的文件和文件夹</h2><p>命令：ls -al</p>
+<p>注：这个命令可以列出隐藏的文件。   </p>
+<h2 id="在-Git-中给文件快速重命名的方法"><a href="#在-Git-中给文件快速重命名的方法" class="headerlink" title="在 Git 中给文件快速重命名的方法"></a>在 Git 中给文件快速重命名的方法</h2><p>命令：git mv</p>
+<p>举个例子，如果你想把 readme 重命名为 <code>readme.md</code>，只需要执行命令：  </p>
+<p>git mv readme <code>read.md</code> </p>
+<h2 id="删除某个文件"><a href="#删除某个文件" class="headerlink" title="删除某个文件"></a>删除某个文件</h2><p>git rm filename</p>
+<p>这个命令会直接将处于暂存区的文件删除，这样就不需要先在工作目录下删除文件，再到暂存区清理文件。 </p>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><p>git checkout master    </p>
+<p>注：从当前分支切换到 master 分支上，这个命令需要在工作路径下运行     </p>
+<h2 id="新建分支并切换到新分支上"><a href="#新建分支并切换到新分支上" class="headerlink" title="新建分支并切换到新分支上"></a>新建分支并切换到新分支上</h2><p>git checkout -b 新分支的名称 旧分支名称      </p>
+<p>注：基于旧分支的基础上，创建一个新的分支      </p>
+<h2 id="查看当前工作在哪个分支下边（查看当前有哪些分支）"><a href="#查看当前工作在哪个分支下边（查看当前有哪些分支）" class="headerlink" title="查看当前工作在哪个分支下边（查看当前有哪些分支）"></a>查看当前工作在哪个分支下边（查看当前有哪些分支）</h2><p>git branch -av</p>
+<p>注：运行返回的带有星号 * 的分支，就是当前的工作分支   </p>
+<h2 id="查看本地的-git-配置"><a href="#查看本地的-git-配置" class="headerlink" title="查看本地的 git 配置"></a>查看本地的 git 配置</h2><p>git config –local –list：显示所有配置信息，包含 <code>user.name</code>、user.email 等。    </p>
+<p>git config –local <code>user.name</code>：仅显示 <code>user.name</code> 信息。   </p>
+<h2 id="更改-user-name-信息"><a href="#更改-user-name-信息" class="headerlink" title="更改 user.name 信息"></a>更改 <code>user.name</code> 信息</h2><p>git config –local <code>user.name</code> ‘angola’   </p>
+<p>末尾的单引号内的名字 angola 就是更改之后的 <code>user.name</code>   </p>
+<h2 id="cat-命令"><a href="#cat-命令" class="headerlink" title="cat 命令"></a>cat 命令</h2><p>命令含义：主要用来查看文件内容，创建文件，文件合并，追加文件内容等功能。      </p>
+<p>cat+空格+文件名：将文件内容打印显示    </p>
+<h2 id="查看-HEAD-指针目前指向哪个分支"><a href="#查看-HEAD-指针目前指向哪个分支" class="headerlink" title="查看 HEAD 指针目前指向哪个分支"></a>查看 HEAD 指针目前指向哪个分支</h2><p>cat .git/HEAD   </p>
+<p>假设运行返回的结果是 ref: refs/heads/fix_readme    </p>
+<p>这意味着 HEAD 目前指向分支 fix_readme    </p>
+<h2 id="查看路径下边类型是文件的个数"><a href="#查看路径下边类型是文件的个数" class="headerlink" title="查看路径下边类型是文件的个数"></a>查看路径下边类型是文件的个数</h2><p>find .git/objects -type file   </p>
+<p>注：.git/objects 路径下类型是文件的数量     </p>
+<h2 id="比较两次-commit-的区别"><a href="#比较两次-commit-的区别" class="headerlink" title="比较两次 commit 的区别"></a>比较两次 commit 的区别</h2><p>git diff 3d4731d80eb 415c5c8086e1    </p>
+<p>注：diff 后面跟的是两次 commit 对应的哈希值     </p>
+<p>比较 HEAD 与 HEAD 父级（即 HEAD 的前一个版本）的不同：      </p>
+<p>git diff HEAD <code>HEAD^1</code>     </p>
+<p>最末尾也可以不加数字，单纯使用：   </p>
+<p>git diff HEAD <code>HEAD^</code>    </p>
+<p>HEAD 与 HEAD 父级的父级（即 HEAD 的爷爷）的不同：  </p>
+<p>git diff HEAD <code>HEAD^^</code><br>等同于 git diff HEAD <code>HEAD～2</code>   </p>
+<h2 id="图形界面工具"><a href="#图形界面工具" class="headerlink" title="图形界面工具"></a>图形界面工具</h2><p>gitk<br>gitk –all    </p>
+<h2 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h2><p>git branch -d 待删除的分支名称    </p>
+<h2 id="修改最新-commit-的-message"><a href="#修改最新-commit-的-message" class="headerlink" title="修改最新 commit 的 message"></a>修改最新 commit 的 message</h2><p>git commit –amend   </p>
+<p>运行之后，会打开编辑窗口，顶部可编辑最近一次提交的 message 信息，编辑好之后按 ESC，输入 :wq! 退出编辑   </p>
+<h2 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h2><p>git log –graph<br>git reset –hard 5df3fd1900</p>
+<p>第一个命令是，在终端中以图形化的方式显示之前提交的记录，记录中会显示每一次 commit 对应的哈希值。</p>
+<p>注：5df3fd1900 是恢复到的某一次 commit 对应的哈希值</p>
+<h2 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h2><p>git diff –cached</p>
+<p>cached 代表暂存区 </p>
+<h2 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h2><p>git diff</p>
+<p>diff 后面不加参数，默认比较的是工作区和暂存区的差别</p>
+<p>如果 diff 添加了文件名，就是比较这个文件在工作区和暂存区的差别，例如    </p>
+<p>git diff –readme.md   </p>
+<p>添加两个文件名的话，就可以同时查看两个文件在工作区和暂存区的差别：   </p>
+<p>git diff –readme.md styles/style.css </p>
+<h2 id="如何指定不需要-Git-管理的文件？"><a href="#如何指定不需要-Git-管理的文件？" class="headerlink" title="如何指定不需要 Git 管理的文件？"></a>如何指定不需要 Git 管理的文件？</h2><p>不需要 Git 管理的文件，可以在 <code>.gitignore</code> 文件中列出。  </p>
+<p>先使用命令 vi <code>.gitignore</code></p>
+<p>创建一个 <code>.gitignore</code> 文件，文件名必须为 <code>.gitignore</code>，在文件中列明不纳入 Git 管理的文件和文件夹。</p>
+<p>在输入文件和文件名时需要注意：</p>
+<ul>
+<li>doc 代表 doc 文件不纳入 Git 管理</li>
+<li>doc/ 末尾如果带有斜杠，代表文件夹 doc 下的所有文件都不纳入 Git 管理</li>
+</ul>
+<p>如果先将文件或文件夹添加到了暂存区，<code>.gitignore</code> 对其也不起作用。   </p>
+<h2 id="其他内容"><a href="#其他内容" class="headerlink" title="其他内容"></a>其他内容</h2><p>这本课我还没看完，其他有些单纯靠文字无法理解的内容，我在记笔记的时候还附上了一些截图，放在幕布中，感兴趣的朋友可以扫描下方的二维码查看：   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/03/24/qrcodea3.png" srcset="/img/loading.gif" alt="QRcode_A3"><br>本文也同步发布在我的个人博客上，你可以点击底部左下角的「<strong>阅读原文</strong>」，查看本文在博客上的表现。   </p>
+<p>以上。      </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Git/">Git</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/03/29/2021-3-29-githubbeautify/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何美化 GitHub 个人主页？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/03/22/2021-3-22-aboutme/">
+                        <span class="hidden-mobile">我是谁？</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2021/03/24/2021-3-24-gittips/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "搭建博客可能会用到的 Git 命令&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1032 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    前端框架 Vue3 + TypeScript 学习笔记（五） - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-09-25 10:55" pubdate>
+        2022年9月25日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      40
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">前端框架 Vue3 + TypeScript 学习笔记（五）</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>注：学习笔记来自 coderwhy 老师的 Vue3 课程，由彭宏豪整理。    </p>
+<h2 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16623019692055.jpg" srcset="/img/loading.gif"></p>
+<p>当然，即便像 JS 这么优秀的语言，也是存在一些痛点的：    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16623021378882.jpg" srcset="/img/loading.gif"></p>
+<p>类型带来的问题   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627356766046.jpg" srcset="/img/loading.gif"></p>
+<p>JS 中定义的函数，很多时候都会存在 2 个问题：  </p>
+<ul>
+<li>没有对传入的参数的类型进行校验    </li>
+<li>没有对是否传入参数进行校验    </li>
+</ul>
+<p>JS 没有对我们传入的参数进行任何的限制，只有等到运行代码期间才发现这个错误；<br>并且当这个错误产生时，会影响后续代码的继续执行，也就是整个项目会因为一个小小的错误而陷入崩溃。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627381978399.jpg" srcset="/img/loading.gif"></p>
+<p>类型思维的缺失  </p>
+<p>其他大部分语言都存在类型检测的机制，唯独 JS 没有。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627384185875.jpg" srcset="/img/loading.gif"></p>
+<h3 id="JS-添加类型约束"><a href="#JS-添加类型约束" class="headerlink" title="JS 添加类型约束"></a>JS 添加类型约束</h3><p>JS 类型检测的 2 个方案：   </p>
+<ul>
+<li>flow   </li>
+<li>TypeScript   </li>
+</ul>
+<p>Vue2 中其实也有类型检测，不过它是用的 flow，而从 Vue3 开始，类型检测换成了 TypeScript。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627386006089.jpg" srcset="/img/loading.gif"></p>
+<p>学习 TypeScript 不仅可以为我们的代码增加类型约束，而且可以让前端程序员逐渐培养类型思维。  </p>
+<h3 id="认识-TypeScript"><a href="#认识-TypeScript" class="headerlink" title="认识 TypeScript"></a>认识 TypeScript</h3><p>TypeScript 是拥有类型的 JS 超集，它可以被编译成普通、干净、完整的 JS 代码。    </p>
+<p>TS 可以简单理解成加强版的 JS。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627390257424.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TypeScript-的特点"><a href="#TypeScript-的特点" class="headerlink" title="TypeScript 的特点"></a>TypeScript 的特点</h3><ul>
+<li>始于 JS，归于 JS    </li>
+<li>TS 是一个强大的工具，用于构建大型项目   </li>
+<li>拥有先进的 JS     </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627890272629.jpg" srcset="/img/loading.gif"></p>
+<h3 id="众多项目采用-TS"><a href="#众多项目采用-TS" class="headerlink" title="众多项目采用 TS"></a>众多项目采用 TS</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627892133027.jpg" srcset="/img/loading.gif"></p>
+<p>大前端的发展趋势     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627896274396.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TypeScript-的编译环境"><a href="#TypeScript-的编译环境" class="headerlink" title="TypeScript 的编译环境"></a>TypeScript 的编译环境</h3><p>TS 代码无法直接在浏览器或 node 环境中运行，它需要先经过编译，转换为 JS 代码，才能在浏览器或 node 环境运行。   </p>
+<p>将 TS 编译为 JS 代码的 2 个工具：   </p>
+<ul>
+<li>TSC：TypeScript Compiler  </li>
+<li>Babel：Babel 中内置了一个 <code>plugin/preset</code> 插件   </li>
+</ul>
+<p>全局安装 TS  </p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> typescript -g</code></pre>
+
+<p>安装 TS 后，里面就包含了 TSC，我们可以通过 <code>tsc --version</code> 来查询 TSC 的版本号。   </p>
+<h3 id="TS-初体验"><a href="#TS-初体验" class="headerlink" title="TS 初体验"></a>TS 初体验</h3><p>创建一个 ts 后缀的文件，在其中编写简单的 TS 代码。  </p>
+<p>完成后，在终端进入到 ts 文件所在的路径，输入 tsc + 文件名，它就会在同一路径下生成同名的 js 文件，这个文件就是 ts 编译后生成的 js 文件。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16627908831174.jpg" srcset="/img/loading.gif"></p>
+<h3 id="搭建运行-TS-的环境"><a href="#搭建运行-TS-的环境" class="headerlink" title="搭建运行 TS 的环境"></a>搭建运行 TS 的环境</h3><p>搭建 TypeScript 的运行环境，有 2 种方案：  </p>
+<ul>
+<li>通过 Webpack 搭建一个 ts 的环境  </li>
+<li>通过 node 中的一个库 ts-node</li>
+</ul>
+<h3 id="ts-node-库"><a href="#ts-node-库" class="headerlink" title="ts-node 库"></a>ts-node 库</h3><p>全局安装 ts-node 库：  </p>
+<pre><code class="hljs crmsh">npm install ts-<span class="hljs-keyword">node</span> <span class="hljs-title">-g</span></code></pre>
+
+<p>安装好 ts-node 库之后，为了运行 ts 文件，我们还需要安装另外两个依赖：   </p>
+<ul>
+<li>tslib    </li>
+<li>@types/node   </li>
+</ul>
+<pre><code class="hljs crmsh">npm install tslib @types/<span class="hljs-keyword">node</span> <span class="hljs-title">-g</span></code></pre>
+
+
+<p>使用 ts-node 库，只需要在终端输入下面的命令   </p>
+<pre><code class="hljs crmsh">ts-<span class="hljs-keyword">node</span> <span class="hljs-title">TypeScript</span>.ts</code></pre>
+
+<p>ts-node 库会帮我们做两件事，首先把 ts 编译成 js 文件，再在 node 环境中运行 js 文件。   </p>
+<h3 id="Webpack-搭建-TS-运行环境"><a href="#Webpack-搭建-TS-运行环境" class="headerlink" title="Webpack 搭建 TS 运行环境"></a>Webpack 搭建 TS 运行环境</h3><p>在终端用 cd 命令进入到文件夹 <code>02_Webpack_ts</code>，输入 <code>npm init</code> 进行初始化，一路按回车键，最后输入 yes，在当前路径下生成一个 <code>package.json</code> 文件。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628012262662.jpg" srcset="/img/loading.gif"></p>
+<p>接着在本地安装 Webpack（开发时依赖）：    </p>
+<pre><code class="hljs avrasm">npm install webpack webpack-<span class="hljs-keyword">cli</span> -D</code></pre>
+
+<p>需要说明的是，从 Webpack 4 开始，在安装 Webpack 的同时，也要安装 Webpack-cli。   </p>
+<p>安装 Webpack 后，文件夹中会多出 node_modules 的字文件夹，且 <code>package.json</code> 中显示 Webpack 和 Webpack-cli 的版本号。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628016507547.jpg" srcset="/img/loading.gif"></p>
+<p>在 <code>package.json</code> 文件中增加一个 build 脚本： </p>
+<pre><code class="hljs 1c"><span class="hljs-string">&quot;build&quot;</span>: <span class="hljs-string">&quot;webpack&quot;</span></code></pre>
+
+<p>增加 build 脚本，是为了等会使用 Webpack 来对项目进行打包。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628019232983.jpg" srcset="/img/loading.gif"></p>
+<p>我们还要在根目录下创建一个 Webpack 的配置文件 <code>webpack.config.js</code>，用来声明入口和出口文件。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628028818613.jpg" srcset="/img/loading.gif"></p>
+<p>为了让 Webpack 能将 ts 文件编译为 js 文件，我们还需要安装一个 ts-loader：   </p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> ts-loader typescript -D</code></pre>
+
+<p>安装了 ts-loader 后，还需要在 <code>webpack.config.js</code> 中添加相应的配置：  </p>
+<p>即指定用 ts-loader 来处理以 <code>.ts</code> 结尾的文件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628254127962.jpg" srcset="/img/loading.gif"></p>
+<p>配置好之后，重新运行 <code>npm run build</code>，终端还会抛出报错的信息，说我们缺少了一个名为 <code>tsconfig.json</code> 的文件。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628255969767.jpg" srcset="/img/loading.gif"></p>
+<p>对于这个问题，我们可以在终端中输入 <code>tsc --init</code>，在根目录下生成 <code>tsconfig.json</code> 文件。  </p>
+<p>这里还有另外一个问题，ts 文件导入模块时不让加 <code>.ts</code> 后缀名，不加后缀的话，Webpack 在进行打包的时候，找不到 <code>main.ts</code> 文件，因此我们还需要在 Webpack 配置文件中再添加 resolve 字段。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628259965651.jpg" srcset="/img/loading.gif"></p>
+<p>完成以上配置后，在终端中运行 <code>npm run build</code>，就能看到 ts 文件被顺利编译为 js 文件了。   </p>
+<p>当然，如果每次修改代码之后，都要手动输入 <code>npm run build</code> 进行编译，还是有点麻烦。   </p>
+<p>针对这个问题，我们可以安装 webpack-dev-server 来构建一个本地服务，这样当我们保存代码，就会自动进行编译。   </p>
+<pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> webpack-dev-<span class="hljs-keyword">server</span> -D</code></pre>
+
+<p>安装 webpack-dev-server 后，还需要去到 Webpack 配置文件添加一个 serve 脚本，添加之后，当我们运行 <code>npm run serve</code>，就能开启本地服务了。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628269798768.jpg" srcset="/img/loading.gif"></p>
+<p>如果我们想把根目录下的 <code>index.html</code> 文件指定为模板文件，我们可以安装一个 html-webpack-plugin 的插件。  </p>
+<pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> html-webpack-<span class="hljs-keyword">plugin</span> -D</code></pre>
+
+
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628280531886.jpg" srcset="/img/loading.gif"></p>
+<p>安装插件之后，还需要在 webpack 配置文件添加相应的配置：   </p>
+<p>导入插件，在模块导出中添加 plugins 字段，template 将根目录下的 <code>index.html</code> 指定为模板文件。    </p>
+<p>这样即便我们没有在 <code>index.html</code> 文件通过 script 标签引入编译后的 <code>bundle.js</code> 文件，插件也会自动帮我们添加。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628282385545.jpg" srcset="/img/loading.gif"></p>
+<p>还需要注意的是，使用 webpack-dev-server 开启本地服务后，由于 dev-server 对编译生成的 <code>bundle.js</code> 文件存在依赖，因此我们还要在 webpack 配置文件的 extensions 数组，添加 <code>.js</code> 文件后缀。   </p>
+<p>不添加 js 文件后缀的话，在终端运行 <code>npm run serve</code> 会报错。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628284040449.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-变量的声明"><a href="#TS-变量的声明" class="headerlink" title="TS 变量的声明"></a>TS 变量的声明</h3><p>TS 声明变量的关键字：var、let、const    </p>
+<p>在 tslint 中并不推荐使用 var 来声明变量。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628643845804.jpg" srcset="/img/loading.gif"></p>
+<pre><code class="hljs ts"><span class="hljs-keyword">const</span> message: <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;phh&quot;</span>
+<span class="hljs-keyword">const</span> name: <span class="hljs-built_in">String</span> = <span class="hljs-string">&quot;Hello TypeScript&quot;</span></code></pre>
+
+<p>变量名后面加上的类型注册，首字母为小写和大写是不一样的—— </p>
+<ul>
+<li>string：表示 TypeScript 中的字符串类型</li>
+<li>String：表示 JS 的字符串包装类的类型（类）  </li>
+</ul>
+<p>两个工具 eslint 和 tslint   </p>
+<p>eslint：可以让 js 代码更加规范<br>tslint：可以让 ts 代码更加规范   </p>
+<p>使用 tslint 之前，需要全局安装：  </p>
+<pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> tslint -g</code></pre>
+
+<p>安装好之后，用 cd 命令进入到项目的根目录下，输入 <code>tslint --init</code>，就会在根目录下生成一个 <code>tslint.json</code> 文件。   </p>
+<p>有了这个文件，当我们书写的 TS 代码不规范，它会给我们报对应的警告或者错误的。    </p>
+<p>TypeScript 官方文档地址：<br><a target="_blank" rel="noopener" href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a>      </p>
+<p>TS 是 JS 的一个超级，TS 有 JS 的所有特性，而且还额外增加了一些新东西：   </p>
+<ul>
+<li>强类型  </li>
+<li>Generics 泛型  </li>
+<li>Interfaces 接口  </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628674719115.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-数字类型"><a href="#TS-数字类型" class="headerlink" title="TS 数字类型"></a>TS 数字类型</h3><p>ES6 开始，新增了二进制和八进制的表示方法，因此 TS 也支持二进制、八进制和十六进制的表示。  </p>
+<p>二进制：0b 开头<br>八进制：0o 开头<br>十六进制：0x 开头        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16628684712109.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-数组类型的使用"><a href="#TS-数组类型的使用" class="headerlink" title="TS 数组类型的使用"></a>TS 数组类型的使用</h3><p>TS 中声明数组类型时，有两种书写方式：     </p>
+<p>Array 的首字母必须是大写。  </p>
+<p><code>Array&lt;string&gt;</code>、<code>string[]</code> 的含义都是，数组中的元素都为字符串类型。         </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629161594128.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-Symbol-类型"><a href="#TS-Symbol-类型" class="headerlink" title="TS Symbol 类型"></a>TS Symbol 类型</h3><p>Symbol 翻译为符号，是 ES6 新增的一种数据类型。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629169972892.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-any-类型"><a href="#TS-any-类型" class="headerlink" title="TS - any 类型"></a>TS - any 类型</h3><p>TS 中使用 any 类型的场景：  </p>
+<ul>
+<li>当进行一些类型断言 as、any   </li>
+<li>在不想给某些 TS 添加具体的数据类型时（这时 TS 就和原生的 JS 代码是一样的）     </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629527175239.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-unknown-类型"><a href="#TS-unknown-类型" class="headerlink" title="TS - unknown 类型"></a>TS - unknown 类型</h3><p>unknown 是 TS 中比较特殊的一种类型，用于描述类型不确定的变量。  </p>
+<p>下图的例子，result 返回的值的类型是不确定的，我们可以用 any 也可以用 unknown，这时最好使用 unknown，因为 any 太灵活了。</p>
+<ul>
+<li>unknown 类型只能赋值给 any 和 unknown 类型   </li>
+<li>any 类型可以赋值给任意类型     </li>
+</ul>
+<p>当我们把 unknow 类型的 result 赋值给 string/number 类型的 message1/message2，代码会提示错误；而如果把 result 换成 any 类型，同样的情况就不会报错。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629544796739.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-void-类型"><a href="#TS-void-类型" class="headerlink" title="TS - void 类型"></a>TS - void 类型</h3><p>void 通常用来指定一个函数是没有返回值的，那么它的返回值就是 void 类型。   </p>
+<p>如果没有在函数体最后一行使用 return 语句，那么这个函数就是没有返回值的，它的返回值就是 void 类型。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629553107092.jpg" srcset="/img/loading.gif"></p>
+<p>但如果我们添加了 return 语句，函数返回值的类型就是确定的，例如下图，它的返回值就是 number 类型。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629567559397.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-never-类型"><a href="#TS-never-类型" class="headerlink" title="TS - never 类型"></a>TS - never 类型</h3><p>never 表示永远不会发生值的类型。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16630250066528.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TS-tuple-类型"><a href="#TS-tuple-类型" class="headerlink" title="TS - tuple 类型"></a>TS - tuple 类型</h3><p>tuple 是<strong>元组</strong>类型，很多语言中也有这种数据类型，比如 Python、Swift 等。  </p>
+<p>元组类型的写法：一个中括号，里面指定不同的数据类型。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629587338632.jpg" srcset="/img/loading.gif"></p>
+<p>元组与数组的区别：  </p>
+<ul>
+<li>数组中通常建议存放相同类型的元素，不同类型的元素是不推荐放在数组中。   </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629661698905.jpg" srcset="/img/loading.gif"></p>
+<h3 id="函数的参数类型"><a href="#函数的参数类型" class="headerlink" title="函数的参数类型"></a>函数的参数类型</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629664511913.jpg" srcset="/img/loading.gif"></p>
+<h3 id="函数的返回值类型"><a href="#函数的返回值类型" class="headerlink" title="函数的返回值类型"></a>函数的返回值类型</h3><p>多数情况下不需要注明返回值的类型，因为 TS 会根据 return 返回值推断函数的返回类型。  </p>
+<p>而某些第三方库出于方便理解，会明确指定返回值类型。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629665932528.jpg" srcset="/img/loading.gif"></p>
+<h3 id="匿名函数的参数类型"><a href="#匿名函数的参数类型" class="headerlink" title="匿名函数的参数类型"></a>匿名函数的参数类型</h3><p>传入 forEach() 的函数，即为匿名函数。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629686383482.jpg" srcset="/img/loading.gif"></p>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><p>函数传入的形参是一个对象类型。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629795059110.jpg" srcset="/img/loading.gif"></p>
+<h3 id="可选类型"><a href="#可选类型" class="headerlink" title="可选类型"></a>可选类型</h3><p>对象类型可以指定哪些属性是可选的，将属性设置为可选类型，只需要在属性后面加多一个问号 ? 。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16629795795122.jpg" srcset="/img/loading.gif"></p>
+<h3 id="联合类型"><a href="#联合类型" class="headerlink" title="联合类型"></a>联合类型</h3><h3 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h3><p>使用 type 定义类型别名(type alias)，简化代码的书写。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16630255278729.jpg" srcset="/img/loading.gif"></p>
+<h3 id="类型断言-as"><a href="#类型断言-as" class="headerlink" title="类型断言 as"></a>类型断言 as</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16632031962410.jpg" srcset="/img/loading.gif"></p>
+<p><code>document.getElementById</code> 得到的变量类型是 HTMLElement，类型比较宽泛。   </p>
+<p>假设我们获取到的是一个 img 元素，想给图片的 src 属性重新赋值，会发现在 TS 中是报错的。  </p>
+<p>这时我们可以使用类型断言，将变量的类型从 HTMLElement 缩小到更准确的 HTMLImageElement，这样就不会报错了。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16631159827212.jpg" srcset="/img/loading.gif"></p>
+<h3 id="非空类型断言"><a href="#非空类型断言" class="headerlink" title="非空类型断言"></a>非空类型断言</h3><p>在可能为空(undefined)的值后面加上一个感叹号，就是非空类型断言。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16632591067620.jpg" srcset="/img/loading.gif"></p>
+<p>下图的例子，我们在类型为字符串的 message 后面加了一个问号，将它设置为<strong>可选类型</strong>，由于只有一个参数且是可选类型，那有可能会出现没有传入参数，即传入的参数为 undefined 的情况。   </p>
+<p>undefined 没有 length 属性，就会导致代码在编译阶段报错。   </p>
+<p>如果我们能 100% 保证传入的参数为非空，那么可以在变量 message 的末尾加上一个感叹号，转换为非空类型断言，这样就能<strong>跳过 TS 在编译阶段对它的检测</strong>。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16632591456700.jpg" srcset="/img/loading.gif"></p>
+<h3 id="可选链的使用"><a href="#可选链的使用" class="headerlink" title="可选链的使用"></a>可选链的使用</h3><p>下图的例子，我们定义了一个类型 Person，其中的 friend 对象为可选类型，可能有值，也可能为 undefined。   </p>
+<p>对于这种情况，一种解决方法是，在调用 friend 对象的属性之前，先用 if 判断。  </p>
+<p>但使用 if 判断也存在一个问题，如果 friend 对象中嵌套了另外一个可选类型，想继续调用嵌套元素的属性时，就需要再次进行判断，非常麻烦。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636077712120.jpg" srcset="/img/loading.gif"></p>
+<p>一个更好的方法是，使用 ES11（ES2020）新增的<strong>可选链</strong>。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636084279825.jpg" srcset="/img/loading.gif"></p>
+<p>可选链使用可选链操作符 <code>?.</code>   </p>
+<p>如下图，info 对象嵌套的 friend 对象是可选类型，那我们在调用 friend 对象的属性时，可以在 friend 对象后面加一个可选链操作符 <code>?.</code>。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636085286444.jpg" srcset="/img/loading.gif"></p>
+<h3 id="和-的作用"><a href="#和-的作用" class="headerlink" title="?? 和 !! 的作用"></a>?? 和 !! 的作用</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636086855856.jpg" srcset="/img/loading.gif"></p>
+<p>?? 操作符，是 ES11 增加的新特性，被称作<strong>空值合并操作符</strong>。  </p>
+<p>空值合并操作符，其实等价于 JS 中的<strong>三目运算符</strong>，只是空值合并操作符看起来更简洁。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636102459037.jpg" srcset="/img/loading.gif"></p>
+<h3 id="字面量类型"><a href="#字面量类型" class="headerlink" title="字面量类型"></a>字面量类型</h3><p>普通的文本或数字类型，也是可以作为类型的，叫做字面量类型。     </p>
+<p>字面量类型，需要与联合类型结合使用。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636943991878.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16636945844767.jpg" srcset="/img/loading.gif"></p>
+<h3 id="字面量推理"><a href="#字面量推理" class="headerlink" title="字面量推理"></a>字面量推理</h3><p>定义的 request 函数，第二个参数为<strong>字面量</strong>类型，但传入的 <code>options.method</code> 参数是<strong>字符串</strong>类型，与定义函数时声明的类型不同，且字符串存在被修改的可能，因此在编译阶段会报错。  </p>
+<p>解决方法：  </p>
+<ul>
+<li>使用类型断言：在 <code>options.method</code> 后面添加 <code>as Method</code>，指明它是一个字面量类型       </li>
+<li>使用字面量推理：在 options 对象的末尾添加 <code>as const</code>      </li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16637201983986.jpg" srcset="/img/loading.gif"></p>
+<p>在对象 options 末尾添加 <code>as const</code>，此时再将鼠标移动到 options 对象上方，会显示 method 为只读，且为字面量类型中的 “POST”。        </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16637206672306.jpg" srcset="/img/loading.gif"></p>
+<h3 id="类型缩小"><a href="#类型缩小" class="headerlink" title="类型缩小"></a>类型缩小</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16637217562252.jpg" srcset="/img/loading.gif"></p>
+<p>instanceof 的例子   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638057159407.jpg" srcset="/img/loading.gif"></p>
+<h3 id="TypeScript-函数类型"><a href="#TypeScript-函数类型" class="headerlink" title="TypeScript 函数类型"></a>TypeScript 函数类型</h3><p>在 JS 开发中，函数是重要的组成部分，并且函数可以作为<strong>一等公民</strong>（可以作为参数，也可以作为返回值进行传递）。     </p>
+<p>函数类型的表达式： <code>() =&gt; void</code></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638624614641.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638628388529.jpg" srcset="/img/loading.gif"></p>
+<p>如果函数的返回值有明确的类型，可以将 void 更改为对应的类型，例如下图的 number。    </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638626534725.jpg" srcset="/img/loading.gif"></p>
+<h3 id="函数参数的可选类型"><a href="#函数参数的可选类型" class="headerlink" title="函数参数的可选类型"></a>函数参数的可选类型</h3><p>当传入函数的两个或多个参数中，包含有可选类型时，<strong>可选类型必须写在必选类型的后面</strong>。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638631442758.jpg" srcset="/img/loading.gif"></p>
+<h3 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h3><p>如果函数传入两个参数，第二个参数有默认值，那么在调用的时候，第二个参数可以不写；但如果第一个参数有默认值，那么在调用函数时，第一个参数得写默认值，或者写 undefined。   </p>
+<p>函数传入多个参数时的书写顺序：  </p>
+<p>先写<strong>必传参数</strong>，再写<strong>有默认值的参数</strong>，最后写<strong>可选参数</strong>。      </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638663396891.jpg" srcset="/img/loading.gif"></p>
+<h3 id="函数的剩余参数"><a href="#函数的剩余参数" class="headerlink" title="函数的剩余参数"></a>函数的剩余参数</h3><h3 id="函数的重载"><a href="#函数的重载" class="headerlink" title="函数的重载"></a>函数的重载</h3><p>函数的重载：函数的名称相同，但是参数不同的几个函数，就是函数的重载。   </p>
+<p>先在前面定义多个重载函数，不需要写函数体，<br>后面再写具体的实现。     </p>
+<p>下面的例子中，两个重载函数传入的参数类型是不同的，一个是 number 类型，一个是 string 类型。   </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16638934889503.jpg" srcset="/img/loading.gif"></p>
+<p>函数的重载使用场景：用联合类型实现起来比较麻烦的时候，才考虑使用函数的重载。(优先级：联合类型 &gt; 函数的重载)     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/25/16640672138523.jpg" srcset="/img/loading.gif"></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Vue/">Vue</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/10/06/2022-10-6-tampermonkey/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">油猴脚本获取公众号文章封面</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/09/24/2022-9-24-obs/">
+                        <span class="hidden-mobile">录屏软件OBS使用技巧：圆形人像和应用LUT</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2022/09/25/2022-9-25-vue3learnnote5/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "前端框架 Vue3 + TypeScript 学习笔记（五）&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

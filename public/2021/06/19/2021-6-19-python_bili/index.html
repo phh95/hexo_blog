@@ -1,0 +1,888 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    用 Python 爬取 B 站视频弹幕，生成词云图 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-19 18:00" pubdate>
+        2021年6月19日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      27
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">用 Python 爬取 B 站视频弹幕，生成词云图</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>Hello 大家好，我是安哥。</p>
+<p>最近 B 站上有一个超火且非常洗脑的视频《蜜雪冰城主题曲MV 中英双语版》，视频中原来的歌词是「<strong>你爱我，我爱你，蜜雪冰城甜蜜蜜</strong>」。</p>
+<p>看到有些网友在弹幕中把它篡改成「<strong>你碍我，我碍你，你学编程天灭你</strong>」，哈哈哈哈哈。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>为了弄清这些有趣的网友都在弹幕中说了啥，结合我之前学会的一点 <strong>Python 爬虫</strong>的知识，我用 Python 抓取了这个视频的所有弹幕，并将弹幕做成了如下的<strong>词云图</strong>：</p>
+<p>词云图会自动将比较长的弹幕拆分成单个的词汇，之后根据单个词汇出现的频率来决定字号的大小，<strong>字号越大，说明在弹幕中出现的频率越高</strong>。</p>
+<p>显而易见，出现次数最多的弹幕当属「<strong>哈哈哈哈哈哈</strong>」，即便长大了，听到这可爱的儿歌，看到这萌萌哒雪人，还是会觉得欢乐无穷。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210847892.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>看完上面的词云图，如果你想知道词云图是怎么生成的，可以继续看下面的文章。</p>
+<p>我也将用到的源码放到了 GitHub 上，有需要的朋友可以前往 GitHub 下载或复制代码，跟着我一起「<strong>改代码</strong>」，之后就能<strong>随意抓取任意 B 站视频的弹幕了</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210858176.png" srcset="/img/loading.gif" alt="图片">  </p>
+<p><strong>抓取 B 站视频弹幕 Python 代码</strong>：<br><a target="_blank" rel="noopener" href="https://github.com/phh95/pythonProject/tree/main/%E6%8A%93%E5%8F%96B%E7%AB%99%E5%BC%B9%E5%B9%95">https://github.com/phh95/pythonProject/tree/main/%E6%8A%93%E5%8F%96B%E7%AB%99%E5%BC%B9%E5%B9%95</a>       </p>
+<p><strong>制作词云图的流程</strong>是这样的：先使用 <strong>dammu_spider.py</strong> 抓取视频的弹幕，得到一个<strong>包含所有弹幕的 txt 文件</strong>，再用 <strong>词云.py</strong> 将得到的 txt 文件导出为<strong>词云图</strong>。</p>
+<h2 id="01-安装-Python"><a href="#01-安装-Python" class="headerlink" title="01. 安装 Python"></a><strong>01. 安装 Python</strong></h2><p>打开 Python 官网，下载最新版的 Python3.9.5，它支持 Windows、macOS 和 Linux 系统。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210822844.png" srcset="/img/loading.gif" alt="图片"></p>
+<p><strong>Python 官网地址：</strong></p>
+<p><em><a target="_blank" rel="noopener" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></em></p>
+<p>下载之后，打开 Python 安装程序，先勾选安装面板下方的「<strong>Add Python 3.x to PATH</strong>」，再点击「<strong>Install Now</strong>」，一直点下一步等待 Python 完成安装。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210815165.png" srcset="/img/loading.gif" alt="图片来自网络"></p>
+<p>安装好 Python 之后，为了确认我们配置好了 Python 环境，可以按下 <strong>Win + S</strong> 打开 Windows 自带的搜索，输入 <strong>cmd</strong>，打开「<strong>命令提示符</strong>」。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210914887.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>在打开的窗口中，输入 <strong>python</strong> 后按下回车，如果下方<strong>返回 Python 的版本号</strong>，例如我这里返回的版本号是 <strong>Python 3.9.2</strong> ，则说明 Python 已经配置妥当了。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210922315.png" srcset="/img/loading.gif" alt="图片"></p>
+<h2 id="02-安装-Python-开发工具"><a href="#02-安装-Python-开发工具" class="headerlink" title="02. 安装 Python 开发工具"></a><strong>02. 安装 Python 开发工具</strong></h2><p>写 Python 代码有很多工具，如下图所示，这些工具被统称为 <strong>IDE</strong>，这是英文 Integrated Development Environment 的缩写，中文翻译为「<strong>集成开发环境</strong>」。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210929929.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>目前我用过的开发工具有两个，一个是社区版的 <a target="_blank" rel="noopener" href="http://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649912923&idx=1&sn=26e8b3b8a7a12983c03781551b67b96f&chksm=83a87276b4dffb60265b4cc75eab2fe6e7992e924ad2577e2ae45af9a0f2ba1202c27f2f4670&scene=21#wechat_redirect"><strong>PyCharm</strong></a>，一个是微软推出的 VS Code。</p>
+<p>如果你贪图方便的话，可以使用 PyCharm，而如果你用的是 VS Code，还需要给 VS Code 安装一个名为「<strong>Python</strong>」的插件。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210938217.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>关于如何让 VS Code 的语言变成<strong>中文</strong>以及<strong>安装插件</strong>的问题，可以看之前我写过的一篇文章：</p>
+<p><a target="_blank" rel="noopener" href="http://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649881449&idx=1&sn=56c9016004fb2cb9960d8300c230a079&chksm=83abff44b4dc7652e2957e8dfd63c5bcca8f667731bc3fd1272aa908664695313b5e8ac0c6f7&scene=21#wechat_redirect"><strong>那些排版好看的公众号，都在偷偷用这些神器！</strong></a></p>
+<p><strong>PyCharm 下载地址：</strong></p>
+<p><em><a target="_blank" rel="noopener" href="https://www.jetbrains.com/pycharm/download/">https://www.jetbrains.com/pycharm/download/</a></em></p>
+<p><strong>VS Code 下载地址：</strong></p>
+<p><em><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></em></p>
+<h2 id="03-安装第三方-Python-库"><a href="#03-安装第三方-Python-库" class="headerlink" title="03. 安装第三方 Python 库"></a><strong>03. 安装第三方 Python 库</strong></h2><p>爬取 B 站弹幕的代码中，用到了 Python 没有内置的第三方库，为了不影响后续程序的运行，我们先安装一下这些第三方库：</p>
+<ul>
+<li>requests</li>
+<li>jieba</li>
+<li>wordcloud</li>
+</ul>
+<p>安装这些库也非常简单，先打开 <strong>Windows</strong> 自带的「<strong>命令提示符</strong>」窗口，如果你用的是 Mac 电脑，则打开 <strong>macOS</strong> 系统自带的「<strong>终端</strong>」。</p>
+<p>在命令提示符窗口中分别输入 <strong>pip3 install + 第三方库的名称</strong>，例如安装 wordcloud 库，就输入 <strong>pip3 install wordcloud</strong> 。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210950937.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>如果程序可以顺利安装的话，在末尾会提示「<strong>Successfully installed</strong>」，至于最末尾出现的黄色警告文字「WARNING」，它是警告信息而不是报错，可以忽略它们。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210956347.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>重复上面的操作，分别逐一安装三个第三方库 requests、jieba 和 wordcloud。</p>
+<p>安装好第三方库之后，就可以开始修改代码啦。由于我在 Windows 电脑上用的 IDE 是 <strong>VS Code</strong>，下面就以 VS Code 来演示如何修改 Python 代码：</p>
+<h2 id="04-修改抓取视频弹幕的代码"><a href="#04-修改抓取视频弹幕的代码" class="headerlink" title="04. 修改抓取视频弹幕的代码"></a><strong>04. 修改抓取视频弹幕的代码</strong></h2><p>在 VS Code 中使用快捷键 <strong>Ctrl + N</strong> 新建一份文档，刚开始我们需要确定我们想使用的编程语言。</p>
+<p>点击文档第一行的蓝色文字「<strong>选择语言</strong>」，在弹出的输入框中输入 Python，点击下方返回的 Python。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211003487.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>打开 GitHub 上的 danmu_spider.py 文件，用鼠标选中所有代码，右击选择「复制」。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211009372.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>将复制的代码粘贴到 VS Code 中，我们最先要更改的代码是 <strong>url 的值</strong>，这个 url 指向的是<strong>视频的弹幕地址</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211014766.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>打开你想抓取弹幕的 B 站视频，按下 <strong>F12</strong> 键，打开<strong>浏览器开发者工具</strong>，切换到 <strong>Network</strong> 选项卡，再点击视频右侧弹幕列表的「<strong>展开</strong>」按钮。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211019811.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>拖动开发者工具右下角的滑钮，将其拖拽到底部，接着点击弹幕列表底部的「查看历史弹幕」，随意选择一个日期。</p>
+<p>例如我选择查看 <strong>6 月 10 日</strong>的弹幕，下方的开发者工具，会新增一个后缀为 <strong>data=2020-06-10</strong> 的记录。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210656010-20210619211025852.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>点击这条记录，在右侧展开的 General &gt;&gt; <strong>Request URL</strong>，就可以看到获取这一天的所有弹幕的链接地址，<strong>复制 Request URL 后面的 https 链接</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211031366.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>将其粘贴到 VS Code 中的 url 处，并**将链接末尾的日期，替换为 {date}**，这是为了后面更灵活地指定抓取的弹幕所在的日期。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211035945.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>url 上方的 range(5,18) 就可以用来指定我们想<strong>抓取哪几天的弹幕</strong>，这里的 (<strong>5,18</strong>) 意思就是我想抓取蜜雪冰城视频，从 6 月 5 号到 6 月 18 号这段时间的所有视频弹幕。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211041265.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>至于你需要如何修改这两个参数，可以查看对应视频的<strong>历史弹幕小日历</strong>，来决定你要如何设置这两个参数。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211047607.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>接着代码中要修改的参数是 <strong>cookie</strong>，这个参数记录了你的登录信息，因此只有在浏览器中<strong>登录自己的 B 站账号</strong>，才能找到这个我们需要的参数。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211055382.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>cookie 同样可以在开发者工具面板中找到，在刚点开的 06-10 记录中，向下滑动右侧的滑动，就可以在 <strong>Request Headers</strong> 中看到 <strong>cookie</strong> 了。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211101597.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>将 cookie 的值复制到 VS Code 中进行替换，原本有好几行的 cookie 值会变成一行：</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211107753.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>这里复制的 cookie 值还有一个<strong>小问题</strong>，cookie 值里面包含了一个<strong>英文的单引号</strong>，这在 Python 中会让程序<strong>误以为 cookie 值到这里就结束了</strong>，实际上并没有。</p>
+<p>为了解决这个问题，我们需要在这个单引号的前面加一个反斜杠 \ ，通过<strong>转义</strong>的方式，让它变成一个<strong>普通的单引号</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211205866.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>接着还需要<strong>修改一下保存抓取的弹幕的 txt 文件的名称</strong>，名称可以随你起，可以是中文，也可以是英文，记得名称末尾需要<strong>带上格式后缀 .txt</strong> 。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211215478" srcset="/img/loading.gif" alt="图片"></p>
+<p>修改好以上代码之后，右击鼠标，选择「<strong>在终端中运行 Python 文件</strong>」，Python 就会开始运行当前的代码。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211221472.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>运行程序没有报错、顺利的话，你就可以得到一个包含有多个弹幕的 <strong>txt 文件</strong>，这个文件位于 <strong>C 盘 &gt;&gt; 用户 &gt;&gt; 用户名</strong> 路径下。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211227217.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>如果你在这个路径下找不到 txt 文件，可以使用 Windows 自带的搜索，以 txt 文件名进行搜索，应该就可以找到这个文件。</p>
+<h2 id="05-修改导出词云图的代码"><a href="#05-修改导出词云图的代码" class="headerlink" title="05. 修改导出词云图的代码"></a><strong>05. 修改导出词云图的代码</strong></h2><p>得到所有弹幕文本之后，我们还需要将得到的文本再作进一步的处理，才能得到最终想要的词云图。</p>
+<p>同样在 VS Code 中新建一个文档，将 GitHub 上的 <strong>词云.py</strong> 的代码复制到文档中。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211239037.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>首先修改第 6 行的代码，这里需要替换成你在上一步抓取得到的<strong>弹幕 txt 文件的名称</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211244415" srcset="/img/loading.gif" alt="图片"></p>
+<p>接着来到第 25、26 行代码，这里需要设置导出的词云图所使用的字体，如果你用的是 Windows 系统，那么就使用第 25 行代码，将 26 行代码删除。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211248486.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>如果你的电脑系统是 <strong>macOS</strong>，那么就使用第 26 行代码，将字体设置为苹果系统自带的<strong>苹方字体</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210703139-20210619211253542.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>接着来到文档的最后一行代码，这里用来<strong>设置导出的词云图的名称</strong>，同样图片的名称可以随意设置，最后别忘了加上<strong>格式后缀 .png</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619210703761.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>修改好之后，同样右击鼠标，选择「<strong>在终端中运行 Python 文件</strong>」，运行修改好的 Python 程序。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211303730.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>程序运行完毕，和之前导出的弹幕文件相同路径下，即 <strong>C 盘 &gt;&gt; 用户 &gt;&gt; 用户名</strong> 路径，就可以看到导出的词云图了。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/640-20210619211309259.png" srcset="/img/loading.gif" alt="图片"></p>
+<p>以上，就是使用 Python 抓取 B 站视频弹幕、并导出词云图的过程了，仅说明了如何修改现成的代码，如果要说清代码是如何写出的，那就要花费更多的功夫了。</p>
+<p>本文的代码参考了一个视频和一篇文章，在此也一并列出，感兴趣的朋友可以去看一下：</p>
+<p>[1] 【Python】爬取B站弹幕，看哪个弹幕更有梗？，<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UK4y137Ye">https://www.bilibili.com/video/BV1UK4y137Ye</a>    </p>
+<p>[2] <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzIwNDY5OTI2OA==&mid=2247484638&idx=1&sn=262ff53eaafb742387ab6e936cafef9c&scene=21#wechat_redirect"><strong>Python爬取B站弹幕并制作词云图</strong></a></p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a><strong>欢迎关注</strong></h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">   </p>
+<p>以上就是本次想和你分享的内容。<br>看完文章如果觉得对你有帮助的话，别忘了点击底部的「<strong>点赞/在看</strong>」鼓励一下我，谢谢。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Python/">Python</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%88%AC%E8%99%AB/">爬虫</a>
+                    
+                      <a class="hover-with-bg" href="/tags/B%E7%AB%99/">B站</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/06/23/2021-6-23-apptips/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">近期值得关注的 App 及使用技巧</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/04/2021-6-4-100flag/">
+                        <span class="hidden-mobile">✅连续日更公众号100天完成</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2021/06/19/2021-6-19-python_bili/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "用 Python 爬取 B 站视频弹幕，生成词云图&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

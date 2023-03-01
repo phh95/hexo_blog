@@ -1,0 +1,916 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    在网页中使用 icon 字体图标 | 前端开发 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-19 01:30" pubdate>
+        2021年9月19日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">在网页中使用 icon 字体图标 | 前端开发</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/html5-wang-ye-gao-su-ni-30-zhong-bin-lin-mie-jue-d.png" srcset="/img/loading.gif" alt="HTML5 网页告诉你 30 种濒临灭绝的物种  轻单"></p>
+<p>最近在 B 站上看 Pink 老师的前端视频，简单总结一下在网页中使用 icon 图标的两种方法。   </p>
+<h2 id="直接插入字体图标"><a href="#直接插入字体图标" class="headerlink" title="直接插入字体图标"></a>直接插入字体图标</h2><p>这里说的字体图标，是指既有普通 icon 图标的外观，又带有字体特征的图标，可以像调整字体那样、调整图标的大小和颜色，且图标放大之后不会失真变模糊。  </p>
+<p>我们一般是从网上下载字体图标的，譬如国内的阿里巴巴旗下的矢量素材网站 <strong>iconfont</strong>、国外的 <strong>IcoMoon</strong> 等。 </p>
+<p>去年写过一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/yxQ4Rrx8r9An2dqreTkndA">微信小程序开发 | 如何在小程序中使用自定义 icon 图标</a>》，其中介绍了 iconfont 图标的使用，这回介绍一下使用来自 IcoMoon 的图标的方法。  </p>
+<p>打开 IcoMoon 图标官网，从中挑选你想使用的 icon 图标，底部的 Selection 会统计你选中的图标数量，选好图标之后，点击右下角的 <strong>Generate Font</strong>，生成字体图标。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/1631932008295.png" srcset="/img/loading.gif" alt="1631932008295"></p>
+<p>在打开的页面，会显示我们刚才挑选的所有 icon 图标，并且提供图标的 unicode 编码，这些编码等下要用到，但现在先不管。点击右下角的 <strong>Download</strong>，下载生成的字体图标文件。  </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/1631932359827.png" srcset="/img/loading.gif" alt="1631932359827"></p>
+<p>IcoMoon 图标下载：<br><em><a target="_blank" rel="noopener" href="https://icomoon.io/app/#/select">https://icomoon.io/app/#/select</a></em></p>
+<p>解压下载的压缩文件，其中包含下面这些文件，我们需要用到其中的 fonts 文件夹。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210918214014532.png" srcset="/img/loading.gif" alt="image-20210918214014532"></p>
+<p>fonts 文件中包含了 4 个字体文件，这是因为不同浏览器所支持的字体格式是不一样的，考虑到兼容性，fonts 文件夹就包含了主流浏览器支持的字体文件：  </p>
+<ul>
+<li>TrueType 字体(.ttf)：是 Windows 和 Mac 最常见的字体</li>
+<li>Web Open Font Format 字体(.woff)：支持的浏览器有 IE 9+、Firefox 3.5+、Chrome 6+、Safari 3.6+、Opera 11.1+</li>
+<li>Embedded Open Type 字体(.eot)：是 IE 专用的字体，支持的浏览器有 IE 4+     </li>
+<li>SVG 字体(.svg)：是基于 SVG 字体渲染的一种格式，支持的浏览器有 Chrome 4+、Safari 3.1+、Opera 10.0+、iOS Mobile Safari 3.2+</li>
+</ul>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210918215027965.png" srcset="/img/loading.gif" alt="image-20210918215027965"></p>
+<p>将 fonts 文件夹复制到网页的项目文件夹📂中，譬如放在与  <code>index.html</code> 文件同级的路径下。 </p>
+<p>打开 HTML 文件，在 <strong>style 标签</strong>中粘贴下方的代码，定义我们等下需要用到的字体 icomoon。需要注意的是，如果 fonts 文件与 html 文件在同个路径下，就不需要修改下方代码中的 url 地址。</p>
+<pre><code class="hljs css">&lt;<span class="hljs-selector-tag">style</span>&gt;
+  <span class="hljs-keyword">@font-face</span> &#123;
+              <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;icomoon&#x27;</span>;
+              <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;fonts/icomoon.eot?bawtoo&#x27;</span>);
+              <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;fonts/icomoon.eot?bawtoo#iefix&#x27;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&#x27;embedded-opentype&#x27;</span>),
+                  <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;fonts/icomoon.ttf?bawtoo&#x27;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&#x27;truetype&#x27;</span>),
+                  <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;fonts/icomoon.woff?bawtoo&#x27;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&#x27;woff&#x27;</span>),
+                  <span class="hljs-built_in">url</span>(<span class="hljs-string">&#x27;fonts/icomoon.svg?bawtoo#icomoon&#x27;</span>) <span class="hljs-built_in">format</span>(<span class="hljs-string">&#x27;svg&#x27;</span>);
+              <span class="hljs-attribute">font-weight</span>: normal;
+              <span class="hljs-attribute">font-style</span>: normal;	
+              <span class="hljs-attribute">font-display</span>: block;
+          &#125;
+&lt;/style&gt;</code></pre>
+
+<p>粘贴代码之后，先来看一下我们最终想要实现的效果，如下图，下方的红色爱心❤️图标，就是前面说到的字体图标。根据最终想要实现的效果，我们要去到 html 文件中书写相应的代码。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210918225727566.png" srcset="/img/loading.gif" alt="image-20210918225727566"></p>
+<p>在 html 文件的 <strong>body 标签</strong>中输入下方的一行代码，中间的 <strong>span 标签</strong>包含的<strong>方块 </strong>，其实就是爱心图标，只不过它无法在 html 文件中正常显示。</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我 <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 你<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+
+<p>这个方块  也不是随意输入的，还得从我们前面下载的压缩文件夹中的 <code>demo.html</code> 查看。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210918232918454.png" srcset="/img/loading.gif" alt="image-20210918232918454"></p>
+<p>在浏览器中打开 <code>demo.html</code> ，移动到爱心图标右下角的区域，框选有时看得到、有时看不到的<strong>方块字符 </strong>，复制到剪贴板，接着粘贴到 html 文件中。 </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210918233454678.png" srcset="/img/loading.gif" alt="image-20210918233454678"></p>
+<p>将方块字符粘贴到 html 中，如果此时在浏览器中预览网页效果的话，还是无法看到刚添加的字体图标的，因为还缺少对字体图标设置 CSS 样式——<strong>声明字体图标所使用的字体</strong>。 </p>
+<p>html：</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  我<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>你
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+
+<p>css：</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">span</span> &#123;
+		<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;icomoon&#x27;</span>;
+&#125;</code></pre>
+
+<p>此时在浏览器中重新打开 html 文件，我们所使用的字体图标就会正常显示了。</p>
+<p>如果你还想调整字体图标的<strong>大小</strong>和<strong>颜色</strong>，可以在 CSS 中增加另外两个属性：<strong>font-size</strong> 和 <strong>color</strong>。</p>
+<p>css：</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">span</span> &#123;
+  	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;icomoon&#x27;</span>;
+  	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+  	<span class="hljs-attribute">color</span>: red;
+&#125;</code></pre>
+
+<p>一番设置之后，重新在浏览器中刷新页面，就可以看到最终的效果啦。</p>
+<h2 id="通过伪类选择器使用字体图标"><a href="#通过伪类选择器使用字体图标" class="headerlink" title="通过伪类选择器使用字体图标"></a>通过伪类选择器使用字体图标</h2><p>前面介绍的第一种方法，需要同时在 body 标签(html) 和 style 标签(css) 中同时书写相关的代码，如果我们想让 html 文件的结构更加简单，我们可以通过第二种方法——在  style 标签(css) 中通过<strong>伪类选择器</strong>使用字体图标，这样就只需要在 style 标签或 css 文件中书写相关的代码。  </p>
+<p>先来看一下我们最终想要实现的效果，如下图所示，给输入框的右侧添加一个<strong>向下的小三角🔽图标</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919001244754.png" srcset="/img/loading.gif" alt="image-20210919001244754"></p>
+<p>想制作这个效果，同样是先从前面介绍的 IcoMoon 网站下载字体图标，将解压后的文件中的 fonts 文件夹放到与 <code>index.html</code> 同级的路径下，接着在 html 的 <strong>style 标签</strong>中粘贴下方的代码：</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span>
+<span class="css">  <span class="hljs-keyword">@font-face</span> &#123;</span>
+              font-family: &#x27;icomoon&#x27;;
+              src: url(&#x27;fonts/icomoon.eot?bawtoo&#x27;);
+              src: url(&#x27;fonts/icomoon.eot?bawtoo#iefix&#x27;) format(&#x27;embedded-opentype&#x27;),
+                  url(&#x27;fonts/icomoon.ttf?bawtoo&#x27;) format(&#x27;truetype&#x27;),
+                  url(&#x27;fonts/icomoon.woff?bawtoo&#x27;) format(&#x27;woff&#x27;),
+                  url(&#x27;fonts/icomoon.svg?bawtoo#icomoon&#x27;) format(&#x27;svg&#x27;);
+              font-weight: normal;
+              font-style: normal;	
+              font-display: block;
+          &#125;
+<span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre>
+
+<p>在 html 的 <strong>body 标签</strong>中插入一个空白的盒子 div 标签：</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre>
+
+<p>接着在 style 标签中，给 div 盒子设置宽度、高度，并给它设置一个粗细为 1 px 的黑色边框：</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span>
+  div &#123;
+    width: 200px;
+    height: 40px;
+    border: 1px solid gray;
+  &#125;
+<span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre>
+
+<p>此时在浏览器中打开 html 文件，就可以看到下图所示的孤零零的输入框。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919002544501.png" srcset="/img/loading.gif" alt="image-20210919002544501"></p>
+<p>接着继续给这个输入框「添砖加瓦」——添加一个向下的小三角🔽，继续在 style 标签中书写代码：</p>
+<pre><code class="hljs html">div::after &#123;
+	content: &#x27;&#x27;;
+	font-family: &#x27;icomoon&#x27;;
+&#125;</code></pre>
+
+<p>稍微解释一下这个代码，在 div 后面加上<strong>两个英文中的冒号</strong>，并且跟上单词 <strong>after 或者 before</strong>，就是所谓的<strong>伪类选择器</strong>，在我目前的认知范围内，<strong>伪类选择器就是用 css 代码来给 html 页面添加额外的元素</strong>，我们也确实可以在网页中看到添加的小三角，如下图。但这段代码是写在 css 而非 html 文件中，一定程度上可以简化 html 文件的代码。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919003524108.png" srcset="/img/loading.gif" alt="image-20210919003524108"></p>
+<p>到这里，我们就顺利地在 html 页面中添加了字体图标，值得一提的是，伪类选择器中 <strong>content 属性</strong>的值，除了可以是字体图标对应的<strong>方块字符</strong>，还可以是<strong>字体图标下方的编号</strong>。</p>
+<p>以下图为例，爱心图标的编号是 e9da，因此 content 属性的值也可以是 <code>\e9da</code> ，通过编号来调用字体图标的时候，需要在编号的最前面加多一个反斜杆 \ 。</p>
+<pre><code class="hljs html">div::after &#123;
+	content: &#x27;\e9da&#x27;;
+	font-family: &#x27;icomoon&#x27;;
+&#125;</code></pre>
+
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919003833891.png" srcset="/img/loading.gif" alt="image-20210919003833891"></p>
+<p>引入字体图标之后，字体图标默认位于输入框的左上角，为了将字体图标移动到右侧居中的位置，这里还需要用到另外的知识——<strong>定位</strong>，包含<strong>相对定位</strong>和<strong>绝对定位</strong>。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919003524108.png" srcset="/img/loading.gif" alt="image-20210919003524108"></p>
+<p>关于定位的知识，这里暂时就不过多展开了，可以记住一个口诀「<strong>子绝父相</strong>」，即子元素设置绝对定位，父元素设置相对定位，就可以达到<strong>自由移动下拉小三角位置</strong>的目的。</p>
+<p>分别给 div 和伪元素选择器 div::after 添加另外的样式：</p>
+<pre><code class="hljs html">div &#123;
+	position: relative;
+&#125;</code></pre>
+
+<pre><code class="hljs html">div::after &#123;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+&#125;</code></pre>
+
+<p>这里的 top 和 right 属性的值，并不是唯一的，需要根据实际情况，配合浏览器的开发者工具进行调整，最终得到看起来比较舒适的值（主要就是调整到小三角可以位于输入框水平居中的位置），最终效果如下。</p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/09/19/image20210919001244754.png" srcset="/img/loading.gif" alt="image-20210919001244754"></p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                      <a class="hover-with-bg" href="/tags/icon/">icon</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/09/20/2021-9-20-apps/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">近期值得关注的 App</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/09/11/2021-9-11-bloggithub/">
+                        <span class="hidden-mobile">给个人博客首页添加 GitHub 图标</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
+          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
+          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2021/09/19/2021-9-19-frontend_icon/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "在网页中使用 icon 字体图标 | 前端开发&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>
