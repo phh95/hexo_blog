@@ -403,6 +403,14 @@ page404:
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 'Page not found'  # 打字机内容
 
+# Verification (站长验证)
+# --------------------------------------
+
+site_verification:
+  # - name: google-site-verification
+  #   content: xxxxxx
+  - name: baidu-site-verification
+    content: code-PdLAgt4JZr
 
 #---------------------------
 # 友链页
