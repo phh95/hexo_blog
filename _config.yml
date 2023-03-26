@@ -110,10 +110,10 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+- type: git
   repo: git@106.55.41.29:/home/git/hexo.git
   branch: master
-  type: baidu_url_submitter
+- type: baidu_url_submitter
 
 #订阅RSS
 feed:
