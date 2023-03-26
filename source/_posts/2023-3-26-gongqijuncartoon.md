@@ -1,7 +1,8 @@
 ---
 title: 宫崎骏动画合集【效率工具指南】    
 date: 2023-3-26 22:38:00               
-tags: [宫崎骏,电影]                                                                                     
+tags: [宫崎骏,电影]  
+sticky: 100                                                                                       
 ---
 
 ![宫崎骏动画合集](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798417359508.jpg)
