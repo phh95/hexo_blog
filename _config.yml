@@ -95,6 +95,13 @@ include:
 exclude:
 ignore:
 
+#百度sitemap自动提交
+baidu_url_submit:
+  count: 10
+  host: https://www.penghh.fun
+  token: a6P7UNsj7a41TlzE 
+  path: baidu_urls.txt
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -106,6 +113,7 @@ deploy:
   type: git
   repo: git@106.55.41.29:/home/git/hexo.git
   branch: master
+  type: baidu_url_submitter
 
 #订阅RSS
 feed:
