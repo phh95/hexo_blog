@@ -431,6 +431,13 @@ links:
     }
 
     - {
+      title: '东评西就',
+      intro: '小饿，专注科技互联网、社交媒体运营',
+      link: 'https://dongjunke.cn',
+      image: 'https://pic.yunshusong.cn/upic/20230204122856.jpg'
+    }
+
+    - {
       title: '全网漫游指南',
       intro: '继承《全球概览》的分享精神，让互联网探索重新变得有趣',
       link: 'https://tagly.notion.site/',
