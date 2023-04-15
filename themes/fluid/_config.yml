@@ -424,6 +424,13 @@ links:
     }
 
     - {
+      title: '马草原的个人网站',
+      intro: 'If you want to tame a person , will risk tears',
+      link: 'https://www.mcaoyuan.com',
+      image: 'https://file.mcaoyuan.com/blog/IMG_1477.JPG'
+    }
+
+    - {
       title: '全网漫游指南',
       intro: '继承《全球概览》的分享精神，让互联网探索重新变得有趣',
       link: 'https://tagly.notion.site/',
