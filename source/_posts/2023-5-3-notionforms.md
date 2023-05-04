@@ -155,6 +155,8 @@ NotionForms 表单嵌入 Notion 页面的效果👇👇
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
 ![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
 
 
