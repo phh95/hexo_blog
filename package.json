@@ -25,6 +25,7 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
-    "hexo-tag-aplayer": "^3.0.4"
+    "hexo-tag-aplayer": "^3.0.4",
+    "lxgw-wenkai-lite-webfont": "^1.7.0"
   }
 }
