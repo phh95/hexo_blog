@@ -1,3 +1,5 @@
+@import 'lxgw-wenkai-lite-webfont/style.css';
+
 .banner {
   height: 100%;
   position: relative;
@@ -229,7 +231,7 @@ sup > a::before,
 html,
 body {
   font-size: 16px;
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-family: "LXGW WenKai Lite", "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 html,
 body,
