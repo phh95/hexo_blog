@@ -74,9 +74,9 @@ color:  # 主题颜色配置，不一定能每一处都生效，可能会被局�
   board_color_dark: "#252d38"
 
 font:  # 主题字体配置
-  font_size: 16px                   # 全局字号
-  font_family:                     # 全局字体
-  code_font_size: 85%               # 代码的字号
+  font_size: 18px                     # 全局字号
+  font_family: "LXGW Wenkai Screen"   # 全局字体
+  code_font_size: 85%                 # 代码的字号
 
 custom_js:   # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js，支持列表
 custom_css:   /css/custom.css # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css 同上，支持列表
