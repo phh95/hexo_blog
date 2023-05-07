@@ -1,1 +1,5 @@
 @import 'lxgw-wenkai-lite-webfont/style.css';
+
+body {
+  font-family: "LXGW WenKai Lite"
+}
