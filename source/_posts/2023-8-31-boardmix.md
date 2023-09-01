@@ -1,0 +1,175 @@
+---
+title: 在线思维导图软件boardmix，思维导图一键转PPT【效率工具指南】  
+date: 2023-8-31 23:33:00               
+tags: [剪藏,效率工具,数据备份,小红书]                                                                               
+---
+本文首发于我的微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/qDCaE5-cU2PGtaPl0owGFA)」       
+文/彭宏豪   
+
+
+Hello 各位好，我是小豪。  
+
+平时工作比较忙，等到闲下来的时候就只想「葛优躺」，没什么心思去关注一些新出的软件或者是过去推荐过的软件后续的更新。
+
+
+不过，也想起很久没有写一篇长文来专门介绍一款软件了，甚是羞愧，感觉逐渐丢掉了自己曾「引以为傲」的技能……      
+
+择日不如撞日，今天这篇文章，就来给大家介绍之前推荐过的一款[在线思维导图软件「boardmix」](https://mp.weixin.qq.com/s/02LrInAEn8xBwMaSTz_5eg)近期更新的好用功能：  
+
+* 思维导图一键转 PPT   
+* 思维导图「树状图」布局    
+* 提取图片文本（即 OCR 文字识别）   
+* 提炼内容为思维导图     
+* 签到免费获得 AI 点数    
+* 推客：推荐他人使用 boardmix，你有可能获得佣金   
+
+👇👇[扫描下方二维码，使用 boardmix博思白板，线上办公更高效！](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)      
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/boardmix-you-hui-quan-hai-bao.png)
+
+
+## 思维导图一键转 PPT
+
+> 这是最想和各位分享的一个实用功能。  
+
+做过 PPT 的朋友，想必都有过这样的经历：在定好 PPT 的主题后，就会围绕主题罗列 PPT 的**要点**或**框架**，也可称之为**大纲**，在执行这一步的时候，有人可能会直接在空白的 PPT 页面上罗列要点，有人可能会切换到思维导图软件，在导图软件里基于 PPT 主题拆解得到 PPT 的框架。  
+
+对于后一种情况，在思维导图梳理好 PPT 框架后，过去的做法是把导图的内容搬到 PPT 里，再逐渐细化 PPT 的内容，但现在同样的情况放到 boardmix 里，我们可以把用导图梳理好的 PPT 框架直接转换为 PPT：   
+
+单击选中思维导图的「中心主题」节点，选择工具栏的「**生成 > 生成：演示文稿**」，可以将整一个思维导图自动转换为 PPT。  
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933267953483.jpg)
+
+在执行转换之前，会弹出下图的面板，让我们选择页面主标题：  
+
+* 将思维导图第二层级的节点内容作为 PPT 页面的主标题     
+* 将思维导图第三层级的节点内容作为 PPT 页面的主标题     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933269124233.jpg)
+
+另外，还可以从内置的 12 款主题中，选择一款作为转换后得到的 PPT 所使用的**模板**，这些主题风格包含：
+
+经典、沉稳、学术、自然、工业、文艺、小清新、简约、商务、卡通、扁平、卡通2。     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933271687087.jpg)
+
+思维导图 👉 PPT 效果如下图所示，左侧是转换前的思维导图，右侧是转换后得到的 PPT 文件。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933276591637.jpg)
+
+
+## 思维导图「树状图」布局
+
+boardmix 的思维导图原先只有 3 种布局，如下图所示，我将它们分别称之为：左右布局、上下布局（组织架构图）、单向布局。
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931510470517.jpg)
+
+
+而最近 boardmix 新增了另外 2 种「树状图」的布局方式，选中导图的中心节点，点击「导图主题」，在弹出面板的「布局」中，就能看到新增的 2 种树状图布局，一个是**径直向下的树状图**，一个是**左右分叉的树状图**。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931508268431.jpg)
+
+## 提取图片文本（即 OCR 文字识别） 
+
+> 这也是一个我比较喜欢的功能。  
+
+boardmix博思白板内置了「提取图片文本」的功能，即 OCR，可以一键提取出图片中包含的文本。  
+
+使用方法：  
+
+选中任意一张白板上的图片，点击上方工具栏的第一个选项「AI 助手」，会弹出下图所示的面板，点击最后一项「提取图片文本」，它就会自动识别出选中的图片所包含的文本。   
+
+此外，在写作本文的过程中，我发现 boardmix博思白板又更新了，菜单中新增了**画面修复、智能抠图、识别图片为思维导图、识别图片为流程图** 4 个选项，颗粒度更细了，可满足我们更多样化的需求。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933578788192.jpg)
+
+当我们选择「识别图片为思维导图」时，会弹出下方的面板，供我们选择思维导图的分支结构——向右、左右、向下、上下。    
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933581316639.jpg)
+
+
+## 提炼内容为思维导图
+
+> 这是另外一个我在使用过程中意外发现的功能。  
+
+相比于在线文档或笔记软件，白板一个突出的优势就是它**非常自由**，我们可以随意在白板上的任意位置添加内容。  
+
+假设有下图这么一个小小的使用场景，我用 boardmix 的文本和便签功能，在白板上随手记下了一些和「思维导图」这个主题相关的问题，想基于这些问题制作一个思维导图。   
+
+在这种场景下，boardmix 提供了一种可以**快速制作思维导图**的方式：      
+
+全选所有内容，同样点击工具栏的第一个选项「AI 助手」，选择「**提炼内容为思维导图**」，就能调用 AI 生成一个思维导图。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933584667506.jpg)
+
+
+👇👇 这是使用 AI 功能提炼得到的思维导图，还行吧？   
+
+——简直是 2333！！  
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933588518822.jpg)
+
+
+## 签到免费获得 AI 点数  
+
+之前在一期视频《[什么档次，跟我用一样的思维导图软件](https://mp.weixin.qq.com/s/CJr7OidJsIRdRgew5vXQuw)》中介绍到，boardmix 内置了「AI一键生成思维导图」的功能，输入思维导图的主题，瞬间会生成一个完整的思维导图。   
+
+每次使用 AI 生成思维导图时，会消耗一定数量的 AI 点数。每位用户最初都会获得 500 点 AI 点数，用完之后，要想继续使用 AI 功能，就得购买 AI 点数。    
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931502072287.jpg)
+
+除了购买点数，boardmix 近期新增了签到免费得 AI 点数的活动：  
+
+随意打开一个 boardmix 白板文件，在左上角可以看到一个像是「日历」的图标，点击即可打开签到打卡的面板。  
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931498729988.jpg)
+
+签到免费获得 boardmix AI 点数的规则如下：  
+
+前 4 次签到，每次可获得 100 点的 AI 点数，第 5 次签到可获得 400 点 AI 点数，连续签到 7 次，可获得 1000 点的 AI 点数。   
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931504552989.jpg)
+
+
+## boardmix 推客
+
+最后，还想说一个可以通过 boardmix博思白板这款软件「赚点小钱」的事：   
+
+boardmix博思白板上线了一个「邀好友赚佣金」的活动，当有好友或用户通过你分享的链接或二维码注册 boardmix，从注册日起的一年时间里，如果对方购买了 boardmix 年度会员或终身版，你可获得下单金额 20% 的收益。   
+
+boardmix 推客介绍页面：    
+https://boardmix.cn/invitation/     
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16934148623123.jpg)
+  
+还没使用过 boardmix博思白板的朋友，可以扫描下方二维码，或者通过链接 `https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ` 注册 boardmix 账号呀，不管之后买不买购买会员，先谢过各位😂毕业注册了才有机会呀。      
+
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/boardmix-chan-pin-er-wei-ma.png)
+
+
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+
+
+## 订阅我在竹白上创建的 Newsletter   
+
+如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  
+
+[👉在竹白上订阅效率工具指南](https://penghh.zhubai.love/)         
+
+## 欢迎关注     
+
+以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
+
+![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+
+
+
+
+
+
+
