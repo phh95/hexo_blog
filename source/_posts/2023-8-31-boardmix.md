@@ -1,7 +1,7 @@
 ---
 title: 在线思维导图软件boardmix，思维导图一键转PPT【效率工具指南】  
 date: 2023-8-31 23:33:00               
-tags: [剪藏,效率工具,数据备份,小红书]                                                                               
+tags: [PPT,思维导图,在线白板]                                                                               
 ---
 本文首发于我的微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/qDCaE5-cU2PGtaPl0owGFA)」       
 文/彭宏豪   
