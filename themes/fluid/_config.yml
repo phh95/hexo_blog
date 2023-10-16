@@ -452,9 +452,10 @@ links:
     }
 
     - {
-      title: '遍历分形',
-      intro: '不断试错，无限迭代',
-      link: 'https://blog.tagly.cn/',
+      title: 'Ethan.Tzy',
+      intro: '古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志',
+      link: 'https://fe32.top/',
+      image: 'https://bu.dusays.com/2022/05/02/626f92e193879.jpg'
     }
 
 rss: /atom.xml
