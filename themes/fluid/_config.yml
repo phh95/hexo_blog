@@ -424,6 +424,13 @@ links:
     }
 
     - {
+    title: '江湖人称向前兄的 blog',
+    intro: '知行合一 —— "知之真切笃实处即是行,行之明觉精察处即是知"',
+    link: 'http://chengxiangqian.com/',
+    image: 'https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/28/feebed1cfdc1421d97debfee2fcb5342.png'
+    }
+
+    - {
       title: '马草原的个人网站',
       intro: 'If you want to tame a person , will risk tears',
       link: 'https://www.mcaoyuan.com',
