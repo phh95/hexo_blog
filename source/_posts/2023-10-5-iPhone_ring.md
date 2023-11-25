@@ -27,8 +27,7 @@ Hello 各位好，这里是效率工具指南。
 
 播放想设置为铃声的音乐，进入下图左侧的播放界面，点击右下角的「…」，在弹出的菜单，找到「设为铃声」。   
 
-
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/stiiitch20231005110833.jpg)
+![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/25/stiiitch20231005110833.jpg)
 
 点击「设为铃声」后，会进入下图的「剪辑铃声」界面，可从整首歌中截取任意片段作为铃声，时长最长为 30 秒。  
 
