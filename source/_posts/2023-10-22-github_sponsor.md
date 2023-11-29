@@ -13,19 +13,19 @@ Hello 各位好，这里是效率工具指南。
 
 同是天涯沦落人，这个处境和长期做免费内容的人有点像，做事的人觉得自己做的事情有意义，可能时不时会收到他人精神层面的鼓励，但物质上的就没搞头了，没有赞助（GitHub Sponsor），没有赞赏（公众号赞赏），没有广告位可以招租（渠道没落，已经没广子可以接了）。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16974763076536.jpg)
+![](https://img.penghh.fun/2023/10/22/16974763076536.jpg)
 
 做开源项目的开发者，会将代码开源出来，放到 GitHub 上，供人免费围观学习。  
 
 当然，就像你平时玩各种社媒平台，你会给喜欢的内容点赞，在 GitHub 上，也有类似于「赞」一样的设计，只不过这里的赞被称作 Star，如果你觉得某个 GitHub 项目有用，或者是帮到了你，可以点亮仓库右上角的 Star。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16974777503063.jpg)
+![](https://img.penghh.fun/2023/10/22/16974777503063.jpg)
 
 
 一个 GitHub 项目得到的 Star 数量越多，说明它被越多的人认可，具备更高的价值，平台也会考虑把它展示在 **Trending** 列表中，可以近似理解为社媒平台的「**热榜**」，将项目推荐给更多的用户。   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16974782378409.jpg)
+![](https://img.penghh.fun/2023/10/22/16974782378409.jpg)
 
 除了平台的推荐机制，GitHub 还推出了一个直接赞助开发者的功能——**GitHub Sponsor**，即 GitHub 赞助者或 GitHub 赞助商，这个功能旨在帮助开发者获得持续的财务支持和赞助。它允许个人开发者、开源项目组织和社区接受其他用户的赞助，以支持他们的工作和项目。   
 
@@ -40,24 +40,24 @@ Hello 各位好，这里是效率工具指南。
 * 每月赞助 16 美元   
 * 每月赞助 32/64/128/256/512/1024/2048 美元         
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16977240490029.jpg)
+![](https://img.penghh.fun/2023/10/22/16977240490029.jpg)
 
 
 不过，在支付赞助费时，GitHub 的支付方式也很容易让人卡住，它只支持使用 Visa、MasterCard、American Express 国际银行卡进行支付，不支持国内主流的支付方式……    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16974754873439.jpg)
+![](https://img.penghh.fun/2023/10/22/16974754873439.jpg)
 
 
 值得一提的是，在赞助页面，还会显示当前和过去的赞助者的 GitHub 头像，赠人玫瑰，手有余香。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16977290041102.jpg)
+![](https://img.penghh.fun/2023/10/22/16977290041102.jpg)
 
 还有一个小问题，第一次知道 GitHub Sponsor 的朋友，对这个功能不够熟悉，不确定某位开发者是否创建了赞助页面，或是不知如何找到开发者创建的赞助页面。         
 
 GitHub Sponsor 赞助页面入口：点开某位开发者的 GitHub 主页，如果 TA 创建了赞助页面，主页左侧头像下方会多出一个 Sponsor 的按钮，点击即可进入赞助页面。  
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16977308744886.jpg)
+![](https://img.penghh.fun/2023/10/22/16977308744886.jpg)
 
 
 ## 爱发电
@@ -74,7 +74,7 @@ GitHub Sponsor 赞助页面入口：点开某位开发者的 GitHub 主页，如
 https://afdian.net/     
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16979412746477.jpg)
+![](https://img.penghh.fun/2023/10/22/16979412746477.jpg)
 
 ## Buy Me a Coffee  
 
@@ -83,7 +83,7 @@ https://afdian.net/
 注册一个账号，简单填入信息，Buy Me a Coffee 就会给你分配一个专属的页面链接，让支持者给你买一杯咖啡。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16979440410870.jpg)
+![](https://img.penghh.fun/2023/10/22/16979440410870.jpg)
 
 
 在支付赞助的咖啡时，Buy Me a Coffee 提供两种支付方式，一个是银行卡，一个是 link 支付。   
@@ -92,7 +92,7 @@ https://afdian.net/
 
 我试了一下手里的**借记卡**，输入卡号时它会显示银联的标志，后续也会打开中国银联的验证界面，为避免支付后被扣手续费，我就被没有接着往下点付款了，推测应该是支持大陆的借记卡的。如果有用过这个工具的朋友，也欢迎在评论区留言，帮我补全信息～          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16979440033680.jpg)
+![](https://img.penghh.fun/2023/10/22/16979440033680.jpg)
 
 
 ## 其他创作者工具   
@@ -109,7 +109,7 @@ https://afdian.net/
 * 视频号「付费会员专区」权益   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/22/16979483129261.jpg)
+![](https://img.penghh.fun/2023/10/22/16979483129261.jpg)
 👆👆 一位朋友发给我的截图
 
 
@@ -125,13 +125,13 @@ https://afdian.net/
 
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)   
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 

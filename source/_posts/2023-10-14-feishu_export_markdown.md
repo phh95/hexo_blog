@@ -17,7 +17,7 @@ Hello 各位好，这里是效率工具指南。
 
 但今天继续就「**飞书文档导出 Markdown 格式**」这个话题，来介绍另一种更为便捷的方法。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/16972888592961.jpg)
+![](https://img.penghh.fun/2023/10/14/16972888592961.jpg)
 
 
 ## 飞书文档导出 Markdown 格式   
@@ -29,7 +29,7 @@ Hello 各位好，这里是效率工具指南。
 
 为知笔记官网还在，只不过软件好久不更新了，官网出了 bug 也没人修复，官网首页右上角的「登录」或「下载」按钮根本没法用，点了之后打开的页面提示 404。       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/16972909575097.jpg)
+![](https://img.penghh.fun/2023/10/14/16972909575097.jpg)
 
 
 今天介绍的从飞书文档导出 Markdown 文件的方法，需要先在电脑上安装为知笔记的客户端。  
@@ -40,7 +40,7 @@ https://pan.quark.cn/s/16e6da593ec5
 
 扫码下方👇👇二维码，也可下载为知笔记安装包   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/qrcodea--a1-5.jpg)
+![](https://img.penghh.fun/2023/10/14/qrcodea--a1-5.jpg)
 
 下载安装为知笔记后，之前没用过为知笔记的朋友，可以先注册一个为知笔记的账号，支持使用 QQ 邮箱注册。  
 
@@ -48,21 +48,21 @@ https://pan.quark.cn/s/16e6da593ec5
 
 接着去到任意一个飞书文档中，全选文档内容，右击复制整个文档，将文档粘贴到我刚在为知笔记创建的 Markdown 笔记中。          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/xin-jianmarkdown.png)
+![](https://img.penghh.fun/2023/10/14/xin-jianmarkdown.png)
 
 
 粘贴过来之后，找到为知笔记的「导出」按钮，这里需要注意的是，Windows 版为知笔记的导出按钮在笔记的右上角，而 macOS 版的导出在软件左上角的「文件」菜单中。   
 
 下图是在苹果电脑上的截图，点击「文档 > 保存为 Markdown」，将存在为知笔记云端的 Markdown 文件保存到电脑本地。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/lc.png)
+![](https://img.penghh.fun/2023/10/14/lc.png)
 
 
 从为知笔记导出 Markdown 文件的同时，它会生成一个和 Markdown 文件同名的文件夹📁，里面存放了 Markdown 文件用到的图片，即为知笔记将飞书文档中添加的图片也一并打包下载了，这一点非常棒！！    
 
 这时我们可以用一些本地的 Markdown 编辑器，例如 Typora、苹果上的 MWeb、Ulysess 等，打开导出的 Markdown 文件，文件中的图片也能正常显示，不会丢失～    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/14/bd.png)
+![](https://img.penghh.fun/2023/10/14/bd.png)
 
 
 稍微有一点小遗憾的是，从为知笔记导出的 Markdown 文件，会丢掉飞书文档的「标题」、「文本加粗」的样式，不过这都算是小问题，不是强迫症基本可以忽略，最重要的是，导出的文档排版正常、图片都还在，且操作简单易上手，能做到这样，我就非常满意了，不知你觉得呢？   
@@ -77,13 +77,13 @@ https://pan.quark.cn/s/16e6da593ec5
 
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)   
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
