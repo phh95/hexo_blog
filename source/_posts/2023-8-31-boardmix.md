@@ -25,7 +25,7 @@ Hello 各位好，我是小豪。
 
 👇👇[扫描下方二维码，使用 boardmix博思白板，线上办公更高效！](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/boardmix-you-hui-quan-hai-bao.png)
+![](https://img.penghh.fun/2023/08/31/boardmix-you-hui-quan-hai-bao.png)
 
 
 ## 思维导图一键转 PPT
@@ -38,36 +38,36 @@ Hello 各位好，我是小豪。
 
 单击选中思维导图的「中心主题」节点，选择工具栏的「**生成 > 生成：演示文稿**」，可以将整一个思维导图自动转换为 PPT。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933267953483.jpg)
+![](https://img.penghh.fun/2023/08/31/16933267953483.jpg)
 
 在执行转换之前，会弹出下图的面板，让我们选择页面主标题：  
 
 * 将思维导图第二层级的节点内容作为 PPT 页面的主标题     
 * 将思维导图第三层级的节点内容作为 PPT 页面的主标题     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933269124233.jpg)
+![](https://img.penghh.fun/2023/08/31/16933269124233.jpg)
 
 另外，还可以从内置的 12 款主题中，选择一款作为转换后得到的 PPT 所使用的**模板**，这些主题风格包含：
 
 经典、沉稳、学术、自然、工业、文艺、小清新、简约、商务、卡通、扁平、卡通2。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933271687087.jpg)
+![](https://img.penghh.fun/2023/08/31/16933271687087.jpg)
 
 思维导图 👉 PPT 效果如下图所示，左侧是转换前的思维导图，右侧是转换后得到的 PPT 文件。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933276591637.jpg)
+![](https://img.penghh.fun/2023/08/31/16933276591637.jpg)
 
 
 ## 思维导图「树状图」布局
 
 boardmix 的思维导图原先只有 3 种布局，如下图所示，我将它们分别称之为：左右布局、上下布局（组织架构图）、单向布局。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931510470517.jpg)
+![](https://img.penghh.fun/2023/08/31/16931510470517.jpg)
 
 
 而最近 boardmix 新增了另外 2 种「树状图」的布局方式，选中导图的中心节点，点击「导图主题」，在弹出面板的「布局」中，就能看到新增的 2 种树状图布局，一个是**径直向下的树状图**，一个是**左右分叉的树状图**。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931508268431.jpg)
+![](https://img.penghh.fun/2023/08/31/16931508268431.jpg)
 
 ## 提取图片文本（即 OCR 文字识别） 
 
@@ -81,11 +81,11 @@ boardmix博思白板内置了「提取图片文本」的功能，即 OCR，可�
 
 此外，在写作本文的过程中，我发现 boardmix博思白板又更新了，菜单中新增了**画面修复、智能抠图、识别图片为思维导图、识别图片为流程图** 4 个选项，颗粒度更细了，可满足我们更多样化的需求。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933578788192.jpg)
+![](https://img.penghh.fun/2023/08/31/16933578788192.jpg)
 
 当我们选择「识别图片为思维导图」时，会弹出下方的面板，供我们选择思维导图的分支结构——向右、左右、向下、上下。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933581316639.jpg)
+![](https://img.penghh.fun/2023/08/31/16933581316639.jpg)
 
 
 ## 提炼内容为思维导图
@@ -100,14 +100,14 @@ boardmix博思白板内置了「提取图片文本」的功能，即 OCR，可�
 
 全选所有内容，同样点击工具栏的第一个选项「AI 助手」，选择「**提炼内容为思维导图**」，就能调用 AI 生成一个思维导图。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933584667506.jpg)
+![](https://img.penghh.fun/2023/08/31/16933584667506.jpg)
 
 
 👇👇 这是使用 AI 功能提炼得到的思维导图，还行吧？   
 
 ——简直是 2333！！  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16933588518822.jpg)
+![](https://img.penghh.fun/2023/08/31/16933588518822.jpg)
 
 
 ## 签到免费获得 AI 点数  
@@ -116,19 +116,19 @@ boardmix博思白板内置了「提取图片文本」的功能，即 OCR，可�
 
 每次使用 AI 生成思维导图时，会消耗一定数量的 AI 点数。每位用户最初都会获得 500 点 AI 点数，用完之后，要想继续使用 AI 功能，就得购买 AI 点数。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931502072287.jpg)
+![](https://img.penghh.fun/2023/08/31/16931502072287.jpg)
 
 除了购买点数，boardmix 近期新增了签到免费得 AI 点数的活动：  
 
 随意打开一个 boardmix 白板文件，在左上角可以看到一个像是「日历」的图标，点击即可打开签到打卡的面板。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931498729988.jpg)
+![](https://img.penghh.fun/2023/08/31/16931498729988.jpg)
 
 签到免费获得 boardmix AI 点数的规则如下：  
 
 前 4 次签到，每次可获得 100 点的 AI 点数，第 5 次签到可获得 400 点 AI 点数，连续签到 7 次，可获得 1000 点的 AI 点数。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16931504552989.jpg)
+![](https://img.penghh.fun/2023/08/31/16931504552989.jpg)
 
 
 ## boardmix 推客
@@ -140,20 +140,21 @@ boardmix博思白板上线了一个「邀好友赚佣金」的活动，当有好
 boardmix 推客介绍页面：    
 https://boardmix.cn/invitation/     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/16934148623123.jpg)
+![](https://img.penghh.fun/2023/08/31/16934148623123.jpg)
   
 还没使用过 boardmix博思白板的朋友，可以扫描下方二维码，或者通过链接 `https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ` 注册 boardmix 账号呀，不管之后买不买购买会员，先谢过各位😂毕业注册了才有机会呀。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/31/boardmix-chan-pin-er-wei-ma.png)
+![](https://img.penghh.fun/2023/08/31/boardmix-chan-pin-er-wei-ma.png)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
-
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -165,7 +166,7 @@ https://boardmix.cn/invitation/
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

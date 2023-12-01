@@ -45,7 +45,7 @@ tags: [公众号,墨问便签,写作]
 
 墨问便签 slogan：**让创作成为一种生活**。    
 
-![IMG_6297](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/27/img6297.jpg)
+![IMG_6297](https://img.penghh.fun/2023/05/27/img6297.jpg)
 
 
 这款产品目前是小程序的形态，因此它和你用过的其他小程序存在着共性： 
@@ -59,7 +59,7 @@ tags: [公众号,墨问便签,写作]
 * **不会压缩上传的图片**，这点比朋友圈友好一些，喜欢摄影的朋友，可以试着把图片上传到墨问便签里，保留一个不被压缩的版本。      
 * **支持订阅（关注）**，点击头像可以进入「个人主页」，右侧会有一个「订阅」按钮，订阅后每天早上 8 点，可以收到更新提醒。   
 
-![IMG_6298](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/27/img6298.PNG)
+![IMG_6298](https://img.penghh.fun/2023/05/27/img6298.PNG)
 
 
 在墨问便签中写好的内容，是支持多次编辑和修改的，当你**把写好的便签嵌入到公众号文章**里，即便文章已经推送出去，里面嵌入的便签还是「活」的——你在便签里更新了内容，读者从公众号打开的便签，也是会同步更新的，这样就实现了标题所说的，写一篇可以多次修改的公众号文章。   
@@ -81,9 +81,11 @@ tags: [公众号,墨问便签,写作]
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -96,7 +98,7 @@ tags: [公众号,墨问便签,写作]
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

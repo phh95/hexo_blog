@@ -22,12 +22,12 @@ Hello 各位周末好，我是小豪。
 
 忘了具体是从哪个版本开始，苹果在 macOS 系统上加了快速备忘录的功能，当我们把鼠标指针移动到电脑桌面右下的角落，角落会弹出一个小窗口。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779158600821tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779158600821tuya.jpg)
 
 
 点击这个小窗口，就会快速启动苹果自带的「备忘录」App，方便我们随时记录灵感。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779156860184.jpg)
+![](https://img.penghh.fun/2023/03/05/16779156860184.jpg)
 
 
 不过这个功能仅限在苹果设备上使用，如果你手里只有 Windows 电脑，那我更推荐你使用滴答清单的「便签」功能。
@@ -36,11 +36,11 @@ Hello 各位周末好，我是小豪。
 
 滴答清单的便签外观，是不是更接近于我们用过的便利贴呢？        
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779163982413.jpg)
+![](https://img.penghh.fun/2023/03/05/16779163982413.jpg)
 
 添加便签的快捷键，可以在设置面板「快捷键 >> 全局操作」中查看👀，我已经忘了自己是否修改过这个快捷键了……      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779829670330tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779829670330tuya.jpg)
 
 
 
@@ -48,13 +48,13 @@ Hello 各位周末好，我是小豪。
 
 便利贴是做完一张，撕掉一张，在这里是做完一件，叉❌掉一个（小窗口）。          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779169811494tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779169811494tuya.jpg)
 
 
 
 在桌面上添加的便签，默认情况下会被收纳到滴答清单的「收集箱」中，因此即便你把桌面上的便签关闭了，你之前在便签中输入的内容，也是会保留在滴答清单中的，无需担心记录丢失～          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779175479284tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779175479284tuya.jpg)
 
 
 
@@ -62,16 +62,16 @@ Hello 各位周末好，我是小豪。
 
 右击任意一个任务，选择「打开便签」，选中的任务就会以便签的样式贴到桌面。          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779807832956tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779807832956tuya.jpg)
 
 
 当你把鼠标指针移动到任意一张便签的左下角时，它会显示「日期与提醒」，点击文字，可以给便签添加截止日期或提醒，这个操作与滴答清单中添加任务时是一致的。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779177661786.jpg)
+![](https://img.penghh.fun/2023/03/05/16779177661786.jpg)
 
 给便签添加日期时，还有一个**小细节**，如果我们添加的日期是今天，滴答清单还会把当前便签自动归类到「时间管理四象限」中的「不重要但紧急」。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779148086456.jpg)
+![](https://img.penghh.fun/2023/03/05/16779148086456.jpg)
 
 
 ## 看板/时间线视图   
@@ -83,7 +83,7 @@ Hello 各位周末好，我是小豪。
 
 通常情况下，我们创建的清单都是任务清单。        
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779837143309.jpg)
+![](https://img.penghh.fun/2023/03/05/16779837143309.jpg)
 
 在任务清单中添加的每一项任务，默认会自上往下排列，新添加的任务会排在旧任务的上方，这种默认的呈现方式被称作「列表视图」。    
 
@@ -92,7 +92,7 @@ Hello 各位周末好，我是小豪。
 * 看板视图   
 * 时间线视图     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779833951275tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779833951275tuya.jpg)
 
 
 滴答清单的**看板视图**如下，相信用过其他**看板工具/项目管理工具**的朋友，对这个视图并不陌生。   
@@ -100,7 +100,7 @@ Hello 各位周末好，我是小豪。
 任务清单中未分类的任务，都会放在「未分组」下面，点击旁边的「新分组」，给分组命名，之后就可以把未分组中的任务拖拽到相应的分组下面，更好地管理或分类所有任务。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779858638996tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779858638996tuya.jpg)
 
 
 另外，任务清单还能切换到「**时间线视图**」，如下图所示，这种视图更专业的说法应该是叫「甘特图」。            
@@ -109,7 +109,7 @@ Hello 各位周末好，我是小豪。
 
 这里还有一个小细节，将鼠标指针放到任务日期和主题中间的分隔线上方，可以设置任务的**进度**，同时它会在时间线的任务块右侧，以**饼状图**可视化呈现进度的百分比。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779864919486tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779864919486tuya.jpg)
 
 
 ## 专注   
@@ -119,7 +119,7 @@ Hello 各位周末好，我是小豪。
 在电脑上使用这一功能，需要先打开设置面板，在「功能 >> 专注」中启用番茄计时。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779872209976tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779872209976tuya.jpg)
 
 
 启用之后，滴答清单左侧栏会新增一个「专注」的按钮🔘，专注功能提供了番茄钟应用常见的 2 种模式：   
@@ -127,12 +127,12 @@ Hello 各位周末好，我是小豪。
 * 番茄专注（倒计时 25 分钟）          
 * 正计时
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779872358702tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779872358702tuya.jpg)
 
 
 在使用专注功能的同时，我们还可以点击右上角的**小喇叭**，给专注加首 BGM，这些 BGM 更准确的说法应该是「**白噪音**」，模拟自然或现实环境中可以听到的各种声音，例如炉火、炸薯条、车流、咖啡馆、晨间、夏日、深海等。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779833262346tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779833262346tuya.jpg)
 
 
 关于白噪音，ChatGPT 给出的解释如下：    
@@ -156,7 +156,7 @@ Hello 各位周末好，我是小豪。
 从中选择一个，选中的日期就会被设置为任务的日期或截止时间。     
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779813535914tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779813535914tuya.jpg)
 
 
 另外，在编辑任务详情时，我们还可以给任务快速**添加标签**：    
@@ -164,12 +164,21 @@ Hello 各位周末好，我是小豪。
 按下井号 #，会弹出一个浮窗，上面列有你之前创建过的所有标签。     
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779822175780tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779822175780tuya.jpg)
 
 
 如果想创建一个新的标签，滴答清单也是支持的，在井号后面直接输入标签名，就能创建一个新的标签。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/05/16779822786376tuya.jpg)
+![](https://img.penghh.fun/2023/03/05/16779822786376tuya.jpg)
+
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -183,7 +192,7 @@ Hello 各位周末好，我是小豪。
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
 
 
 

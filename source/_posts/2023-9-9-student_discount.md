@@ -27,7 +27,7 @@ Hello 各位好，这里是效率工具指南。
 * 购买 MacBook Air(M2 款)，MacBook Pro(M2 款，13寸/14寸/16寸)，iMac 都会获赠一副 AirPods 三代耳机     
 * 购买 Mac mini 获赠一副 AirPods 二代耳机，另外购买 Apple Care+ 享受 8 折优惠。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-4.png)
+![](https://img.penghh.fun/2023/09/09/image-4.png)
 
 
 ## 02 [boardmix博思白板](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)      
@@ -47,9 +47,9 @@ boardmix博思白板，一款基于云端的在线白板软件，可看成是**�
 
 [戳这里，享boardmix博思白板开学季优惠，买一增一](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/boardmix-chan-pin-er-wei-ma.png)
+![](https://img.penghh.fun/2023/09/09/boardmix-chan-pin-er-wei-ma.png)
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/16941891949802.jpg)
+![](https://img.penghh.fun/2023/09/09/16941891949802.jpg)
 
 
 ## 03 微软开学季教育优惠
@@ -61,7 +61,7 @@ boardmix博思白板，一款基于云端的在线白板软件，可看成是**�
 我自己没买过微软的 Surface 电脑，质量这个不好说，有人说好，有人说不好，有买过的人可以在文章底部留言，说一下入手后的使用体验～       
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-5.png)
+![](https://img.penghh.fun/2023/09/09/image-5.png)
 
 
 ## 04 Setapp
@@ -70,7 +70,7 @@ Setapp 是乌克兰软件公司 MacPaw 于 2017 年发布的基于订阅的 macO
 
 对于学生和老师群体，Setapp 提供了 50% 的价格优惠，凭借 edu 或教育机构域名为后缀的邮箱，可按 59.88美元/年的价格订阅 Setapp。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-6.png)
+![](https://img.penghh.fun/2023/09/09/image-6.png)
 
 
 ## 05 Eagle
@@ -79,7 +79,7 @@ Eagle，一款许多设计师都在用的设计素材管理工具，可通过标
 
 Eagle 是一个买断制的软件，一次购买，终身使用，原价为 199 元，针对在校学生及在职教师提供 7 折的优惠，价格变为 139 元，有需要的朋友可以前往 Eagle 官网购买~   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/jnigvekpxnincptr.png)
+![](https://img.penghh.fun/2023/09/09/jnigvekpxnincptr.png)
 
 
 ## 06 Apple Music
@@ -92,7 +92,7 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 
 > 小 Tips：如果你已经是社会人或打工人了，也想以 5 元/月的价格入手 Apple Music，可以去某宝找人帮忙验证。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-7.png)
+![](https://img.penghh.fun/2023/09/09/image-7.png)
 
 ## 07 Spotify
 
@@ -100,7 +100,7 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 
 学生版的价格虽然接近于个人版的一半，但换算过来，价格还是比 Apple Music 高出很多，如果你身边有比较多人使用 Spotify，更建议拼团使用 Spotify 家庭版，均摊下来每个人的费用更低，大约是 100 块钱出头一年。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-8.png)
+![](https://img.penghh.fun/2023/09/09/image-8.png)
 
 
 ## 08 滴答清单
@@ -114,7 +114,7 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 值得一提的是，在苹果设备上订阅滴答清单高级会员会被苹果抽成，因此对于苹果用户，更建议通过滴答清单网页版订阅会员。   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-9.png)
+![](https://img.penghh.fun/2023/09/09/image-9.png)
 
 
 ## 09 海底捞学生优惠
@@ -131,7 +131,7 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 需要注意的是，新生同学因学信网数据延迟，在入学 3 个月后才可进行学生身份认证，如果在认证时遇到问题，可咨询支付宝的客服。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/09/image-10.png)
+![](https://img.penghh.fun/2023/09/09/image-10.png)
 
 
 
@@ -142,9 +142,11 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -157,4 +159,4 @@ Apple Music 采用按月订制的方式，每月 10 元，但如果你是学生�
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   

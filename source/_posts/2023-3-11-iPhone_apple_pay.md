@@ -11,7 +11,7 @@ Hello 各位好，我是小豪。
 
 这周有个同事用的 iPhone 手机，不慎被锁定🔒了，在尝试解锁时，输入太多次错误的锁屏密码，导致最后屏幕显示「iPhone 已停用」，不得不抹除手机的数据，将其还原为未设置锁屏密码的状态。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/16785146676993.jpg)
+![](https://img.penghh.fun/2023/03/11/16785146676993.jpg)
 
 
 看到这你可能会纳闷，手机天天用，好端端地，又不是失忆了，怎么会忘了手机的锁屏密码？   
@@ -24,12 +24,12 @@ Hello 各位好，我是小豪。
 
 此时你如果不冷静下来回忆一下，之前是否有设置过其他的密码，就是直愣愣地输入 N 次锁屏密码，那你的手机就会被锁定，而且可能还会引发一系列问题：上班迟到、约会迟到、航班延误、无法购买东西、没法联系别人……       
 
-![IMG_5055](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/img5055.PNG)
+![IMG_5055](https://img.penghh.fun/2023/03/11/img5055.PNG)
 
 
 不止是我的同事遇到这个问题，我在网上看到有网友也分享了类似的遭遇……   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/16785147247280.jpg)
+![](https://img.penghh.fun/2023/03/11/16785147247280.jpg)
 
 
 遇到这种问题，越发地感觉到 Plan B 的重要性：   
@@ -74,6 +74,14 @@ Hello 各位好，我是小豪。
 
 [如果你忘记了 iPhone 密码](https://support.apple.com/zh-cn/HT204306)，https://support.apple.com/zh-cn/HT204306       
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
+
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -86,4 +94,4 @@ Hello 各位好，我是小豪。
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      

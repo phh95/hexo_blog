@@ -22,7 +22,7 @@ Keynote具备强大的文字、段落、对象格式设置功能，可以方便�
 
 在演示幻灯片时，Keynote支持画笔标注、激光笔提示等，这些功能可以让演示更加生动有趣。生成的演示文稿还可以另存为PDF格式，方便邮件发送和打印。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949433583888.jpg)
+![](https://img.penghh.fun/2023/09/17/16949433583888.jpg)
 
 
 需要注意的是，虽然Keynote是苹果独家推出的软件，但这不意味着它只能在苹果设备上使用，如iPhone、iPad和Macbook，它也推出了网页版，使用Windows设备的朋友，也可以在浏览器打开iCloud使用简易版的Keynote。   
@@ -40,7 +40,7 @@ boardmix的PPT编辑界面简洁直观，使用者可以轻松地在画布上插
 
 [点击链接，使用boardmix博思白板在线制作PPT](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949418523745.jpg)
+![](https://img.penghh.fun/2023/09/17/16949418523745.jpg)
 
 
 另外，boardmix支持在演示中嵌入视频，并提供倒计时(计数器)、注释等工具来辅助演示。演示文稿可以实时共享进行协作，也可以发布链接进行在线演示。
@@ -51,7 +51,7 @@ boardmix的PPT编辑界面简洁直观，使用者可以轻松地在画布上插
 
 在浏览器打开[boardmix首页](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)，点击左侧的「在线使用」，进入boardmix工作台。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949420530530.jpg)
+![](https://img.penghh.fun/2023/09/17/16949420530530.jpg)
   
 下图是打开的boardmix工作台，点击「演示文稿」，切换到制作PPT的模式，下方有3个选项——
 
@@ -59,18 +59,18 @@ boardmix的PPT编辑界面简洁直观，使用者可以轻松地在画布上插
 - AI一键生成演示文稿：使用AI功能，输入PPT主题，快速生成一份PPT     
 - 导入文件转换为演示文稿：支持导入Markdown文件，转换为PPT  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949418066063.jpg)
+![](https://img.penghh.fun/2023/09/17/16949418066063.jpg)
 
 如果选择了第一个选项「新建空白演示文稿」，boardmix会创建一个下图的白板，同时打开白板的演示文稿功能，可以从最左侧的面板选择模板，快速创建PPT。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949428337904.jpg)
+![](https://img.penghh.fun/2023/09/17/16949428337904.jpg)
 
 
 另外一个实用的功能，则是使用boardmix内置的AI功能自动生成一份PPT：  
 
 点击boardmix白板左上角工具栏的「生成演示文稿」，打开AI生成演示文稿的面板，输入任意PPT主题，AI会依据我们输入的主题，快速生成一份PPT。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949430394671.jpg)
+![](https://img.penghh.fun/2023/09/17/16949430394671.jpg)
 
 ## Prezi
 
@@ -84,7 +84,7 @@ Prezi支持在线协作编辑，团队成员可以同时编辑作品，生成的
 
 此外，Prezi与PowerPoint完全兼容，支持两者之间无缝转换。它还提供了Presenter模式，可以更加便捷地进行演示。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949433086899.jpg)
+![](https://img.penghh.fun/2023/09/17/16949433086899.jpg)
 
 
 
@@ -98,7 +98,7 @@ Prezi支持在线协作编辑，团队成员可以同时编辑作品，生成的
 
 腾讯文档PPT也方便内容的共享与协作。用户可以发布和共享演示链接，方便他人在线浏览。它跨平台支持，可以在网页、iOS、Android等不同设备上访问和编辑。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/17/16949436983979.jpg)
+![](https://img.penghh.fun/2023/09/17/16949436983979.jpg)
 
 
 ## Gamma
@@ -116,9 +116,11 @@ Gamma是一款基于网页的在线演示文稿工具，与其他PPT工具最大
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -131,6 +133,6 @@ Gamma是一款基于网页的在线演示文稿工具，与其他PPT工具最大
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 

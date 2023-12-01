@@ -15,7 +15,7 @@ Hello 各位好，我是小豪。
 
 从网上看到的评论，有人说这是印象推出的一种新的加密格式，类似于网易云音乐耍流氓推出的 ncm 音乐格式，**增加了用户从印象笔记迁移到其他笔记软件（例如微软的 OneNote）的成本**，导致你的印象笔记只能被迫继续留在印象笔记中。        
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/28/16589382346303.jpg)
+![](https://img.penghh.fun/2022/07/28/16589382346303.jpg)
 
 这种耍流氓的行为，简直和之前一篇文章《[不吐不快，国内互联网产品畸形的设计](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649920287&idx=1&sn=d6ebda6f99519204cb9e01411884fe8b&chksm=83a89732b4df1e24e834a73ef328d8cf7f15741f1e413cd3e54a6fb4629974e849ab9c5384c9&token=1775818589&lang=zh_CN#rd)》里提到的「产品设计乱象」一模一样，感觉国内很多公司好的东西不学，尽学那些下三滥的招数，都烂到一处。    
 
@@ -29,7 +29,7 @@ Hello 各位好，我是小豪。
 
 我在自己的公众号「效率工具指南」后台准备好了 macOS 和 Windows 两个系统旧版的软件包，有需要的朋友，可以点击下方的卡片，在后台回复「**印象**」两个字，就能获取下载链接啦。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
 
 
 ## 将印象笔记迁移到 OneNote  
@@ -42,15 +42,15 @@ Hello 各位好，我是小豪。
 
 而如果你想把印象笔记迁移到微软的笔记软件 OneNote，倒是有一个比较方法的方法：使用微软官方提供的迁移工具 **OneNote Importer**。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/28/16589407039961.jpg)
+![](https://img.penghh.fun/2022/07/28/16589407039961.jpg)
 
 这个迁移工具同时支持 Windows 和 macOS 系统，从网站下载之后安装，应用程序列表会多出一个软件 OneNote Importer，打开之后按照提示，将 enex 导入 OneNote，稍等一小会，就能在 OneNote 中看到导入的笔记。   
 
-![iShot_2022-07-28_00.53.42](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/28/ishot20220728005342.png)
+![iShot_2022-07-28_00.53.42](https://img.penghh.fun/2022/07/28/ishot20220728005342.png)
 
 下面是 enex 格式的印象笔记文件导入 OneNote 的效果，供参考：   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/28/16589409493081.jpg)
+![](https://img.penghh.fun/2022/07/28/16589409493081.jpg)
 
 
 需要说明的是，微软 OneNote 提供的这个导入工具，按照官网上展示的信息，应该是今年 9 月 1 日起就无法下载了。  
@@ -59,11 +59,19 @@ Hello 各位好，我是小豪。
 
 
 印象笔记导入 OneNote 工具 OneNote Importer 下载地址：    
-https://www.onenote.com/import-evernote-to-onenote     
+https://www.onenote.com/import-evernote-to-onenote   
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       

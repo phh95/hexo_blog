@@ -18,7 +18,7 @@ Hello 各位好，我是小豪。
 
 对比了导出前后的文件，发现导出的部分 Markdown 文件存在**文本丢失**的问题，这个问题会出现在某一行文本带有**粗体**样式的时候，导出的 Markdown 只保留了粗体样式中的文本。          
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654635347301.jpg)
+![](https://img.penghh.fun/2022/10/11/16654635347301.jpg)
 
 不过我发现，**文本丢失的问题，目前只出现在创建时间比较早的文档上**，我猜测是在幕布推出 Markdown 功能之前创建的文档，导出时所在的行如果带有粗体样式，就会发生内容丢失，而如果是之后创建的文档，就不会出现这个问题。          
 
@@ -29,7 +29,7 @@ Hello 各位好，我是小豪。
 
 导出的 Markdown 文件会生成一个压缩包，里面带有原文件中附带的图片，因此使用 MWeb 打开的 Markdown 文件(下图右侧)，图片也能正常显示，但有个小小的不足——幕布中插入的 gif 动画会变成一张静态的 jpg 图片。             
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654657992107.jpg)
+![](https://img.penghh.fun/2022/10/11/16654657992107.jpg)
 
 总体而言，我对这个导出工具还是比较满意的，虽然多少存在一些问题，但能把我放在幕布中的大部分内容导出，我就很满意了。    
 
@@ -41,7 +41,7 @@ Hello 各位好，我是小豪。
 
 有意思的是，我还留意到了这个插件名称下方的域名 `xmind.app`，用过国内另外一款思维导图软件 XMind 的朋友，想必对这个域名并不陌生。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654667162953.jpg)
+![](https://img.penghh.fun/2022/10/11/16654667162953.jpg)
 
 浏览器插件「幕布导出器 - Mubu Dumper」安装地址：   
 https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E5%99%A8-mubu-dumper/nhpebeoohnmbgeigmojaebjfliekikkb/related 
@@ -49,7 +49,7 @@ https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E
 
 安装插件后，在浏览器打开网页版的幕布，点击浏览器右上角的插件图标，在弹出的面板，可以选择导出 所有文件、单个文件夹或是单个文件。       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654678724168.jpg)
+![](https://img.penghh.fun/2022/10/11/16654678724168.jpg)
 
 勾选☑️ 文件之后，点击下方的「导出」按钮，在弹出的二级菜单，可以选择导出的文件格式：  
 
@@ -57,7 +57,7 @@ https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E
 
 这里之所以提供了 Markdown 格式，不确定是不是只提供 xmind 格式的话，会让人看起来是在「明目张胆」地撬幕布的墙角，所以出于体面一些的考虑，这里也提供了更通用的 Markdown 格式。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654683129332.jpg)
+![](https://img.penghh.fun/2022/10/11/16654683129332.jpg)
 
 不过，撬别人墙角，在国内很多产品都可以看到，不独有 XMind 一家：   
 
@@ -69,7 +69,7 @@ https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E
 
 绝大多数用户都不会在意这些事情，因为这些下三滥的操作多了，原本不正确的事情也会变成是理所当然。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654689727150.jpg)
+![](https://img.penghh.fun/2022/10/11/16654689727150.jpg)
 
 
 看到这里，你说：       
@@ -85,12 +85,19 @@ https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E
 
 少谈情怀，多干正事。        
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
 
 

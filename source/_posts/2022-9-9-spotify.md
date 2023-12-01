@@ -17,14 +17,14 @@ Hello 各位晚上好，我是小豪。
 
 上一篇文章，已经把 Spotify 绿色的主色调更改为下图的样式，且歌词增加了滚动效果——会随着音乐的播放，自动高亮显示对应的歌词。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16612972465257.jpg)
+![](https://img.penghh.fun/2022/09/09/16612972465257.jpg)
 
 而前两天，多亏一位网友的分享，对 Spotify 的美化又进了一步，目前的效果如下：     
 
 在小窗的情况下全屏显示当前正在播放的歌，左侧显示专辑封面，右侧显示歌词，这种左右布局的方式，相信用过 Apple Music 的朋友并不陌生。  
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626540054980.jpg)
+![](https://img.penghh.fun/2022/09/09/16626540054980.jpg)
 
 鼠标右击界面，会弹出下图的面板，可启用/关闭多个选项：   
 
@@ -39,17 +39,17 @@ Hello 各位晚上好，我是小豪。
 * 歌词切换动画      
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626550861876.jpg)
+![](https://img.penghh.fun/2022/09/09/16626550861876.jpg)
 
 
 下图是切换到「垂直模式」的效果，主要是左侧的布局变了，专辑的封面和歌词名称、进度条从水平布局变成垂直布局，看起来效果也非常棒。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626554180711.jpg)
+![](https://img.penghh.fun/2022/09/09/16626554180711.jpg)
 
 
 此外，点击界面右下角的按钮，还可以调整歌词的字号大小、歌词滚动的延迟时间，切换显示部分歌词/全部歌词(Compact)。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626549378725.jpg)
+![](https://img.penghh.fun/2022/09/09/16626549378725.jpg)
 
 
 看完了 Spotify 二次美化后的效果，如果你也想让自己的 Spotify 变成这样，可以先跟着[前一篇文章的方法](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649920587&idx=1&sn=586266c1aad64d898dc11b0095ace697&chksm=83a89066b4df19701a16aa282991a1bad6022c409f12c6f472ec8f6d905cf61870e442b1a556&token=707859341&lang=zh_CN#rd)，在电脑上安装好 Spicetify 这个美化工具。   
@@ -67,14 +67,22 @@ spicetify apply
 
 搞定之后，重启 Spotify，点击 Spotify 中类似下面的小图标，就能进入全屏播放的界面啦。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626559017317.jpg)
+![](https://img.penghh.fun/2022/09/09/16626559017317.jpg)
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)           
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)           
 
 
 

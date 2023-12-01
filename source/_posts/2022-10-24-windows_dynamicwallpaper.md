@@ -18,7 +18,7 @@ Hello 各位好，我是小豪。
 不过 QQ 音乐内置的动态壁纸很丑，但还好它提供了使用其他动态壁纸的选项，点击下方的「**自定义动态壁纸**」，可以将本地的其他视频设置为桌面壁纸。   
 
 
-![桌面装扮](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/24/zhuo-mian-zhuang-ban.png)
+![桌面装扮](https://img.penghh.fun/2022/10/24/zhuo-mian-zhuang-ban.png)
 
 需要注意的是，目前这个功能只能在 Windows 版本的 QQ 音乐中使用，苹果电脑上的版本缺少了这个功能。   
 
@@ -26,7 +26,7 @@ Hello 各位好，我是小豪。
 
 [推荐2个动态壁纸软件](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649920947&idx=1&sn=46c18af69e0a2c5a1cd92748ac557249&chksm=83a8919eb4df1888ed7a4d26d4416871df7729fae92df92575f5c56b4c32a3dbdbd9a3b597db&token=2127183971&lang=zh_CN#rd)        
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/24/16666255004147.jpg)
+![](https://img.penghh.fun/2022/10/24/16666255004147.jpg)
 
 
 有了设置动态壁纸的工具，接下来的问题就是，**去哪里下载好看的动态壁纸**？    
@@ -35,18 +35,25 @@ Hello 各位好，我是小豪。
 
 对于每个视频，网站提供了 3 种版本：1080p、4K 和移动端的版本，你可以根据自己在用的显示器分辨率下载对应分辨率的版本，看了官网有 300 多个页面，视频数量应该够你选了。                
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/24/16666259454184.jpg)
+![](https://img.penghh.fun/2022/10/24/16666259454184.jpg)
  
 
 MyLiveWallpapers 网址：     
 https://mylivewallpapers.com/      
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
 
 
 

@@ -5,7 +5,7 @@ tags: [iPhone,图片标注,iOS]
 ---
 
 
-本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/V20V0qWWKAet671iHKNo1Q)」
+本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/V20V0qWWKAet671iHKNo1Q)」，欢迎移步关注
 文/彭宏豪
 
 
@@ -16,12 +16,12 @@ Hello 各位好，我是小豪。
 
 美食图片局部放大
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/16835928534061.jpg)
+![](https://img.penghh.fun/2023/05/10/16835928534061.jpg)
 
 
 说的就是正在看文章的你，**点赞**了吗？
 
-![IMG_6080](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/img6080.PNG)
+![IMG_6080](https://img.penghh.fun/2023/05/10/img6080.PNG)
 
 想给自己的照片加上同样的放大镜效果，不妨看一下下面的这些 App：   
 
@@ -34,7 +34,7 @@ Hello 各位好，我是小豪。
 点击右上角的「画笔」图标，进入「标记」界面，点击底部右下角的加号 + ，选择「放大器」。    
 
 
-![IMG_5265937E66C0-1](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/img5265937e66c01.jpeg)
+![IMG_5265937E66C0-1](https://img.penghh.fun/2023/05/10/img5265937e66c01.jpeg)
 
 添加放大器后，我们可以自由移动放大器在图片中的位置，放大器的边缘有两个小圆点：  
 
@@ -44,7 +44,7 @@ Hello 各位好，我是小豪。
 
 最后点击右上角的「完成」按钮，保存修改即可～    
 
-![IMG_6087](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/img6087.jpg)
+![IMG_6087](https://img.penghh.fun/2023/05/10/img6087.jpg)
 
 ## 我的标记
 
@@ -54,7 +54,7 @@ Hello 各位好，我是小豪。
 
 第 5 个放大镜图标，就是我们想要使用的「局部放大」工具，点击图标之后，在图片上拖拽，画出放大镜。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/16836483825526.jpg)
+![](https://img.penghh.fun/2023/05/10/16836483825526.jpg)
 
 
 和前面 iPhone 自带的放大器一样，「我的标记」添加的放大镜，也会带有两个小圆点：  
@@ -65,7 +65,7 @@ Hello 各位好，我是小豪。
 如果你想调整放大镜的缩放倍数，则要点击左下角的「红色」圆圈⭕️，在打开的面板，向右拖动滑钮，可以提高放大镜的倍数。  
 
 
-![IMG_6088](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/img6088.PNG)
+![IMG_6088](https://img.penghh.fun/2023/05/10/img6088.PNG)
 
 我的标记 App 的功能不止于此，我还经常用它来横向拼接图片、用其中的「圆角矩形」或「圆形」来圈出图片的某个信息，这款软件免费又好用，真的是实至名归。  
 
@@ -78,7 +78,7 @@ Hello 各位好，我是小豪。
 
 在 Google Play 中看了一下展示的截图，其中包含了放大镜功能，且写着完全免费，累计有 100万+ 次下载，今年也有更新过，应该是比较靠谱的。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/16836493998945.jpg)
+![](https://img.penghh.fun/2023/05/10/16836493998945.jpg)
 
 
 ## 高亮显示：Piiico 
@@ -94,14 +94,16 @@ App 做得很棒，可以免费下载，但部分功能存在限制，值得闭�
 iOS 下载链接：https://apps.apple.com/cn/app/piiico-%E5%9B%BE%E5%83%8F%E6%A0%87%E6%B3%A8/id1395700699          
 
 
-![IMG_6089](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/10/img6089.jpg)
+![IMG_6089](https://img.penghh.fun/2023/05/10/img6089.jpg)
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -115,6 +117,6 @@ iOS 下载链接：https://apps.apple.com/cn/app/piiico-%E5%9B%BE%E5%83%8F%E6%A0
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 

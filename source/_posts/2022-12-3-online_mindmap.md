@@ -1,7 +1,7 @@
 ---
 title: 在线的思维导图工具有哪些推荐？8款免费在线思维导图软件推荐！ 
 date: 2022-12-3 09:28:00               
-tags: [思维导图软件,在线思维导图,幕布]                                                                               
+tags: [思维导图,在线思维导图,幕布]                                                                               
 ---
 
 本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/JMkTUA2GkSAXivEWfOBm-A)」    
@@ -21,7 +21,7 @@ tags: [思维导图软件,在线思维导图,幕布]
 
   
 
-## 01 [BoardMix博思白板](https://boardmix.cn/?source=peng_blog_8mindmap)
+## 01 [BoardMix博思白板](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)
 
 BoardMix博思白板，一款集合了多种功能的**在线白板软件**，其中就包括我们想要的**思维导图**功能。  
 BoardMix 的导图功能依托于在线的白板之上，因此它也可以归入**在线思维导图**的范畴。  
@@ -39,19 +39,19 @@ BoardMix 的导图功能依托于在线的白板之上，因此它也可以归�
 - 额外功能：思维导图一键转表格、思维导图路线图
 
 
-![image1](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image1.png)
+![image1](https://img.penghh.fun/2022/12/02/image1.png)
 
 
 说句题外话，思维导图软件发展到现在，开始出现了从以前**单一的导图软件**过渡到**集合多种功能的综合软件**，例如这里提到的 **BoardMix博思白板**，国外的 **Miro、Whimsical** 等，这些产品的设计思路可能不在于把单个功能做到极致，而是可以在一个软件中联动使用多个功能，各取所长，让用户不需要在多个应用间来回切换。    
 
 在 BoardMix博思白板中新建一个白板后，点击左侧菜单栏的**思维导图图标**，选择一种布局或主题样式，在白板任意位置单击，就能创建一个导图的中心节点。    
 
-![image2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image2.png)
+![image2](https://img.penghh.fun/2022/12/02/image2.png)
 
 
 选中添加的导图节点，再次单击节点，就能编辑节点中的内容，在节点上方弹出的菜单，可以修改节点内容的层级、字体、字号、粗体/斜体/下划线/删除线、对齐方式、文本颜色、文本背景色。  
 
-![image3](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image3.png)
+![image3](https://img.penghh.fun/2022/12/02/image3.png)
 
 
 点击上方菜单最左侧的「T」选项，在弹出的二级面板中，可一键更改文本内容的样式，可选择的文本样式有：  
@@ -61,7 +61,7 @@ BoardMix 的导图功能依托于在线的白板之上，因此它也可以归�
 
 不同的标题样式，对应的字号大小存在着差别，**导图的主节点可选择「标题」或「一级标题」**，让文本看起来比较大，之后的子节点的字号可以随之递减。  
 
-![image4](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image4.png)
+![image4](https://img.penghh.fun/2022/12/02/image4.png)
 
 
 在选中导图节点的情况下，点击右侧或下方的**加号 +** ，可以创建新的分支主题，或是和大多数思维导图软件一样，按下**快捷键**也能创建分支主题：  
@@ -69,55 +69,55 @@ BoardMix 的导图功能依托于在线的白板之上，因此它也可以归�
 - Enter：创建同级的分支主题   
 - Tab：创建下一级的分支主题（子节点或孙子节点）
 
-![image5](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image5.png)
+![image5](https://img.penghh.fun/2022/12/02/image5.png)
 
 
 选中导图的主节点，在上方弹出的菜单，选择「**导图主题**」，可以更改导图当前使用的布局或主题样式。   
 
 譬如下图我更改了导图的主题样式，从左侧的蓝灰样式变为右侧的小清新样式。    
 
-![image6](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image6.png)
+![image6](https://img.penghh.fun/2022/12/02/image6.png)
 
 
 如果你对 BoardMix 主题样式的配色方案不满意，也可以自行更改**导图节点的背景色**和**导图连接线的颜色**。  
   
 选中导图节点，点击上方菜单的第 2 个选项「**填充颜色**」，可以重新设置节点的背景颜色。  
 
-![image7](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image7.png)
+![image7](https://img.penghh.fun/2022/12/02/image7.png)
 
 
 而如果是更改**导图连接线的颜色**，同样是先选中导图节点，点击「**分支颜色**」选项，从打开的面板选择一种颜色，修改之后就会更改节点所在的连接线和后面所有分支的颜色。  
 
-![image8](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image8.png)
+![image8](https://img.penghh.fun/2022/12/02/image8.png)
 
 
 如果是想要在导图节点中插入图片，可点击上方菜单的「**插入图片**」，将本地的图片上传到导图中。  
 
-![image9](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image9.png)
+![image9](https://img.penghh.fun/2022/12/02/image9.png)
 
 
 如果插入导图节点的图片尺寸比较大，会占用节点较多的空间，或是影响到节点内容的展示，这时我们选中节点插入的图片，长按拖拽图片右下角的锚点，**缩小图片的尺寸**。  
 
-![image10](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image10.png)
+![image10](https://img.penghh.fun/2022/12/02/image10.png)
 
 
 BoardMix博思白板支持多人在线协作，而在其中创建的思维导图也是依托于白板之上，这也让我们可以在一个文档中同时编辑一个思维导图。    
 
 点击右上角的「**分享**」按钮，将文档链接设置为**所有人可编辑**，接着将文档链接发送给其他人，对方打开链接就能加入编辑，用于头脑风暴或是记录会议纪要，也是杠杠滴！  
 
-![image11](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image11.png)
+![image11](https://img.penghh.fun/2022/12/02/image11.png)
 
 
 在文件导出方面，BoardMix思维导图支持导出下图的格式——PNG、JPG、PDF、SVG 和软件专属的 bdx 格式，导出为图片格式时，点击下方的「分辨率」，可以调整导出图片的分辨率，数值越大，图片越清晰。    
 
 如果是选择 PDF 或 SVG 文件，由于这两种本质上都是矢量文件，可无限放大不失真，也就没有调整分辨率的需要啦，具体选择哪种导出格式，按自己的需要来就好了\~  
 
-![image12](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image12.png)
+![image12](https://img.penghh.fun/2022/12/02/image12.png)
 
 
 BoardMix博思白板目前对个人用户完全免费，也没有对思维导图功能有任何限制——**可添加无限节点，不会导图做到一半就弹出付费的窗口**，使用 BoardMix 内置的导图功能，可以说是白嫖了！有在寻找免费思维导图软件的朋友，可以去使用一下哇\~   
 
-[BoardMix博思白板，免费多功能在线思维导图，无限节点，支持导出高清无水印图片！](https://boardmix.cn/?source=peng_blog_8mindmap)      
+[BoardMix博思白板，免费多功能在线思维导图，无限节点，支持导出高清无水印图片！](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)      
 
 ## 02 石墨文档
 
@@ -125,17 +125,17 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 
 点击石墨文档左上角的「创建」按钮，在弹出的面板，选择「思维导图」，创建导图文件。  
 
-![image13](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image13.png)
+![image13](https://img.penghh.fun/2022/12/02/image13.png)
 
 
 从石墨文档顶部的工具栏，多少也能看出导图功能比较简单，就是一些添加导图节点、设置文本样式的选项。  
 
-![image14](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image14.png)
+![image14](https://img.penghh.fun/2022/12/02/image14.png)
 
 
 如果想在导图中插入图片，可以点击工具栏的「插入图片主题」，不过插入的图片会**单独置于一个节点中**，而不是像前面介绍的 BoardMix博思白板一样，导图内容和图片位于同一个节点中。  
 
-![image15](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image15.png)
+![image15](https://img.penghh.fun/2022/12/02/image15.png)
 
   
 在界面的左上角，石墨文档还提供了切换视图模式的选项：  
@@ -145,26 +145,26 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 - 混合视图：大纲视图和思维导图并排显示，如下图，左侧是大纲视图，右侧是思维导图，不过在这种视图模式下，左侧的大纲视图无法编辑
 
   
-![image16](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image16.png)
+![image16](https://img.penghh.fun/2022/12/02/image16.png)
 
 
   
 由于这个导图功能是基于石墨文档之上，因此它也继承了石墨文档「协作」的功能，如果你想要和其他人在线编辑思维导图，可以点击右上角的按钮，邀请其他人加入协作，就能一起编辑同一份思维导图。      
 
 
-![image17](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image17.png)
+![image17](https://img.penghh.fun/2022/12/02/image17.png)
 
 
 在文件导出方面，石墨文档提供了 2 种导出格式：图片和 xmind，可选择的文件格式偏少。  
 
-![image18](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image18.png)
+![image18](https://img.penghh.fun/2022/12/02/image18.png)
 
 
 最后值得一提的是，使用这一功能做好的思维导图，可以**直接嵌入石墨文档**中，方法也很简单：   
 
 在石墨文档中输入**斜杠 /** ，呼出下图的面板，找到「**石墨云文件**」，在弹出的面板中选择导图文件，就能将导图嵌入文档中啦。  
 
-![image19](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image19.png)
+![image19](https://img.penghh.fun/2022/12/02/image19.png)
 
 
 ## 03 腾讯文档
@@ -174,14 +174,14 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 点击「新建 >> 更多类型」，选择「**在线思维导图**」，就能在腾讯文档中创建一个导图文件。  
 
 
-![image20](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image20.png)
+![image20](https://img.penghh.fun/2022/12/02/image20.png)
 
 
 打开刚创建的思维导图，顶部工具栏的选项，与石墨文档大同小异，不制作花里胡哨的导图，功能基本够用，其中有一个添加「**概要**」的选项，为超级会员专属的功能（**同样的概要功能，这在前面介绍的 BoardMix博思白板中是完全免费的**）。    
 
 在导图的左下角，腾讯文档清晰地列出了已添加和免费节点的数量（100个），想要创建无限节点的导图，同样得先升级为超级会员。  
 
-![image21](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image21.png)
+![image21](https://img.penghh.fun/2022/12/02/image21.png)
 
 
 选中任意一个导图节点，点击右上角的「插入」，可在节点中插入**图片、超链接、备注、标签**和**图标**。  
@@ -189,14 +189,14 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 在导图节点插入的**图片，会与导图内容位于同一个节点中**，而不是像石墨文档那样，图片会成为节点的下一个分支。  
 
 
-![image22](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image22.png)
+![image22](https://img.penghh.fun/2022/12/02/image22.png)
 
 
 插入节点的图片默认位于文本内容的上方，这对于我来说不太习惯，选中图片，左上角提供了调整图片位置的选项，更改为「**图片在下**」或「**图片在右**」，看起来就比较舒服了。   
 
 如果我们插入的图片尺寸较大，它也会占据比较大的空间，有可能会妨碍我们浏览导图的其他内容，此时将鼠标指针移动到图片右下角的圆形上方，长按左键并拖拽，可以自由更改图片的大小。  
 
-![image23](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image23.png)
+![image23](https://img.penghh.fun/2022/12/02/image23.png)
 
 
 除了图片，我们还可以在节点中插入「**备注**」，用作节点内容的**补充**或**说明**，当我们插入备注时，可以在右侧打开的「备注」面板中输入相应的内容，下方的小字有一个提示，备注支持「支持Markdown语法」。   
@@ -205,12 +205,12 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 
 不过这个「**引用**」样式，看起来真的有点丑啊，上方咋空出来了那么大的间距呢？  
 
-![image24](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image24.png)
+![image24](https://img.penghh.fun/2022/12/02/image24.png)
 
   
 在导出方面，腾讯文档提供了多种文件格式：图片、在线文档、在线幻灯片、PDF 和 POS，免费用户可选择将导图导出为**标清图片（PNG）、在线文档**和**在线幻灯片**。  
 
-![image25](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image25.png)
+![image25](https://img.penghh.fun/2022/12/02/image25.png)
 
 
 
@@ -221,7 +221,7 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 在幕布刚推出时，因为看到一些博主的推荐，于是我也去用了这款产品，设计简约，产品功能不花里胡哨，很对我的胃口。  
 幕布将大纲笔记（无序列表）和思维导图融合到了一起，编辑时用大纲视图模式，需要演示的时候，可以一键切换为思维导图。  
 
-![image26](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image26.png)
+![image26](https://img.penghh.fun/2022/12/02/image26.png)
 
 
 从去年 7 月以来，幕布一直处于「正常运营但停止更新」的状态，不少人都会这款产品未来的走向表示担忧，还有些公司为了撬幕布的用户，美名其曰出了一个帮助用户迁移文件的插件……~~（其实还不是想把幕布的用户转化成自家的用户）~~  
@@ -236,25 +236,25 @@ BoardMix博思白板目前对个人用户完全免费，也没有对思维导图
 打开飞书云文档，点击右上角的「新建」，选择「**新建思维笔记**」，创建一个导图文件。  
 
 
-![image27](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image27.png)
+![image27](https://img.penghh.fun/2022/12/02/image27.png)
 
 
 打开思维笔记，一股浓浓的幕布风扑面而来，还是原来熟悉的配方和界面，有那味了哈哈哈哈哈哈哈  
 
 点击左上角的按钮，可以从当前的大纲视图切换为思维导图，相信用过幕布的朋友，对这种切换方式并不陌生。  
 
-![image28](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image28.png)
+![image28](https://img.penghh.fun/2022/12/02/image28.png)
 
   
 在思维导图模式下，长按任意节点并拖拽，可以移动导图节点，更改节点在导图中的位置。  
 
 
-![image29](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image29.png)
+![image29](https://img.penghh.fun/2022/12/02/image29.png)
 
 
 如果你想把存放在云端的思维导图下载到本地，可以点击右上角的「…」，选择「**下载为**」，思维笔记提供了 2 种导出格式——FreeMind 和图片。  
 
-![image30](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image30.png)
+![image30](https://img.penghh.fun/2022/12/02/image30.png)
 
 
 ## 06 Whimsical
@@ -264,7 +264,7 @@ Whimsical，和最前面介绍的 **BoardMix博思白板**一样，一款集合�
 
 与 BoardMix 的操作逻辑相似，在 Whimsical 中创建的思维导图，也是基于**白板**这个容器之上，点击左侧工具栏的思维导图按钮，在白板上单击，即可开始编辑导图内容。
 
-![image31](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image31.png)
+![image31](https://img.penghh.fun/2022/12/02/image31.png)
 
 
 Whimsical 是海外团队打造的产品，目前仅有英文版本，但软件本身并不复杂，因此软件语言并不会影响产品的使用。  
@@ -279,7 +279,7 @@ XMind 海外版 `xmind.works` 是一个在线的思维导图软件，外观与�
 
 如果你想与其他人分享当前编辑的导图，可点击左上角的「文件」菜单，选择 Share，借用 Google Drive、Dropbox 或者 OneDrive 网盘实现多人在线协作。  
 
-![image32](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image32.png)
+![image32](https://img.penghh.fun/2022/12/02/image32.png)
 
 
 依稀记得 XMind 国内版最初也有云端同步功能，不过后来官方说是太少人用这个功能了，就选择把这个功能下掉了……这对已经习惯使用各类在线协作工具的人来说，可能不太能接受了，也让 XMind 在这方面显得有些滞后。  
@@ -292,7 +292,7 @@ Miro，一款在国外拥有非常高知名度的**在线白板软件**，与回
 
 Miro 的使用逻辑也是基于无限大的白板之上，初次使用需要创建一个白板，打开之后点击左侧的思维导图工具，就能创建一个思维导图。  
 
-![image33](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image33.png)
+![image33](https://img.penghh.fun/2022/12/02/image33.png)
 
 
 不过就我自己的使用体验而言，Miro 思维导图节点间的**连接线太细**，也没有给用户提供调节粗细的选项，对比已经看惯了的粗线条，反而看起来觉得有点不习惯…   
@@ -300,7 +300,7 @@ Miro 的使用逻辑也是基于无限大的白板之上，初次使用需要创
 还有一点，在使用快捷键添加导图节点时，如果是**添加同级的节点**，通常的导图软件是按一次 Enter 回车键就好，在 Miro 中则需要**按两次 Enter 键**——第一次是进入节点的编辑状态，第二次才是添加同级节点。  
 
 
-![image34](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/02/image34.png)
+![image34](https://img.penghh.fun/2022/12/02/image34.png)
 
 由于 Miro 是海外的产品，在国内的打开速度比较慢，要用代理才会有所改善，而且 Miro 免费版对功能也做了限制，譬如只能创建 3 个白板，无法使用计时器、音视频通话等功能。  
 
@@ -311,7 +311,7 @@ Miro 的使用逻辑也是基于无限大的白板之上，初次使用需要创
   
 呼（实际上是气喘吁吁），一口气分享了 **8 款在线制作思维导图的软件**，最后再来简单总结一下：  
 
-- BoardMix博思白板：在线思维导图，**完全免费**，无节点限制，可导出高清图片（**最为推荐！！！**）  
+- [BoardMix博思白板](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)：在线思维导图，**完全免费**，无节点限制，可导出高清图片（**最为推荐！！！**）  
 - 石墨文档思维导图：功能比较简单     
 - 腾讯文档思维导图：与石墨文档类似，功能比石墨文档丰富一点点，免费用户可创建 100 个节点   
 - 幕布：融合大纲笔记和思维导图的跨平台工具。有一个好消息：**幕布在 2023 年会恢复更新**。     
@@ -319,6 +319,15 @@ Miro 的使用逻辑也是基于无限大的白板之上，初次使用需要创
 - Whimsical：多功能在线协作应用，包含导图功能，免费用户最多可创建 3000 个节点       
 - XMind海外版：可在线使用的XMind版本    
 - Miro：多功能的在线白板软件，创建的导图简约美观，需要有良好的网络条件
+
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 
@@ -333,4 +342,4 @@ Miro 的使用逻辑也是基于无限大的白板之上，初次使用需要创
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     

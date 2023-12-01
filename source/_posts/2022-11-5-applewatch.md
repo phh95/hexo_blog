@@ -16,13 +16,13 @@ tags: [Apple,iPhone,苹果手表,数码]
 
 每次看他发布的跑步动态，配上苹果手表提供的**跑步配速、运动圆环**截图，一方面觉得很有**仪式感**，另一方面觉得，**培养运动习惯，前期需要用足够的数据反馈来激励自己，才能一步一步坚持下来**，这里的数据反馈可能是公里数、配速、每次跑步的时长、3 个圆环都闭合上的次数等等。   
 
-![IMG_9D0BDAB8D00A-1](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/img9d0bdab8d00a1.jpeg)
+![IMG_9D0BDAB8D00A-1](https://img.penghh.fun/2023/11/26/img9d0bdab8d00a1.jpeg)
 
 上面说到的「跑步配速和运动圆环截图」，来自于 iPhone 上的「健身」App，这个 App 是免费的，无法从应用商店搜索下载，只有在你购买了 Apple Watch 之后，它才会安装到你的手机上。  
 
 购入 Apple Watch SE 已有 111 天，今年断断续续跑步 75 次了，每次 3 公里，我觉得可以坚持这么多天，应该也和 Apple Watch 脱不了关系，因为多数时候，我都会将运动截图发动到微信群、知识星球和即刻上，一边证实自己确实运动了，一边收获别人的点赞。
 
-![IMG_82786E868FC7-1](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/img82786e868fc71.jpeg)
+![IMG_82786E868FC7-1](https://img.penghh.fun/2023/11/26/img82786e868fc71.jpeg)
 
 ## 戴着口罩时解锁手机
 
@@ -34,7 +34,7 @@ tags: [Apple,iPhone,苹果手表,数码]
 
 启用的方法：打开 iPhone 设置 >> 面容 ID 与密码 >> 使用 APPLE WATCH 解锁。     
 
-![IMG_9752B6985105-1](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/img9752b69851051.jpeg)
+![IMG_9752B6985105-1](https://img.penghh.fun/2023/11/26/img9752b69851051.jpeg)
 
 
 
@@ -46,7 +46,7 @@ tags: [Apple,iPhone,苹果手表,数码]
 
 启用的方法：系统偏好设置 >> 安全性与隐私，勾选「使用您的 Apple Watch 解锁 App 和 Mac」。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/16374559218828.jpg)
+![](https://img.penghh.fun/2023/11/26/16374559218828.jpg)
 
 ## 温和地叫你起床  
 
@@ -58,12 +58,12 @@ Apple Watch 上有一个监测睡眠质量的第三方应用——AutoSleep，�
 
 这款应用需要付费下载，为买断制，价格为 25 元。   
 
-![IMG_0315](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/img0315.PNG)
+![IMG_0315](https://img.penghh.fun/2023/11/26/img0315.PNG)
 
 
 除了这些，知识星球「曹将和朋友们」里的一位网友 @好姑娘 在社群里也分享过苹果手表的使用心得，她写得更加详细，感兴趣的可以查看下图：    
 
-![image_582125128421254](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/image582125128421254.PNG)
+![image_582125128421254](https://img.penghh.fun/2023/11/26/image582125128421254.PNG)
 
 
 ## 【附】Apple Watch 选购指南   
@@ -72,7 +72,7 @@ Apple Watch 上有一个监测睡眠质量的第三方应用——AutoSleep，�
 
 如果你希望手表**屏幕常亮**（官方也称之为**始终显示**），不想抬起手腕等待屏幕亮起，那就得购买 Apple Watch Series 5 及之后更新的型号，廉价款的 Apple Watch SE 是不带有屏幕常亮功能的。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/16676166604698.jpg)
+![](https://img.penghh.fun/2023/11/26/16676166604698.jpg)
 
 
 和 iPad 平板有点相似，每款 Apple Watch 都分为两个类别——**GPS 版**和**蜂窝版**，前面的版本只有连上手机的网络，才能接收微信消息、在线听音乐等，但有一个例外：它可以在无网络的条件下使用微信支付，这样即便你只戴了手表出门运动，运动完还能去小卖部买瓶水。    
@@ -100,7 +100,7 @@ A：Apple Series 7 及之后的型号，包含 Apple Series 8 和 Apple Watch Ul
  
 [关于 Apple Watch 快速充电 - 官方 Apple 支持 (中国)](https://support.apple.com/zh-cn/HT212769)      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/26/16676186982898.jpg)
+![](https://img.penghh.fun/2023/11/26/16676186982898.jpg)
 
 
 Q：我想买手表⌚️，你会推荐买哪一款？   
@@ -119,13 +119,13 @@ A：世界上的商品非常多，但好商品非常少，很多都是粗制滥�
 
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)   
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG) 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 

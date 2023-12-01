@@ -15,7 +15,7 @@ Hello 各位好，我是小豪。
 
 我们没有设置打开这种文件的默认应用，或是安装了一个新的应用后，原先打开这种文件的默认应用被篡改，系统需要重新进行确认。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602309319698.jpg)
+![](https://img.penghh.fun/2022/08/12/16602309319698.jpg)
 
 而如果把这里的本地文件换成我们天天在用的**网页**，是否可以实现在浏览器之外，使用其他的软件打开当前的网页呢？   
 
@@ -38,7 +38,7 @@ Hello 各位好，我是小豪。
 
 说这么多，其实是想表达：**这个插件可以让人变得更懒**，想下载视频，连复制链接的操作都可以省掉，让程序自动帮我们完成。          
  
-![2022-08-11 23.40.59](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/20220811-234059.gif)
+![2022-08-11 23.40.59](https://img.penghh.fun/2022/08/12/20220811-234059.gif)
 
 用着 Windows 电脑的同学，把这里的 Downie 替换为 IDM，也能实现相同的效果。   
 
@@ -55,13 +55,13 @@ Hello 各位好，我是小豪。
 
 因此，用着 Chrome 浏览器的朋友，如果想使用这个插件，可以扫描下方的二维码，在公众号「效率工具指南」后台回复【**ow**】，获取插件安装包。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
 
 使用 Firefox 浏览器的朋友，可以从插件的 GitHub 项目页面找到安装链接：  
 
 https://github.com/darktrojan/openwith    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602343911689.jpg)
+![](https://img.penghh.fun/2022/08/12/16602343911689.jpg)
 
 
 ## 配置浏览器插件  
@@ -70,17 +70,17 @@ https://github.com/darktrojan/openwith
 
 右击 Chrome 浏览器右上角的插件图标，选择「选项」，打开插件的设置页面。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602350192081.jpg)
+![](https://img.penghh.fun/2022/08/12/16602350192081.jpg)
 
 点击左侧的蓝色文字「Click here to download」，下载一个 Python 脚本文件。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602352833394.jpg)
+![](https://img.penghh.fun/2022/08/12/16602352833394.jpg)
 
 将下载的 Python 文件放到**资源库**的应用支持路径下，具体路径如下图所示：     
 
 `/Library/Application\ Support/Google/Chrome/`     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602357245967.jpg)
+![](https://img.penghh.fun/2022/08/12/16602357245967.jpg)
 
 接着打开 Mac 上的终端，在终端中依次输入如下两行命令：   
 
@@ -91,26 +91,26 @@ https://github.com/darktrojan/openwith
 `/Library/Application\ Support/Google/Chrome/open_with_mac.py install`     
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602359059758.jpg)
+![](https://img.penghh.fun/2022/08/12/16602359059758.jpg)
 
 
 经过前面的操作后，就算是在 Mac 电脑上完整安装了这个插件。   
 
 接着回到插件的设置页面，点击下方的「Look for browsers」，插件就会扫描你在电脑上安装的所有浏览器，并将其添加到右侧的面板。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602362278293.jpg)
+![](https://img.penghh.fun/2022/08/12/16602362278293.jpg)
 
 经过这个操作后，去到 Chrome 浏览器中的任意一个页面，当你在页面空白处右击，选择 Open With，弹出的面板应该就会显示你电脑上安装的所有浏览器。  
 
 这时选择一个 Chrome 之外的浏览器，就会在另外一个浏览器中打开当前的页面。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602363955782.jpg)
+![](https://img.penghh.fun/2022/08/12/16602363955782.jpg)
 
 而如果你想在这个面板中添加额外的应用，例如前面提到的下载工具 Downie 或者 IDM，就需要再次回到插件的设置页面。   
 
 点击下方的「Add browser」，添加新的浏览器。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602365874491.jpg)
+![](https://img.penghh.fun/2022/08/12/16602365874491.jpg)
 
 在弹出的配置面板，有两个需要填入文本的字段：  
 
@@ -118,7 +118,7 @@ https://github.com/darktrojan/openwith
 * Command：这里要输入应用所在的路径，Mac 电脑应用安装的路径是一致的，因此输入 `/Application/应用名称.app`    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602366622826.jpg)
+![](https://img.penghh.fun/2022/08/12/16602366622826.jpg)
 
 这样配置之后，Open With 插件就会多出一个 Downie 的备选项，这样我们就可以在 Downie 中打开当前的网页。  
 
@@ -128,13 +128,20 @@ https://github.com/darktrojan/openwith
 科技，让人变得更懒了！   
 还不错。   
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)         
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)         
 
 
 

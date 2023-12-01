@@ -27,13 +27,13 @@ Hello 各位好，这里是效率工具指南。
 
 播放想设置为铃声的音乐，进入下图左侧的播放界面，点击右下角的「…」，在弹出的菜单，找到「设为铃声」。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/11/25/stiiitch20231005110833.jpg)
+![](https://img.penghh.fun/2023/11/25/stiiitch20231005110833.jpg)
 
 点击「设为铃声」后，会进入下图的「剪辑铃声」界面，可从整首歌中截取任意片段作为铃声，时长最长为 30 秒。  
 
 完成截取后，点击右上角的「完成」。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8245.jpg)
+![](https://img.penghh.fun/2023/10/05/img8245.jpg)
 
 
 截取得到铃声片段后，来到下图左侧的界面，网易云音乐 App 会给出后续如何操作的提示，你可以点击下方的按钮，查看视频教程。  
@@ -42,35 +42,35 @@ Hello 各位好，这里是效率工具指南。
 在下方的图标中找到苹果自带的「库乐队」App，如果展示的图标中没有库乐队，可以滑动到最右侧，单击「更多」，在弹出的面板，找到库乐队 App 并单击。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/ae6436212d98413194e2e1444eca31781201a.jpeg)
+![](https://img.penghh.fun/2023/10/05/ae6436212d98413194e2e1444eca31781201a.jpeg)
 
 
 ## 库乐队
 
 来到 iPhone 自带的库乐队（横屏显示），最左侧会显示我们刚添加的铃声。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8248.PNG)
+![](https://img.penghh.fun/2023/10/05/img8248.PNG)
  
 
 长按铃声，在弹出的菜单，选择「共享」。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8249.PNG)
+![](https://img.penghh.fun/2023/10/05/img8249.PNG)
 
 
 选择下图中间的「**电话铃声**」，为 iPhone 创建自定义电话铃声。       
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8250.PNG)
+![](https://img.penghh.fun/2023/10/05/img8250.PNG)
 
 iPhone 为弹出下图的提示，「电话铃声应该为 30 秒或更短」，这个之前在网易云音乐 App 中已经裁剪过了，因此这里点「继续」即可。  
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8252.PNG)
+![](https://img.penghh.fun/2023/10/05/img8252.PNG)
 
 最后在导出电话铃声之前，我们可以修改一下「铃声的名称」，重命名之后，点击右上角的「导出」按钮。      
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8253.PNG)
+![](https://img.penghh.fun/2023/10/05/img8253.PNG)
 
 
 ## 查看导出的电话铃声
@@ -80,7 +80,7 @@ iPhone 为弹出下图的提示，「电话铃声应该为 30 秒或更短」，
    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/05/img8255.PNG)
+![](https://img.penghh.fun/2023/10/05/img8255.PNG)
 
 
 ## 写在最后
@@ -90,9 +90,11 @@ iPhone 为弹出下图的提示，「电话铃声应该为 30 秒或更短」，
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -105,6 +107,6 @@ iPhone 为弹出下图的提示，「电话铃声应该为 30 秒或更短」，
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
  

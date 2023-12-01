@@ -22,24 +22,24 @@ https://pan.quark.cn/s/e08221da914d
 
 * 写作软件 Effie  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834356775975.jpg)
+![](https://img.penghh.fun/2023/05/07/16834356775975.jpg)
 
 
 * 微信读书  
 
-![IMG_6051](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/img6051.PNG)
+![IMG_6051](https://img.penghh.fun/2023/05/07/img6051.PNG)
 
 
 * 在线白板软件「boardmix博思白板」   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834362061118.jpg)
+![](https://img.penghh.fun/2023/05/07/16834362061118.jpg)
 
 
 还有一款国产软件，也用了这款字体，只不过人家**脸皮厚**，有勇气把这款字体设置为**会员专属的字体**……从版权和用途上说，把这款字体设置为会员功能，没啥毛病。
 
 但如果它能慷慨大方地放出来给用户使用，我会更「敬佩」它……不想吐槽了。            
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834359382140.jpg)
+![](https://img.penghh.fun/2023/05/07/16834359382140.jpg)
 
 
 每个人对「美」的理解是不同的，但对「美」的追求是无止尽的，就像我看到这么一款优雅的字体，也想把它用到自己的**Hexo博客**上，效果如下：        
@@ -47,16 +47,16 @@ https://pan.quark.cn/s/e08221da914d
 
 博客首页：
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834351784264.jpg)
+![](https://img.penghh.fun/2023/05/07/16834351784264.jpg)
 
 
 博客文章列表：  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834347751134.jpg)
+![](https://img.penghh.fun/2023/05/07/16834347751134.jpg)
 
 博客文章正文：
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834365649022.jpg)
+![](https://img.penghh.fun/2023/05/07/16834365649022.jpg)
 
 我的 Hexo 博客能顺利用上「霞鹜文楷」这款字体，还得感谢博客「[东评西就](https://www.dongjunke.cn/)」的作者 @小饿 对我的帮助，有了他在前面「踩坑」，给我发了他的代码，让我少走了许多弯路。     
 
@@ -75,7 +75,7 @@ https://www.dongjunke.cn/
 `<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">`   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834379640171.jpg)
+![](https://img.penghh.fun/2023/05/07/16834379640171.jpg)
    
 接着去到 fluid 主题下的 css 文件夹下，路径为 `themes/fluid/source/css`，新建一个自定义 CSS 文件 `custom.css`，在 CSS 文件中添加样式：   
 
@@ -85,12 +85,12 @@ html, body, .markdown-body, p {
 }
 ```
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834382087815.jpg)
+![](https://img.penghh.fun/2023/05/07/16834382087815.jpg)
 
 
 再来到 fluid 主题的配置文件 `_config.yml`，路径为 `themes/fluid/_config.yml`，搜索配置项 `font_family`，在后面填上我们想用的霞鹜文楷字体对应的英文名 `"LXGW Wenkai Screen"`，记得要给字体名称加上引号哦。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/07/16834384189389.jpg)
+![](https://img.penghh.fun/2023/05/07/16834384189389.jpg)
 
 通过上面介绍的 3 个步骤，就能把 Hexo 博客的字体全局更改为霞鹜文楷体，是不是很简单呢？   
 
@@ -106,9 +106,11 @@ html, body, .markdown-body, p {
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -122,7 +124,7 @@ html, body, .markdown-body, p {
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

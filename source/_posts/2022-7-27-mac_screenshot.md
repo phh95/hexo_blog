@@ -18,7 +18,7 @@ Xnip，是我目前在用的截图软件，我日常会有的截图需求——�
 
 Xnip 还有一个我不常用的功能——**高亮**（快捷键为数字 9），效果如下图所示，高亮的区域会保持原本的亮度，非高亮的部分亮度则会变暗，就像是「红花配绿叶」，非高亮的部分作为衬托，来凸显出高亮的区域。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588503052776.jpg)
+![](https://img.penghh.fun/2022/07/27/16588503052776.jpg)
 
 
 Xnip 可从 Mac 应用商店免费下载，应用包含内购，在不付费的情况下，其实也不影响使用。  
@@ -28,7 +28,7 @@ Xnip 可从 Mac 应用商店免费下载，应用包含内购，在不付费的�
 其实评估窗口我也极少使用，我一般都是在截完图片的状态下随手给图片添加标注，而不是再单独打开下面的窗口进行标注。   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588510621149.jpg)
+![](https://img.penghh.fun/2022/07/27/16588510621149.jpg)
 
 说明：打开 Xnip 评估窗口的快捷键为 W。  
 
@@ -38,13 +38,13 @@ Xnip 可从 Mac 应用商店免费下载，应用包含内购，在不付费的�
 
 直到有一次在 Xnip 作者的动态下方留言，才找到了这个隐蔽的设置项。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588514948516.jpg)
+![](https://img.penghh.fun/2022/07/27/16588514948516.jpg)
 
 调整标注工具默认样式的方法如下：   
 
 打开 Xnip 的评估窗口，点击顶部对应的标注工具，调整右侧的参数，例如下图的「描边粗细」，调整好之后点击「设为默认样式」，这样就可以将自己觉得舒服的样式设置为软件的默认值，而不需要每次都去手动调整，我真的太蠢了。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588514542052.jpg)
+![](https://img.penghh.fun/2022/07/27/16588514542052.jpg)
 
 
 
@@ -60,19 +60,19 @@ Xnip 可从 Mac 应用商店免费下载，应用包含内购，在不付费的�
 
 > 截图、标注、贴图、取色、录屏、录音、OCR（文字识别）、截图翻译。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588524917641.jpg)
+![](https://img.penghh.fun/2022/07/27/16588524917641.jpg)
 
 在使用 iShot 拖拽截取局部区域时，截取的图片**默认会带有圆角**，效果如下图所示。   
 
 有公众号运营经验的朋友，想必对「圆角」并不陌生，有些公众号为了给文章中的图片都加上圆角的效果，还得额外安装一个浏览器插件，而现在使用 iShot，也能实现同样的效果了。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588528371492.jpg)
+![](https://img.penghh.fun/2022/07/27/16588528371492.jpg)
 
 此外，iShot 在今年还加入了一个在我看来非常不错的功能——**带壳截图**，效果如下图所示，iShot 会进行全屏截图，并自动给截图最外层加上一个苹果电脑的样机（Mockup）。    
 
 不确定这个灵感，是不是从手机上的截图应用 Picsew 上获得的？真棒👍          
 
-![iShot_2022-07-27_00.20.16](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/ishot20220727002016.png)
+![iShot_2022-07-27_00.20.16](https://img.penghh.fun/2022/07/27/ishot20220727002016.png)
 
 当然，iShot 内置的功能并不是可以完全免费使用的，这里说免费版的两个限制：
 
@@ -80,14 +80,21 @@ Xnip 可从 Mac 应用商店免费下载，应用包含内购，在不付费的�
 
 iShot 提供了两种付费模式，一种是订阅，一种是买断，买断价格为 78 元。如果选择买断，则需要下载另外一个新的应用 iShot Pro，如果选择订阅，应该是使用老的 iShot 就可以了。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/27/16588525617540.jpg)
+![](https://img.penghh.fun/2022/07/27/16588525617540.jpg)
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
 
 
 

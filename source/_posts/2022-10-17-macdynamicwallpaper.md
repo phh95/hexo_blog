@@ -26,10 +26,10 @@ Plash，一款可以把任意网页设置为桌面壁纸的软件，软件开源
 
 就像是下图我添加的液态星球网站，在桌面上移动鼠标指针，桌面的液态星球也会跟着移动。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659319082190.jpg)
+![](https://img.penghh.fun/2022/10/16/16659319082190.jpg)
 
 具体效果可以查看我录制的一个视频，扫码即可查看：   
-![QRcode_A — a1 -1-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/qrcodea--a1-1.jpg)
+![QRcode_A — a1 -1-](https://img.penghh.fun/2022/10/16/qrcodea--a1-1.jpg)
 
 
 Plash 这款软件，与我之前介绍过的一款 Windows 上的免费动态壁纸软件 Lively Wallpaper 很像。  
@@ -45,10 +45,10 @@ https://sindresorhus.com/plash
 
 顺便一提，开发 Plash 这款应用的作者，是一个**全职的开源应用程序开发者**，我数了一下，他的官网列出了 29 个 App，我没有一一去确认是否所有应用都是免费的，但看每一款 App 的图标，就觉得这是一个非常用心的开发者。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659336913775.jpg)
+![](https://img.penghh.fun/2022/10/16/16659336913775.jpg)
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659335386442.jpg)
+![](https://img.penghh.fun/2022/10/16/16659335386442.jpg)
 
 
 ## Dynamic Wallpaper
@@ -59,22 +59,30 @@ Dynamic Wallpaper，一款付费的动态壁纸软件，价格为 18 元，可�
 
 在筛选视频时，可选择视频分辨率(内置的视频最高分辨率应该是 4K)、是否带有声音。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659338924434.jpg)
+![](https://img.penghh.fun/2022/10/16/16659338924434.jpg)
 
 如果在内置的壁纸库中没有找到自己喜欢的壁纸，还可以点击顶部状态栏的图标，选择「**导入本地视频**」，将本地视频设置为桌面壁纸。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659344499462.jpg)
+![](https://img.penghh.fun/2022/10/16/16659344499462.jpg)
 
 
 这款软件不仅可用于设置动态壁纸，还可以将视频应用到屏保。   
 
 不过这个功能我暂时还没有体验，目前用的还是之前安装的动态屏保，感兴趣的朋友可以自行尝试。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/16/16659341787420.jpg)
+![](https://img.penghh.fun/2022/10/16/16659341787420.jpg)
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       

@@ -34,11 +34,11 @@ tags: [微信小程序,前端,学习笔记]
 
 FeHelper 可以对服务器请求返回的 JSON 数据进行美化（格式化），美化后的效果，就和我们在「微信开发者工具」控制台 `console.log` 打印的内容外观一致了，看起来更舒服。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566068661368.jpg)
+![](https://img.penghh.fun/2022/07/02/16566068661368.jpg)
 
 顺便来看一下安装 FeHelper 插件之前，服务器返回的 JSON 数据的样式，作为对比：     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566070159756.jpg)
+![](https://img.penghh.fun/2022/07/02/16566070159756.jpg)
 
 * 正则表达式：正则表达式是字符串的匹配利器，在项目「解析歌词」的部分会用到。   
 
@@ -47,7 +47,7 @@ FeHelper 可以对服务器请求返回的 JSON 数据进行美化（格式化�
 
 ## 各大厂商支持小程序的原因
 
-![image -3-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-3.png)
+![image -3-](https://img.penghh.fun/2022/06/26/image-3.png)
 
 
 ## 小程序是由谁来开发？
@@ -65,11 +65,11 @@ FeHelper 可以对服务器请求返回的 JSON 数据进行美化（格式化�
       - uni-app：基于 Vue 开发的框架
       - taro：由京东团队开发维护
 
-![image -4-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-4.png)
+![image -4-](https://img.penghh.fun/2022/06/26/image-4.png)
 
 下图的 RN 是 React Native 的缩写，开发好之后可以发布为 iOS 和 Android 应用
 
-![image -5-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-5.png)
+![image -5-](https://img.penghh.fun/2022/06/26/image-5.png)
 
 
 uni-app 和 taro 开发原生 App：
@@ -97,7 +97,7 @@ uni-app 和 taro 开发原生 App：
 
 这两个线程通过底层的 WeixinJSBridge 进行通讯
 
-![image -6-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-6.png)
+![image -6-](https://img.penghh.fun/2022/06/26/image-6.png)
 
 
 ## 注册账号 - 申请 AppID
@@ -118,18 +118,18 @@ uni-app 和 taro 开发原生 App：
 
 注：这些插件都是差不多的，不需要全部安装，老师推荐安装第一个插件就够了
 
-![image -7-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-7.png)
+![image -7-](https://img.penghh.fun/2022/06/26/image-7.png)
 
 
 ## 小程序项目结构
 
-![image -8-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-8.png)
+![image -8-](https://img.penghh.fun/2022/06/26/image-8.png)
 
 
 ## 去除控制台的警告⚠️信息
 打开项目的 `project.config.json` 文件，在其中增加一个配置信息 `"checkSiteMap": flase`，就可以去掉控制台的警告信息了。
 
-![image -9-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-9.png)
+![image -9-](https://img.penghh.fun/2022/06/26/image-9.png)
 
 
 ## 微信小程序基础库
@@ -138,7 +138,7 @@ uni-app 和 taro 开发原生 App：
 
 这里提到的 SDK 其实就是微信小程序的基础库。
 
-![image -10-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-10.png)
+![image -10-](https://img.penghh.fun/2022/06/26/image-10.png)
 
 
 基础库是会随着时间不断更新的，因此会衍生出多个版本：
@@ -156,14 +156,14 @@ uni-app 和 taro 开发原生 App：
 await 必须放到 async 异步函数里面。
 这种方式不是在所有地方都可以使用的，在某些地方使用可能会影响性能。
 
-![image -11-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-11.png)
+![image -11-](https://img.penghh.fun/2022/06/26/image-11.png)
 
 
 ## 小程序的视频无法播放
 
 遇到小程序中的视频无法播放，可能是因为向服务器请求数据时验证不通过，我们需要在 video 组件中增加一个推荐策略的属性 `referrer-policy`，这个属性的默认值是 no-referrer，我们要把它设置为 origin。
 
-![image -12-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-12.png)
+![image -12-](https://img.penghh.fun/2022/06/26/image-12.png)
 
 
 ## 对 wxml 的数据进行格式化
@@ -172,18 +172,18 @@ wxml 页面从服务器请求得到的视频播放量、时间（单位为毫秒
 
 对 wxml 的数据进行格式化，需要用到 wxs，wxs 本质上也是 js，只不过不支持 ES6 语法，只能用 ES5。 
 
-![image -13-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-13.png)
+![image -13-](https://img.penghh.fun/2022/06/26/image-13.png)
 
 
 在 utils 文件中创建一个 `format.wxs` 文件，里面定义了一个函数 formatCount，用来转换视频播放量。
 
-![image -14-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-14.png)
+![image -14-](https://img.penghh.fun/2022/06/26/image-14.png)
 
 
 接着在 wxml 文件中使用 wxs 标签引用 wxs 文件，wxs 标签需要添加一个 module 属性，属性值是可以自定义的，可以是 tools，也可以是 format。
 在需要调用 formatCount 函数的位置，使用 module 属性值中的方法。
 
-![image -15-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-15.png)
+![image -15-](https://img.penghh.fun/2022/06/26/image-15.png)
 
 
 ## 将 wxml 中的组件抽取成一个单独的组件
@@ -192,18 +192,18 @@ wxml 页面从服务器请求得到的视频播放量、时间（单位为毫秒
 
 创建组件时，右击选择「新建 Component」，会一次性创建 4 个文件。  
 
-![image -37-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-37.png)
+![image -37-](https://img.penghh.fun/2022/06/26/image-37.png)
 
 
 组件的 `index.js` 文件 Component 包含 properties 和 data，这两者的区别在于：
 
 data 和页面一样，是用来存放组件内部的数据的；properties 用来**存放外界传过来的数据**，譬如服务器请求得到的数据，
 
-![image -38-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-38.png)
+![image -38-](https://img.penghh.fun/2022/06/26/image-38.png)
 
 properties 会接收外部传入的 item 对象。  
 
-![image -39-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-39.png)
+![image -39-](https://img.penghh.fun/2022/06/26/image-39.png)
 
 
 ## 在小程序中使用自定义的组件
@@ -214,12 +214,12 @@ properties 会接收外部传入的 item 对象。
 `"组件名": "组件的路径"`
 组件路径最末尾不要加后缀。  
 
-![image -40-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-40.png)
+![image -40-](https://img.penghh.fun/2022/06/26/image-40.png)
 
 
 在 wxml 页面使用我们自定义的组件   
 
-![image -41-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-41.png)
+![image -41-](https://img.penghh.fun/2022/06/26/image-41.png)
 
 
 
@@ -227,32 +227,32 @@ properties 会接收外部传入的 item 对象。
 
 在页面的 js 文件中，使用生命周期 `onReachBottom` 监听。  
 
-![image -42-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-42.png)
+![image -42-](https://img.penghh.fun/2022/06/26/image-42.png)
 
 
 上拉加载数据时，可以在导航栏增加一点细节，譬如增加「加载数据」时的转圈动画
 需要用到 `wx.showNavigationBarLoading()`
 数据完成加载后，要把加载动画隐藏，否则加载动画会一直显示在顶部的导航栏，调用 `wx.hideNavigationBarLoading()`   
 
-![image -43-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-43.png)
+![image -43-](https://img.penghh.fun/2022/06/26/image-43.png)
 
 
 ## 小程序页面下拉刷新
 
 小程序页面默认情况下是不允许下拉刷新的，需要在页面的 json 文件中，将 enablePullDownRefresh 配置为 true，才可以实现下拉刷新。
 
-![image -44-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-44.png)
+![image -44-](https://img.penghh.fun/2022/06/26/image-44.png)
 
 
 同时，要在 json 中配置 `backgroundTextStyle` ，将默认的 light 更改为 dark，在下拉刷新时才能看见 3 个小点点。  
 
-![image -45-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-45.png)
+![image -45-](https://img.penghh.fun/2022/06/26/image-45.png)
 
 
 
 当偏移量为 0 时，停止下拉刷新的动效，让动效尽快结束。
 
-![image -46-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-46.png)
+![image -46-](https://img.penghh.fun/2022/06/26/image-46.png)
 
 
 ## 点击组件跳转到新的页面
@@ -264,19 +264,19 @@ properties 会接收外部传入的 item 对象。
 - 直接监听组件的点击（组件可以直接绑定事件的）
 
 
-![image -47-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-47.png)
+![image -47-](https://img.penghh.fun/2022/06/26/image-47.png)
 
 
 ### 组件内部监听点击事件
 来到自定义组件的 wxml 页面，给类名为 item 的 view 组件添加 bindtap，监听点击事件。  
 
-![image -48-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-48.png)
+![image -48-](https://img.penghh.fun/2022/06/26/image-48.png)
 
 ### 直接监听组件的点击
 
 在我们自定义的组件 `video-item-v1` 添加 bindtap 属性，可以直接监听组件的点击。
 
-![image -49-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-49.png)
+![image -49-](https://img.penghh.fun/2022/06/26/image-49.png)
 
 
 我们点击不同的组件，会跳转到不同的详情页，那我们如何知道具体是点击了哪个页面呢？
@@ -284,7 +284,7 @@ properties 会接收外部传入的 item 对象。
 之后在事件处理时，我们就可以通过 data-item 绑定的 item，拿到所点击的组件的 id，就可以知道用户到底是点击了哪一个组件。
 这种拿到 id 的方法，并不是小程序独有的，而是 html 提供的能力。  
 
-![image -50-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-50.png)
+![image -50-](https://img.penghh.fun/2022/06/26/image-50.png)
 
 
 ## 在小程序引入第三方 UI 库 Vant
@@ -293,7 +293,7 @@ properties 会接收外部传入的 item 对象。
 如果项目中包含了中文名称的文件夹，使用上面的命令会无法生成 json 文件，需要使用命令 `npm init` 。
 
 
-![image -51-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-51.png)
+![image -51-](https://img.penghh.fun/2022/06/26/image-51.png)
 
 
 通过 npm 安装 Vant：
@@ -303,41 +303,41 @@ npm install @vant/weapp
 
 安装之后，项目文件夹会多出一个 `node_modules` 文件夹，里面就包含了我们刚安装的 Vant 库。  
 
-![image -52-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-52.png)
+![image -52-](https://img.penghh.fun/2022/06/26/image-52.png)
 
 
 `node_modules` 中的 Vant 库在小程序中无法直接使用，还需要经过构建 npm 的环节，构建之后，项目路径会生成一个新的文件夹 `miniprogram_npm` 。
 
-![image -53-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-53.png)
+![image -53-](https://img.penghh.fun/2022/06/26/image-53.png)
 
 
 完成构建之后，就可以开始使用 Vant 库了。
 在想要使用 Vant 库的页面的 json 文件中，注册需要用到的组件，譬如其中的搜索框组件 `van-search`。    
 
-![image -54-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-54.png)
+![image -54-](https://img.penghh.fun/2022/06/26/image-54.png)
 
 
 接着在 wxml 文件中使用 `van-search` 组件，编译之后就能看到搜索框了。   
 
-![image -55-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-55.png)
+![image -55-](https://img.penghh.fun/2022/06/26/image-55.png)
 
 
 ## 小程序轮播图组件
 小程序轮播图组件 swiper 默认的高度为 150px。
 
-![image -56-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-56.png)
+![image -56-](https://img.penghh.fun/2022/06/26/image-56.png)
 
 
 换到 iPhone5 小尺寸的手机上，轮播图组件高度依旧为 150px，原本位于图片上方的指示点就会显示在图片下方，看起来非常丑陋。   
 
-![image -57-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-57.png)
+![image -57-](https://img.penghh.fun/2022/06/26/image-57.png)
 
 
 解决适配的问题，稍微有些麻烦。
 解决的方法：轮播图组件的高度应该和图片的高度是一致的。
 问题是：如何获取图片的高度（**如何获取一张网络请求得到的图片的高度**）。    
 
-![image -58-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-58.png)
+![image -58-](https://img.penghh.fun/2022/06/26/image-58.png)
 
 
 这里需要注意的是，只有当图片完成加载，我们才能拿到网络图片的高度。
@@ -350,7 +350,7 @@ bindload 绑定了 handleSwiperImageLoaded 后，拿到的是图片原始的宽�
 ——需要用到小程序的 API `createSelectorQuery`
 
 
-![image -59-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-59.png)
+![image -59-](https://img.penghh.fun/2022/06/26/image-59.png)
 
 
 ## 请求次数过多的处理方法
@@ -399,7 +399,7 @@ setData 在设置 data 数据时，之所以是同步的，可能是为了方便
 
 自定义组件 `area-header` 配置好了左侧 title 的默认值，我们可以在使用的时候，为 title 设置新的值，就可以替换到默认的值。 
 
-![image -60-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-60.png)
+![image -60-](https://img.penghh.fun/2022/06/26/image-60.png)
 
 
 ## 小程序插槽
@@ -408,7 +408,7 @@ setData 在设置 data 数据时，之所以是同步的，可能是为了方便
 
 我们封装的区域标题组件，右侧的内容，在不同的场景下，显示的内容是不一样的（内容会动态变化的），如果想要让封装的组件更加灵活，就需要用到插槽。
 
-![image -61-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-61.png)
+![image -61-](https://img.penghh.fun/2022/06/26/image-61.png)
 
 
 不像 Vue，**微信小程序无法给插槽 slot 设置默认值**，但还是有相应的解决方法的，主要有两种：  
@@ -418,16 +418,16 @@ setData 在设置 data 数据时，之所以是同步的，可能是为了方便
 
 我们在封装的组件 area-header 中预留了插槽的位置，如何实现 **插槽默认值** 和 **在使用组件时往插槽插入内容** 的**互斥显示**呢？
 
-![image -62-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-62.png)
+![image -62-](https://img.penghh.fun/2022/06/26/image-62.png)
 
 
 下面介绍基于 css 样式来解决这个问题的方法：
 
-![image -63-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-63.png)
+![image -63-](https://img.penghh.fun/2022/06/26/image-63.png)
 
 使用自定义组件 area-header，不往插槽中插入内容时，就会显示插槽的默认值 `更多 >`。   
 
-![image -64-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-64.png)
+![image -64-](https://img.penghh.fun/2022/06/26/image-64.png)
 
 
 ## 在小程序中使用多个插槽
@@ -436,7 +436,7 @@ setData 在设置 data 数据时，之所以是同步的，可能是为了方便
 
 同时，**当你在一个页面中使用多个插槽，需要在页面的 js 文件额外配置一个 options 字段**，将 `multipleSlots`配置为 true。
 
-![image -65-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-65.png)
+![image -65-](https://img.penghh.fun/2022/06/26/image-65.png)
 
 ## 小程序多页面的状态管理
 
@@ -447,7 +447,7 @@ setData 在设置 data 数据时，之所以是同步的，可能是为了方便
 - **跨页面之间事件的传递**：页面发出一个事件 event，其他的页面会进行监听。现在有很多的库来帮我们实现跨页面之间事件的传递，例如 mitt，mitt 库实际上就是**事件总线**。事件总线的库一般只负责帮助我们传递事件，并**不会管理状态**。
 - 跨页面之间数据的共享和响应（**状态共享**）：页面会共享出一些数据（产生一些共享数据），其他页面可以使用这些数据，并且当共享的数据发生变化时，其他用到了共享数据的页面也会做出响应，自动更新数据。
 
-![image -66-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-66.png)
+![image -66-](https://img.penghh.fun/2022/06/26/image-66.png)
 
 
 在不同的框架中，采用的不同方案来完成**数据的共享**：
@@ -476,29 +476,29 @@ npm install hy-event-store
 
 当我们用 npm 安装了新的包之后，需要构建一下 npm。
 
-![image -67-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-67.png)
+![image -67-](https://img.penghh.fun/2022/06/26/image-67.png)
 
 
 在根目录下创建一个文件夹 store，用来存放共享的数据。其中的 `index.js` 作为统一导出的出口。  
 
-![image -68-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-68.png)
+![image -68-](https://img.penghh.fun/2022/06/26/image-68.png)
 
 
 在需要用到共享数据的页面的 js 文件，在 onLoad 生命周期**发起共享数据的请求**和**从 store 获取共享数据**。
 
-![image -69-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-69.png)
+![image -69-](https://img.penghh.fun/2022/06/26/image-69.png)
 
 
 ## 推荐歌曲列表自定义组件 song-item-v1
 自定义组件 song-item-v1 用到了 mustache 语法，需要将页面请求得到的数据，通过设置的 item 属性传递给自定义组件。  
 
 
-![image -70-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-70.png)
+![image -70-](https://img.penghh.fun/2022/06/26/image-70.png)
 
 
 自定义组件的 js 文件中的 properties 属性，接收数据。   
 
-![image -71-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-71.png)
+![image -71-](https://img.penghh.fun/2022/06/26/image-71.png)
 
 
 ## 全局共享数据
@@ -506,12 +506,12 @@ npm install hy-event-store
 
 `wx.getSystemInfoSync`API 可以拿到当前手机设备的信息，例如手机屏幕的宽度和高度。   
 
-![image -72-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-72.png)
+![image -72-](https://img.penghh.fun/2022/06/26/image-72.png)
 
 
 把获取到的手机屏幕宽度和高度数据，存入全局对象 `globalData` 中。   
 
-![image -73-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-73.png)
+![image -73-](https://img.penghh.fun/2022/06/26/image-73.png)
 
 
 如何在组件中使用全局共享的数据？
@@ -521,26 +521,26 @@ npm install hy-event-store
 - 使用 getApp() 方法获取全局对象 app；
 - 在 data 中使用全局对象的方法，就能得到我们刚刚获取的 screenWidth
 
-![image -74-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-74.png)
+![image -74-](https://img.penghh.fun/2022/06/26/image-74.png)
 
 
 拿到屏幕宽度后，我们可以给 scroll-view 组件设置行内样式 `style="width: {{screenWidth}}px"`，这样 scroll-view 组件的宽度就和手机屏幕宽度是一致的。
 
-![image -75-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-75.png)
+![image -75-](https://img.penghh.fun/2022/06/26/image-75.png)
 
 
 同样是让 scroll-view 组件宽度等于屏幕宽度，还有另外一种**更为简单的方法**：
 
 把 scroll-view 组件的宽度设置为 **100 vw**，等于视口的宽度，即整个屏幕的宽度。  
 
-![image -76-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-76.png)
+![image -76-](https://img.penghh.fun/2022/06/26/image-76.png)
 
 
 另外一个全局共享数据的例子：
 
 我们需要根据不同的设备，动态地获取页面顶部状态栏的高度，由于这个动态获取状态栏高度的需求，可能在多个页面中都是会用到的，我们可以把它放到 `app.js` 文件中。
 
-![image -77-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-77.png)
+![image -77-](https://img.penghh.fun/2022/06/26/image-77.png)
 
 
 ## 编程语言 - 数据处理
@@ -548,7 +548,7 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 我们可以怎样地把数据组织得更合适一点
 之后在另外一个地方就可以更加方便地使用这些数据
 
-![image -78-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-78.png)
+![image -78-](https://img.penghh.fun/2022/06/26/image-78.png)
 
 
 数据结构：告诉你应该怎样更高效地组织数据
@@ -558,7 +558,7 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 
 溢出隐藏显示为省略号
 
-![image -79-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-79.png)
+![image -79-](https://img.penghh.fun/2022/06/26/image-79.png)
 
 
 ## 页面跳转时携带参数
@@ -567,19 +567,19 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 
 如果跳转页面时需要携带参数，url 原本的单引号就要更改为 ``，且需要在 index 末尾增加参数  
 
-![image -80-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-80.png)
+![image -80-](https://img.penghh.fun/2022/06/26/image-80.png)
 
 
 在跳转的目标页面，我们可以在页面的 js 文件的 onLoad 生命周期，通过 `function(options) {}` 拿到携带过来的参数。   
 
-![image -81-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-81.png)
+![image -81-](https://img.penghh.fun/2022/06/26/image-81.png)
 
 
 ## CSS 制作毛玻璃效果
 毛玻璃效果由两个图层组成，一个是最下方的图片，一个是上层的半透明色块，给半透明色块加上模糊滤镜，就能得到想要的毛玻璃效果。
 两个图层都采取**相对定位**，`z-index` 的值为 -1，半透明色块添加 `backdrop-filter: blur(5px)`，就能加上毛玻璃效果。   
 
-![image -82-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-82.png)
+![image -82-](https://img.penghh.fun/2022/06/26/image-82.png)
 
 
 ## 搜索框的防抖操作
@@ -591,7 +591,7 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 
 在搜索框组件 `van-search` 绑定一个事件 `bind:search`，可以用来监听用户按下了回车键 Enter。
  
-![image -83-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-83.png)
+![image -83-](https://img.penghh.fun/2022/06/26/image-83.png)
 
 ## 搜索框固定定位
 
@@ -601,13 +601,13 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 
 还有一个细节，当我们为固定定位的搜索框设置了左右两侧的距离，它就会根据设置的距离，自动计算搜索框的宽度。  
 
-![image -84-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-84.png)
+![image -84-](https://img.penghh.fun/2022/06/26/image-84.png)
 
 
 ## 自定义小程序页面顶部状态栏
 小程序页面顶部的状态栏默认会显示系统的时间和电量，我们制作的音乐播放页面，想让播放页充满整个页面，就需要在页面的 json 中添加配置 `"navigationStyle": "custom"`。
 
-![image -85-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-85.png)
+![image -85-](https://img.penghh.fun/2022/06/26/image-85.png)
 
 
 ## 获取不同机型（设备）状态栏的高度
@@ -620,7 +620,7 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 页面获取，要把获取状态栏高度的函数写在页面 js 的 onLoad 生命周期中。
 组件获取，通常情况下把获取状态栏高度的函数，写在组件的 lifetimes 生命周期中。
 
-![image -86-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-86.png)
+![image -86-](https://img.penghh.fun/2022/06/26/image-86.png)
 
 
 ## 小程序分页效果
@@ -633,14 +633,14 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 - 使用第三方组件
 - 使用小程序内置组件 swiper（类似轮播图）
 
-![image -87-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-87.png)
+![image -87-](https://img.penghh.fun/2022/06/26/image-87.png)
 
 
 ## 项目中的「常量」管理
 
 不建议在 js 文件中直接使用「常量」进行运算，因为之后想要对常量进行更改，如果项目多个地方都用到了一个常量，就要在多处进行修改，维护起来比较麻烦。
 
-![image -88-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-88.png)
+![image -88-](https://img.penghh.fun/2022/06/26/image-88.png)
 
 
 对「常量」的处理方法有两种：
@@ -650,12 +650,12 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 这种常量的管理方法常用于**项目中有比较多常量**的场景。
 
 
-![image -89-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-89.png)
+![image -89-](https://img.penghh.fun/2022/06/26/image-89.png)
 
 
 另外一种是将用到的常量放在全局的 `app.js` 文件，并对其初始化，在需要使用的时候，通过 getApp() 函数调用。
 
-![image -90-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-90.png)
+![image -90-](https://img.penghh.fun/2022/06/26/image-90.png)
 
 
 ## 页面在不同设备上的适配   
@@ -664,7 +664,7 @@ coderwhy 老师在上课时候讲到一句名言：所有的编程语言最终�
 
 这里我们采取的布局方式是，整个页面采用 flex 布局，flex-direction 设置为 column，即垂直方向为主轴，其他的部分都是由文字内容的大小、icon 图标的高度、内外边距撑起来的，而剩下两块——专辑的封面和歌词的高度，是由屏幕的高度来动态决定的，即它们的高度之和等于 屏幕高度 - 所有其他元素的高度之和，再由设置的 flex 数值来分配剩余的高度，譬如我们这里把专辑封面高度的比例设置为 4，歌词高度的比例设置为 1。 
 
-![image -91-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-91.png)
+![image -91-](https://img.penghh.fun/2022/06/26/image-91.png)
 
 
 ## 小程序播放音乐
@@ -679,10 +679,10 @@ const audioContext = wx.createInnerAudioContext()
 audioContext.src = "url" 
 ```
 
-![image -92-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-92.png)
+![image -92-](https://img.penghh.fun/2022/06/26/image-92.png)
 
 
-![image -93-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-93.png)
+![image -93-](https://img.penghh.fun/2022/06/26/image-93.png)
 
 ## 歌词解析   
 
@@ -697,7 +697,7 @@ const lyricString = res.lrc.lyric
 const lyricSingle = lyricString.split("\n")   
 ```
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16566068661368.jpg)
+![](https://img.penghh.fun/2022/07/02/16566068661368.jpg)
 
 split() 方法分割之后得到的一个数组，数组里面的每个元素是一个字符串，由时间和歌词组成。  
 
@@ -775,7 +775,7 @@ for (const lineString of lyricSingle) {
 
 每个数组中第 2、第 3、第 4 个元素，就是我们想要的分钟、秒钟、毫秒。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/16567361817322.jpg)
+![](https://img.penghh.fun/2022/07/02/16567361817322.jpg)
 
 ```js
 const minute = timeResult[1] * 60 * 1000  
@@ -825,7 +825,7 @@ timeResult[0] 是正则表达式匹配结果的第一个元素，值为 `[00:00.
 
 接下来，我们要根据当前播放的音乐进度 currentTime，与 lyricInfos 中的 time 进行匹配，得到对应的歌词。    
 
-![根据时间查找歌词的分析](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/02/gen-ju-shi-jian-cha-zhao-ge-ci-de-fen-xi.png)
+![根据时间查找歌词的分析](https://img.penghh.fun/2022/07/02/gen-ju-shi-jian-cha-zhao-ge-ci-de-fen-xi.png)
 
 
 ## 歌词自动滚动
@@ -844,12 +844,12 @@ padding-bottom: {{index==lyricInfos.length-1? (contentHeight/2+80): 0}}px"
 
 想要实现**歌词自动滚动**，可以给 scroll-view 组件设置 scroll-top 属性，属性需要绑定一个动态变化的值 lyricScrollTop。
 
-![image -94-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-94.png)
+![image -94-](https://img.penghh.fun/2022/06/26/image-94.png)
 
 
 动态变化的值 lyricScrollTop，是由歌词的索引值和每行歌词的高度 35px 相乘得来的。  
 
-![image -95-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-95.png)
+![image -95-](https://img.penghh.fun/2022/06/26/image-95.png)
 
 
 ## 点击左侧按钮返回上一页
@@ -857,13 +857,13 @@ padding-bottom: {{index==lyricInfos.length-1? (contentHeight/2+80): 0}}px"
 左侧按钮位于我们自行封装的 nav-bar 组件中，我们给左侧的 left 区域绑定一个 handleLeftClick 事件。
 在 nav-bar 组件的 js 文件中，只把点击的事件发射出去，而不直接写返回上一页的逻辑，因为我们要让使用 nav-bar 组件的页面自行决定点击后的逻辑，如此一来也能让 nav-bar 组件更具备扩展性。   
 
-![image -96-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-96.png)
+![image -96-](https://img.penghh.fun/2022/06/26/image-96.png)
 
 
 来到使用 nav-bar 组件的音乐播放页面 music-player，我们在 nav-bar 组件监听内部发射出来的 click 事件，并绑定一个函数 handleBackBtnClick。
 在函数里面调用小程序的 API `wx.navigateBack()`，就能返回上一页。    
 
-![image -97-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-97.png)
+![image -97-](https://img.penghh.fun/2022/06/26/image-97.png)
 
 
 ## 阻止事件向上冒泡  
@@ -871,13 +871,13 @@ padding-bottom: {{index==lyricInfos.length-1? (contentHeight/2+80): 0}}px"
 在 HTML 中常用的做法：传入 event 对象，调用 event 对象的 stopPropagation() 方法。
 但是小程序中是不支持这个做法的。  
 
-![image -98-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-98.png)
+![image -98-](https://img.penghh.fun/2022/06/26/image-98.png)
 
 
 小程序中捕捉到一个事件后，不想让它向上冒泡，我们监听的方法要从 bindtap 更换为 catchtap。
 这样当我们点击右侧的 播放/暂停 按钮，就不会触发进入播放详情页的操作。   
 
-![image -99-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-99.png)
+![image -99-](https://img.penghh.fun/2022/06/26/image-99.png)
 
 
 小程序有自己的捕获和冒泡机制的，跟在 JS 中的写法稍微有一点点不一样。
@@ -891,19 +891,19 @@ padding-bottom: {{index==lyricInfos.length-1? (contentHeight/2+80): 0}}px"
 
 将我们之前使用 `wx.createInnerAudioContext`创建的音频上下文对象，更改为 `wx.getBackgroundAudioManager`。  
 
-![image -100-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image-100.png)
+![image -100-](https://img.penghh.fun/2022/06/26/image-100.png)
 
 
 使用 `wx.getBackgroundAudioManager` 有两个必须配置的参数：
 
 - 在 App 的全局 json 文件`app.json` 中增加字段 `requireBackgroundModes` 字段
 
-![image - 2022-06-26T102556.119](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102556119.png)
+![image - 2022-06-26T102556.119](https://img.penghh.fun/2022/06/26/image--20220626t102556119.png)
 
 
 - 在使用到 `wx.getBackgroundAudioManager` 的 js 文件中配置 title 属性，这个属性代表音乐的名称。
 
-![image - 2022-06-26T102612.212](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102612212.png)
+![image - 2022-06-26T102612.212](https://img.penghh.fun/2022/06/26/image--20220626t102612212.png)
 
 
 ## 小程序登录功能
@@ -951,7 +951,7 @@ unionid：在多个平台共享 id
 下图中的「自定义登录态」，就是公司服务器生成的 token。
 
 
-![image - 2022-06-26T102629.475](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/image--20220626t102629475.png)
+![image - 2022-06-26T102629.475](https://img.penghh.fun/2022/06/26/image--20220626t102629475.png)
 
 
 ### 用户什么时候需要重新登录呢？  
@@ -982,9 +982,9 @@ openid 是识别这个用户的身份，而不是拿到这个用户的更多信�
 
 在使用这个 API 时需要注意，它直接放在 `app.js` 中是无效的，它需要**在一个事件之后才能触发获取用户头像和昵称**的，例如绑定在页面按钮的点击事件中，当我们点击了按钮，页面下方才会弹出是否授权的窗口。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561726429178.jpg)
+![](https://img.penghh.fun/2022/06/26/16561726429178.jpg)
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561695117607.jpg)
+![](https://img.penghh.fun/2022/06/26/16561695117607.jpg)
 
 ### unionid
 
@@ -1026,18 +1026,18 @@ openid：仅仅是微信用户在同一个小程序里面多次登录的时候�
 不过需要注意的是，个人开发者是无法通过微信小程序拿到用户的手机号的。   
 
 截图地址：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/getPhoneNumber.html      
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561727312023.jpg)
+![](https://img.penghh.fun/2022/06/26/16561727312023.jpg)
 
 如果是个人开发者账号，绑定获取手机号的事件，会打印一个错误信息，提示「没有获取的权限」。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561732384096.jpg)
+![](https://img.penghh.fun/2022/06/26/16561732384096.jpg)
 
 不过即便是公司主体的开发者账号，拿到的也不是手机号，而是一个动态的 code，要想真正拿到用户手机号码，我们还需要在公司服务器向微信服务器发起请求，发起请求的时候，需要携带两个参数，一个是 access_token，一个是动态的 code，请求之后微信会返回 phone_info 对象，里面就有用户的手机号。  
 
  
 ## 小程序分包   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561736591917.jpg)
+![](https://img.penghh.fun/2022/06/26/16561736591917.jpg)
 
 第一次打开小程序必须下载的包，称为主包。
 后面才需要用到的包，称为分包。  
@@ -1056,7 +1056,7 @@ openid：仅仅是微信用户在同一个小程序里面多次登录的时候�
 
 需要注意的是，TabBar 对应的页面是不能进行分包操作的。 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561746955305.jpg)
+![](https://img.penghh.fun/2022/06/26/16561746955305.jpg)
 
 ### 分包预下载
 
@@ -1066,7 +1066,7 @@ openid：仅仅是微信用户在同一个小程序里面多次登录的时候�
 
 譬如下面的代码，是在进入 home-music 页面后，预下载两个分包 packageDetail 和 packagePlayer。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/26/16561756826579.jpg)
+![](https://img.penghh.fun/2022/06/26/16561756826579.jpg)
 
 
 ## 项目为何要用到 Vant 组件库？  
@@ -1096,14 +1096,20 @@ openid：仅仅是微信用户在同一个小程序里面多次登录的时候�
 
 点击开发者工具「模拟器」右下角的 … ，选择「生成骨架屏」。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/06/28/16562272511306.jpg)
+![](https://img.penghh.fun/2022/06/28/16562272511306.jpg)
 
 骨架屏的详细使用，可以参考微信团队提供的视频教程： https://developers.weixin.qq.com/community/business/doc/000086539b40682ccddd8b71551c0d    
 
 骨架屏只是在页面加载时给用户更好的体验，并不能提高页面的加载速度，因此**不能无节制地使用骨架屏**，一般只给主页添加骨架屏效果。 
 
 
- 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 

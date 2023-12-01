@@ -17,20 +17,20 @@ Hello 各位好，这里是效率工具指南，我是小豪。
 
 https://pan.quark.cn/s/b37a262e51bc       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/16821302630159.jpg)
+![](https://img.penghh.fun/2023/04/22/16821302630159.jpg)
 
 对比早前介绍的 bilibili哔哩哔哩B站下载助手插件，这个新插件还额外多了一些功能：   
 
 * 仅下载视频
 * 仅下载音频   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/16821340696880.jpg)
+![](https://img.penghh.fun/2023/04/22/16821340696880.jpg)
 
 不过，我测试过，仅下载视频或音频时，下载到的文件格式为 m4s，而不是我们常见的 mp4 或者 mp3。  
 
 这也不用着急，只要修改一下文件的后缀，就能在播放器中打开文件啦。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/16821342373389.jpg)
+![](https://img.penghh.fun/2023/04/22/16821342373389.jpg)
 
 另外，B 站最近似乎在打击「下载视频」的行为，表现在：未登录 B 站账号时，下载到的视频为低分辩率的版本，无法下到 1080p。  
 
@@ -45,7 +45,7 @@ Downie 是一个来自国外的付费软件，已上架到国内的软件商店�
 👉 点击右侧的链接，入手视频下载神器 Downie：https://store.lizhi.io/site/products/id/280?cid=5dpmgg7b  
 
 👇扫描二维码，入手视频下载神器 Downie  
-![Downie_qrcode](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/downieqrcode.jpg)
+![Downie_qrcode](https://img.penghh.fun/2023/04/22/downieqrcode.jpg)
 
 对于在 Mac 电脑上使用 Downie 下载视频的朋友，因为 B 站新增的限制，在下载视频之前需要**多一步「登录」操作**：    
 
@@ -53,7 +53,7 @@ Downie 是一个来自国外的付费软件，已上架到国内的软件商店�
 
 接着回到 Downie 下载视频的面板，再次粘贴视频链接，就能下载到 1080p 分辨率的视频啦！     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/16821331973628.jpg)
+![](https://img.penghh.fun/2023/04/22/16821331973628.jpg)
 
 ## B站视频封面下载
 
@@ -65,13 +65,17 @@ bilibiliq 网址：https://www.bilibiliq.com/
 
 如下图，我提取了梅艳芳告别演唱会上和陈奕迅合唱的视频封面，有需要的朋友自行尝试一下吧。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/22/16821352340765.jpg)
+![](https://img.penghh.fun/2023/04/22/16821352340765.jpg)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -85,7 +89,7 @@ bilibiliq 网址：https://www.bilibiliq.com/
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

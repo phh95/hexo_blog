@@ -21,7 +21,7 @@ Hello 各位好，我是小豪。
 
 [做视频必备！多功能工具箱，解决90%视频剪辑难题【Quick Cut】](https://www.bilibili.com/video/BV1G3411a7RN)     
 
-![QRcode_A — a1 -1-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/09/qrcodea--a1-1.jpg)
+![QRcode_A — a1 -1-](https://img.penghh.fun/2022/07/09/qrcodea--a1-1.jpg)
 
 
 除了视频压缩工具的选择，有时还会遇到一些比较小众的需求，例如将视频压缩到不超过 20 MB。  
@@ -38,7 +38,7 @@ Hello 各位好，我是小豪。
 
 点击左侧栏的「视频压缩」，将想要压缩的视频拖拽到软件窗口中，点击右侧的「设置」按钮，在弹出的面板，拖动中间可自由滑动的图标，就能自定义视频的压缩强度，随之你就能在「文件大小」直接地看到压缩后的视频体积。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/09/16573061654679.jpg)
+![](https://img.penghh.fun/2022/07/09/16573061654679.jpg)
 
 压缩后的视频体积大小之所以有个范围，而不是某个确定的值，是因为软件默认选择了「**可变比特率**」，这里的比特率其实就是通常所说的「视频码率」。  
 
@@ -46,13 +46,13 @@ Hello 各位好，我是小豪。
 
 因此，选择了可变比特率的情况下，在软件还没正式开始压缩前，只能根据比特率的上限和下限，得到一个大概的视频体积，就呈现为我们在下图看到的 48.4 MB 和 96.9 MB 这两个临界值。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/09/16573064077783.jpg)
+![](https://img.penghh.fun/2022/07/09/16573064077783.jpg)
 
 **可变比特率或者可变码率，我觉得叫做「动态码率」可能更直观，也更好理解。**    
 
 而如果我们把软件中的「可变比特率」更改为「恒定比特率」，压缩后的视频预估体积就是确定的，不存在前面有一个范围值的情况。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/09/16573068367798.jpg)
+![](https://img.penghh.fun/2022/07/09/16573068367798.jpg)
 
 当你选择了恒定比特率，就意味着压缩后每个帧画面的比特率都是一致的，这样有可能会出现一种情况：  
 
@@ -71,11 +71,19 @@ Hello 各位好，我是小豪。
 
 [高效批量压缩图片，Mark住这两个神器就够了。](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649914213&idx=1&sn=06869840e55c9d145f71773b35a20813&chksm=83a87f48b4dff65eb4e24ef5f00fa8e76f3406bc2ec583e343358ca24f2168d830f02531747d&token=658973878&lang=zh_CN#rd)       
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
+
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
 
 
 

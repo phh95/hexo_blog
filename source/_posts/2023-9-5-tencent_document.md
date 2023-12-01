@@ -15,7 +15,7 @@ Hello 各位好，这里是效率工具指南。
 * 腾讯文档在统计数据和**团队协作**时使用，后者在语雀、石墨公开文档为会员权益的背景下，腾讯文档的优势就凸显出来了     
 
 👇👇 我的语雀文档知识库「效率工具指南」   
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/16938375683917.jpg)
+![](https://img.penghh.fun/2023/09/05/16938375683917.jpg)
 
 今天的这篇文章，想来介绍腾讯文档中一些可能被人忽略的使用技巧：    
 
@@ -27,11 +27,11 @@ Hello 各位好，这里是效率工具指南。
 
 如果你用过腾讯文档小程序，那它应该也会出现在下方的列表中。点击「腾讯文档」，它就会自动将当前的文章剪藏保存到腾讯文档中。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/stiiitch20230904110921.jpg)
+![](https://img.penghh.fun/2023/09/05/stiiitch20230904110921.jpg)
 
 剪藏保存到腾讯文档的公众号文章，会自动存放在一个名为「**微信公众号文章**」的文件夹中，在这里可以一览保存到腾讯文档的所有公众号文章。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/16938428422698.jpg)
+![](https://img.penghh.fun/2023/09/05/16938428422698.jpg)
 
 下图是我打开的一篇保存到腾讯文档的公众号文章，左侧会自动生成文章的目录。  
 
@@ -39,14 +39,14 @@ Hello 各位好，这里是效率工具指南。
 
 个人猜测，应该是那些采用了 Markdown 编辑模式来写的文章，小标题中用到了可渲染为**二级/三级/四级标题**等的语法，剪藏到腾讯文档时，依据网页所包含的**标题标签**来识别生成目录。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/16938460565221.jpg)
+![](https://img.penghh.fun/2023/09/05/16938460565221.jpg)
 
 
 ## 聊天文件转存到腾讯文档
 
 熟悉微信的朋友可能都知道，在微信上收到的文件，如果未及时下载下来，14 天后就会被自动清理。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/16938736682055.jpg)
+![](https://img.penghh.fun/2023/09/05/16938736682055.jpg)
 
 在手机微信预览下载的文件时，我们可以像前面保存微信公众号文章一样，点击文件右上角的「…」，选择「更多打开方式」，在弹出的面板选择「腾讯文档」。  
 
@@ -54,7 +54,7 @@ Hello 各位好，这里是效率工具指南。
 
 如果我想对 Excel 文件做进一步的处理，比如筛选或搜索数据，只要在电脑端打开网页版的腾讯文档，就能直接操作 Excel 文档，省去了文件传输的步骤。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/stiiitch20230905083250.jpg)
+![](https://img.penghh.fun/2023/09/05/stiiitch20230905083250.jpg)
 
 ## 图片识别转换为表格
 
@@ -64,15 +64,17 @@ Hello 各位好，这里是效率工具指南。
 
 说起来，以前想要识别图片格式的表格，还得用比较专业的 OCR 软件，现在用微信自带的「搜一搜」就能搞定，简直不要太方便！     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/05/stiiitch20230905084552.jpg)
+![](https://img.penghh.fun/2023/09/05/stiiitch20230905084552.jpg)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -85,7 +87,7 @@ Hello 各位好，这里是效率工具指南。
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

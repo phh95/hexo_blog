@@ -36,13 +36,13 @@ Edge 插件商店地址：
 
 [https://microsoftedge.microsoft.com/addons/detail/notion-converter-笔记转换工具/donmgcoapjphmanmlfhhgcnlkmikggdn](https://microsoftedge.microsoft.com/addons/detail/notion-converter-%E7%AC%94%E8%AE%B0%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/donmgcoapjphmanmlfhhgcnlkmikggdn)
 
-![Untitled](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/04/untitled.png)
+![Untitled](https://img.penghh.fun/2023/03/04/untitled.png)
 
 安装插件之后，回到网页版的 Notion，打开任意一个 Notion 页面，页面右上角会增加一个**向左指的三角形** ◀️ **图标**，如下图。
 
 看到网上有人反馈说，这个小图标太不显眼了，还以为安装的插件不起作用，特此附上一张截图。
 
-![Untitled](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/04/untitled-1.png)
+![Untitled](https://img.penghh.fun/2023/03/04/untitled-1.png)
 
  
 
@@ -52,13 +52,21 @@ Edge 插件商店地址：
 
 点击向左指的三角形 ◀️ 图标下方的**剪刀** ✂️ **图标**，就能将渲染后的内容复制到系统剪贴板，此时再打开公众号后台，按下粘贴操作的快捷键，就能将内容粘贴到公众号后台。   
 
-![Untitled](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/04/untitled-2.png)
+![Untitled](https://img.penghh.fun/2023/03/04/untitled-2.png)
 
 最后再在公众号后台微调一下行间距、或者字号等参数，配上文章，就能直接发布啦！   
 
 这么看下来，有了这款浏览器插件，对于**一边用着 Notion，一边写公众号的人**来说，真的不要太方便。    
 
 看到这里的朋友，有空可以去尝试一下，没准你就会爱上这个新的**写作工作流**。
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -72,7 +80,7 @@ Edge 插件商店地址：
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
 
 
 

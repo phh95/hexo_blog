@@ -27,31 +27,31 @@ https://microsoftedge.microsoft.com/addons/detail/boardmix%E7%B4%A0%E6%9D%90%E4%
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-29.png)
+![](https://img.penghh.fun/2023/10/08/image-29.png)
 👆👆浏览器插件「boardmix素材库」
 
 安装boardmix素材库插件之后，点击浏览器右上角的「插件」图标，将boardmix插件固定在浏览器的右上角方便使用。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-12.png)
+![](https://img.penghh.fun/2023/10/08/image-12.png)
 
 安装boardmix素材库插件后，为了正常使用插件，我们还要来到boardmix的官网 https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ ，点击页面中间的「免费使用」，创建一个boardmix账号，随后boardmix素材库插件会自动与创建的账号绑定，插件就能正常使用啦~      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-31.png)
+![](https://img.penghh.fun/2023/10/08/image-31.png)
 
 
 
 👇👇 [扫码下方二维码，注册boardmix账号](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)              
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/qrcodesp--1.jpg)
+![](https://img.penghh.fun/2023/10/08/qrcodesp--1.jpg)
 
 
 在浏览器打开想保存的图片所在的网页，把鼠标指针移动到想保存的网页图片上方，图片左上角会弹出一个「**收藏**」按钮，点击即可将图片一键剪藏保存到**boardmix素材库**。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-32.png)
+![](https://img.penghh.fun/2023/10/08/image-32.png)
 
 值得一提的是，boardmix剪藏插件还支持**拖拽内容快速实现剪藏**的操作，长按选中网页上的**文字、链接**或**图片**，将其拖拽到页面左下角的采集窗口并松手，同样可以把内容快速保存到boardmix素材库中。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-33.png)
+![](https://img.penghh.fun/2023/10/08/image-33.png)
 
 
 
@@ -62,13 +62,13 @@ https://microsoftedge.microsoft.com/addons/detail/boardmix%E7%B4%A0%E6%9D%90%E4%
 在浏览器打开boardmix博思白板的首页 `boardmix.cn`，点击中间的「免费使用」按钮，进入boardmix的工作台页面。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-34.png)
+![](https://img.penghh.fun/2023/10/08/image-34.png)
 
 
 
 点击boardmix工作台左侧的「我的收藏&素材」，打开**boardmix素材库**，就能看到我们刚从网页中采集的图片。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-35.png)
+![](https://img.penghh.fun/2023/10/08/image-35.png)
 
 
 
@@ -77,26 +77,26 @@ https://microsoftedge.microsoft.com/addons/detail/boardmix%E7%B4%A0%E6%9D%90%E4%
 在选中图片的情况下，右侧的面板会显示图片的诸多信息，包括**图片名称、标签、描述、格式、图片大小、分辨率、创建时间、素材类型**。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-36.png)
+![](https://img.penghh.fun/2023/10/08/image-36.png)
 
 
 点击其中的「标签」，左侧会弹出boardmix默认已有的4个标签——已完成、待处理、我的收藏、进行中，点击底部的「创建标签」，可以创建**自定义标签**，更好地管理自己采集的网页图片。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-37.png)
+![](https://img.penghh.fun/2023/10/08/image-37.png)
 
 
 
 另外，右击素材库中的图片，点击浮窗的「标签」选项，也能给图片快速添加标签。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-38.png)
+![](https://img.penghh.fun/2023/10/08/image-38.png)
 
 
 boardmix素材库支持上传多种文件类型，不局限于图片，但如果我们只想查看保存到素材库中的图片，可以点击素材库左上角「类型」右侧的下拉箭头，在弹出的浮窗，勾选「**图片**」，就能筛选出素材库中的所有图片。
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/08/image-39.png)
+![](https://img.penghh.fun/2023/10/08/image-39.png)
 
 
 ## 写在最后
@@ -113,9 +113,11 @@ https://microsoftedge.microsoft.com/addons/detail/boardmix%E7%B4%A0%E6%9D%90%E4%
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -128,4 +130,4 @@ https://microsoftedge.microsoft.com/addons/detail/boardmix%E7%B4%A0%E6%9D%90%E4%
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   

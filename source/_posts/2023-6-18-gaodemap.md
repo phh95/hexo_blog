@@ -31,7 +31,7 @@ Hello 各位好，我是小豪。
 
 一般首选麦当劳或者肯德基的厕所😂没得选的话，其他也只能凑合了。    
 
-![IMG_6597](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/img6597.jpg)
+![IMG_6597](https://img.penghh.fun/2023/06/18/img6597.jpg)
 
 
 ## 语音提示「红灯即将变绿」
@@ -55,7 +55,7 @@ Hello 各位好，我是小豪。
 * 驾车路线下，左下角的「顺路搜」  
 * 选择一条路线后，在导航模式下，左上角的「顺路搜」   
 
-![STIIITCH_2023_06_17_03_23_20](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/stiiitch20230617032320.jpg)
+![STIIITCH_2023_06_17_03_23_20](https://img.penghh.fun/2023/06/18/stiiitch20230617032320.jpg)
 
 当我们点击顺路搜，高德会在下面列出你可能想去的地方：  
 
@@ -71,7 +71,7 @@ Hello 各位好，我是小豪。
 * 超市
 * 服务区
 
-![IMG_6592](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/img6592.jpg)
+![IMG_6592](https://img.penghh.fun/2023/06/18/img6592.jpg)
 
 
 ## 点亮城市
@@ -80,12 +80,12 @@ Hello 各位好，我是小豪。
 
 不确定高德地图是不是从这里学习的，高德「我的」页面中也有「点亮城市」的入口，点进去之后就能看到自己去过的城市。  
 
-![STIIITCH_2023_06_17_02_59_12](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/stiiitch20230617025912.jpg)
+![STIIITCH_2023_06_17_02_59_12](https://img.penghh.fun/2023/06/18/stiiitch20230617025912.jpg)
 
 
 还有个小细节，如果你刚到一个新的城市，可以打开高德地图，刚进入 App 的时候会有一个类似下图的动画「欢迎来到漳州市」，点下方的「**去点亮**」按钮，点亮的城市就会自动 +1。
 
-![IMG_5699](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/img5699.PNG)
+![IMG_5699](https://img.penghh.fun/2023/06/18/img5699.PNG)
 
 
 
@@ -100,7 +100,7 @@ Hello 各位好，我是小豪。
 * 智行火车票     
 * ……       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/16870503772204.jpg)
+![](https://img.penghh.fun/2023/06/18/16870503772204.jpg)
 
 包括今天介绍的高德地图，高德地图本身拥有丰富的地理信息数据，为它开拓本地生活业务提供了巨大的优势，用户可以很方便找到附近的餐厅、超市、电影院、酒店等等。   
 
@@ -121,7 +121,7 @@ Hello 各位好，我是小豪。
 
 业务看起来似乎比美团更丰富了😂狼子野心，昭然若揭。    
 
-![STIIITCH_2023_06_18_09_27_08](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/stiiitch20230618092708.jpg)
+![STIIITCH_2023_06_18_09_27_08](https://img.penghh.fun/2023/06/18/stiiitch20230618092708.jpg)
 
 高德里面的生活服务业务虽然很丰富，但要让用户把在别的 App 中养成的习惯扭转过来，可能还需要重点运营那些与高德 App 本身高度契合的场景，而不是单纯依靠服务种类的丰富度。  
 
@@ -150,7 +150,7 @@ Hello 各位好，我是小豪。
 
 我在神州和一嗨上都租过最便宜的那种车，连中控台（倒车影像）和雷达都没有……对新手特别不友好🤦‍♂️怕撞到车要赔的话，最好再加多一个保险。      
 
-![STIIITCH_2023_06_18_10_07_38](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/18/stiiitch20230618100738.jpg)
+![STIIITCH_2023_06_18_10_07_38](https://img.penghh.fun/2023/06/18/stiiitch20230618100738.jpg)
 
 
 ## 戏精「一条小团团」语音包
@@ -181,10 +181,11 @@ Hello 各位好，我是小豪。
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
-
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -196,4 +197,4 @@ Hello 各位好，我是小豪。
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   

@@ -26,11 +26,11 @@ Hello 各位好，我是小豪。
 
 在我上周看到的例子，有一位博主把表单用作 Notion 博客的**留言板**，如下图，用户可以在表单中写下留言或者自己的问题，且所有用户写下的留言会汇总到 Notion 的 database 中。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16830872724502.jpg)
+![](https://img.penghh.fun/2023/05/04/16830872724502.jpg)
 
 表单留言 ➡️ Notion 数据库：    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831042047231.jpg)
+![](https://img.penghh.fun/2023/05/04/16831042047231.jpg)
 
 
 如果你想实现同样的效果，**在 Notion 中使用表单来收集数据，且同时将收集到的数据存放在 Notion 的数据库中**，不妨跟着下面的方法进行操作：    
@@ -46,23 +46,23 @@ NotionForms，为 Notion 而生的表单构建工具，创建漂亮的表单来�
 NotionForms 官网：   
 https://notionforms.io/      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16830869104828.jpg)
+![](https://img.penghh.fun/2023/05/04/16830869104828.jpg)
 
 NotionForms 创建表单的步骤如下：  
 
 打开 NotionForms 官网，注册一个 NotionForms 帐户，完成注册后，点击 NotionForms 页面左侧的按钮，与 Notion 的 Workspace(工作区) 相关联。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831064171223.jpg)
+![](https://img.penghh.fun/2023/05/04/16831064171223.jpg)
 
 
 在 Notion 工作区中新建一个页面，在页面添加一个数据库，没有特殊要求的话，选择 Database - Inline(数据库只占页面的一小部分) 即可。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831067221382.jpg)
+![](https://img.penghh.fun/2023/05/04/16831067221382.jpg)
 
 创建的数据库，默认会有两个属性（两列）——Name 和 Tags，这里我们要根据后面创建的**表单要收集的信息**，适当地修改 property name(属性名) 和 type(类型)。       
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831073291274.jpg)
+![](https://img.penghh.fun/2023/05/04/16831073291274.jpg)
 
 以前面的「博客留言板」表单为例，我们想要收集**留言、昵称、来源**这 3 个字段（信息），因此数据库也要相应地添加这 3 个属性：  
 
@@ -70,47 +70,47 @@ NotionForms 创建表单的步骤如下：
 * 昵称：Text 文本类型
 * 来源：统计用户来自哪个渠道，为方便用户选择，这里将其设置为 Select 类型      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831176172559.jpg)
+![](https://img.penghh.fun/2023/05/04/16831176172559.jpg)
 
 
 设置好数据库的属性名和类型后，回到 NotionForms，点击左侧的 Create a form，查看右侧列出的数据库，是否包含了你刚创建的页面。  
 
 如果没有展示出来，则可以尝试在上方的输入框输入数据库或者页面的名称。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831187131529.jpg)
+![](https://img.penghh.fun/2023/05/04/16831187131529.jpg)
 
 
 输入之后还是搜不到的话，可以点击下图的蓝色文本 My Notion database is not here。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831188786559.jpg)
+![](https://img.penghh.fun/2023/05/04/16831188786559.jpg)
 
 
 点击下图的 Share my database，重新关联一下 Notion 数据库和 NotionForms，这样应该就能找到刚创建的包含有数据库的页面。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831038024564.jpg)
+![](https://img.penghh.fun/2023/05/04/16831038024564.jpg)
 
 进入到表单的编辑页面，左侧可以编辑表单的标题、描述，输入之后可以在右侧实时预览效果。   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831191205040.jpg)
+![](https://img.penghh.fun/2023/05/04/16831191205040.jpg)
 
 向下滑动左侧的面板，来到表单结构，这里会把我们在 Notion 数据库中添加的属性，作为表单的**字段**。  
 
 将鼠标指针移动到字段的右侧，会显示隐藏的星号 * ，把星号点亮变为红色，可以把当前字段设置为「**必填项**」，即用户不输入的情况下，无法提交表单。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831200424005.jpg)
+![](https://img.penghh.fun/2023/05/04/16831200424005.jpg)
 
 完成以上设置后，点击左上角的 Save changes，保存修改，会打开下图的页面，点击表单链接右侧的「复制」按钮，复制链接。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831202940642.jpg)
+![](https://img.penghh.fun/2023/05/04/16831202940642.jpg)
 
 回到 Notion 页面中，粘贴表单链接，选择 Create embed，将表单嵌入页面。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831204004851.jpg)
+![](https://img.penghh.fun/2023/05/04/16831204004851.jpg)
 
 NotionForms 表单嵌入 Notion 页面的效果👇👇     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831204709252.jpg)
+![](https://img.penghh.fun/2023/05/04/16831204709252.jpg)
 
 当有用户在表单提交了信息，我们也能在 Notion 数据库中及时地看到通过 NotionForms 采集的信息～ 
 
@@ -126,7 +126,7 @@ NotionForms 表单嵌入 Notion 页面的效果👇👇
 
 不过在 Notion 中填写谷歌表单之前，需要先进行登录操作，体验不是很好。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831211464447.jpg)
+![](https://img.penghh.fun/2023/05/04/16831211464447.jpg)
 
 
 ## 腾讯文档表单
@@ -134,7 +134,7 @@ NotionForms 表单嵌入 Notion 页面的效果👇👇
 腾讯文档表单不支持嵌入 Notion 页面，它会把我们想嵌入的链接转为书签的形式。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16830836498360.jpg)
+![](https://img.penghh.fun/2023/05/04/16830836498360.jpg)
 
 
 ## 石墨文档表单
@@ -142,22 +142,24 @@ NotionForms 表单嵌入 Notion 页面的效果👇👇
 石墨文档也有创建表单的功能，同样地，将我们在石墨文档中创建的表单嵌入 Notion 页面，就能很方便地收集相关信息。   
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16830848707207.jpg)
+![](https://img.penghh.fun/2023/05/04/16830848707207.jpg)
 
 经由石墨表单收集到的数据，我们可以在石墨文档的后台，点击「在表格中查看」，会发现石墨文档提供了 2 个选项：   
 
 * 在专业表格中查看：其实就是普通的 Excel 表格
 * 在应用表格中查看：类似于飞书或者腾讯文档的多维表格   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/05/04/16831215610302.jpg)
+![](https://img.penghh.fun/2023/05/04/16831215610302.jpg)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -171,5 +173,5 @@ NotionForms 表单嵌入 Notion 页面的效果👇👇
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 

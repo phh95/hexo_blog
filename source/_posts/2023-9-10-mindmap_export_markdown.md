@@ -18,7 +18,7 @@ Hello 各位好，这里是效率工具指南。
 我比较喜欢 Markdown 这种通用型的格式，过去的很多文章都是用 Markdown 写的，因此在确定使用某款软件之前，我会**留意软件是否支持导出 Markdown 格式**。      
 
 👇在 MWeb 中用 Markdown 写的文章
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943128790430.jpg)
+![](https://img.penghh.fun/2023/09/10/16943128790430.jpg)
 
 
 就**思维导图软件**而言，以前在选择思维导图软件时，没有关注**导出格式**这个维度，后来看到幕布可能会关停（幕布现已被 flomo 团队接手，暂无关停可能）的消息，就开始为存在幕布的数据发愁……   
@@ -37,17 +37,17 @@ Hello 各位好，这里是效率工具指南。
 
 MindNode 是苹果生态中一款知名的思维导图软件，可在 iPhone、iPad、Mac 和 Apple Watch 设备上使用。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943146007251.jpg)
+![](https://img.penghh.fun/2023/09/10/16943146007251.jpg)
 
 MindNode 可免费下载和使用，轻度使用的话——节点不插入图片、不更改导图主题，不需要订阅 Plus 会员。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943147315649.jpg)
+![](https://img.penghh.fun/2023/09/10/16943147315649.jpg)
 
 在 MindNode 的导出菜单中，支持将思维导图导出为多种文件，包含 PDF、FreeMind、OPML、图像、标记、文本和任务。  
 
 这里的「标记」其实就是 Markdown 格式，不过中文翻译为标记，有点让人困惑，要不是我认识常用来代表 Markdown 的图标 M↓，我应该还在纳闷，这是一个什么格式啊。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943174190133.jpg)
+![](https://img.penghh.fun/2023/09/10/16943174190133.jpg)
 
 比较良心的是，**MindNode 导出 Markdown 格式是免费的**，导出前后的对比如下图所示：      
 
@@ -56,7 +56,7 @@ MindNode 可免费下载和使用，轻度使用的话——节点不插入图�
 思维导图三级节点对应 Markdown 的三级标题     
 四级节点对应无序列表      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943132130173.jpg)
+![](https://img.penghh.fun/2023/09/10/16943132130173.jpg)
 
 
 ## boardmix博思白板   
@@ -65,13 +65,13 @@ boardmix博思白板，一款基于云端的在线白板软件，软件集成了
 
 [使用 boardmix博思白板在线创建思维导图👇👇](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/boardmix-chan-pin-er-wei-ma.png)
+![](https://img.penghh.fun/2023/09/10/boardmix-chan-pin-er-wei-ma.png)
 
 boardmix博思白板支持将思维导图导出为 Markdown 文件：  
 
 选中思维导图的主节点并右击，选择「导出 > Markdown」，就可以将思维导图转换为 Markdown 文件。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943181892465.jpg)
+![](https://img.penghh.fun/2023/09/10/16943181892465.jpg)
 
 
 ## Xmind
@@ -81,15 +81,17 @@ Xmind，也提供了将思维导图导出为 Markdown 文件的功能，点击�
 Xmind 之前只有按年或按半年订阅的选项，今年上线了按月订阅的方案，连续包月的情况下，每月 38 元，价格还是偏贵……       
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/09/10/16943185908542.jpg)
+![](https://img.penghh.fun/2023/09/10/16943185908542.jpg)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -102,6 +104,6 @@ Xmind 之前只有按年或按半年订阅的选项，今年上线了按月订�
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 

@@ -17,7 +17,7 @@ Hello 各位好，我是小豪。
 
 这不是明摆着不让用户用回旧版的应用吗？**为了阻止用户转移本应属于自己的笔记数据，真是什么下三滥的招都用出来**。       
 
-![iShot_2022-07-30_11.11.37](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/ishot20220730111137.png)
+![iShot_2022-07-30_11.11.37](https://img.penghh.fun/2022/07/30/ishot20220730111137.png)
 
 不过，即便这样，我还是找到了另外一个从印象笔记导出 enex 格式的方法，这个方法稍微有一点麻烦，需要用到 Python 和命令行。       
 
@@ -27,7 +27,7 @@ GitHub 项目「evernote-backup」地址：
 
 https://github.com/vzhd1701/evernote-backup
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591866903796.jpg)
+![](https://img.penghh.fun/2022/07/30/16591866903796.jpg)
 
 ## 安装 Python      
 
@@ -99,7 +99,7 @@ evernote-backup init-db --backend china
 
 终端会提示让你**输入印象笔记的账户**和**密码**，按照提示输入即可，如果程序能顺利运行，终端最终会返回一句 Successfully initialized database for user。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591880882942.jpg)
+![](https://img.penghh.fun/2022/07/30/16591880882942.jpg)
 
 
 
@@ -125,7 +125,7 @@ https://stackoverflow.com/questions/52805115/certificate-verify-failed-unable-to
 /Applications/Python\ 3.9/Install\ Certificates.command      
 ```
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591885073911.jpg)
+![](https://img.penghh.fun/2022/07/30/16591885073911.jpg)
 
 运行前面的命令解决遇到的这个问题后，再运行最初的初始化数据库的命令，顺利的话，电脑本地就会多出一个名为 `en_backup.db` 的文件。   
 
@@ -142,7 +142,7 @@ evernote-backup sync
 
 因为这个工具支持**断点下载**，你可以在中途随时停止，之后重新运行这个命令，它会从上一次停止的地方继续下载，不需要重头再来。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591891303912.jpg)
+![](https://img.penghh.fun/2022/07/30/16591891303912.jpg)
 
 
 ## 输出 enex 格式的文件 
@@ -159,7 +159,7 @@ evernote-backup export output_dir/
 
 需要说明的是，下图中每一个 enex 文件，实际上对应的是印象笔记中的每一个「笔记本」，如果你在笔记本里创建了多条笔记，那每个 enex 文件里就会包含多条笔记的。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591894673026.jpg)
+![](https://img.penghh.fun/2022/07/30/16591894673026.jpg)
 
 得到所有的 enex 文件后，我试着将其中一个名为「得到 App 笔记」的 enex 文件导入 OneNote，导入后的效果如下：  
 
@@ -167,7 +167,7 @@ evernote-backup export output_dir/
 
 我也终于拿回了本该属于我的数据。           
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591896552414.jpg)
+![](https://img.penghh.fun/2022/07/30/16591896552414.jpg)
 
 
 ## 将 enex 文件导入 Notion   
@@ -179,7 +179,7 @@ Notion 默认不支持直接导入 enex 文件，但我们可以使用这位开�
 关于这个工具的使用，可以查看一位博主「Jerry Zhu」写的文章《[印象笔记近乎完美的迁移至Notion](https://imho.plus/form-evernote-to-notion/)》，这里就不复读了，他也写得很详细了：   
 
 
-![QRcode_A — a1 -2-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/qrcodea--a1-2.jpg)
+![QRcode_A — a1 -2-](https://img.penghh.fun/2022/07/30/qrcodea--a1-2.jpg)
 
 
 ## 写在最后
@@ -203,11 +203,20 @@ Notion 默认不支持直接导入 enex 文件，但我们可以使用这位开�
 **印象笔记，终于活成了自己最讨厌的样子。**    
 
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
+
+
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)         
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)         
 
 
 

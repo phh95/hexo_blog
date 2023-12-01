@@ -21,13 +21,13 @@ Hello 各位好，我是小豪。
 
 打开支付宝 App，点击左上角的「城市」，在打开的页面，点击「国际/港澳台」，选择下面的「旧金山」。       
 
-![STIIITCH_2023_06_01_12_33_21](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/01/stiiitch20230601123321.jpg)
+![STIIITCH_2023_06_01_12_33_21](https://img.penghh.fun/2023/06/01/stiiitch20230601123321.jpg)
 
 
 切换到旧金山后，会自动回到支付宝首页，向下滑动首页，找到「大牌礼卡低至9折」，点进去，将页面滑动到最底部，点击「更多大牌折扣礼卡」。   
 
 
-![STIIITCH_2023_06_01_12_37_10](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/01/stiiitch20230601123710.jpg)
+![STIIITCH_2023_06_01_12_37_10](https://img.penghh.fun/2023/06/01/stiiitch20230601123710.jpg)
 
 在打开的 Pockyt Shop 页面，找到下图的 App Store & iTunes US，点进去，进入到下图右侧的页面。  
 
@@ -36,7 +36,7 @@ Hello 各位好，我是小豪。
 补充我自己的个人情况：我的美区 Apple ID 注册地属于征税州，在支付 ChatGPT Plus 费用的时候，需要额外支付税额，总价为 21.76 美元。    
 
 
-![STIIITCH_2023_06_01_12_42_47](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/01/stiiitch20230601124247.jpg)
+![STIIITCH_2023_06_01_12_42_47](https://img.penghh.fun/2023/06/01/stiiitch20230601124247.jpg)
 
 在这里购买 App Store 礼品卡时，还需要用邮箱注册一个 Pockyt 帐号，用国内的 QQ 邮箱注册就好，没有要求必须是国外的邮箱。  
 
@@ -46,7 +46,7 @@ Hello 各位好，我是小豪。
 
 此时会打开另一个页面，点击底部的「手动输入兑换码」，粘贴刚从支付宝复制的兑换码，就能将 App Store 礼品卡的金额充入自己的美区 Apple ID 帐户中啦。      
 
-![STIIITCH_2023_06_01_12_56_31](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/06/01/stiiitch20230601125631.jpg)
+![STIIITCH_2023_06_01_12_56_31](https://img.penghh.fun/2023/06/01/stiiitch20230601125631.jpg)
 
 这时再打开 ChatGPT App，点击右上角的图标，选择 Settings，就能看到订阅 ChatGPT Plus 的选项，点击蓝色的文字，按照提示，通过 Apple ID 帐号支付月费，就能顺利用上 GPT-4 啦～    
 
@@ -60,9 +60,11 @@ Hello 各位好，我是小豪。
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -75,5 +77,5 @@ Hello 各位好，我是小豪。
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 

@@ -10,7 +10,7 @@ Hello 各位好，我是小豪。
 
 目前这个模块最多只支持置顶 2 篇文章，数量多了也不好，会让设计出来的精选失去了意义——要先把别的文章设为精选，就必须先取消掉原有的精选（在「订阅号助手」App 中操作）。           
 
-![IMG_3665](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/img3665.JPEG)
+![IMG_3665](https://img.penghh.fun/2022/10/20/img3665.JPEG)
 
 因为公众号的这个精选功能，我就联想到：为啥我不给自己的个人博客也整一个呢？     
 
@@ -19,7 +19,7 @@ Hello 各位好，我是小豪。
 * 我终于拥有自己的独立博客了   
 * 油猴脚本获取公众号文章封面       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661981781654.jpg)
+![](https://img.penghh.fun/2022/10/20/16661981781654.jpg)
 
 给 Hexo 博客添加「文章置顶」功能也非常简单，当然需要说明的是，不同的 Hexo 主题添加或配置这个功能的方法，存在着细微的差异。  
 
@@ -27,7 +27,7 @@ Hello 各位好，我是小豪。
 
 安装版本号 >= 2.0.0 的 `hexo-generator-index` 插件，并在文章开头的 `Front-matter` 中额外增加一个 sticky 属性，就能将文章置顶啦。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661986069840.jpg)
+![](https://img.penghh.fun/2022/10/20/16661986069840.jpg)
 
 Hexo Fluid 主题配置指南：       
 https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E6%8E%92%E5%BA%8F
@@ -35,10 +35,10 @@ https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E6%8E%92%E5%BA%8F
 
 我跟着配置指南的提示，分别给两篇文章添加了 sticky 属性，两个值分别为 100 和 99，数字大的文章会排在数字小的文章上方，效果就如前面你所看到的那样。           
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661984858109.jpg)
+![](https://img.penghh.fun/2022/10/20/16661984858109.jpg)
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661988818465.jpg)
+![](https://img.penghh.fun/2022/10/20/16661988818465.jpg)
 
 
 如果你使用的是别的 Hexo 主题，可能要安装另外的插件 `hexo-generator-index-pin-top`，并配置 top 属性来实现文章的置顶，具体可参考网上的一篇文章：   
@@ -46,11 +46,19 @@ https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E6%8E%92%E5%BA%8F
 https://blog.51cto.com/u_15477117/4919708  
 
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
+
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)       
 
 
 

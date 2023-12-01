@@ -19,7 +19,7 @@ Hello 各位周末好，我是小豪。
 
 只要 OBS 能拿到相机拍摄的东西，我们就能把相机用于直播了，不管是视频号直播，还是其他的平台。       
 
-![Snipaste_2022-07-16_17-24-58](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/snipaste20220716172458.png)
+![Snipaste_2022-07-16_17-24-58](https://img.penghh.fun/2022/07/16/snipaste20220716172458.png)
 
 
 整个流程需要用到两款软件：  
@@ -33,11 +33,11 @@ Hello 各位周末好，我是小豪。
 
 你需要先有一台支持 HDMI 输出的相机，还需要有一个硬件「**视频采集卡**」，有了视频采集卡，才能将相机拍摄到的画面，传输给我们的电脑。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16579650382634.jpg)
+![](https://img.penghh.fun/2022/07/16/16579650382634.jpg)
 
 但是在我们这个直播流程中，视频采集卡并不是必须的，我们可以使用佳能或其他相机厂商推出的「直播软件」，起到取代视频采集卡的作用，这样就省去了买硬件的钱💰了。       
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16579649735843.jpg)
+![](https://img.penghh.fun/2022/07/16/16579649735843.jpg)
 
 说明：上面👆这两张截图，来自我喜欢的一位 Up 主「极地手记」的视频《[【保姆教学】不用采集卡，佳能相机直播指南（支持G7X3，M50，M6II） by 极地手记](https://www.bilibili.com/video/BV1ya4y1v7hY)》。          
 
@@ -47,7 +47,7 @@ EOS Webcam Utility，是佳能在 2020 年上线的一款直播软件，这个�
 
 > 疫情催生了在线教学或直播的需求，相机厂商看到了这个需求，顺势推出可把相机用于直播的软件。         
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16579648740959.jpg)
+![](https://img.penghh.fun/2022/07/16/16579648740959.jpg)
 
 EOS Webcam Utility 既有 Windows 也有 macOS 版本，不过 **macOS 版本的限制比较多**，你只能在 macOS 10.13-10.15 的系统上使用，如果你的 Mac 系统已经更新到了 macOS 11 以上，那就和这个软件无缘了。    
 
@@ -55,13 +55,13 @@ Windows 系统的限制少一些，只要是 Win10 的系统都是可以使用�
 
 也是因为系统的问题，我又搬出了好久没用的 Windows 笔记本。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16579655857407.jpg)
+![](https://img.penghh.fun/2022/07/16/16579655857407.jpg)
 
 另外还需要说明的是，**并不是所有的佳能相机都可以使用这个软件来直播**，在下载软件时需要根据相机的型号来查找，才能知道佳能是否推出了对应的软件。  
 
 如果你手里有佳能的相机，可以看看自己购买的相机型号，是否在下图的列表中：    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/16579659655294.jpg)
+![](https://img.penghh.fun/2022/07/16/16579659655294.jpg)
 
 EOS Webcam Utility 下载地址：   
 https://www.canon.com.cn/special/webcam/index.html      
@@ -71,7 +71,7 @@ https://www.canon.com.cn/special/webcam/index.html
 
 将佳能的直播软件下载到本地，解压下载的文件，双击打开文件夹中的 setup 文件，就能开始安装。     
 
-![双击setup](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/shuang-jisetup.png)
+![双击setup](https://img.penghh.fun/2022/07/16/shuang-jisetup.png)
 
 安装好软件后，用数据线将相机与电脑进行连接，连接后电脑和相机分别会有反应：  
 
@@ -85,7 +85,7 @@ Win10 电脑右下角会有一个弹窗；相机屏幕会出现一个电脑的�
 
 点击设备，在下拉列表中选择刚安装的软件名称「EOS Webcam Utility」，顺利地说，你就能在 OBS 中看到相机捕获的画面了。    
   
-![添加设备来源](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/tian-jia-she-bei-lai-yuan.png)
+![添加设备来源](https://img.penghh.fun/2022/07/16/tian-jia-she-bei-lai-yuan.png)
 
 到这里，我们就完成了将相机画面导入直播软件 OBS 的步骤。  
 
@@ -96,15 +96,22 @@ Win10 电脑右下角会有一个弹窗；相机屏幕会出现一个电脑的�
 感兴趣的可以看我发布在 B 站的一个「视频号竖屏直播」的视频：   
 
      
-![IMG_2856](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/16/img2856.PNG)
+![IMG_2856](https://img.penghh.fun/2022/07/16/img2856.PNG)
 
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 欢迎关注     
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
 
 
 

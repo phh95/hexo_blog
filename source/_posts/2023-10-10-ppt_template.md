@@ -24,7 +24,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 **[▶ 点击卡片，海量免费优质PPT模板，尽在boardmix模板社区！](https://boardmix.cn/community/?source=peng_blog_ppt_templates)**
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/yq1jblfyio0nf1xvdlccbeponme.png)
+![](https://img.penghh.fun/2023/10/10/yq1jblfyio0nf1xvdlccbeponme.png)
 *PPT模板-来自boardmix模板社区
 
 在使用boardmix模板社区海量的模板资源时，可从下面3个维度进行筛选，快速找到自己想要的模板——
@@ -38,7 +38,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 **[▶ 点击卡片，海量免费优质PPT模板，尽在boardmix模板社区！](https://boardmix.cn/community/?source=zhihu_ppt_templates)**
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/s9j0bokkto8fh2x1awjcc7rinmg.png)
+![](https://img.penghh.fun/2023/10/10/s9j0bokkto8fh2x1awjcc7rinmg.png)
 *海量优质PPT模板，尽在boardmix模板社区
 
 
@@ -50,14 +50,14 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/vtnzbc6exowdxpxhvnvcd51fntb.png)
+![](https://img.penghh.fun/2023/10/10/vtnzbc6exowdxpxhvnvcd51fntb.png)
 *热度Top10的PPT模板-来自boardmix模板社区
 
 
 
 将鼠标指针移动到任意一个PPT模板上方，点击「立即使用」，会打开一个新的页面，我们可以在boardmix的编辑器中**在线编辑PPT模板**。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/sjy2bvbi2o4v4cx9jgqc44iwnzd.png)
+![](https://img.penghh.fun/2023/10/10/sjy2bvbi2o4v4cx9jgqc44iwnzd.png)
 
 
 
@@ -65,13 +65,13 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/ffijbszbjomzaxxehfoc2tkyndk.png)
+![](https://img.penghh.fun/2023/10/10/ffijbszbjomzaxxehfoc2tkyndk.png)
 *小手拖拽画布，浏览所有PPT页面
 
 
 点击boardmix博思白板左下角的「**路线图列表**」按钮，白板左侧会打开一个**PPT页面导航**窗口，单击窗口中的PPT页面缩略图，右侧的编辑器会快速定位到相应的页面。
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/fqtmbwa9toezgvxed8gcvfyynjd.png)
+![](https://img.penghh.fun/2023/10/10/fqtmbwa9toezgvxed8gcvfyynjd.png)
 
 
 
@@ -79,7 +79,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/xda1biuopoiid1xl242cs2bknzg.png)
+![](https://img.penghh.fun/2023/10/10/xda1biuopoiid1xl242cs2bknzg.png)
 *一键更改整份PPT的外观
 
 
@@ -90,7 +90,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/i3robnqclonhltxnujxcewfynic.png)
+![](https://img.penghh.fun/2023/10/10/i3robnqclonhltxnujxcewfynic.png)
 
 
 
@@ -98,7 +98,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/b0pcbilfuozzsvxpd3scnzylnye.png)
+![](https://img.penghh.fun/2023/10/10/b0pcbilfuozzsvxpd3scnzylnye.png)
 
 
 
@@ -106,7 +106,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/ujt9bvqlooiwkdxhtfmcekcnnqg.png)
+![](https://img.penghh.fun/2023/10/10/ujt9bvqlooiwkdxhtfmcekcnnqg.png)
 
 
 
@@ -114,7 +114,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/vyq5bzmyyoj3t7xou0cctlvunlc.png)
+![](https://img.penghh.fun/2023/10/10/vyq5bzmyyoj3t7xou0cctlvunlc.png)
 
 
 
@@ -122,7 +122,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/uhk2bjwq4ou5tcx7tq5cdfvvnod.png)
+![](https://img.penghh.fun/2023/10/10/uhk2bjwq4ou5tcx7tq5cdfvvnod.png)
 
 
 
@@ -130,7 +130,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/tlbrberqeolsmyx6ibocggwunyd.png)
+![](https://img.penghh.fun/2023/10/10/tlbrberqeolsmyx6ibocggwunyd.png)
 *将在线PPT导出下载到本地
 
 除了这里介绍的内容，boardmix博思白板还有一项非常受欢迎的「**黑科技**」——**AI生成PPT**，只需输入一个PPT主题，即可快速生成一份完整的PPT，彻底解放双手，告别加班。感兴趣的朋友可以**戳下方↓↓的卡片**，免费体验这项黑科技！
@@ -138,7 +138,7 @@ boardmix模板社区，是[在线PPT软件boardmix](https://boardmix.cn/ai-white
 
 **[▶ 点击卡片，使用boardmix AI一键生成PPT，简单又漂亮！](https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ)**
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/dff9btffdojhu0xao1hcu0yknfg.png)
+![](https://img.penghh.fun/2023/10/10/dff9btffdojhu0xao1hcu0yknfg.png)
 
 
 ## **02 SlidesCarnival**
@@ -149,7 +149,7 @@ SlidesCarnival是一个免费提供PPT模板下载的网站。该网站提供超
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/l6v6baljvoh7wjxec4ccbgjznpb.png)
+![](https://img.penghh.fun/2023/10/10/l6v6baljvoh7wjxec4ccbgjznpb.png)
 
 
 
@@ -161,7 +161,7 @@ presentermedia是一家提供演示素材的网站，拥有大量免费PPT模板
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/i51xbl5ctoapu4xfq9xcohbjn9f.png)
+![](https://img.penghh.fun/2023/10/10/i51xbl5ctoapu4xfq9xcohbjn9f.png)
 
 
 
@@ -173,7 +173,7 @@ TemplateMonster是一个知名的模板资源网站，提供大量免费PPT模�
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/hoppb5vcqonlnaxku98c09bqned.png)
+![](https://img.penghh.fun/2023/10/10/hoppb5vcqonlnaxku98c09bqned.png)
 
 
 
@@ -185,7 +185,7 @@ OfficePlus是Microsoft微软官方提供的一个在线PPT模板库，这个平�
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/pcqbblk1folletxmslgc4dwgnxk.png)
+![](https://img.penghh.fun/2023/10/10/pcqbblk1folletxmslgc4dwgnxk.png)
 
 
 
@@ -201,15 +201,17 @@ Google旗下的模板社区GoogleSlidesPPT，提供了种类丰富的PPT模板�
 
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/10/10/jyrfbbx0vowcsoxqdakcjko1njb.png)
+![](https://img.penghh.fun/2023/10/10/jyrfbbx0vowcsoxqdakcjko1njb.png)
 
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -222,7 +224,7 @@ Google旗下的模板社区GoogleSlidesPPT，提供了种类丰富的PPT模板�
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

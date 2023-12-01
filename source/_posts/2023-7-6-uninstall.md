@@ -53,11 +53,11 @@ Windows 电脑删除软件，可以优先使用系统自带的「卸载」功能
 
 打开访达的 Macintosh HD 路径，进入「应用程序」文件夹。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883048021166.jpg)
+![](https://img.penghh.fun/2023/07/02/16883048021166.jpg)
 
 在应用程序单击选中想卸载的应用，右击选择「移到废纸篓」，就能删除相应的软件。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883077151746.jpg)
+![](https://img.penghh.fun/2023/07/02/16883077151746.jpg)
 
 但这种删除软件的方法，和 Windows 直接把整个文件夹拖拽到回收站的做法类似，同样会在卸载软件后产生残留。  
 
@@ -65,50 +65,51 @@ Windows 电脑删除软件，可以优先使用系统自带的「卸载」功能
 
 打开访达，在访达右上角的搜索框中，输入你想卸载的软件名称，接着点击左侧的「这台 Mac」，将搜索的范围扩大到整台电脑。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883085545524.jpg)
+![](https://img.penghh.fun/2023/07/02/16883085545524.jpg)
 
 
 接着点击访达右上角搜索框下方的加号 + ，添加一些筛选条件。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883086636455.jpg)
+![](https://img.penghh.fun/2023/07/02/16883086636455.jpg)
 
 默认添加的第一个筛选条件为「名称」，在最后的输入框中再次输入想卸载的软件名称。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883087410177.jpg)
+![](https://img.penghh.fun/2023/07/02/16883087410177.jpg)
 
 接着再次点击访达搜索框下方的加号 + ，再添加一条筛选条件。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883088391089.jpg)
+![](https://img.penghh.fun/2023/07/02/16883088391089.jpg)
 
 
 添加的第二个筛选条件，默认是「上次打开日期」，这里我们需要将其更改为「系统文件」。 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883089490232.jpg)
+![](https://img.penghh.fun/2023/07/02/16883089490232.jpg)
 
 同时还要将「系统文件」条件后面的「不包括」，更改为「包括」。   
 
 经过这两步，访达显示的内容，就是和我们想卸载的软件相关的所有文件，此时我们可以全选所有文件，将它们移动到废纸篓🗑️，就可以彻底删除这款软件了！     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883090287783.jpg)
+![](https://img.penghh.fun/2023/07/02/16883090287783.jpg)
 
 上面介绍的这种彻底删除 Mac 软件的方法，我之前也录了一个视频，发布在我的视频号「好个柯基」上，感兴趣的朋友可以戳下面👇的视频：      
 
 
 除了这种方法，Mac 上同样有第三方的软件清理/卸载工具，可以很方便地帮我们清除电脑上残留的文件，比如前面提到的 Windows 第三方清理工具 CCleaner，它同样也有 Mac 版本，并且有 2 个版本可供选择——免费版和专业版，免费版的功能较少，专业版则提供了完整清理的功能。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/16883096808073.jpg)
+![](https://img.penghh.fun/2023/07/02/16883096808073.jpg)
 
 目前 CCleaner 专业版已上架到国内知名的软件商店「数码荔枝」，有需要的朋友可以扫描下方图片入手～     
 
-![CCleaner_qrcode](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/07/02/ccleanerqrcode.jpg)
+![CCleaner_qrcode](https://img.penghh.fun/2023/07/02/ccleanerqrcode.jpg)
 
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
-
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -120,7 +121,7 @@ Windows 电脑删除软件，可以优先使用系统自带的「卸载」功能
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 
 

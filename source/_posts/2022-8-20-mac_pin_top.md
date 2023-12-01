@@ -13,7 +13,7 @@ Hello 各位周末好，我是小豪。
 
 它可以将截图固定在屏幕最上层，不会被其他应用窗口所遮挡，这个功能有点像 Windows 上一些软件自带的「置顶」功能一样，例如 Windows 微信或幕布，点击右上角的「图钉📌」，就可以将应用「钉」在桌面最顶层。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610004551391.jpg)
+![](https://img.penghh.fun/2023/02/04/16610004551391.jpg)
 
 当然并不是所有的 Windows 应用都自带「置顶」功能，为了让所有的 Windows 应用窗口都能置顶，我还写过 2 篇实现应用窗口置顶的文章：   
 
@@ -50,7 +50,7 @@ Hello 各位周末好，我是小豪。
 * 必须禁用 macOS 系统的系统完整性保护，系统完整性保护的英文全称为 System Integrity Protection，简写为 SIP         
 * MacForge 不能用于 M1 或 M2 芯片的电脑，目前只支持 Intel 芯片的 Mac 电脑，且 macOS 系统版本不得低于 10.14   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610030947358.jpg)
+![](https://img.penghh.fun/2023/02/04/16610030947358.jpg)
 
 MacForge 下载地址：  
 https://www.macenhance.com/macforge   
@@ -62,14 +62,14 @@ Mac 电脑出厂时，为了提升系统的安全性，默认开启了系统完�
 
 更多关于系统完整性保护的介绍，可以查看来自 macEnhance 网站的介绍：  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610036328958.jpg)
+![](https://img.penghh.fun/2023/02/04/16610036328958.jpg)
 
 
 如果你不确定自己之前是否关闭了系统完整性保护，可以先打开 Mac 自带的终端，在终端中输入 `csrutil status`，根据返回的信息，就能知道当前是否关闭了 SIP。  
 
 如下图，我的电脑当前关闭了 SIP，因此返回的信息为 disabled。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610037897147.jpg)
+![](https://img.penghh.fun/2023/02/04/16610037897147.jpg)
 
 
 如果返回的是 enabled，那就说明系统当前的 SIP 是开启的。为了让 MacForge 能起作用，需要先关闭 SIP。   
@@ -80,7 +80,7 @@ Mac 电脑出厂时，为了提升系统的安全性，默认开启了系统完�
 
 接下来的操作，因为我没有截图，这里可参考「少数派」上的一篇文章《[macOS 开启或关闭 SIP](https://sspai.com/post/55066)》：   
 
-![QRcode_A — a1 -2-](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/qrcodea--a1-2.jpg)
+![QRcode_A — a1 -2-](https://img.penghh.fun/2023/02/04/qrcodea--a1-2.jpg)
 
 简单来说，就是打开 macOS 恢复功能界面顶部菜单栏「实用工具 >> 终端」，在打开的终端中输入 `csrutil disable`后按下回车，这样就关闭了 SIP，之后重启电脑，正常进入系统。    
 
@@ -100,7 +100,7 @@ sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.pl
 
 安装好插件后，再重启一下电脑，让刚安装的插件生效。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610045700357.jpg)
+![](https://img.penghh.fun/2023/02/04/16610045700357.jpg)
 
 ## 将应用窗口置顶显示   
 
@@ -108,7 +108,7 @@ sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.pl
 
 开心～从自己的需求出发，找到了刚好可以满足需求的工具，这种感觉太开心了。           
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610048056235.jpg)
+![](https://img.penghh.fun/2023/02/04/16610048056235.jpg)
 
 
 ## 另外的窗口置顶方案  
@@ -121,7 +121,7 @@ Fentre 可以置顶显示图片、视频、网页等，只需要安装软件就�
 
 但实际使用下来，Fentre 的自由度不如前面介绍的方法，表现在：使用 Fentre 置顶显示的视频只能用 Fentre 内置的播放器播放，无法使用 IINA 来播放，也就意味着无法倍速播放视频。。。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610053721374.jpg)
+![](https://img.penghh.fun/2023/02/04/16610053721374.jpg)
 
 
 如果你想要使用 Fentre，可从 Mac App Store 下载，应用商店提供了两个软件版本，一个是免费的 Lite 版，一个是付费的 Pro 版，价格为 50 元。 
@@ -129,8 +129,16 @@ Fentre 可以置顶显示图片、视频、网页等，只需要安装软件就�
 还需要说明的是，Fentre 目前似乎只有适配 Intel 芯片的版本，如果你想在 M1 或者 M2 芯片的电脑上使用，需要额外安装 Rosetta，对 Intel 版本的软件进行转译。      
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/02/04/16610058770652.jpg)
+![](https://img.penghh.fun/2023/02/04/16610058770652.jpg)
 
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -143,7 +151,7 @@ Fentre 可以置顶显示图片、视频、网页等，只需要安装软件就�
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)      
 
 
 

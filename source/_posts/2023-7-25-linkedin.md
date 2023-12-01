@@ -15,7 +15,7 @@ tags: [LinkedIn,下载,领英]
 
 到今年 8 月 9 号，领英职场正式停止服务，靴子落地，曾经的谣传变成了现实。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/11/16917667934186.jpg)
+![](https://img.penghh.fun/2023/08/11/16917667934186.jpg)
 
 领英职场关停，对大部分人可能没什么影响，但对一些猎头、或者是有意向寻找海外工作的朋友，还是不太方便。   
 
@@ -28,11 +28,11 @@ https://www.linkedin.com/login/zh
 
 之前没有注册过领英账号的朋友，可以通过 Google 帐号或者苹果 Apple 帐号登录。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/11/16917676849258.jpg)
+![](https://img.penghh.fun/2023/08/11/16917676849258.jpg)
 
 如果你没有 Google 或 Apple 帐号，那也可以使用邮箱进行注册。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/11/16917677800373.jpg)
+![](https://img.penghh.fun/2023/08/11/16917677800373.jpg)
 
 
 领英 iOS 版本：https://apps.apple.com/sg/app/linkedin-%E9%A2%86%E8%8B%B1/id288429040?l=zh    
@@ -46,7 +46,7 @@ https://www.linkedin.com/login/zh
 
 **领英安卓版 apk 安装包下载 - 网盘链接**：https://pan.quark.cn/s/2f1b2c5d6fc0 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/08/11/16917678743076.jpg)
+![](https://img.penghh.fun/2023/08/11/16917678743076.jpg)
 
 *相关阅读：  
 
@@ -55,10 +55,11 @@ https://www.linkedin.com/login/zh
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
 关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
-
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 ## 订阅我在竹白上创建的 Newsletter   
 
@@ -70,6 +71,6 @@ https://www.linkedin.com/login/zh
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 

@@ -1,7 +1,7 @@
 ---
 title: 怎么用Notion做思维导图？用自带的功能就够了！【效率工具指南】     
 date: 2022-11-27 16:28:00               
-tags: [笔记软件,思维导图软件,Notion]                                                                               
+tags: [笔记软件,思维导图,Notion]                                                                               
 ---
 
 本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/LGb-13wwZEcp5yKo_3APwQ)」       
@@ -25,7 +25,7 @@ Hello 各位好，我是小豪。
 
 创建的思维导图如下：   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695237621440.jpg)
+![](https://img.penghh.fun/2022/11/27/16695237621440.jpg)
 
 这个方法的优点：  
 
@@ -46,12 +46,12 @@ Hello 各位好，我是小豪。
 
 在 Notion 中输入斜杠 `/code`，点击下方返回的 Code，添加一个代码块。     
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695241623814.jpg)
+![](https://img.penghh.fun/2022/11/27/16695241623814.jpg)
 
 
 点击代码块左上角「向下」的小箭头，在弹出面板的搜索框输入 **Mermaid** 并单击，将代码块所使用的语言设置为 Mermaid。  
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695242610462.jpg)
+![](https://img.penghh.fun/2022/11/27/16695242610462.jpg)
 
 > 补充一点小知识：    
 > 
@@ -74,7 +74,7 @@ graph LR;
 ```
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695286652598.jpg)
+![](https://img.penghh.fun/2022/11/27/16695286652598.jpg)
 
 简单解释一下输入的这些内容/符号的含义：    
 
@@ -96,7 +96,7 @@ LR 还可以更改为其他 3 个值：
 
 掌握使用 Mermaid 的这几个要点，**在 Notion 中绘制一个简单的思维导图**就绰绰有余了。        
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695303427924.jpg)
+![](https://img.penghh.fun/2022/11/27/16695303427924.jpg)
 
 
 ## 用 Mermaid 在 Notion 中绘制其他的图形  
@@ -107,7 +107,7 @@ LR 还可以更改为其他 3 个值：
 
 流程图中不同的形状有着相对应的含义，例如：矩形/圆角矩形表示流程图的开始，菱形表示判断，柱形表示数据……   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695320089639.jpg)
+![](https://img.penghh.fun/2022/11/27/16695320089639.jpg)
 
 绘制流程图时，在第一行输入流程图对应的英文 flowchart，且在后面写上流程图的方向，上图的方向是 TB，即从上往下。   
 
@@ -132,7 +132,7 @@ LR 还可以更改为其他 3 个值：
 如果为数值，Mermaid 会自动计算数值在数值在总和中所占的比例，而不需要我们手动计算对应的比例。    
 
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695325577276.jpg)
+![](https://img.penghh.fun/2022/11/27/16695325577276.jpg)
 
 
 关于 Mermaid 的用法，就简单介绍到这里咯，介绍它并不是说大家都要用它来绘制图形，而是提供一种选择：     
@@ -140,6 +140,15 @@ LR 还可以更改为其他 3 个值：
 如果你想在 Notion 中绘制一些简单的图形/图表，例如思维导图或者饼状图，那么可以考虑用它，但对于一些复杂的图形，建议还是**用更专业的工具**，而不是被自己所掌握的语言、工具甚至是思维所束缚～   
 
 让工具回归工具，让你成为你。    
+
+
+## 扫码加入我在知识星球上创建的社群「效率工具指南」  
+
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 
@@ -154,7 +163,7 @@ LR 还可以更改为其他 3 个值：
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)     
 
 
   

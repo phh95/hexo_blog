@@ -35,18 +35,18 @@ AI 的热度🔥从 2 月份一直延续到了现在，好像还没有看到要�
 Whimsical，一款很早之前就用过的**在线协作工具**，第一次安利这款软件，还是我加入某家公司不久的时候，转眼现在已经过去好多年了，我还在写工具文……      
 
 
-![IMG_5474](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/img5474.jpg)
+![IMG_5474](https://img.penghh.fun/2023/04/16/img5474.jpg)
 
 Whimsical 是一款集合了**流程图、线框图、项目管理、思维导图、文档**功能的在线协作工具，目前**只有网页版**，暂未推出移动端。    
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16814074690367.jpg)
+![](https://img.penghh.fun/2023/04/16/16814074690367.jpg)
 
 
 新建一个文件后，点击左侧的思维导图工具，快捷键为 M，在板上单击，添加一个节点，输入思维导图主题。  
 
 接着单击选中节点，点击上方的「小星星」图标，这个图标对应的操作为 Generate additional ideas(产生额外的想法)，之后 AI 就会围绕选中的文本内容，产生新的分支。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16814073826979.jpg)
+![](https://img.penghh.fun/2023/04/16/16814073826979.jpg)
 
 Whimsical 目前暂未限制 AI 功能的使用次数，但每生成一个节点会占用一个 item，当所有文件的item 数达到 3000 时，就需要升级到专业版，才能继续使用内置的 AI 功能。   
 
@@ -61,7 +61,7 @@ Miro，是海外非常出名的一款白板应用，前不久也上线了 AI 功
 
 先创建一个节点，接着选中节点，点击上方菜单的「小星星」图标，Miro AI 就会自动生成导图分支。   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16815723927944.jpg)
+![](https://img.penghh.fun/2023/04/16/16815723927944.jpg)
 
 
 ## [boardmix博思白板](https://boardmix.cn/?source=xiaolv_blog)    
@@ -70,7 +70,7 @@ boardmix博思白板，是一款对标 Miro 的国产在线白板软件，在今
 
 关于 boardmix AI 与思维导图功能的结合，在上周发布的视频《[什么档次，跟我用一样的思维导图软件](https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649922116&idx=1&sn=4b91e0d6dd084ccc5f83d7051176967b&chksm=83a89e69b4df177fffb7f4eadf06943e1f46d2952f1f5df4cf7754145fb417db2259fd97474f&token=621289165&lang=zh_CN#rd)》中有简单介绍过，可参加下面的截图：   
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16815741118278.jpg)
+![](https://img.penghh.fun/2023/04/16/16815741118278.jpg)
 
 而在这周，boardmix博思白板对 AI 功能又进行了升级，提供了更多使用场景和生成内容的提示词（prompts）：   
 
@@ -81,7 +81,7 @@ boardmix博思白板，是一款对标 Miro 的国产在线白板软件，在今
 
 点击下方的「生成思维导图」选项，在输入框输入思维导图主题，AI 就会基于输入的主题一键生成思维导图。      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16815742254198.jpg)
+![](https://img.penghh.fun/2023/04/16/16815742254198.jpg)
 
 譬如我输入了「五一假期厦门旅游攻略」，稍等一小会，AI 助手就生成了包含 4 个层级的思维导图：  
 
@@ -90,14 +90,18 @@ boardmix博思白板，是一款对标 Miro 的国产在线白板软件，在今
 * 景点    
 * 景点详情      
 
-![](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/04/16/16815747463578.jpg)
+![](https://img.penghh.fun/2023/04/16/16815747463578.jpg)
 
 
 boardmix博思白板的 AI 助手每次生成内容时，会消耗一定的 AI 点数，每位用户最初可以获得 200 点 AI 点数，消耗完之后，就需要订阅会员，获得更多的 AI 点数。   
 
 ## 扫码加入我在知识星球上创建的社群「效率工具指南」  
 
-![48844555552858T2](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG)
+如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)   
 
 
 ## 订阅我在竹白上创建的 Newsletter   
@@ -111,7 +115,7 @@ boardmix博思白板的 AI 助手每次生成内容时，会消耗一定的 AI �
 
 以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     
 
-![公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
+![公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
   
 
