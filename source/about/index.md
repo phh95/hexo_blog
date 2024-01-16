@@ -16,7 +16,19 @@ layout: about
 ## ⛹ 兴趣爱好
 
 * 跑步    
-* 兴趣广泛，学过 PPT、AE、C4D、小程序开发等，目前无一样精通     
+* 码字
+* 摄影新手
+
+## 🛒 我可以提供的服务     
+
+* 软件深度测评，过往合作品牌：万兴优转、万兴播爆、[QQ](https://zhuanlan.zhihu.com/p/568342138)、[魔音工坊](https://zhuanlan.zhihu.com/p/621884742)等      
+* 基于微信公众号的付费专栏《[OBS直播：搭建一个好看专业的直播间](https://mp.weixin.qq.com/s/iRSY4qStavyrns5KXWfM6Q)》    
+* 基于知识星球的付费社群「效率工具指南」
+
+关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：[知识星球「效率工具指南」简介](https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#)    
+
+![48844555552858T2](https://img.penghh.fun/2023/03/25/48844555552858t2.JPG)     
+
 
 ## 📬 联系我呀
 
@@ -25,7 +37,7 @@ layout: about
 微信：penghonghao95
 微信公众号：[效率工具指南](https://mp.weixin.qq.com/s/_izXrRi6eLav8NfLRaD6Mg)（ID：PengTalk15）   
 
-![微信公众号：效率工具指南](https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/04/18/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)    
+![微信公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
 知乎：[彭宏豪](https://www.zhihu.com/people/angola-84)         
 
