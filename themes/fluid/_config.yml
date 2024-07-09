@@ -417,6 +417,13 @@ links:
   items:  # intro 与 image 可省略
 
     - {
+    title: 'yihong gitblog',
+    intro: 'People Die, but Long Live GitHub',
+    link: 'https://github.com/yihong0618/gitblog',
+    image: 'https://avatars.githubusercontent.com/u/15976103?v=4'
+    }
+
+    - {
     title: '张洪Heo',
     intro: '分享设计与科技生活',
     link: 'https://blog.zhheo.com/',

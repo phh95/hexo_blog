@@ -15,7 +15,7 @@ layout: about
 
 ## ⛹ 兴趣爱好
 
-* 跑步    
+* 跑步：我的个人跑步记录 [running_page](https://running-page-eight-gilt.vercel.app/) ，基于 Vercel 部署，需要特殊工具才能访问。     
 * 码字
 * 摄影新手
 
