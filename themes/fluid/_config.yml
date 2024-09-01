@@ -417,6 +417,14 @@ links:
   items:  # intro 与 image 可省略
 
     - {
+    title: 'AI效率工具导航',
+    intro: '我创建的好用软件导航网站',
+    link: 'https://nav.penghh.fun',
+    image: 'https://img.penghh.fun/2024/09/01/08fbcded114b4769978f71712b57d790.png'
+    }
+
+
+    - {
     title: 'yihong gitblog',
     intro: 'People Die, but Long Live GitHub',
     link: 'https://github.com/yihong0618/gitblog',

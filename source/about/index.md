@@ -15,6 +15,7 @@ layout: about
 
 ## ⛹ 兴趣爱好
 
+* 软件：我做了一个导航网站「[AI效率工具导航](https://nav.penghh.fun)」       
 * 跑步：我的个人跑步记录 [running_page](https://running-page-eight-gilt.vercel.app/) ，基于 Vercel 部署，需要特殊工具才能访问。     
 * 码字
 * 摄影新手
