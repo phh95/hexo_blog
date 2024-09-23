@@ -474,7 +474,7 @@ links:
     }
 
     - {
-      title: 'Jayden\'s site',
+      title: "Jayden's site",
       intro: '为天地立心, 为生民立命, 为往圣继绝学, 为万世开太平',
       link: 'https://xxu.do/',
       image: 'https://avatars.githubusercontent.com/u/97662597?v=4'
