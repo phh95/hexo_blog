@@ -1,8 +1,7 @@
 ---
 title: 油猴脚本获取公众号文章封面                              
 date: 2022-10-6 17:55:00               
-tags: [油猴脚本,前端,微信公众号]           
-sticky: 99                                                                           
+tags: [油猴脚本,前端,微信公众号]                                                                                  
 ---  
 
 本文首发于微信公众号「[效率工具指南](https://mp.weixin.qq.com/s/p8pnKX8_4tLKKkG4GsmERQ)」                 
