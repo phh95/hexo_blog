@@ -1,0 +1,896 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="baidu-site-verification" content="code-PdLAgt4JZr">
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    爸爸总有办法 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-07-10 00:32" pubdate>
+        2023年7月10日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      27
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">爸爸总有办法</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发于我的微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/2yNLU7GYKUObm2yrV2YeZg">效率工具指南</a>」<br>文/彭宏豪   </p>
+<p>一天中午在公司睡午觉前，写完一个和爸爸有关的便签，想起爸爸做过的事情，脑子里便蹦出了这句话：<strong>爸爸总有办法</strong>。  </p>
+<p>那天我回到家，想起这应该是从 B 站上去年很火的一个视频《回村三天，二舅治好了我的精神内耗》来的，于是打开重温了一遍，在中间看到了原话：  </p>
+<blockquote>
+<p>二舅总有办法    </p>
+</blockquote>
+<p>视频中出现这句话，是在说二舅的木工活了得，在两个妹妹出嫁时给她们打造了超豪华的家具，可能为了让家具看起来像是从外边买来的高档货，二舅总有办法，可以在家具外边贴上各种「牌子」——上海牌、天津牌、北京牌、香港牌，甚至还有超豪华OK？</p>
+<p><img src="https://img.penghh.fun/2023/07/10/16887403848920.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/07/10/16888652283217.jpg" srcset="/img/loading.gif"></p>
+<p>二舅不仅是一个出色的木匠（原视频中说很难把二舅定义为一个木匠），他还点亮了很多项技能：   </p>
+<ul>
+<li>修插线板</li>
+<li>修燃气灶  </li>
+<li>修床头灯   </li>
+<li>修玩具车</li>
+<li>修镢头</li>
+<li>修洗衣机</li>
+<li>修水龙头   </li>
+<li>修门锁</li>
+<li>修老人机</li>
+<li>修收音机</li>
+<li>雕梁画栋</li>
+<li>做二胡</li>
+<li>……    </li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/07/10/16888660363255.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/07/10/16888659905645.jpg" srcset="/img/loading.gif"></p>
+<p>列出二舅掌握的诸多技能之后，作者末了还来了一个总结：</p>
+<blockquote>
+<p>这个村子里有的一切农具、家具、电器、车辆，二舅不会修的只有三样：智能手机、汽车和电脑。     </p>
+</blockquote>
+<p>看到这里的时候，我还想起纪录片《四个春天》中的那位父亲，他的本职工作是物理老师，但为了尽早还完债，他平时还会帮人修电器，修得又快又好，人耐心和气，收费又低，因此县里电器坏了的都会找上门来。<br>（这段参考了公众号「人物」在今年父亲节发布的一篇文章 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3GGhgGt5go6Qg5KgifhQxg">谨以此文，纪念《四个春天》中的那位父亲</a>，点击文章标题可跳转阅读原文）      </p>
+<p>铺垫到这里，可以开始讲讲我的爸爸了：   </p>
+<h2 id="接水管"><a href="#接水管" class="headerlink" title="接水管"></a>接水管</h2><p>我上初中那会，村子里总是缺水，水一时间成了稀缺的资源，别的村子有人做起了卖水的生意，漫天要价，原本一立方几块钱的水，可以卖 40 多，爱买不买。   </p>
+<p>不买水的人家，有这么几种对付的办法：  </p>
+<ul>
+<li>挖深井（费用比较高，听说是挖到地下 100 m），深井出来的水不会那么硬，水淌过的地方也不容易变黄        </li>
+<li>晚上去别人家里洗澡（我去过表哥、伯父、叔叔家洗过澡）     </li>
+<li>买来更多的不锈钢蓄水池，在有水的时候囤满水    </li>
+</ul>
+<p>👇下图为我说的不锈钢蓄水池，农村自建房没有集体供水的说法，每家每户都要自己买或者建蓄水池，下面这种蓄水池在农村自建房的最顶层随处可见。       </p>
+<p>这种蓄水池也有好处，夏天盛在里面的水，隔着铁板经过太阳的暴晒加热，傍晚洗澡的时候水不会太凉，也省了燃气😂不像城里现在还要洗温水澡。          </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16888681230610.jpg" srcset="/img/loading.gif"></p>
+<p>家里在缺水那段时间，买多了一个蓄水池，买完爸爸说要从楼下弄一条新的水管通到顶层，那时候我不理解为什么要弄一条新的水管，可能是因为蓄水池太多，单纯一条水管去分流，蓄满水的时间太长了？    </p>
+<p>接新水管之前，爸爸随口说起以前被人「宰」的经历，以前天台上让别人接的铁水管（水龙管），随随便便就好几千……    </p>
+<p>因此这回爸爸决定自己赚这笔钱，他评估过接铁水管比较麻烦，久了会生锈，而且材料价格比较高，最后选择了那时候也是现在比较流行的<strong>塑料水管</strong>。  </p>
+<p>塑料水管接起来比较简单，只需要下面两个工具，接起来就像是在玩游戏一样哈哈哈哈哈哈：  </p>
+<ul>
+<li>管剪   </li>
+<li>PVC 给水管胶水（相当于铁水管的水胶布，不过我觉得水胶布用起来太麻烦了，不如胶水来得简单😂）    </li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/07/10/16888684363945.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/07/10/16888691228887.jpg" srcset="/img/loading.gif"></p>
+<p>有了这次经历之后，后来家里或者其他地方需要接水管的，都是我爸自己来：  </p>
+<ul>
+<li>平房装修之后重新接水管   </li>
+<li>奶奶家里装蓄水池</li>
+<li>家里旁边的巷子铺水泥后接水管 </li>
+</ul>
+<h2 id="让土地产生现金流"><a href="#让土地产生现金流" class="headerlink" title="让土地产生现金流"></a>让土地产生现金流</h2><p>很多年以前，爸爸就在家里往后的一条路，买了一块新的地皮，从我记事起，就看着那个属于我家的荒芜地皮，中间长了很多荷叶。    </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16889133276148.jpg" srcset="/img/loading.gif"><br>👆上图来自 Pixabay </p>
+<p>直到多年以后，家里钱虽然不多，爸爸还是想把搁置了几年建新房子的想法变成现实，那时听到妈妈说要建新房子，我心里还在嘀咕——家里不是没什么钱吗，怎么还要建新房子呢？   </p>
+<p>那时候我只是想到，建新房子是为了之后可以搬进新的、更大的 house，后来发现是我想多了😂     </p>
+<p>我爸的想法应该是，地皮闲置着就是一种资源的错配或者说浪费，虽然眼下建起来不能装修，但是有了空架之后，就可以用来出租呀！   </p>
+<p>这个道理，应该也是我很久之后才领悟出来的……我至今也没当面问过爸爸，但他当初下定决心，把地皮建成房子，让闲置的土地产生现金流，从现在看来是无比正确的。   </p>
+<h2 id="上漆"><a href="#上漆" class="headerlink" title="上漆"></a>上漆</h2><p>地皮建成房子后，家门口装的是铁质的门（铁门），俺爸说铁门便宜，又耐用，不锈钢门要好好呵护，出租给别人，「<strong>北人草粿北人糖</strong>」，可不舍得装不锈钢门，以后自家搬进来住，可以再考虑换成不锈钢门。     </p>
+<p>但铁门也有一个坏处，就是容易氧化生锈，尤其是地面因为下雨有积水的时候，更不好「保养」，因此如果要延长铁门的存续时间，最好是在外面上一遍漆。       </p>
+<p>上漆也是一个技术活，活儿细的话，要上两遍漆，我看过的是里面先上一层橙色的漆，外面再上一层白漆。  </p>
+<p>有些刷漆的师傅路过我家新建的房子，看到门还没上漆，就联系我爸，问需不需要帮忙上漆啊？      </p>
+<p>好家伙，一打听，可能就一天半的功夫，上漆也要大几千，我爸没舍得下血本，自己决定撸起袖子漆，正好赶上暑假😂，我和弟弟也去帮忙了。</p>
+<p>如今记忆犹新的，就只有那难闻的油漆味，还有被油漆玷污的皮肤和裤子，手如果不慎或不得不沾上了巨量的油漆，还得用一种叫<strong>松节油</strong>的东西来洗。    </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16889152012272.jpg" srcset="/img/loading.gif"></p>
+<h2 id="穿孔打洞"><a href="#穿孔打洞" class="headerlink" title="穿孔打洞"></a>穿孔打洞</h2><p>每次想要家里墙上挂个新东西，比如说放置路由器的架子、厕所装个新的毛巾架、装一台新的热水器等等，都需要在墙上打孔。   </p>
+<p>有过打孔经历的朋友可能清楚，打孔也有专业的工具，而不是直接一锤子砸上去，一锤子上去不够精准，会伤及无辜，可能会让一大块墙体脱落。   </p>
+<p>打孔要用到的工具叫冲击钻，看起来有点接近冲锋枪的造型，这工具看起来和用起来都很危险，但我爸照用不误😂。          </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16889164823068.jpg" srcset="/img/loading.gif"></p>
+<p>选好钻头大小（一般是六分的钻头），在墙上打出一个洞之后，接着就是锤子🔨上场了，要往洞里钉入下图左侧的黄色塑料，这东西叫「木牙」，为右侧的螺丝提供咬合的纹路，这样我们装在墙上的东西才劳靠。       </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16888703882755.jpg" srcset="/img/loading.gif"></p>
+<h2 id="换插头面板"><a href="#换插头面板" class="headerlink" title="换插头面板"></a>换插头面板</h2><p>前阵子端午假期回家，我发现房间里的插头面板又换过一遍了，插头面板也可以算是一个「遗留」问题了：    </p>
+<p>现在住的房子建得早，那时候可能是「三孔」的电器或插头面板还比较少，家里装的很多插头面板，都是下图这种上下两孔的设计。  </p>
+<p>而当想用一个三孔的验钞机、或者是三孔的电吹风时，就得在插头面板和三孔插头之间加多一个「二孔转三孔」的转换器，得这个用起来属实不够方便，插上去的电线还容易摇晃。   </p>
+<p><img src="https://img.penghh.fun/2023/07/10/16889173480078.jpg" srcset="/img/loading.gif"></p>
+<p>这次端午回家，上图这种上下双孔的插板，已经被更换为上二下三的插板，虽然对比最新的带有 USB 插孔的插板还是存在滞后，但已有有了改进，我就觉得非常满意了。   </p>
+<p>自不必说，这些新的插头面板，也是爸爸自己换的。   </p>
+<h2 id="分两程陪妈妈去汕头市区"><a href="#分两程陪妈妈去汕头市区" class="headerlink" title="分两程陪妈妈去汕头市区"></a>分两程陪妈妈去汕头市区</h2><p>妈妈每年至少要去两次汕头市区，不是去玩，而是去体检。我家在汕头郊区，离市区比较远，之前家里没车🚗，爸爸又不想直接从家里打车去市区，就研究出了一个法子，分两程陪妈妈去汕头市区：  </p>
+<ul>
+<li>先从家里开摩托车🏍️到和平镇，把摩托车丢在某个医院的停车场里     </li>
+<li>再走到医院对面的马路，坐公车直达市区的医院  </li>
+</ul>
+<p>今年有一个好消息，家里终于有车了，这下爸妈可以比较舒服地去汕头市区了……   </p>
+<p>（写到这里眼泪在眼眶里打转，属实太不容易了）       </p>
+<p>现在想起的爸爸做过的事，暂时只有上面这些，爸爸做的一连串事情，其实也是在解决生活向他抛出的一个个具体的问题，正是这些细微而生动的小事，构筑成了我与父亲之间独特的回忆。  </p>
+<p><strong>生活无涯，爸爸总有办法</strong>。   </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
+<h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
+<p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">   </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%88%B6%E4%BA%B2/">父亲</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/14/2023-7-14-homepod/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">苹果音箱HomePod mini怎么连接到MacBook电脑？【效率工具指南】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/07/06/2023-7-6-uninstall/">
+                        <span class="hidden-mobile">电脑上怎么彻底删除一个软件？【效率工具指南】</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    }
+    waitElementVisible('comments', loadUtterances)
+  </script>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2023/07/10/2023-7-10-myfather/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "爸爸总有办法&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

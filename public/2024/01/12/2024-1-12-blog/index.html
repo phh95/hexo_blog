@@ -1,0 +1,877 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="baidu-site-verification" content="code-PdLAgt4JZr">
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    2024年，还有必要搭建个人博客吗？【效率工具指南】 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2024-01-12 11:31" pubdate>
+        2024年1月12日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      30
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">2024年，还有必要搭建个人博客吗？【效率工具指南】</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发于我的微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/NN3ti0EDVC06xmw8NsyVgg">效率工具指南</a>」，欢迎移步关注<br>文/彭宏豪</p>
+<p>Hello 各位好，这里是效率工具指南。<br>我是小豪。      </p>
+<p>从去年到现在，看到不止一个博主重新提起「博客」这个旧事物，就我自己看到的有——</p>
+<ul>
+<li>公众号「高少星」发布的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/-RR70kLrDq2rBxZ-EPYyTw">别了，微信公众号</a>》 <a target="_blank" rel="noopener" href="https://gaoshaoxing.com/">https://gaoshaoxing.com/</a></li>
+<li>公众号「槽边往事」作者和菜头写的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/BK491-caWZ5hEd7aqAa0kg">重开博客</a>》  <a target="_blank" rel="noopener" href="https://www.hecaitou.com/">https://www.hecaitou.com/</a></li>
+<li>公众号「范冰的二次学习」作者范冰写的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/57NMO4UUKNPiwd_t1OjfPA">独立博客，还是有必要搞起来的</a>》  <a target="_blank" rel="noopener" href="https://xdash.me/">https://xdash.me/</a></li>
+</ul>
+<p>说起博客，那应该是上世纪 90 年代到 21 世纪 10 年代前流行的东西，这对许多 90 后或者是 Z 世代的人来说太过遥远，毕竟博客流行那会，很多人还在玩沙子，有些还未出生，“<strong>博客生我未生，我生博客已老</strong>”，与曾经的「博客时代」完美错峰。        </p>
+<p><img src="https://img.penghh.fun/2024/01/12/17048150287765.jpg" srcset="/img/loading.gif"></p>
+<p>而且，博客主要以文字作为载体，对比时下流行的短视频，显得不够「性感」，就像一个已经阳痿的老男人，怎敌得过深谙「黄金三秒」之道的短视频，让人颅内高潮迭起呢？     </p>
+<p>除了这两个因素，博客的衰落，可能也与下面这些方面有关——    </p>
+<h2 id="缺少有效的订阅体系"><a href="#缺少有效的订阅体系" class="headerlink" title="缺少有效的订阅体系"></a>缺少有效的订阅体系</h2><p>这个可把博客和公众号放到一起进行对比，两者都是主要以文字作为载体，最明显的差异是，公众号有订阅体系，一旦你订阅了某个公众号，当公众号发布新的文章，你有更大的概率看到推送的文章，而博客虽然也可以通过 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3BzBk-pEsfZ9-tzFOzxzkA">RSS 链接</a>进行订阅，但比起人们天天在用的微信，“近水楼台先得月”，你说能有多少人天天打开 RSS 订阅器，就为了阅读你发布的博客文章呢？         </p>
+<p>这一点，微信之父张小龙早年在「饭否」上也发表过一个观点：  </p>
+<blockquote>
+<p>推送改变世界。因为更懒。 2012-03-05 02:21 通过网页</p>
+</blockquote>
+<p>结合微信公众平台的上线时间——2012 年 8 月 17 日，可以推测张小龙的这条饭否动态，就是在说（2012 年）几个月后即将上线的微信公众平台。    </p>
+<p>做产品的人不要高估用户，就像产品设计领域的那句至理名言「Don’t Make Me Think」，能推给用户的，就不要期待用户主动来打开阅读，因为人性中存在着偷懒的倾向。   </p>
+<h2 id="缺乏互动和反馈"><a href="#缺乏互动和反馈" class="headerlink" title="缺乏互动和反馈"></a>缺乏互动和反馈</h2><p>这个和上面的「缺少有效的订阅体系」相关，每当博客更新，读者都不一定知道你更新了，连基础的阅读都无法保证，基于阅读之上的评论、留言，那就更少了。  </p>
+<p>大家也别小看「<strong>反馈</strong>」这个行为，有反馈/没反馈，给一名创作者的感觉是全然不同的：</p>
+<p>能收到反馈，说明至少有人愿意在你这多花一点时间，给你一句肯定/感谢的话，补充博客未提及的事情，或是给出一些改进的建议等等；没反馈的，就像是往湖里扔了一块石头，毫无波澜，扔了个寂寞。      </p>
+<h2 id="缺乏商业化的空间"><a href="#缺乏商业化的空间" class="headerlink" title="缺乏商业化的空间"></a>缺乏商业化的空间</h2><p>这个可以把博客和 B 站放到一起「互相伤害」：  </p>
+<p>这些年 B 站带火了一个词「用爱发电」，不少 Up 主出来「卖惨」，说自己做视频，没啥收入，准备无限期停更账号，但至少还有平台的创作激励不是？      </p>
+<p>对比起来，我觉得把「用爱发电」放到写博客的人身上更贴切，在现在这个节点，除了一些站点加入 Google AdSense 换得一点广告收入外，写博客几乎不能获得任何收入……</p>
+<p>而且有些博客为了给读者提供更好的阅读体验，会把博客图片放到租用的图床（对象存储）中，<strong>不仅不挣钱，还要倒贴钱</strong>，远不如直接去某个内容平台上开个账号来得划算。   </p>
+<p><img src="https://img.penghh.fun/2024/01/12/17049021567835.jpg" srcset="/img/loading.gif"></p>
+<h2 id="前期的搭建成本，让人望而却步"><a href="#前期的搭建成本，让人望而却步" class="headerlink" title="前期的搭建成本，让人望而却步"></a>前期的搭建成本，让人望而却步</h2><p>文章开头附上的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/BK491-caWZ5hEd7aqAa0kg">重开博客</a>》里提到一个观点，也是我最近这些年上网察觉到的一个现象，那就是：  </p>
+<blockquote>
+<p><strong>只使用手机上网的人，和同时使用台式机电脑、笔记本电脑、平板电脑、智能手机的人，完全是不同的两类人</strong>。只会用手机上网的人不大适合阅读，他们的行为习惯是快读扫读，然后就要留言发表看法，并且喜欢在留言区里骂人。会使用电脑，熟练进行Web上操作的人，毫无疑问眼界要相对宽广一些，多少见识过一点世界，这些人还保留有阅读的习惯，也知道讨论的形式和规则，所以应该是长文字比较理想的读者群，他们的留言和讨论甚至可以丰富正文。   </p>
+</blockquote>
+<p>使用手机上网的人，绝大部分可能更喜欢「推荐」式的阅读，App 推荐什么，我就读什么，容易造成所谓的「信息茧房」，而还保有用电脑上网习惯的人，可能更喜欢「探索」式的阅读，这一小撮人上网的目的性比较强，想从网上找到某个问题的解法，不仅有应用推荐的内容，中间还包含了主动阅读、探索的行为，偶遇的一篇内容，没准刚好补齐了认知上的不足，不会变得固执、走向极端，以为自己在井底看到的就是一切。   </p>
+<p>回到搭建博客这件事上来，毋须统计，已有博客的人里面，应该是程序员/工程师占了绝大部分，折腾博客这件事，和技术人的身份确实很搭，也顺理成章，余下的人，应该就是不懂技术的群体，那他们是如何搭建博客的？   </p>
+<p>如何搭建博客这个话题，说大也大，它背后包含了一系列问题：    </p>
+<ul>
+<li>选用哪个博客框架，是 Hexo，是 Hugo，还是 WordPress，亦或是 Ghost 等等。    </li>
+<li>如何注册博客域名？    </li>
+<li>选用哪个博客主题呢？     </li>
+<li>选用哪个服务来托管博客？      </li>
+<li>选用哪个云服务商提供的对象存储呢？   </li>
+<li>博客使用哪个评论系统呢？    </li>
+<li>……   </li>
+</ul>
+<p>说小也小，在 Notion 中建个页面公开分享出来、或是使用以前分享过的 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/cRqTBEfHTmt0TvxCP7PjjA">GitPress</a>，也可以算是有了一个最简单的博客。   </p>
+<p>再不济，网上还有大量教人搭建博客的文章、视频教程，不想自己动手的话，还可以<strong>去闲鱼上委托别人帮忙搭建</strong>，只要有搭建博客的想法，具体的实现方法多种多样。   </p>
+<h2 id="搭建博客的好处"><a href="#搭建博客的好处" class="headerlink" title="搭建博客的好处"></a>搭建博客的好处</h2><p>写到这里，说了很多个劝退人搭建博客的因素，但还是有人不怕把手弄脏，坚持要搭一个自己的博客，那它有没有一丁点好处呢？   </p>
+<p>我问了一下 AI，它是这么说的——     </p>
+<ul>
+<li>展示个人品牌：个人博客是展示个人品牌的有效方式。通过博客，你可以分享自己的专业知识、经验和兴趣，树立个人在某个领域的专业形象。</li>
+<li>建立专业声誉：通过发布有质量的内容，你有机会在特定领域建立专业声誉。这有助于吸引同行、潜在雇主或客户的关注，提高自己在行业中的可见度。</li>
+<li>提升写作能力：博客是一个锻炼写作能力的平台。通过持续写作，你可以改善表达能力、逻辑思维和文字组织能力。</li>
+<li>分享经验和知识：通过博客，你可以分享自己在学习、工作或生活中的经验和知识。这对他人可能是有价值的学习资源，也能帮助他人解决问题。</li>
+<li>建立社交网络，多认识一个「网上邻居」：通过博客，你有机会与同行、读者和其他领域的专业人士建立联系。这有助于扩大社交网络，获取新的机会和合作伙伴关系。</li>
+<li>创造 passvie income（被动收入）：通过博客，你可以探索一些被动收入的机会，比如广告、赞助、联盟营销等。尽管这可能需要时间，但成功的个人博客可以成为一种持续的收入来源。</li>
+<li>个人成长：持续地思考、写作和与读者互动可以促进个人成长。这有助于更好地理解自己的思想、观点和价值观。</li>
+<li>记录个人进步：博客可以成为个人的成长日志，记录学习、成就和进步。回顾过去的文章，可以看到自己的发展轨迹，对个人发展有积极的影响。    </li>
+</ul>
+<p>不知道上面这些好处，能否说服一两个人去搭建或者开通博客呢？   </p>
+<p>还有一个好处，可能是 AI 没能提及到的，那就是，把写博客这件事放到更长的时间视角下，它会让我们变成互联网的一部分，即便有一天我们从这个世界上消失了，我们在博客上发过的东西，很有可能会代替我们与他人进行隔空对话。         </p>
+<p>下边的截图来自本文开头提及的文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/BK491-caWZ5hEd7aqAa0kg">重开博客</a>》，作者和菜头<br><img src="https://img.penghh.fun/2024/01/12/17049891912095.jpg" srcset="/img/loading.gif"></p>
+<h2 id="一起写博客的同行者们"><a href="#一起写博客的同行者们" class="headerlink" title="一起写博客的同行者们"></a>一起写博客的同行者们</h2><p>从今天来看，博客是个几乎被人遗忘的东西，假设只有自己一个人写，那确实很孤独，但幸好有互联网，让我们看到了一个个还在坚持更新博客的同行者们。    </p>
+<p>如果你还在写博客，不妨试着和同行者们互换友链，或是在一些项目里提交自己的博客链接，没准在某个瞬间会给你带来惊喜。   </p>
+<ul>
+<li>十年之约：从加入这个活动起，我们的博客十年不关闭，保持更新和活力！  <a target="_blank" rel="noopener" href="https://www.foreverblog.cn/">https://www.foreverblog.cn/</a>     </li>
+<li>中文独立博客列表：<a target="_blank" rel="noopener" href="https://github.com/timqian/chinese-independent-blogs">https://github.com/timqian/chinese-independent-blogs</a>        </li>
+</ul>
+<p>最后附上很久之前我摘录的一段话，作为共勉：     </p>
+<blockquote>
+<p>人们一边往前走，一边会在某些独处的时间里，去探求自己内心最深处的东西，那里有缺口，有黑暗，有自己的期待和向往， 有生命的欲望，也有无尽的期待。当有些人在这些最深处相遇的时候，他们的生命就产生了某种关联，牢固和坚韧。</p>
+<p>时间和环境会改变这些关联的频率和连接的强度，但永远不可能切断关联，时光流转，我们点点滴滴会丧失某些东西，就像喜爱音乐的人很久没有听到音乐一样。一旦音乐响起来，所有的东西都会回来。</p>
+</blockquote>
+<p>去写吧，就着最坏的情况——想象着没人看一样，开始写吧。    </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">   </p>
+<h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
+<p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/02/18/2024-2-18-spring_festival/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">春节回家见闻及感悟【效率工具指南】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/16/2023-12-16-weibo_video_download/">
+                        <span class="hidden-mobile">微博视频下载工具推荐！轻松下载任意视频【效率工具指南】</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    }
+    waitElementVisible('comments', loadUtterances)
+  </script>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2024/01/12/2024-1-12-blog/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "2024年，还有必要搭建个人博客吗？【效率工具指南】&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

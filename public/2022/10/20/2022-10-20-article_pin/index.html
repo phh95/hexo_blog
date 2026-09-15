@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      550 字
+      647 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      7
        分钟
     </span>
   
@@ -262,26 +273,29 @@
               <p>Hello 各位好，我是小豪。   </p>
 <p>留意过公众号「历史消息」页面的朋友，想必会在不少公众号看到下图的「<strong>作者精选</strong>」模块，它有点像是<strong>置顶</strong>🔝功能，可以让作者或运营者把最想让用户看到的内容排在所有文章的最前面。   </p>
 <p>目前这个模块最多只支持置顶 2 篇文章，数量多了也不好，会让设计出来的精选失去了意义——要先把别的文章设为精选，就必须先取消掉原有的精选（在「订阅号助手」App 中操作）。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/img3665.JPEG" srcset="/img/loading.gif" alt="IMG_3665"></p>
+<p><img src="https://img.penghh.fun/2022/10/20/img3665.JPEG" srcset="/img/loading.gif" alt="IMG_3665"></p>
 <p>因为公众号的这个精选功能，我就联想到：为啥我不给自己的个人博客也整一个呢？     </p>
 <p>说来就来，下图就是我的 Hexo 博客添加了「<strong>文章置顶</strong>」功能后的效果，我选取了其中 2 篇用作测试：  </p>
 <ul>
 <li>我终于拥有自己的独立博客了   </li>
 <li>油猴脚本获取公众号文章封面       </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661981781654.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/20/16661981781654.jpg" srcset="/img/loading.gif"></p>
 <p>给 Hexo 博客添加「文章置顶」功能也非常简单，当然需要说明的是，不同的 Hexo 主题添加或配置这个功能的方法，存在着细微的差异。  </p>
 <p>以我在用的 Hexo Fluid 主题为例，官方提供的「配置指南」也提供了详细的说明：  </p>
 <p>安装版本号 &gt;= 2.0.0 的 <code>hexo-generator-index</code> 插件，并在文章开头的 <code>Front-matter</code> 中额外增加一个 sticky 属性，就能将文章置顶啦。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661986069840.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/20/16661986069840.jpg" srcset="/img/loading.gif"></p>
 <p>Hexo Fluid 主题配置指南：<br><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E6%8E%92%E5%BA%8F">https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E6%8E%92%E5%BA%8F</a></p>
 <p>我跟着配置指南的提示，分别给两篇文章添加了 sticky 属性，两个值分别为 100 和 99，数字大的文章会排在数字小的文章上方，效果就如前面你所看到的那样。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661984858109.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/20/16661988818465.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/20/16661984858109.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/20/16661988818465.jpg" srcset="/img/loading.gif"></p>
 <p>如果你使用的是别的 Hexo 主题，可能要安装另外的插件 <code>hexo-generator-index-pin-top</code>，并配置 top 属性来实现文章的置顶，具体可参考网上的一篇文章：   </p>
 <p><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_15477117/4919708">https://blog.51cto.com/u_15477117/4919708</a>  </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -333,30 +347,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

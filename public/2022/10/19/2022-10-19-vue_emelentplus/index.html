@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      703 字
+      800 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      8
+      9
        分钟
     </span>
   
@@ -274,13 +285,13 @@
 </ul>
 <h3 id="全局引用"><a href="#全局引用" class="headerlink" title="全局引用"></a>全局引用</h3><p>在入口文件 <code>main.ts</code> 中导入安装的 element-plus 和 CSS 样式；     </p>
 <p>在下方通过 <code>app.use</code> 安装插件。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/19/16658023949845.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/19/16658023949845.jpg" srcset="/img/loading.gif"></p>
 <p>接着就能直接在 <code>App.vue</code> 中使用 element-plus 中封装好的各种组件，例如下图的 el-button 按钮组件。    </p>
 <p>由于这是<strong>全局引用 element-plus</strong>，相应地里面包含的<strong>组件也是全局注册</strong>的，因此我们不需要在 <code>App.vue</code> 的 script 中引用和注册组件。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/19/16658032948529.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/19/16658032948529.jpg" srcset="/img/loading.gif"></p>
 <h3 id="按需引用"><a href="#按需引用" class="headerlink" title="按需引用"></a>按需引用</h3><p>按需引用，配置起来稍微有一点麻烦，我们需要在用到 element-plus 组件的 vue 文件中同时<strong>引入组件和用到的 CSS 样式</strong>。   </p>
 <p>这里引入 <code>base.css</code> 文件是必须的，否则 button 组件的 CSS 文件 <code>el-button.css</code> 不会生效。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/19/16658089071674.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/19/16658089071674.jpg" srcset="/img/loading.gif"></p>
 <p>但是这样我们在开发时每次使用都要手动引入对应的 CSS 样式，使用起来会比较麻烦，我们还可以使用另外一种方法：<strong>按需自动引入</strong>。   </p>
 <h3 id="按需自动引入"><a href="#按需自动引入" class="headerlink" title="按需自动引入"></a>按需自动引入</h3><p>首先要安装两款插件 <code>unplugin-vue-components</code> 和 <code>unplugin-auto-import</code>：     </p>
 <pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> -D unplugin-vue-components unplugin-<span class="hljs-keyword">auto</span>-<span class="hljs-keyword">import</span></code></pre>
@@ -305,11 +316,14 @@
 </code></pre>
 
 <p>完成上面的配置后，再回到 <code>App.vue</code> 文件，<strong>不需要引入和注册组件</strong>，我们就能直接在 vue 文件的 template 模板使用 el-button 组件。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/19/16658190884582.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/19/16658190884582.jpg" srcset="/img/loading.gif"></p>
 <p>老师在视频课程中安装的插件(Babel 相关的插件)和这里安装的插件不一致，babel 插件配置起来更麻烦，还要在入口文件 <code>main.ts</code> 中引入和<strong>注册全局组件</strong>，才能实现在任意的 vue 文件中使用 el-button 组件。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/19/16658192180100.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/19/16658192180100.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -363,30 +377,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

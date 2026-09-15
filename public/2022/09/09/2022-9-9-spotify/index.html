@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      555 字
+      652 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      6
        分钟
     </span>
   
@@ -266,10 +277,10 @@
 <p>Hello 各位晚上好，我是小豪。   </p>
 <p>今天来写点比较轻松的东西，接着上回发布的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649920587&idx=1&sn=586266c1aad64d898dc11b0095ace697&chksm=83a89066b4df19701a16aa282991a1bad6022c409f12c6f472ec8f6d905cf61870e442b1a556&token=707859341&lang=zh_CN#rd">音乐播放器Spotify太丑？给它换个皮肤，立马大变样</a>》，继续来说一下音乐应用 Spotify 美化的事情。   </p>
 <p>上一篇文章，已经把 Spotify 绿色的主色调更改为下图的样式，且歌词增加了滚动效果——会随着音乐的播放，自动高亮显示对应的歌词。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16612972465257.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16612972465257.jpg" srcset="/img/loading.gif"></p>
 <p>而前两天，多亏一位网友的分享，对 Spotify 的美化又进了一步，目前的效果如下：     </p>
 <p>在小窗的情况下全屏显示当前正在播放的歌，左侧显示专辑封面，右侧显示歌词，这种左右布局的方式，相信用过 Apple Music 的朋友并不陌生。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626540054980.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16626540054980.jpg" srcset="/img/loading.gif"></p>
 <p>鼠标右击界面，会弹出下图的面板，可启用/关闭多个选项：   </p>
 <ul>
 <li>歌词增强插件   </li>
@@ -282,11 +293,11 @@
 <li>全屏显示（充满整个屏幕）    </li>
 <li>歌词切换动画      </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626550861876.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16626550861876.jpg" srcset="/img/loading.gif"></p>
 <p>下图是切换到「垂直模式」的效果，主要是左侧的布局变了，专辑的封面和歌词名称、进度条从水平布局变成垂直布局，看起来效果也非常棒。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626554180711.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16626554180711.jpg" srcset="/img/loading.gif"></p>
 <p>此外，点击界面右下角的按钮，还可以调整歌词的字号大小、歌词滚动的延迟时间，切换显示部分歌词/全部歌词(Compact)。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626549378725.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16626549378725.jpg" srcset="/img/loading.gif"></p>
 <p>看完了 Spotify 二次美化后的效果，如果你也想让自己的 Spotify 变成这样，可以先跟着<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649920587&idx=1&sn=586266c1aad64d898dc11b0095ace697&chksm=83a89066b4df19701a16aa282991a1bad6022c409f12c6f472ec8f6d905cf61870e442b1a556&token=707859341&lang=zh_CN#rd">前一篇文章的方法</a>，在电脑上安装好 Spicetify 这个美化工具。   </p>
 <p>安装好之后，打开终端，依次粘贴下面的 4 条命令，安装全屏播放和歌词增强的插件。   </p>
 <pre><code class="hljs routeros">spicetify<span class="hljs-built_in"> config </span>extensions fullAppDisplay.js     
@@ -297,9 +308,12 @@ spicetify<span class="hljs-built_in"> config </span>custom_apps lyrics-plus
 spicetify apply</code></pre>
 
 <p>搞定之后，重启 Spotify，点击 Spotify 中类似下面的小图标，就能进入全屏播放的界面啦。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/09/16626559017317.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/09/16626559017317.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">           </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">           </p>
 
             </div>
             <hr>
@@ -353,30 +367,31 @@ spicetify apply</code></pre>
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.2k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      12
+      13
        分钟
     </span>
   
@@ -264,7 +275,7 @@
 <p>上周尝试给吃灰多年的 Kindle 刷安卓系统，照着网上的教程，其中有一个步骤，不得不在 Windows 系统上操作……  </p>
 <p>因为这样，我也不得不在磁盘「<strong>寸土寸金</strong>」的 Mac 电脑上安装了 Windows 系统，因此今天的这篇文章，来简单分享一下 Mac 电脑安装 Windows 系统的方法。  </p>
 <p>下图是虚拟机软件预估的 Win10 系统会占用的磁盘空间大小——21.47 GB，虽然我有 1 TB 空间，但还是肉疼。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16673502888841.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16673502888841.jpg" srcset="/img/loading.gif"></p>
 <p>我在 Mac 电脑上安装 Windows 系统的方法是：先安装虚拟机软件 Parallels Desktop，再在虚拟机软件中安装 Win10 镜像系统。   </p>
 <p>除了这种方法，应该还有其他的方案，比如 Intel 芯片的电脑还支持的「双系统」，即在启动电脑时，可选择要使用的操作系统。   </p>
 <p>不过我图方便，还是用了更为简单的「虚拟机 + 镜像系统」的方案。     </p>
@@ -276,45 +287,48 @@
 <p>msdn itellyou 网址：<br><a target="_blank" rel="noopener" href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a>      </p>
 <p>下载 Parallels Desktop 后，就和普通的软件一样安装就好啦。    </p>
 <p>打开 Parallels Desktop，选择「安装 Windows 或其它操作系统」。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677027509849.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677027509849.jpg" srcset="/img/loading.gif"></p>
 <p>如果你已经提前下好 Win10 镜像系统文件，Parallels 会扫描到本地已有的 iso 文件，并给出下图的提示「已找到安装映像」。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677028347619.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677028347619.jpg" srcset="/img/loading.gif"></p>
 <p>之后 Parallels 还会询问，你想把安装的 Windows 用于哪种用途，这里我选择「<strong>生产力</strong>」，猜测它是会根据我们选择的用途，给出不同的分配 Mac 磁盘空间和运行内存的方案。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16673500675834.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16673500675834.jpg" srcset="/img/loading.gif"></p>
 <p>接着选择存放 Win10 系统的位置，名称和保存位置按默认的即可，记得勾选底部的「<strong>安装前设定</strong>」，否则无法顺利进入下一步。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16673502888841.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16673502888841.jpg" srcset="/img/loading.gif"></p>
 <p>在打开的窗口，点击「配置」，选择「硬件 &gt;&gt; CPU 与内存」，选择「高级」，在弹出的窗口，将「虚拟机监控程序」更改为「Parallels」。    </p>
 <p>后面的步骤我就没有截图了，按照提示进行操作，应该就能顺利安装 Win10 系统啦。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16673503936012.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16673503936012.jpg" srcset="/img/loading.gif"></p>
 <h2 id="虚拟机无法连接网络"><a href="#虚拟机无法连接网络" class="headerlink" title="虚拟机无法连接网络"></a>虚拟机无法连接网络</h2><p>在 Parallels 虚拟机安装好 Win10 系统后，不确定是不是因为我用了特殊版的虚拟机软件，每次打开 Win10 系统都会遇到下面的提示：  </p>
 <blockquote>
 <p>您的虚拟机将继续正常运作，但将无法连接网络。  </p>
 </blockquote>
 <p>说人话就是，你在虚拟机中安装的 Win10 系统不能上网！  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16676379886646.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16676379886646.jpg" srcset="/img/loading.gif"></p>
 <p>对于这个问题，其实也有对应的解决方法：   </p>
 <p>打开 Mac 的「访达」，点击顶部菜单栏的「前往」选项卡，选择「前往文件夹」。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677046261873.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677046261873.jpg" srcset="/img/loading.gif"></p>
 <p>在打开的窗口，粘贴下面的路径，打开 Parallels 安装位置的文件夹。     </p>
 <p><code>/Library/Preferences/Parallels/</code></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677047183972.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677047183972.jpg" srcset="/img/loading.gif"></p>
 <p>打开的文件夹下有一个名为 <code>network.desktop.xml</code> 的文件，将这个文件<strong>拖拽复制</strong>一份到 Mac 桌面，然后使用 Mac 内置的「文本编辑器」或者电脑上安装的代码编辑器，例如 <strong>VS Code</strong> 打开复制的文件。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677048535212.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677048535212.jpg" srcset="/img/loading.gif"></p>
 <p>打开文件后，找到 <code>&lt;UseKextless&gt;</code> 这一行代码，将中间的数字 -1 更改为 0，保存文件。     </p>
 <p>接着将 Mac 桌面经过修改的文件，拖回到 <code>/Library/Preferences/Parallels/</code> 文件夹中，<strong>替换已有的同名文件</strong>。    </p>
 <p>此时再重新打开虚拟机 Parallels，运行 Win10 系统，应该就不会再弹出「无法连接到网络」的提示啦。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677050328010.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677050328010.jpg" srcset="/img/loading.gif"></p>
 <p>✅ 虚拟机 Win10 系统可以正常连接到网络的标志： </p>
 <p>Win10 系统右下角的小电脑不会出现一个红色的叉号；或是打开 Edge 浏览器，可以正常访问网页。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16677055233076.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16677055233076.jpg" srcset="/img/loading.gif"></p>
 <h2 id="另外一个问题"><a href="#另外一个问题" class="headerlink" title="另外一个问题"></a>另外一个问题</h2><p>除了前面的问题，我使用 Parallels 还遇到了另外一个错误提示：</p>
 <blockquote>
 <p>无法将虚拟摄像头连接到 Win10 </p>
 </blockquote>
 <p>这个问题目前我还没找到解决方法，而且我暂时也没有在虚拟机的 Win10 系统连接摄像头的需求，因此把这个问题搁着，也没啥大碍。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/06/16676385996234.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/06/16676385996234.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -370,30 +384,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

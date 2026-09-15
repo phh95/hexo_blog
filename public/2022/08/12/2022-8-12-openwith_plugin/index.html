@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      1.6k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16
+      17
        分钟
     </span>
   
@@ -263,7 +274,7 @@
 <p>Hello 各位好，我是小豪。   </p>
 <p>相信用过 Windows 电脑的朋友，对下图的电脑询问「你要以何方式打开 XX 文件」的弹窗并不陌生，这个窗口通常出现在：  </p>
 <p>我们没有设置打开这种文件的默认应用，或是安装了一个新的应用后，原先打开这种文件的默认应用被篡改，系统需要重新进行确认。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602309319698.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602309319698.jpg" srcset="/img/loading.gif"></p>
 <p>而如果把这里的本地文件换成我们天天在用的<strong>网页</strong>，是否可以实现在浏览器之外，使用其他的软件打开当前的网页呢？   </p>
 <p>——答案是可以的。   </p>
 <p>但实现了这个操作，你可能会问：这个操作有什么用吗？或是有什么使用场景呢？   </p>
@@ -277,50 +288,53 @@
 <p>假设我要使用下载工具 Downie 下载一个 B 站的视频，按照传统的操作应该是这样子的：先复制浏览器地址栏的视频链接，再打开 Downie，在软件中执行粘贴链接的操作，就能开始下载视频。  </p>
 <p>而当我在浏览器安装了 Open With 插件，同样是要下载这个视频，只需要：右击页面的空白处，选择「Open With &gt;&gt; Downie」，也就是使用 Downie 打开当前的网页，就会自动唤醒本地安装的 Downie，自动在软件中开启视频下载。   </p>
 <p>说这么多，其实是想表达：<strong>这个插件可以让人变得更懒</strong>，想下载视频，连复制链接的操作都可以省掉，让程序自动帮我们完成。          </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/20220811-234059.gif" srcset="/img/loading.gif" alt="2022-08-11 23.40.59"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/20220811-234059.gif" srcset="/img/loading.gif" alt="2022-08-11 23.40.59"></p>
 <p>用着 Windows 电脑的同学，把这里的 Downie 替换为 IDM，也能实现相同的效果。   </p>
 <p>需要说明的是，最早知道这个操作，还是从我喜欢的一个公众号「奔跑中的奶酪」，人称「奶大」的博主那里看到的。  </p>
 <p>之前他写了一篇很详细的文章，不过后来他把文章删掉了，没看过的人可能也见不到了，而且这里我还想补充那篇文章中没提及的一个问题的解决方法。   </p>
 <p>铺垫了这么多，来看一下如何实现这个快捷操作吧：  </p>
 <h2 id="安装浏览器插件-Open-With"><a href="#安装浏览器插件-Open-With" class="headerlink" title="安装浏览器插件 Open With"></a>安装浏览器插件 Open With</h2><p>首先要安装实现这个快捷操作的浏览器插件 Open With，这个插件支持火狐、Firefox 和 Opera 浏览器，最初有上架到 Chrome 应用商店，不过后来下架了。   </p>
 <p>因此，用着 Chrome 浏览器的朋友，如果想使用这个插件，可以扫描下方的二维码，在公众号「效率工具指南」后台回复【<strong>ow</strong>】，获取插件安装包。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 <p>使用 Firefox 浏览器的朋友，可以从插件的 GitHub 项目页面找到安装链接：  </p>
 <p><a target="_blank" rel="noopener" href="https://github.com/darktrojan/openwith">https://github.com/darktrojan/openwith</a>    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602343911689.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602343911689.jpg" srcset="/img/loading.gif"></p>
 <h2 id="配置浏览器插件"><a href="#配置浏览器插件" class="headerlink" title="配置浏览器插件"></a>配置浏览器插件</h2><p>对于使用 Mac 电脑的用户，在浏览器安装了 Open With 插件后，还需要额外对插件进行配置。   </p>
 <p>右击 Chrome 浏览器右上角的插件图标，选择「选项」，打开插件的设置页面。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602350192081.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602350192081.jpg" srcset="/img/loading.gif"></p>
 <p>点击左侧的蓝色文字「Click here to download」，下载一个 Python 脚本文件。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602352833394.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602352833394.jpg" srcset="/img/loading.gif"></p>
 <p>将下载的 Python 文件放到<strong>资源库</strong>的应用支持路径下，具体路径如下图所示：     </p>
 <p><code>/Library/Application\ Support/Google/Chrome/</code>     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602357245967.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602357245967.jpg" srcset="/img/loading.gif"></p>
 <p>接着打开 Mac 上的终端，在终端中依次输入如下两行命令：   </p>
 <p><code>chmod u+x /Library/Application\ Support/Google/Chrome/open_with_mac.py</code>    </p>
 <p>输入上面的命令后，按下回车键，再输入下面的命令：  </p>
 <p><code>/Library/Application\ Support/Google/Chrome/open_with_mac.py install</code>     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602359059758.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602359059758.jpg" srcset="/img/loading.gif"></p>
 <p>经过前面的操作后，就算是在 Mac 电脑上完整安装了这个插件。   </p>
 <p>接着回到插件的设置页面，点击下方的「Look for browsers」，插件就会扫描你在电脑上安装的所有浏览器，并将其添加到右侧的面板。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602362278293.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602362278293.jpg" srcset="/img/loading.gif"></p>
 <p>经过这个操作后，去到 Chrome 浏览器中的任意一个页面，当你在页面空白处右击，选择 Open With，弹出的面板应该就会显示你电脑上安装的所有浏览器。  </p>
 <p>这时选择一个 Chrome 之外的浏览器，就会在另外一个浏览器中打开当前的页面。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602363955782.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602363955782.jpg" srcset="/img/loading.gif"></p>
 <p>而如果你想在这个面板中添加额外的应用，例如前面提到的下载工具 Downie 或者 IDM，就需要再次回到插件的设置页面。   </p>
 <p>点击下方的「Add browser」，添加新的浏览器。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602365874491.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602365874491.jpg" srcset="/img/loading.gif"></p>
 <p>在弹出的配置面板，有两个需要填入文本的字段：  </p>
 <ul>
 <li>Name：输入应用的名称，例如我想添加 Downie，就把它命名为 Downie   </li>
 <li>Command：这里要输入应用所在的路径，Mac 电脑应用安装的路径是一致的，因此输入 <code>/Application/应用名称.app</code>    </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/12/16602366622826.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/12/16602366622826.jpg" srcset="/img/loading.gif"></p>
 <p>这样配置之后，Open With 插件就会多出一个 Downie 的备选项，这样我们就可以在 Downie 中打开当前的网页。  </p>
 <p>如果当前的网页恰好是视频页面，Downie 就会自动下载页面中的视频，真正实现许多人梦寐以求的「一键下载」。   </p>
 <p>科技，让人变得更懒了！<br>还不错。   </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
 
             </div>
             <hr>
@@ -374,30 +388,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

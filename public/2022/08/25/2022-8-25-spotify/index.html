@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      1.7k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      18
+      19
        分钟
     </span>
   
@@ -264,17 +275,17 @@
 <p>不知道这里用 Spotify 听音乐的朋友多不多，我猜应该很少吧，毕竟第一次用 Spotify 挺费劲，而且要好用（去广告 + 自由播放歌曲），还得充值会员。  </p>
 <p>不过 Spotify 会员有个好处，你不需要为了听某张专辑再花钱。。。对比国内的音乐 App，高下立判。 </p>
 <p>就像周董前阵子上新的专辑，Spotify 会员可以直接听，不像国内的 QQ 音乐还要买啥 VVVVVip，我可去你的吧。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16612994880369.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16612994880369.jpg" srcset="/img/loading.gif"></p>
 <p>说回正事，今天这篇文章，想分享一下，如何更换电脑版 Spotify 的主题。  </p>
 <p>有用过 Spotify 的朋友应该都知道，Spotify 默认是下图的青黑配色，最初看起来还是挺高端的。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16612997051318.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16612997051318.jpg" srcset="/img/loading.gif"></p>
 <p>但这个绿色看久了，会觉得有些平淡，想给它换个颜色，譬如换成下面的蓝色：        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613002393121.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613002393121.jpg" srcset="/img/loading.gif"></p>
 <p>Spotify 默认没有提供更换主题或配色方案的选项，因此要想自由更换客户端的主题，需要用到一个第三方工具——<strong>Spicetify</strong>。   </p>
 <h2 id="安装-Spicetify"><a href="#安装-Spicetify" class="headerlink" title="安装 Spicetify"></a>安装 Spicetify</h2><p>使用 Spicetify 时，可参考 Spicetify 的说明文档，因为这是老外写的项目，所以文档的语言是英文。    </p>
 <p>Spicetify 说明文档：<br><a target="_blank" rel="noopener" href="https://spicetify.app/docs/getting-started">https://spicetify.app/docs/getting-started</a>     </p>
 <p>看不懂说明文档也没关系，可以看我下面写的操作步骤。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613007880913.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613007880913.jpg" srcset="/img/loading.gif"></p>
 <p>这个工具支持 3 大系统——Windows、macOS 和 Linux，安装时需要打开电脑上的「终端」或「命令行窗口」—— </p>
 <ul>
 <li>Windows：Powershell   </li>
@@ -300,49 +311,54 @@ curl -fsSL https:<span class="hljs-regexp">//</span>raw.githubusercontent.com<sp
 <pre><code class="hljs routeros"><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">https_proxy</span>=http://127.0.0.1:7890 <span class="hljs-attribute">http_proxy</span>=http://127.0.0.1:7890 <span class="hljs-attribute">all_proxy</span>=socks5://127.0.0.1:789</code></pre>
 
 <p>我在用的工具是 ClashX，默认的端口就是 7890。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613020483554.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613020483554.jpg" srcset="/img/loading.gif"></p>
 <p>在终端中开启全局代理后，再粘贴运行前面的 2 条安装命令，当终端提示「Everything is ready, you can start applying now!」，说明我们顺利安装了 Spicetify 以及相关的文件。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613024899510.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613024899510.jpg" srcset="/img/loading.gif"></p>
 <h2 id="下载-Spicetify-主题"><a href="#下载-Spicetify-主题" class="headerlink" title="下载 Spicetify 主题"></a>下载 Spicetify 主题</h2><p>准备更换 Spotify 的工具后，我们还需要下载一些主题，才能自由地更换 Spotify 的外观。   </p>
 <p>Spicetify 文档提供了 4 个社区中的开发者创建的主题，这些主题放在了 GitHub 仓库中。</p>
-<p>如果你不知道如何从 GitHub 仓库下载这些主题，可以点击下方的公众号卡片「效率工具指南」，在后台回复【<strong>Spotify</strong>】或者【<strong>声田</strong>】，获取所有主题文件。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613543015875.jpg" srcset="/img/loading.gif"></p>
+<p>如果你不知道如何从 GitHub 仓库下载这些主题，可以点击下方的公众号卡片「效率工具指南」，在后台回复【<strong>Spotify</strong>】或者【<strong>声田</strong>】，获取所有主题文件。    </p>
+<p>Spicetify主题下载链接：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/ed241181b6bc">https://pan.quark.cn/s/ed241181b6bc</a>   </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613543015875.jpg" srcset="/img/loading.gif"></p>
 <p>将主题文件下载到本地后进行解压，将解压得到的多个主题文件放到 <code>.spicetify</code> 下的 Themes 文件夹中，使用 Linux 或 macOS 系统的朋友，可以参考下图的路径。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613547804726.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613547804726.jpg" srcset="/img/loading.gif"></p>
 <p>对于使用 Windows 系统的朋友来说，则要把所有的主题文件放到 Appdata 路径下。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613551995230.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613551995230.jpg" srcset="/img/loading.gif"></p>
 <h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>准备好主题文件，来到更换 Spotify 主题的最后一步：修改 Spicetify 的配置文件 <code>config-xpui.ini</code>。   </p>
 <p>对于 macOS 系统，这个配置文件位于 <code>用户/用户名/.config/spicetify</code> 路径下。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613559763035.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613559763035.jpg" srcset="/img/loading.gif"></p>
 <p>编辑配置文件 <code>config-xpui.ini</code> 时，可以使用 VS Code 或任意一款文本编辑器（例如 Windows 上的记事本）打开这个文件。   </p>
 <p>修改配置文件，其实主要修改两个地方：  </p>
 <ul>
 <li>current_theme：主题的名称   </li>
 <li>color_scheme：配色方案   </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613568456100.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613568456100.jpg" srcset="/img/loading.gif"></p>
 <p>主题的名称，来自前面下载解压得到的主题文件，下图中的每个文件夹就对应一个主题，文件夹的名称就是主题的名称。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613547804726.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613547804726.jpg" srcset="/img/loading.gif"></p>
 <p>打开任意一个主题的文件夹，其中的 <strong>screenshots</strong> 文件夹中提供了主题的效果图，在更换 Spotify 主题之前，可以先进到这个文件中查看主题的效果图，再从中选择自己喜欢的 Spotify 主题。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613574066757.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613574066757.jpg" srcset="/img/loading.gif"></p>
 <p>选定一个主题后，我们还需要配置一下主题的「配色方案」，这个参数来自主题文件夹中的 <code>color.ini</code> 文件。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613576317029.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613576317029.jpg" srcset="/img/loading.gif"></p>
 <p>同样地，使用代码编辑器或文本编辑器打开 <code>color.ini</code> 文件，打开后的文件如下图所示。  </p>
 <p>每个中括号 [] 中的文本，就对应一种配色方案，以下图为例，<code>red-light</code> 是一种配色方案，<code>rose-pine-moon</code> 是另外一种配色方案。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613577203616.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613577203616.jpg" srcset="/img/loading.gif"></p>
 <p>选好想使用的主题和主题中提供的配色方案后，依次将这两个参数填入配置文件 <code>config-xpui.ini</code> 对应的两个字段中。   </p>
 <p>填好之后，按下快捷键 Ctrl/Command + S 保存更改。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613579264545.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613579264545.jpg" srcset="/img/loading.gif"></p>
 <h2 id="在终端中应用更改"><a href="#在终端中应用更改" class="headerlink" title="在终端中应用更改"></a>在终端中应用更改</h2><p>完成以上操作后，我们还要来到终端，输入命令 <code>spicetify apply</code>，按下回车键确认更改 Spotify 主题，当下方返回「Spotify is spiced up!」，则说明已经完成主题的更改。  </p>
 <p>此时重启 Spotify 客户端，就能看到更改主题之后的效果啦～     </p>
 <p>需要注意的是，每次更改了主题或配色方案之后，都要来到终端再执行一次 <code>spicetify apply</code>。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16613581921716.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16613581921716.jpg" srcset="/img/loading.gif"></p>
 <h2 id="使用-Spicetify-的体验"><a href="#使用-Spicetify-的体验" class="headerlink" title="使用 Spicetify 的体验"></a>使用 Spicetify 的体验</h2><p>下图是主题为 <code>Ziro</code>，配色方案为 <code>rose-pine-moon</code> 的效果，这个主题不仅可以更改 Spotify 的配色方案，还会给歌词添加滚动效果。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16612972465257.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16612972465257.jpg" srcset="/img/loading.gif"></p>
 <p>下图是主题为 <code>spicetify-fluent-master</code>，配色方案为 <code>dracula</code> 的效果，这个主题有个问题，菜单或者按钮的图标丢失了…   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/08/25/16612990502673.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/08/25/16612990502673.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
 
             </div>
             <hr>
@@ -396,30 +412,31 @@ curl -fsSL https:<span class="hljs-regexp">//</span>raw.githubusercontent.com<sp
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

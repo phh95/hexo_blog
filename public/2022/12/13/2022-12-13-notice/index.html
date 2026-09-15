@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.4k 字
+      2.5k 字
     </span>
   
 
@@ -261,13 +272,13 @@
             <div class="markdown-body" id="post-body">
               <p>Hello 各位好，我是小豪。  </p>
 <p>忘了是去年，还是今年年初，因为飞书的宣传，网上刮起了一阵给自己写一份「<strong>个人使用说明书</strong>」的风，即用一份文档来介绍自己，同时让别人了解如何可以更好地「使用」你。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/13/16706458575916.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/12/13/16706458575916.jpg" srcset="/img/loading.gif"></p>
 <p>最开始觉得这个概念挺好的，曾经也想学着其他人一样，给自己写一份个人使用说明书，但就像很多次在别人面前做自我介绍一样，有点害羞，或是觉得没啥好写的，就把这个想法搁置了。      </p>
 <p>不过，最近看公众号后台的一些私信，不知道怎么地，萌生了给自己的公众号「效率工具指南」写一份使用说明书的想法。  </p>
 <p>也可能是我觉得相比于人，公众号才更像是一个产品，它不能自我表达，因此需要一个简介或一篇文章来介绍它，而人就是人，人是可以自由表达的复杂生命体，任何介绍自己的东西，都只是其中的一个切片，只能力求接近，无法完全概括。      </p>
 <h2 id="私信要账号-密码"><a href="#私信要账号-密码" class="headerlink" title="私信要账号/密码"></a>私信要账号/密码</h2><p>先说一下，最近在后台看到好几个人私信说，「想要账号、想要密码」，我并不知道你们要什么账号（私信中缺少关键信息），也不知道你们是从哪里看到我的。      </p>
 <p>如果你是在网上看到有人说，关注我的公众号就可以拿到某某社交平台的账号，那我猜你是被人骗了，我并没有发布过这种信息。这种套路，可以参考公众号「三表龙门阵」发布过的一篇文章：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/53uknYNfgvGJJlDQoJZMSQ">一场与我有关的骗局</a>             </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/13/16706471627425.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/12/13/16706471627425.jpg" srcset="/img/loading.gif"></p>
 <h2 id="私信获取软件安装包"><a href="#私信获取软件安装包" class="headerlink" title="私信获取软件安装包"></a>私信获取软件安装包</h2><p>因为长期写软件工具的文章，不少朋友可能会误以为，关注我的公众号之后，在后台回复软件名称，就能拿到软件安装包。   </p>
 <p>首先要说声抱歉，我并没有那么多耐心，去逐一回复每条想要安装包却拿不到安装包的私信，因为真的回复不过来，而且也很难解释清楚。     </p>
 <p>事实上，除了一些文章中说到「后台回复 XX 关键字获取安装包」，其余的软件，比如很多人想要的 PS、加速器、思维导图软件、录屏软件 Camtasia 等等，我都没有在后台设置自动回复。          </p>
@@ -275,14 +286,14 @@
 <p>这里再多说一嘴，<strong>别以为在国内分享国外的破解软件就毫无风险</strong>，如果你分享的国外软件恰好被国内某个恶心的代理商代理了，挡到他们赚钱了，他们的法务很可能会找上门，投诉你的公众号、网站等等，别问我怎么知道，因为我以前就被他们套路了：   </p>
 <p>加我的微信，问我是不是有某个软件的安装包，我说是的，还热心地给对方发送了安装包的网盘链接……但其实对方是个演员，骗我发网盘链接，截图下来作为投诉文章侵权的证据，最后文章就被删了，你说我找谁说理去。    </p>
 <h2 id="私信提问之前建议这么操作"><a href="#私信提问之前建议这么操作" class="headerlink" title="私信提问之前建议这么操作"></a>私信提问之前建议这么操作</h2><p>在后台私信提问之前，建议你先在微信上打开我的公众号主页，点击右上角的「搜索」图标，输入问题的关键词，比如「视频转音频」、「音乐格式转换」等，可能就能找到问题的答案。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/13/imgc9686231d6e11.jpeg" srcset="/img/loading.gif" alt="IMG_C9686231D6E1-1"></p>
+<p><img src="https://img.penghh.fun/2022/12/13/imgc9686231d6e11.jpeg" srcset="/img/loading.gif" alt="IMG_C9686231D6E1-1"></p>
 <p>另一种<strong>更推荐的提问方式</strong>，就是加入我在「知识星球」App 上创建的社群，在 App 内发布动态，或是使用 App 的「提问」功能向我发起提问。   </p>
 <p>因为这是一个付费社群，<strong>收人钱财，与人解答</strong>，是最基本的契约精神。当然社群提供的服务不只有回答问题，还会发布一些我觉得有价值的信息，<strong>有时一条有价值的内容，就能省去你几个小时的折腾</strong>。    </p>
 <p>社群内已发布的内容，可查看下面的目录（点开图片查看大图）：                 </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/13/xnip2022121013435zhang-jie-tu.jpg" srcset="/img/loading.gif" alt="Xnip2022-12-10_13-43-5长截图"></p>
+<p><img src="https://img.penghh.fun/2022/12/13/xnip2022121013435zhang-jie-tu.jpg" srcset="/img/loading.gif" alt="Xnip2022-12-10_13-43-5长截图"></p>
 <p>⚠️ 注：目录仅列出了社群已发布的其中一部分内容，并不代表加入社群后可看到的全部内容，且随着社群的持续更新，最终交付的内容会远超现有的内容。  </p>
 <p>社群原价 99 元/年，加入后可查看之前发布的所有内容，以及未来一年更新的内容，前 100 名加入可领取 20 元的优惠券，以 79 元的价格加入。机不可失，现在就扫码加入吧：                          </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/12/13/xing-qiu-you-hui-quan-1.png" srcset="/img/loading.gif" alt="星球优惠券 -1-"></p>
+<p><img src="https://img.penghh.fun/2022/12/13/xing-qiu-you-hui-quan-1.png" srcset="/img/loading.gif" alt="星球优惠券 -1-"></p>
 <h2 id="加我微信请写明来意"><a href="#加我微信请写明来意" class="headerlink" title="加我微信请写明来意"></a>加我微信请写明来意</h2><p>和许多做公众号的博主一样，我在公众号的菜单栏也放了自己的微信二维码，供一些有需要的朋友添加。   </p>
 <p>但鉴于不少朋友加完之后就「沉默」了，不发言也不在朋友圈互动，这样成为微信好友的意义不大。    </p>
 <p>为了减少无效加好友的行为，我学着和别人一样，在微信签名上加了一个备注：<strong>添加微信请注明来意</strong>，但还是有些朋友图方便，或是在加微信的时候没看到，再多唠叨一句：加我微信请写明来意，有需要再加，谢谢。   </p>
@@ -309,10 +320,13 @@
 <p>我没有在指责🫵谁，我在骂我自己，因为接不到广告赚不到钱，只能开个付费社群来回血了，我也是其中一名跳梁小丑。                      </p>
 <p>最后再给各位推荐一篇文章：    </p>
 <p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DhYofGRmp-B2DXsOn4L56g">聊聊怎么线上跟人社交</a> </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
 
             </div>
             <hr>
@@ -366,30 +380,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

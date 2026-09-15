@@ -250,7 +250,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
     enable: true  # 开启评论
-    type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
+    type: utterances  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere | remark42
 
 #---------------------------
 # 评论
@@ -262,7 +262,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
 # utterances
 # You can install utterances with https://utteranc.es/ and generate your configuration
 utterances:
-  repo:
+  repo: phh95/hexo_blog
   issue_term: pathname
   label: utterances
   theme: github-light

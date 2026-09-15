@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -266,44 +277,44 @@
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">hexo-theme-next</a> 主题</li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/image-20210514211522989.png" srcset="/img/loading.gif" alt="hexo-theme-next"></p>
+<p><img src="https://img.penghh.fun/PicGo/image-20210514211522989.png" srcset="/img/loading.gif" alt="hexo-theme-next"></p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>：最近刚看到博客主题，页面左下角带有播放音乐的控件</li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/image-20210514215136167.png" srcset="/img/loading.gif" alt="image-20210514215136167"></p>
+<p><img src="https://img.penghh.fun/PicGo/image-20210514215136167.png" srcset="/img/loading.gif" alt="image-20210514215136167"></p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">hexo-theme-fluid</a>：我的博客目前正在使用的 Hexo 主题</li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/PicGo/image-20210514215958123.png" srcset="/img/loading.gif" alt="image-20210514215958123"></p>
+<p><img src="https://img.penghh.fun/PicGo/image-20210514215958123.png" srcset="/img/loading.gif" alt="image-20210514215958123"></p>
 <h2 id="如何为-Hexo-博客换上不同的主题？"><a href="#如何为-Hexo-博客换上不同的主题？" class="headerlink" title="如何为 Hexo 博客换上不同的主题？"></a>如何为 Hexo 博客换上不同的主题？</h2><p>如果你对前面介绍的 Hexo 主题感兴趣，可以去 GitHub 上搜索主题的名字，就能找到对应主题的代码文件。</p>
 <p>点击绿色的「Code」按钮，选择「Download ZIP」，下载整个项目的源文件。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212610267455.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212610267455.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>将下载的 ZIP 文件解压，将解压后的整个文件放进 Hexo 博客的 themes 文件夹中。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212615371840.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212615371840.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
 <p>下载下来的主题一般都会带有主题作者的信息，在应用到自己的博客之前，需要先进行修改。</p>
 <p>如果你不知道如何修改主题中的信息，可以查看主题的作者是否提供了主题的「说明文档」或「使用文档」。</p>
 <p>以我在用的 Hexo 主题「hexo-theme-fluid」为例，主题的作者写了一份详细的「配置指南」，给初次使用第三方主题的人提供了非常详细的指导。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212648922137.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212648922137.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>Hexo 主题「hexo-theme-fluid」配置文档：<br><em><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">https://hexo.fluid-dev.com/docs/guide/</a></em></p>
 <p>如果你使用的 Hexo 主题没有提供配置文档，也可以来参考上面的配置文档，因为多数 Hexo 主题的配置，都是大同小异的。</p>
 <h2 id="添加-RSS-订阅链接"><a href="#添加-RSS-订阅链接" class="headerlink" title="添加 RSS 订阅链接"></a>添加 RSS 订阅链接</h2><p>虽然之前写过一篇介绍<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649904885&idx=1&sn=4cf0407adfa94e0e855ca3a5bc3bda20&chksm=83a852d8b4dfdbce023212961dfb446fc4fd8a8e595ea762ad8711602dd9c551811cdff19ca6&token=1051004415&lang=zh_CN#rd">通过 RSS 来订阅多个内容平台</a>的文章，但我自己却没有为自己的博客生成 RSS 订阅链接的意识🤦‍♂️</p>
 <p>想起来要给博客添加 RSS 订阅链接，还是推特上一位网友给我提的。</p>
 <p>为博客添加 RSS 订阅链接，需要安装一个插件「hexo-generator-feed」，具体可以参照 GitHub 上的一个项目「hexo-generator-feed」。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212660487438.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212660487438.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>hexo-generator-feed 项目地址：<br><em><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">https://github.com/hexojs/hexo-generator-feed</a></em></p>
 <p>这个插件需要在终端中使用 <strong>npm</strong> 命令行工具安装<br>安装之前，需要打开<strong>终端</strong>（终端在 Windows 上叫做「命令行」），使用 <code>cd</code> 命令进入 Hexo 博客项目文件存放的位置。</p>
 <p>例如我将 Hexo 博客项目文件存放在本地磁盘的 /workspace/hexo_blog 路径下，因此 <code>cd</code> 命令输入的内容如下：</p>
 <pre><code class="hljs bash"><span class="hljs-built_in">cd</span> workspace/hexo_blog</code></pre>
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212663991058.jpg" srcset="/img/loading.gif" alt="-w1152"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212663991058.jpg" srcset="/img/loading.gif" alt="-w1152"></p>
 <p>进入 Hexo 博客项目文件所在的位置后，输入下方的命令安装「hexo-generator-feed」插件：</p>
 <pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> hexo-generator-feed <span class="hljs-comment">--save</span></code></pre>
 
 <p>安装了插件后，我们还需要对插件进行配置，插件项目的说明文档也对配置进行了说明：</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212667655383.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212667655383.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>说明文档中配置的参数比较多，但其实我们可以偷懒，不需要配置那么多参数。</p>
 <p>打开博客项目文件夹中的配置文件 <code>_config.yml</code>，可以用记事本打开，也可以用代码编辑器，例如微软推出的 VS Code 打开。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212673979375.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212673979375.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
 <p>打开配置文件，滑动到文件的最底部，在最底部加上下方的内容：</p>
 <pre><code class="hljs yaml"><span class="hljs-comment"># 订阅 RSS</span>
 <span class="hljs-attr">feed:</span>
@@ -311,22 +322,22 @@
     <span class="hljs-attr">path:</span> <span class="hljs-string">atom.xml</span>
     <span class="hljs-attr">limit:</span> <span class="hljs-literal">false</span></code></pre>
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212674929381.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212674929381.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
 <p>修改好 <code>_config.yml</code> 文件后，按下快捷键 Ctrl + S 保存我们的修改。</p>
 <p>接着打开博客项目中存放主题的文件夹 themes，接着再进入博客当前使用的主题中。</p>
 <p>以下图为例，我进入了我使用的 Hexo 主题「fluid」的文件夹中，其中也有一个名为 <code>_config.yml</code> 的配置文件，同样使用记事本或者代码编辑器打开它。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212677314446.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212677314446.jpg" srcset="/img/loading.gif" alt="-w1112"></p>
 <p>同样滑动到配置文件的末尾，在空白处加上下面的一行内容：</p>
 <pre><code class="hljs avrasm"><span class="hljs-symbol">rss:</span> /atom.xml</code></pre>
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212680030990.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212680030990.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
 <p>加入上面的一行代码之后，同样 Ctrl + S 保存文件。</p>
 <p>此时，将所有的修改 Push 到远端的服务器，稍等一会，就可以使用 RSS 来订阅自己的博客了，RSS 链接为：<code>博客域名/atom.xml</code></p>
 <p>举个例子，我的个人博客域名为 <code>penghh.fun</code>，我的博客 RSS 订阅链接相应地就是：<code>penghh.fun/atom.xml</code></p>
 <p>如果你有使用 RSS 阅读器来获取信息的习惯，可以将我博客的 RSS 链接添加到你的 RSS 阅读器中：</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212686091065.jpg" srcset="/img/loading.gif" alt="-w1400"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212686091065.jpg" srcset="/img/loading.gif" alt="-w1400"></p>
 <p>这部分给 Hexo 博客生成 RSS 订阅链接的内容，参考了网友 @千古壹号 写的内容，原文如下，可扫码阅读：</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/qrcodea--a1.png" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/qrcodea--a1.png" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
 <h2 id="添加单篇博客阅读量统计"><a href="#添加单篇博客阅读量统计" class="headerlink" title="添加单篇博客阅读量统计"></a>添加单篇博客阅读量统计</h2><p>博客不像公众号——会在文章页面的左下角显示阅读数，如果我们想要为博客添加单篇文章阅读量的统计功能，还需要手动进行配置。</p>
 <p>配置之前，最好先查看一下你使用的 Hexo 主题的配置文件 <code>_config.yml</code> 是否已经写好了相关的代码，只是默认暂未开启统计功能。</p>
 <p>打开 Hexo 主题的 <code>_config.yml</code> 文件，按下快捷键 Ctrl + F 打开搜索功能，你可以<strong>试着使用下方这些关键字</strong>进行搜索，查看 Hexo 主题是否写好了统计博客阅读量的代码：</p>
@@ -335,26 +346,26 @@
 <li>views</li>
 <li>leancloud</li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212694034937.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212694034937.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
 <p>譬如，我使用的 Hexo 主题「fluid」就写好了统计阅读量的代码，只是缺少相应的配置，默认就无法统计单篇文章的阅读量。</p>
 <p>这里我使用一个第三方服务 <strong>Leancloud</strong> 来统计文章的阅读量。</p>
 <p>首先需要打开 Leancloud 的官网，注册一个账号，注册好账号之后，点击左上角的按钮，创建一个应用。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212698785178.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
-<p>创建时「应用名称」可以随你自由命名，下方的「应用计价方案」选择「<strong>开发版</strong>」就好，不需要花钱，接着点击右下角的蓝色按钮「创建」。<br><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212699186782.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212698785178.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p>创建时「应用名称」可以随你自由命名，下方的「应用计价方案」选择「<strong>开发版</strong>」就好，不需要花钱，接着点击右下角的蓝色按钮「创建」。<br><img src="https://img.penghh.fun/2021/05/18/16212699186782.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>创建好应用之后，打开应用的「设置 &gt;&gt; 应用 Keys」，页面中有两个参数，一个是 <strong>AppID</strong>，一个是 <strong>AppKey</strong>。</p>
-<p>这两个参数下方的值等会要用到，暂时不要把网页关掉。<br><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212701931820.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
+<p>这两个参数下方的值等会要用到，暂时不要把网页关掉。<br><img src="https://img.penghh.fun/2021/05/18/16212701931820.jpg" srcset="/img/loading.gif" alt="-w1520"></p>
 <p>回到博客主题的配置文件中，搜索 Leancloud，如下图所示，可以看到 leancloud 下方有两个需要配置的参数，一个是 <strong>app_id</strong>，一个是 <strong>app_key</strong>，这两个参数的值就分别对应上面说到的 <strong>AppID</strong> 和 <strong>AppKey</strong>。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212704379312.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212704379312.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
 <p>接着我们还要开启每篇博客的数据统计的功能，在博客主题配置文件中搜索关键字 view。</p>
 <p>每篇博客的数据统计 views 下方有两个参数，一个是 enable，将其设置为 enable 或 true 都可以；一个是统计的来源 source，设置为 leancloud。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212718906462.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212718906462.jpg" srcset="/img/loading.gif" alt="-w1066"></p>
 <p>完成以上配置之后，将所有变更 Push 到服务器，稍等一小会，刷新自己的博客，一般情况下，就可以在每篇博客的顶部看到阅读量的统计数据了。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212721365539.jpg" srcset="/img/loading.gif" alt="-w1742"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212721365539.jpg" srcset="/img/loading.gif" alt="-w1742"></p>
 <h2 id="交换博客「友情链接」"><a href="#交换博客「友情链接」" class="headerlink" title="交换博客「友情链接」"></a>交换博客「友情链接」</h2><p>不像以前，现在刚起步做博客更难了，因为许多人都不怎么在电脑端阅读内容了，都更倾向于使用手机获取信息，而且人们更喜欢观看视频而非枯燥的文字内容了。</p>
 <p>基于种种原因，从零开始做一个博客，真的难上加难。</p>
 <p>因此，如果你刚好也有自己的博客，且有交换友情链接🔗的想法，不嫌弃的话，可以在评论区留言，我们互相在各自的博客添加彼此的链接。</p>
 <p>你的博客链接的位置，我已经留好了。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/18/16212724879342.jpg" srcset="/img/loading.gif" alt="-w1742"></p>
+<p><img src="https://img.penghh.fun/2021/05/18/16212724879342.jpg" srcset="/img/loading.gif" alt="-w1742"></p>
 <p>以上，希望有帮助。</p>
 
             </div>
@@ -409,30 +420,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

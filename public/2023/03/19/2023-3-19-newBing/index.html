@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.6k 字
+      1.7k 字
     </span>
   
 
@@ -267,7 +278,7 @@
 <p>new Bing 是微软推出的「必应搜索」的全新版本，集成了 OpenAI 旗下的人工智能技术，可以更容易理解用户输入的字词，进一步搜寻完整的答案，产出更符合实际解答的内容。</p>
 <p>简单讲，就是新版的必应搜索中多了一个「聊天」功能，你可以像使用 ChatGPT 一样，来向它提出各种问题。   </p>
 <p>新版必应搜索 new Bing 网址：<br><a target="_blank" rel="noopener" href="https://www.bing.com/">https://www.bing.com/</a>      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792040213962.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792040213962.jpg" srcset="/img/loading.gif"></p>
 <p>不过，由于某些限制，有些朋友打开 new Bing 的时候，会自动重定向到旧版的必应 <code>cn.bing.com</code>，导致我们无法用上新版必应的「聊天」功能。      </p>
 <p>要想解决这个问题，网上有多种方法，这里提供 2 种比较靠谱的：</p>
 <ul>
@@ -276,12 +287,12 @@
 </ul>
 <p>第一种方法不便多讲，下面简单介绍第二种方法，修改电脑的 hosts 文件，这个方法适用于安装了不同操作系统的电脑，区别在于不同电脑 hosts 文件的位置存在着差异。   </p>
 <p>如果你用的是 Windows 电脑，可以查看我之前发布过的一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649912608&idx=1&sn=5361b0f7e11214afb6b37a492deb6aab&chksm=83a8710db4dff81b0b7de39923553eb552b7d616c13b37e64b85d9af2191124e461229e94b87&token=420784323&lang=zh_CN#rd">全球最大的交友网站无法打开？这两个技巧来帮你</a>》，按照里面的操作，找到 hosts 文件的位置。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792141242121.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792141242121.jpg" srcset="/img/loading.gif"></p>
 <p>下面以苹果 Mac 电脑修改 hosts 文件为例，进行介绍：   </p>
 <p>打开访达，点击顶部的「前往」选项卡，选择「前往文件夹」，在弹出的输入框中输入 /etc，点击下方返回的 <code>private &gt; etc</code>，就能进入到存放 hosts 文件的路径。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792143294333.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792143294333.jpg" srcset="/img/loading.gif"></p>
 <p>右击 hosts 文件，选择「复制」，将复制出来的 hosts 文件移动到 Mac 桌面，双击打开文件。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792145133191.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792145133191.jpg" srcset="/img/loading.gif"></p>
 <p>在打开的 hosts 副本文件下方空白的位置，粘贴下面的代码。    </p>
 <pre><code class="hljs accesslog"># New Bing Chat
 <span class="hljs-number">20.219.54.1</span> bing.com
@@ -299,17 +310,17 @@
 <span class="hljs-number">13.107.253.59</span> acctcdn.msftauth.net
 <span class="hljs-number">13.107.253.59</span> lgincdnvzeuno.azureedge.net</code></pre>
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792148893864.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792148893864.jpg" srcset="/img/loading.gif"></p>
 <p>按下 Command + S，保存我们粘贴到 hosts 文件的代码，接着对 hosts 副本文件进行重命名，将文件名修改为 hosts，最后再将桌面的 hosts 文件拖回到原来的 etc 文件夹下，覆盖路径下原有的 hosts 文件。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792152465795.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792152465795.jpg" srcset="/img/loading.gif"></p>
 <p>修改电脑的 hosts 文件之后，重新打开 new Bing 的官网 <code>bing.com</code>，如果在顶部的工具栏可以看到「聊天」的选项，那说明你「可能」可以用上 new Bing 了。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792155037245.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792155037245.jpg" srcset="/img/loading.gif"></p>
 <p>之所以说「可能」，是因为当你点击「聊天」进入 new Bing 的页面时，它可能还会弹出下面的提示：   </p>
 <blockquote>
 <p>你已加入候补名单（意思就是你当前没法使用 new Bing，还要继续排队）   </p>
 </blockquote>
 <p>如果你信了它的鬼话，按照下方的「更快地访问新必应」给出的提示进行操作，最后等了半个月、一个月甚至更长时间，会发现还是没什么卵用，一点动静都没有。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16791930635111.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16791930635111.jpg" srcset="/img/loading.gif"></p>
 <p>我不知道这个到底是谁的锅，但千万不要「傻乎乎」地等待，要想早日用上 new Bing，还得靠自己，要点在这：   </p>
 <ul>
 <li>不要用 QQ 邮箱注册的<strong>微软账号</strong>去申请 new Bing 使用资格，这样很大概率会一直显示在排队          </li>
@@ -318,26 +329,28 @@
 <li>注册微软账号的过程中，需要我们填入国家/地区的信息，这里填入的信息取决于上一步的 IP 地址，如果 IP 地址为日本，那国家/地区就选择日本       </li>
 </ul>
 <p>注册一个新的微软账号后，再次提交使用 new Bing 的申请，这回应该就会<strong>立即通过申请</strong>，你也就能在 Edge 浏览器中使用 new Bing。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792165289003.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792165289003.jpg" srcset="/img/loading.gif"></p>
 <p>👆上面的截图来自 Edge 浏览器 Dev 版本，实测 Edge 最新的正式版 v111 也能使用 new Bing 了。  </p>
 <p>到这里，如果你的 Edge 浏览器还无法使用 new Bing，还可以尝试下面的办法：  </p>
 <p>点击必应搜索首页右上角的按钮，点击「设置 &gt;&gt; 国家/地区」，注意要把这里的信息更改为非我国的位置。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792167066961.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792167066961.jpg" srcset="/img/loading.gif"></p>
 <h2 id="在-Chrome-浏览器中使用-new-Bing"><a href="#在-Chrome-浏览器中使用-new-Bing" class="headerlink" title="在 Chrome 浏览器中使用 new Bing"></a>在 Chrome 浏览器中使用 new Bing</h2><p>如果是在 Chrome 浏览器中打开 new Bing 的「聊天」功能，它会提示我们，只有在 Edge 浏览器上才能体验这一功能。      </p>
 <p>如果你不想为了这个功能，在电脑上额外安装 Edge 浏览器，那有没有别的办法呢？   </p>
 <p>——有的，安装一个<strong>浏览器插件</strong>即可。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792164344131.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792164344131.jpg" srcset="/img/loading.gif"></p>
 <p>这个浏览器插件的名称为 Bing Unchained - Use new Bing in Chrome，可从 Chrome 插件商店直接安装。  </p>
 <p>无法访问 Chrome 插件商店的朋友，可以点击下方的链接，从网盘直接下载插件文件：   </p>
 <p><a target="_blank" rel="noopener" href="https://pan.quark.cn/s/04603f4cedaa">https://pan.quark.cn/s/04603f4cedaa</a></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792172268165.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792172268165.jpg" srcset="/img/loading.gif"></p>
 <p>在 Chrome 浏览器安装插件之后，刷新 new Bing 页面，就能直接在 Chrome 浏览器中使用 new Bing 啦！    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/16792175891565.jpg" srcset="/img/loading.gif"></p>
-<h2 id="扫码加入我的社群「效率工具指南」"><a href="#扫码加入我的社群「效率工具指南」" class="headerlink" title="扫码加入我的社群「效率工具指南」"></a>扫码加入我的社群「效率工具指南」</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/20/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2"></p>
+<p><img src="https://img.penghh.fun/2023/03/20/16792175891565.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -391,30 +404,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

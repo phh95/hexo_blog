@@ -1,0 +1,855 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="baidu-site-verification" content="code-PdLAgt4JZr">
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    语鲸：一款App刷遍全网内容，AI时代最佳的RSS订阅+总结工具！ - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2025-08-23 12:51" pubdate>
+        2025年8月23日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      26
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">语鲸：一款App刷遍全网内容，AI时代最佳的RSS订阅+总结工具！</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发于我的微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/irp_B6xcZHsUnvApjQEwwg">效率工具指南</a>」，欢迎移步关注<br>文/彭宏豪      </p>
+<p>熟悉微信的人都知道，公众号改版打乱了原本的信息流，想看特定公众号成了随机事件，让人时常错过精彩内容，且信息流里夹带了许多「私货」，扰乱了正常的阅读体验……     </p>
+<p>在这一点上，之前尝试用微信读书来订阅公众号更新，但这法子也有局限：一方面是订阅数有限，另一方面是订阅后存在延迟，无法及时获取公众号最新内容。    </p>
+<p>直到最近我找到一个名为「<strong>语鲸</strong>」的 App，它支持在 App 内直接订阅和浏览公众号，才解决了困扰我已久的问题。    </p>
+<blockquote>
+<p>如果你对<strong>新奇软件</strong>或<strong>提升效率</strong>感兴趣，可以复制下方的频道口令在语鲸打开，一键查看并订阅我关注的所有频道。   </p>
+<p>9r:/ 02/23 <a href="mailto:&#105;&#64;&#71;&#46;&#120;&#49;">&#105;&#64;&#71;&#46;&#120;&#49;</a> 长按复制此条消息，打开语鲸 app，查看 用户_1754792270418 订阅的频道列表##lw9oje3jR##blog[语鲸口令]         </p>
+</blockquote>
+<p><img src="https://img.penghh.fun/2025/08/23/picsew20250816134752.jpg" srcset="/img/loading.gif"></p>
+<h2 id="🐳-语鲸是什么？"><a href="#🐳-语鲸是什么？" class="headerlink" title="🐳 语鲸是什么？"></a>🐳 语鲸是什么？</h2><p>语鲸是一个集信息订阅、信息聚合、收藏和AI总结于一体的一站式知识管理工具，用大白话讲，<strong>语鲸 = 公众号/RSS订阅 + 阅读 + AI总结问答</strong> ，一款顶三款，在一处完成信息的获取、阅读和消化，构建自己的知识管理体系，免去在不同工具间来回切换。   </p>
+<p>语鲸目前提供 App 和网页版，个人体验下来，App 目前功能最全，且基于移动端的特点，可以随时随地浏览最新的资讯和高价值内容。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/picsew20250816154033.jpg" srcset="/img/loading.gif"></p>
+<h2 id="订阅公众号更新"><a href="#订阅公众号更新" class="headerlink" title="订阅公众号更新"></a>订阅公众号更新</h2><p>像前面说的，如果想要订阅特定的公众号，可以打开语鲸的「发现」页，点击左侧的类别，如 AI、商业、职场、科技、生活等，来寻找想订阅的公众号。   </p>
+<p>觉得挨个点开查找太慢的话，可以点击顶部的搜索框，输入公众号名称进行搜索，返回后点击右侧的按钮订阅即可。   </p>
+<p>如果没有搜到公众号，可先复制公众号的任意一篇文章链接，再粘贴到语鲸的搜索框，同样可以快速订阅公众号。  </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5246.PNG" srcset="/img/loading.gif"></p>
+<p>除了订阅公众号，语鲸的另一大亮点是，支持通过 <strong>RSS 链接来订阅网站或其他平台的内容</strong>，在公众号之外，进一步丰富了内容来源，某种程度上可以破除单一平台形成的「信息茧房」。   </p>
+<p>譬如国内的一些内容平台，像「IT之家」、「少数派」等，或是个人的博客站点，像「阮一峰的个人网站」等，在直接访问之外，也提供了 RSS 订阅链接🔗。    </p>
+<p><img src="https://img.penghh.fun/2025/08/23/17559231214923.jpg" srcset="/img/loading.gif"></p>
+<p>语鲸本身覆盖了一部分 RSS 源，已覆盖的直接搜索站点名称即可一键订阅，省去寻找 RSS 链接的步骤。 </p>
+<p>对于未被覆盖的 RSS 源，则需要先复制站点的 RSS 订阅链接，回到语鲸，在「发现」页顶部搜索框粘贴 RSS 链接，解析后找到对应的网站进行订阅。     </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5265.PNG" srcset="/img/loading.gif"></p>
+<h2 id="聚合订阅多个信源，信息获取更高效"><a href="#聚合订阅多个信源，信息获取更高效" class="headerlink" title="聚合订阅多个信源，信息获取更高效"></a>聚合订阅多个信源，信息获取更高效</h2><p>就和吃饭讲究均衡一样，我们获取信息也追求多样性，单纯订阅一个或少数几个信息源，内容很容易刷完，且不是每一期内容都符合「口味」，这就要求我们主动<strong>进一步扩充信息源</strong>。   </p>
+<p>在这方面，语鲸的「<strong>频道</strong>」功能恰好就是我们需要的！频道可以聚合订阅来自多个信息源的内容，例如多个公众号 + 多个网站，将这些信源归档到一个「抽屉」中，这个抽屉就是语鲸里的频道。    </p>
+<p>首次使用语鲸 App 时，会引导我们选择感兴趣的方向和话题，接着会自动搜集筛选相关内容并生成频道。我个人对 AI 很感兴趣，语鲸就会推荐订阅相关的频道——“AI生成视频最新进展”“进阶Prompt工程指南更新了”等。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/picsew20250816223029.jpg" srcset="/img/loading.gif"></p>
+<p>随手点开的一个频道「中国AI创业者最新采访」，顶部会显示频道所引用的信源数量——高达 46 个，点击数字还能查看具体的信息源，了解频道的来龙去脉。  </p>
+<p>一个频道同时聚合几十个信源，在一处就能浏览该话题下所有相关内容，这要是靠自己挨个去找，且不论最终找到的信源数量的多寡，就是逐一搜索、订阅和浏览，这样繁琐的工作量也让人头疼，而这却是语鲸的优势，巧妙地将相关联的信源聚合到一个频道之中，信息获取效率成倍提升！    </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5271.PNG" srcset="/img/loading.gif"></p>
+<p>如果语鲸已有的频道不在你的兴趣点上，也可以基于语鲸来<strong>创建个人专属频道</strong>，刚创建的时候可能会稍微花点时间，但建好之后它的好处是一劳永逸的。    </p>
+<p>点击「发现」页右上角的「<strong>创建频道</strong>」，打开编辑频道的界面，首要的是添加信源，逐一添加自己平常关注的信息源，支持同时添加公众号和网站两类信源，添加好信源后，下方可自定义频道头像、频道名称和频道描述。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5278.PNG" srcset="/img/loading.gif"></p>
+<p>除了前面的，语鲸还提供了一个可筛选频道内容的选项——「<strong>频道内容筛选</strong>」，如果想让频道展示的内容更加垂直，去除低相关度的内容，可以在输入框<strong>键入一到多个关键词</strong>，例如“AI”、“macOS”、“Notion”等，添加后仅和关键词相关的文章，才会展示在频道中，完成这些后，点击右上角的「下一步」，即可完成频道的创建。    </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5339.PNG" srcset="/img/loading.gif"></p>
+<h2 id="智能聚合专题，沉浸式阅读和探索"><a href="#智能聚合专题，沉浸式阅读和探索" class="headerlink" title="智能聚合专题，沉浸式阅读和探索"></a>智能聚合专题，沉浸式阅读和探索</h2><p>频道是将话题相关的信源聚合到一起，但如果不同频道的话题存在相关性，聚合的内容不可避免会存在重复的情况，这反而与提升信息获取效率的初衷背道而驰。    </p>
+<p>对于这个自 RSS 时代由来已久的问题，语鲸在频道之外，加多了一个 buff 功能「<strong>专题</strong>」，能在我们订阅或关注的所有信源中，自动聚合讨论同一事件或主题的内容，并重新生成一份「不重不漏」的完整总结。    </p>
+<p>专题功能在<strong>跟进或追踪热点事件</strong>时，尤其好用，可以在最短时间内了解事件的背景、相关方的基本情况、事件核心看点以及后续可能的演变路径和结果等。   </p>
+<p>例如我想了解最近 AI 圈的热点「Perplexity 收购 Chrome 浏览器」，Chrome 我是熟悉的，天天在用，但 Perplexity 是什么来头，我就迷糊了，敢试图从巨头手里买下一款核心产品？   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/perplexity-shou-gou-chrome.png" srcset="/img/loading.gif"></p>
+<p>正好语鲸首页也有这个热点的专题「Perplexity 欲 345 亿美元收购 Chrome」，专题顶部自动生成了<strong>热点的「速览」</strong>，瞄一眼就能快速了解前因后果，下方会分「板块」展示智能聚合所参考的文章，包括市场声音、真实意图和专家解读，方便用户按需阅读。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5287.PNG" srcset="/img/loading.gif"></p>
+<p>点击专题速览底部的「查看完整总结」，会打开下图的专题文章，它基于 15 篇国内外的文章智能聚合而成，在<strong>多方信源交叉验证</strong>的情况下，能最大程度避免 AI 幻觉导致的信息失真问题。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/17559239093044.jpg" srcset="/img/loading.gif"></p>
+<p>而且在浏览专题文章时，开头处会提供「智能目录」，可以从整体上把握热点的脉络，有感兴趣的部分，点击目录即可一键跳转到对应位置。   </p>
+<p>语鲸生成的专题文章，不仅是对多篇内容的整合提炼，而且会用<strong>恰当的形式</strong>来呈现内容，像在介绍 Perplexity 的公司概况、当前估值与融资情况时，分别使用表格、条形图进行<strong>可视化呈现</strong>，进一步降低信息获取和消化的门槛。     </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5296.PNG" srcset="/img/loading.gif"></p>
+<p>值得一提的是，经由语鲸智能生成的专题文章，每个段落会保留生成时参考的信源，点击末尾的箭头↖ ，右侧滑出的面板会列出相应的内容列表。    </p>
+<p>如果参考的是海外网站的内容，语鲸还会自动翻译为中文，支持双语对照阅读，边看内容边学英语，获取信息的同时拓展知识边界。 </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5300.PNG" srcset="/img/loading.gif"></p>
+<p>遇到不懂的术语或知识盲区，还可以点击底部的「问答」，使用语鲸内置的 <strong>AI 问答</strong>功能（支持联网搜索），解答阅读过程中产生的疑惑，延伸挖掘更深入的信息，构建更为完整的知识体系。   </p>
+<p><img src="https://img.penghh.fun/2025/08/23/img5304.PNG" srcset="/img/loading.gif"></p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>毫无疑问，随着 AI 极大降低了内容的创作门槛，每个人面临的「信息过载」只增不减，但每个人的时间却是刚性的，如何平衡信息获取与个人时间分配，成了 AI 时代绕不开的母题。    </p>
+<p>今天介绍的语鲸 App，正如它的 Slogan「<strong>潜入信息深海，带洞见上岸</strong>」所言，信息本身不是目的，而是帮助我们获得洞见的手段，语鲸通过整合信息订阅、阅读、总结探索等环节，构建起一站式的知识管理工具，给信息爆炸和时间不足间的矛盾带来一种解法，让每个人都能在 AI 的加持下拨开层层迷雾，直达洞见！   </p>
+<p>最后，如果你对<strong>新奇软件</strong>或<strong>提升效率</strong>感兴趣，可以复制下方的频道口令在语鲸打开，一键查看并订阅我关注的所有频道。   </p>
+<p><code>9r:/ 02/23 i@G.x1 长按复制此条消息，打开语鲸 app，查看 用户_1754792270418 订阅的频道列表##lw9oje3jR##blog[语鲸口令]</code>       </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/RSS/">RSS</a>
+                    
+                      <a class="hover-with-bg" href="/tags/AI/">AI</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96/">信息获取</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/10/06/2025-10-6-wechatmedia_platform/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">所以，公众号编辑器真的很难用吗？【效率工具指南】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/07/16/2025-7-16-monam03/">
+                        <span class="hidden-mobile">MONA M03 Max发布，小鹏老车主们坐不住了！【效率工具指南】</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    }
+    waitElementVisible('comments', loadUtterances)
+  </script>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2025/08/23/2025-8-23-yujing/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "语鲸：一款App刷遍全网内容，AI时代最佳的RSS订阅+总结工具！&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

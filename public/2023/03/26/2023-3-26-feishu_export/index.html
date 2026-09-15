@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.7k 字
+      1.8k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      18
        分钟
     </span>
   
@@ -266,58 +277,60 @@
 <p>今年应该是飞书「商业化」的关键之年（用户养肥了可以开始收钱了），在飞书官网可以看到一个「版本对比｜飞书」的页面，如下图，列出了不同版本的价格。   </p>
 <p>照目前的付费方案看，飞书虽然集成了众多功能，但它并不按单项功能来卖，而是把所有功能打包到一起出售。</p>
 <p>如果你只用其中的「飞书文档」，想拥有更大的云文档空间，只能升级到 50 元/人/月，一年最少 600 块，就买这一项功能，我猜很多个人用户就会觉得太贵了……              </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16797290297420.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16797290297420.jpg" srcset="/img/loading.gif"></p>
 <p>飞书开始商业化之后，原先的免费版权益也有所调整，说我留意到的一个，云文档空间从原本的 200 GB 下调到 50 GB。  </p>
 <p>在网上看到有人吐槽，空间变小了，想升级到更大的空间，客服和他说：亲，个人用户无法直接升级，您需要先创建一个企业，以企业用户的身份，才能进行升级到「商业版」……想给飞书送钱，还得这么折腾，果然是先进生产力工具啊……            </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16797279146083.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16797279146083.jpg" srcset="/img/loading.gif"></p>
 <p>说到这，可以引出今天这篇文章的主题了：      </p>
 <p>如果你觉得飞书文档给的免费空间太小，或是一年 600 起步的价格太高，不想再用飞书了，这时就会有一个问题：<strong>如何批量导出存放在飞书上的文档呢？</strong>         </p>
 <p>数据迁移或导出，一直是国内很多产品被诟病的地方……有些比较良心一点的，譬如腾讯文档，它提供了「批量导出」功能，只不过是要花钱💰，而有些产品，干脆不提供这一功能，被用户问到，就说这需求以后会做的，只是没告诉你，<strong>这需求它永远排不上期</strong>的哈哈哈哈     </p>
 <p>这里我从网上找到了一位个人开发者制作的一个工具 <strong>feishu-backup</strong>，它可以比较方便地批量导出飞书文档，且导出的文档为 Markdown 格式。          </p>
 <p>不过需要注意的是，feishu-backup <strong>只能批量导出存放在企业用户（飞书组织）里的文档</strong>，如果你之前把文档都放在了个人身份的账户里，那就无法使用这个工具了……     </p>
 <p>还有一点，<strong>如果你想用这个工具从你就职的公司批量导出你创建过的所有文档，那也别想了</strong>……因为后面的操作有一步是需要企业的管理员审核的，你这么操作，别人会怎么想你呢？     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16797986209783.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16797986209783.jpg" srcset="/img/loading.gif"></p>
 <p>feishu-backup GitHub 项目链接：<br><a target="_blank" rel="noopener" href="https://github.com/dicarne/feishu-backup">https://github.com/dicarne/feishu-backup</a>      </p>
 <p>下面简单介绍从飞书企业版中批量导出飞书文档的步骤：  </p>
 <h2 id="飞书开放平台创建企业应用"><a href="#飞书开放平台创建企业应用" class="headerlink" title="飞书开放平台创建企业应用"></a>飞书开放平台创建企业应用</h2><p>在浏览器打开飞书开放平台 <code>open.feishu.cn/</code>，点击「创建应用」。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16797999508294.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16797999508294.jpg" srcset="/img/loading.gif"></p>
 <p>点击下方的「创建企业自建应用」</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798000351297.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798000351297.jpg" srcset="/img/loading.gif"></p>
 <p>在下图填入应用的名称、应用描述，这里可以随便填，没有特殊要求</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798002639876.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798002639876.jpg" srcset="/img/loading.gif"></p>
 <p>进入到应用的配置页面，点击「创建版本」，在下方输入「应用版本号」和「更新说明」，接着把页面滑动到底部，点击「保存」按钮。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798011382277.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798011382277.jpg" srcset="/img/loading.gif"></p>
 <p>创建版本后，点击右上角的「申请线上发布」，这时它会向企业的管理员发起「审批」流程。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798053837664.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798053837664.jpg" srcset="/img/loading.gif"></p>
 <p>打开飞书的首页 <code>feishu.cn</code>，点击「飞书网页版」，打开飞书的 IM 页面。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798007612762.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798007612762.jpg" srcset="/img/loading.gif"></p>
 <p>企业管理员的「开发者小助手」会收到一条消息，点击「进入管理后台审核」，在打开的页面中，点击右侧的「审核」，选择「通过」即可。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798072039628.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798072039628.jpg" srcset="/img/loading.gif"></p>
 <p>回到飞书开放平台的后台，点击「权限管理」&gt;&gt;「云文档」，勾选「权限名称」左侧的复选框，全选云文档的 10 项权限，点击右上角的「批量开通」，一键开通所有权限。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798004949956.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798004949956.jpg" srcset="/img/loading.gif"></p>
 <h2 id="获取-App-ID-和-App-Secret"><a href="#获取-App-ID-和-App-Secret" class="headerlink" title="获取 App ID 和 App Secret"></a>获取 App ID 和 App Secret</h2><p>点击飞书开放平台后台左侧栏的「凭证与基础信息」，可以看到应用的 App ID 和密钥 App Secret。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798074884077.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798074884077.jpg" srcset="/img/loading.gif"></p>
 <h2 id="配置-feishu-backup"><a href="#配置-feishu-backup" class="headerlink" title="配置 feishu-backup"></a>配置 feishu-backup</h2><p>在浏览器打开 <code>https://dicarne.github.io/feishu-backup/#/config</code>，填写上面的 App ID 和 App Secret。  </p>
 <p>点击下方的「计算」，重定向URL 输入框会生成一个链接，复制生成的链接。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798097848507.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798097848507.jpg" srcset="/img/loading.gif"></p>
 <p>将复制的链接粘贴到飞书开放平台「安全设置」的重定向 URL 中，点击右侧的「添加」按钮。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798099417483.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798099417483.jpg" srcset="/img/loading.gif"></p>
 <p>回到 feishu-backup 的配置页面，在浏览器打开底部的备份 URL。  </p>
 <p>注：<strong>如果你之后时不时想用 feishu-backup 导出存放在飞书中的文档，请妥善保存这个备份 URL 链接，可以把它保存到备忘录或是收藏起来</strong>。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798101463993.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798101463993.jpg" srcset="/img/loading.gif"></p>
 <p>打开备份 URL 链接会弹出下面的提示，点击「授权」即可。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798102692523.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798102692523.jpg" srcset="/img/loading.gif"></p>
 <h2 id="导出飞书文档"><a href="#导出飞书文档" class="headerlink" title="导出飞书文档"></a>导出飞书文档</h2><p>授权之后，就来到了导出飞书文档的页面，点击上方的「下载云空间文档」，接着点击「选择文件」，下拉弹窗会显示云空间的所有文档。  </p>
 <p>勾选文档左侧的复选框，再点击右侧的「下载选中文件」，feishu-backup 就会把选中的文档<strong>批量下载</strong>到本地。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798105438371.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798105438371.jpg" srcset="/img/loading.gif"></p>
 <p>下载会得到一个压缩包，打开压缩包，就能看到导出的 Markdown 格式的文档（后缀为 <code>.md</code>），另外它会将文档中包含的所有图片，放在名为 assets 的文件夹中，这与 Notion 自带的导出 Markdown 文件是相似的。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/26/16798109141605.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/26/16798109141605.jpg" srcset="/img/loading.gif"></p>
 <p>最后还是要说一声感谢，感谢这位开发者开发了这么一个工具，虽然它还不能兼容所有的情况，但有这个工具，多少还是能帮到那些把文档放在飞书企业版上的用户，让他们的数字资产得以自由迁移到其他应用中。    </p>
-<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南"> </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南"> </p>
 
             </div>
             <hr>
@@ -332,9 +345,9 @@
                     
                       <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/">数据迁移</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E9%A3%9E%E4%B9%A6/">飞书</a>
-                    
                       <a class="hover-with-bg" href="/tags/%E9%A3%9E%E4%B9%A6%E6%96%87%E6%A1%A3/">飞书文档</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%A3%9E%E4%B9%A6/">飞书</a>
                     
                   </div>
                 
@@ -346,6 +359,12 @@
                 <div class="post-prevnext row">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2023/03/27/2023-3-27-10mindmap/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">思维导图App哪个好？2023十大好用的思维导图软件推荐！</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
@@ -367,30 +386,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

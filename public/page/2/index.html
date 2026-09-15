@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -41,9 +43,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -208,22 +219,20 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/02/18/2023-2-18-online_document/">国内的在线文档工具--石墨文档、腾讯文档、语雀文档，选哪款好？</a>
+        <a href="/2024/06/18/2024-6-22-extract_wemdia_cover/">我用AI开发了一个提取公众号封面图的浏览器插件【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2023/02/18/2023-2-18-online_document/">
+        <a href="/2024/06/18/2024-6-22-extract_wemdia_cover/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。   
-作为一名同时开过石墨文档、腾讯会员、语雀文档会员的「韭菜」，今天就来简单介绍这 3 款在线文档的特点和缺点。  
-先放上个人结论：  
-
-石墨文档：功能可能是最少的，迭代也比较慢，但却是最好看、最有品味的，缺点是非会员会带有广告         
-腾讯文档：中规中矩，大厂豪横，限制最少，个人觉得外观有点丑
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。    
+两年之前，我在公众号上介绍过我写的一个油猴脚本，可免费提取微信公众号文章的封面。  
+之所以强调「免费」，是有些软件挺不要脸的，把这个功能做成了会员专属的权益。     
+不过我写的这个油猴脚本，虽然能用，但实际用起来有点别扭：它无法控制脚本运行的时机，因此每次在 Chro
         </a>
       </p>
 
@@ -231,8 +240,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-02-18 22:22" pubdate>
-              2023-02-18
+            <time datetime="2024-06-18 11:45" pubdate>
+              2024-06-18
             </time>
           </div>
         
@@ -241,105 +250,9 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%9F%B3%E5%A2%A8%E6%96%87%E6%A1%A3/">石墨文档</a>
+              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
             
-              <a href="/tags/%E8%AF%AD%E9%9B%80%E6%96%87%E6%A1%A3/">语雀文档</a>
-            
-              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/">在线文档</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/30/2023-1-30-clashx/">开了代理工具🪜，影响软件打开速度，该咋整？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2023/01/30/2023-1-30-clashx/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。   
-临时想来写一篇短文章，这个灵感来自我今早在公司群询问公司同事的一个问题：    
-开了🪜软件，但在非全局代理的情况下，还是会影响国内某些在线软件的打开速度，即这些软件还是走了代理流量，导致打开速度变慢，该怎么解决呢？     
-群里资深的杨工回复了一句：  
-​&gt; 网址过滤​​难道高手都是惜字如金
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-30 00:45" pubdate>
-              2023-01-30
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
-            
-              <a href="/tags/Clash/">Clash</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/07/2023-1-7-yuque/">我又喜欢上语雀文档了</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2023/01/07/2023-1-7-yuque/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。  
-去年写过一篇吐槽语雀文档的文章，没想到过了没多久就打脸了，我把工作中使用的在线文档从石墨换成语雀了，同时还充了语雀会员。  
-有这个转变，还得先感谢网友 @C小调 分享他在语雀上创建的一个知识库，他说知识库首页的目录，很适合用来呈现我在知识星球上发布的内容，让未加入星球的用户可以更好地感知社群的价值，同时也
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-07 23:55" pubdate>
-              2023-01-07
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E8%AF%AD%E9%9B%80%E6%96%87%E6%A1%A3/">语雀文档</a>
-            
-              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/">在线文档</a>
+              <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/">公众号</a>
             
               <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
             
@@ -355,21 +268,20 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/01/03/2023-1-3-xnapper/">Mac截图软件Xnapper，截图美化样机工具【效率工具指南】</a>
+        <a href="/2024/06/18/2024-6-18-trap_in_time/">我们都是困在时间里的人【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2023/01/03/2023-1-3-xnapper/">
+        <a href="/2024/06/18/2024-6-18-trap_in_time/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位晚上好，我是小豪。   
-看过前一篇文章《给视频加水印，推荐这4个好用工具！》的朋友，不知道有没有发现和去年发布的文章的不同之处呢？   
-没有发现也没关系，反正我已经习惯了，这不就来给大家揭开上一篇文章里的一点小心思了吗？  
-就如文章题目说到的，这个小心思和「截图」或者说文章里的「配图」有关：  
-上一篇文章除了前两张图片
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+前段时间李娟的剧《我的阿勒泰》大热，我还没有看，但围绕李娟及这部剧的讨论，网上都炸开锅了，毕竟做媒体的都要追热点，啥热追啥。
+我在朋友圈看到丽娟接受凤凰网采访的一个切片视频，主持人说李娟身上有很多人羡慕的「松弛感」，因为大多数人都困在一个系统里——每天要坐班、要工作、有 KPI，李娟说了一番很有同理心的说：
+
+你刚刚说人会被困在某个
         </a>
       </p>
 
@@ -377,8 +289,8 @@ Hello 各位晚上好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-03 23:55" pubdate>
-              2023-01-03
+            <time datetime="2024-06-18 11:45" pubdate>
+              2024-06-18
             </time>
           </div>
         
@@ -387,11 +299,7 @@ Hello 各位晚上好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Mac/">Mac</a>
-            
-              <a href="/tags/%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6/">截图软件</a>
-            
-              <a href="/tags/%E6%A0%B7%E6%9C%BA%E5%B7%A5%E5%85%B7/">样机工具</a>
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
             
           </div>
         
@@ -405,19 +313,22 @@ Hello 各位晚上好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/01/01/2023-1-1-video_watermark/">给视频加水印，推荐4款好用工具！</a>
+        <a href="/2024/05/12/2024-5-12-ninebot/">全款拿下一辆九号电动车【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2023/01/01/2023-1-1-video_watermark/">
+        <a href="/2024/05/12/2024-5-12-ninebot/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪        
-Hello 各位好，我是小豪。  
-去年写过一篇给图片加水印的文章《逆行者？别人去图片水印，我却加水印》，好像反响不是特别好，猜测也是平时比较少人用到，后来我想过一个类似的问题，如果把这里的媒介从图片更改为视频，即给视频加水印，这样的需求，得用什么软件呢？   
-因此，今天的这篇文章，简单来分享一下，给视频加水印的 4 种方法，希望能
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。
+不不不，别误会，我这里说的电动车，并不是现在大火的新能源电动车，而是九号（ninebot）的电动自行车🛵。  
+买了九号的电动车，一个最大的感受是，它打破了我原先对小电驴的刻板印象，因为它确实很智能：    
+
+启动不需要车钥匙，坐上去就能直接开走    
+共享钥匙，让家人或者朋
         </a>
       </p>
 
@@ -425,8 +336,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-01 20:39" pubdate>
-              2023-01-01
+            <time datetime="2024-05-12 11:45" pubdate>
+              2024-05-12
             </time>
           </div>
         
@@ -435,11 +346,11 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/OBS/">OBS</a>
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
             
-              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+              <a href="/tags/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/">好物推荐</a>
             
-              <a href="/tags/%E8%A7%86%E9%A2%91%E5%8A%A0%E6%B0%B4%E5%8D%B0/">视频加水印</a>
+              <a href="/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/">电动车</a>
             
           </div>
         
@@ -453,21 +364,22 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/12/31/2022-12-31-summary/">我的 2022 年个人总结｜失落的一年</a>
+        <a href="/2024/04/13/2024-4-13-mowenbianqian/">公众号狗都不做，现在流行写墨问便签！【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/12/31/2022-12-31-summary/">
+        <a href="/2024/04/13/2024-4-13-mowenbianqian/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。   
-写这篇文章之前，我内心纠结、犹豫了一会，感觉今年没啥好写的，在想要不要写呢？   
-最后还是决定写啦，才有了你现在看到的这篇文章。  
-我的理解，写总结并不是为了找各种数据来证明自己过得不错，而纯粹只是想在年底做个记录📝，方便以后回过头来稍微有点东西可查，仅此而已。   
-如果你也觉得这个想法不错，不妨
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+文章标题提到的「墨问便签」，是一款基于微信的便签小程序，官方是这么介绍这款便签产品的：  
+
+墨问便签并不是传统意义的笔记软件。它是一个创作和分享的工具，以小程序为载体，让有价值的内容，在人与人之间流动。
+
+而如果要让我用自己的话介绍，我会说，墨问便签是一个更为开放的「朋友圈」，感觉更接近于 QQ 空间。
+相比朋友圈，QQ 空间最突
         </a>
       </p>
 
@@ -475,8 +387,56 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-31 16:45" pubdate>
-              2022-12-31
+            <time datetime="2024-04-13 16:35" pubdate>
+              2024-04-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+              <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/">公众号</a>
+            
+              <a href="/tags/%E5%A2%A8%E9%97%AE%E4%BE%BF%E7%AD%BE/">墨问便签</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2024/02/18/2024-2-18-spring_festival/">春节回家见闻及感悟【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2024/02/18/2024-2-18-spring_festival/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+写这篇文章之前，我翻了一下公号的后台，找到一篇 2021 年写的文章《春节回家见闻及感悟》，想到之前有写过这类文章，中间中断了 2 年，今年想重新捡起来，简单记录自己看到的一些变化。     
+车我们的村子，整体上在镇里面算是发展得比较好的，连菜市场卖的菜，价格都比隔壁村子的高，我妈为了省点钱，有时会跑到隔壁村去买菜。   
+目之所
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-02-18 15:24" pubdate>
+              2024-02-18
             </time>
           </div>
         
@@ -489,7 +449,55 @@ Hello 各位好，我是小豪。
             
               <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
             
-              <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</a>
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2024/01/12/2024-1-12-blog/">2024年，还有必要搭建个人博客吗？【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2024/01/12/2024-1-12-blog/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。      
+从去年到现在，看到不止一个博主重新提起「博客」这个旧事物，就我自己看到的有——
+
+公众号「高少星」发布的一篇文章《别了，微信公众号》 https://gaoshaoxing.com/
+公众号「槽边往事」作者和菜头写的一篇文章《重开博客》  https://www.hec
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-01-12 11:31" pubdate>
+              2024-01-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+            
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+              <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
             
           </div>
         
@@ -503,19 +511,20 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/12/26/2022-12-26-covid19/">新冠感染阳了，记录一下</a>
+        <a href="/2023/12/16/2023-12-16-weibo_video_download/">微博视频下载工具推荐！轻松下载任意视频【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/12/26/2022-12-26-covid19/">
+        <a href="/2023/12/16/2023-12-16-weibo_video_download/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-好久没更新，一方面是年底比较忙，另一方面是我阳了，确实没想到，阳来得这么快，连身在 18 线农村的爸妈也中招了。      
-症状那些就不说了，你在朋友圈、社交网络上可以看到很多人都在分享，大致方向一样，细节的就因人而异。    
-外卖送到后请放在门口这几天吃饭，都是靠美团外卖解决的，一个明显的感受是，送餐的速度变慢了，配送费上调了，最直接的
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。    
+今年很快就结束了，不知道大家有没有一种体会呢？就是今年的演唱会或者音乐演出特别多，大家都憋太久了，需要「报复式」看音乐演出。  
+去现场看了的，可能会拍照、拍视频，回来反复播放，或是看其他网友发布的视频，不够的话，还可以蹲歌手工作室出的 Vlog 视频：    
+再往前一步
         </a>
       </p>
 
@@ -523,8 +532,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-26 21:57" pubdate>
-              2022-12-26
+            <time datetime="2023-12-16 13:00" pubdate>
+              2023-12-16
             </time>
           </div>
         
@@ -533,7 +542,11 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+              <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4/">快捷指令</a>
+            
+              <a href="/tags/%E4%B8%8B%E8%BD%BD/">下载</a>
+            
+              <a href="/tags/%E5%BE%AE%E5%8D%9A/">微博</a>
             
           </div>
         
@@ -547,20 +560,20 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/12/13/2022-12-13-notice/">「效率工具指南」使用说明书</a>
+        <a href="/2023/11/28/2023-11-28-shitou_machine/">石头扫地机器人：今年买的最满意的一个产品，幸福感飙升！【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/12/13/2022-12-13-notice/">
+        <a href="/2023/11/28/2023-11-28-shitou_machine/">
           
           
             
           
-          Hello 各位好，我是小豪。  
-忘了是去年，还是今年年初，因为飞书的宣传，网上刮起了一阵给自己写一份「个人使用说明书」的风，即用一份文档来介绍自己，同时让别人了解如何可以更好地「使用」你。        
-
-最开始觉得这个概念挺好的，曾经也想学着其他人一样，给自己写一份个人使用说明书，但就像很多次在别人面前做自我介绍一样，有点害羞，或是觉得没啥好写的，就把这个想法搁置了。      
-不过，最
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。    
+时间如流水，2023 眼瞅着就只剩下一个月了，不知道各位今年过得怎么样呢？   
+我自己的体会是，有好有坏，好的是我们又过回了正常的生活，可以自由出门，去往那些憧憬已久的远方，坏的是，一年过去又一事无成，周末大多时候都很无聊，只能坐在电脑前码字消磨时间。       
+为数
         </a>
       </p>
 
@@ -568,8 +581,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-13 09:26" pubdate>
-              2022-12-13
+            <time datetime="2023-11-28 02:00" pubdate>
+              2023-11-28
             </time>
           </div>
         
@@ -578,9 +591,58 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
+              <a href="/tags/%E6%95%B0%E7%A0%81/">数码</a>
             
-              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+              <a href="/tags/%E5%A5%BD%E7%89%A9%E6%8E%A8%E8%8D%90/">好物推荐</a>
+            
+              <a href="/tags/%E5%B1%85%E5%AE%B6%E5%A5%BD%E7%89%A9/">居家好物</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/11/21/2023-11-21-wemedia/">公众号的春天要来了？写在微信公众号 3 万关注之际【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/11/21/2023-11-21-wemedia/">
+          
+          
+            
+          
+          Hello 各位好，这里是效率工具指南。我是这个公众号的作者小豪。  
+首先要说一件开心的事情，这个苦心经营、不得其法的公众号，在创建 8 年多之后，终于有 3 万关注了。  
+
+数字只是一个表象，平常会来看我发布的内容的人，实际上远比这个数字少得多。   
+
+
+我原本以为在 2023 年结束的时候，能达到 3 万关注就不错了，没想到微信最近推荐了我之前发过的一篇老文章，文章阅读暴涨的同时，也给我
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-21 22:00" pubdate>
+              2023-11-21
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BE%AE%E4%BF%A1/">微信</a>
             
               <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/">公众号</a>
             
@@ -596,21 +658,21 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/12/03/2022-12-3-online_mindmap/">在线的思维导图工具有哪些推荐？8款免费在线思维导图软件推荐！</a>
+        <a href="/2023/11/18/2023-11-18-running_page/">Nike Run Club运动数据自动上传到running-page修复方法【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/12/03/2022-12-3-online_mindmap/">
+        <a href="/2023/11/18/2023-11-18-running_page/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-现如今很多软件都流行推出网页版，对于思维导图软件来说也不例外，表现为我们可以看到各式各样的在线思维导图软件。相比传统的基于本地的导图软件，在线思维导图软件有如下突出的优势：  
+          本文首发于我的微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪  
 
-使用前无需安装，降低用户的使用成本    
-跨平台，大多支持主流的操作系统，例如 Windows、macOS 和 Linux 系统等  
-创建的思维导图文件可保存到
+注：文章标题里说的 Nike 运动 App，是指 Nike 推出的 Nike Run Club App。  
+
+去年 6 月 8 日，Nike Run Club App 宣布从 2022 年 7 月 8 日起停止在中国地区的运营，在表达遗憾的同时，也给用户提供了导出运动数据的选项。   
+虽然这是官方发的停服公告，但其实想用的
         </a>
       </p>
 
@@ -618,8 +680,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-03 09:28" pubdate>
-              2022-12-03
+            <time datetime="2023-11-18 13:38" pubdate>
+              2023-11-18
             </time>
           </div>
         
@@ -628,65 +690,11 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%B9%95%E5%B8%83/">幕布</a>
+              <a href="/tags/GitHub/">GitHub</a>
             
-              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
+              <a href="/tags/%E8%BF%90%E5%8A%A8/">运动</a>
             
-              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">在线思维导图</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/11/27/2022-11-27-notion_mindmap/">怎么用Notion做思维导图？用自带的功能就够了！【效率工具指南】</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/11/27/2022-11-27-notion_mindmap/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。   
-众所周知，Notion 非常强大，集成了多种功能，但唯独少了思维导图。  
-关于这个问题，我之前也找了一些方法，思路都是在 Notion 中嵌入带有思维导图功能的第三方网页应用，例如：  
-
-BoardMix博思白板        
-Miro   
-Whimsical   
-
-👉想了解使用第三方导图应用
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-11-27 16:28" pubdate>
-              2022-11-27
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Notion/">Notion</a>
-            
-              <a href="/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/">笔记软件</a>
-            
-              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
+              <a href="/tags/Nike/">Nike</a>
             
           </div>
         
@@ -698,7 +706,7 @@ Whimsical
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/3/"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/3/"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
   

@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3k 字
+      3.1k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      31
+      32
        分钟
     </span>
   
@@ -262,32 +273,32 @@
               <p>本文首发于微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ybhgs5YmmcBGTsZ3qqvFAA">效率工具指南</a>」<br>文/彭宏豪    </p>
 <p>Hello 各位好，我是小豪。    </p>
 <p>连续两年差不多这个时候，都会收到腾讯云☁️发来的一封邮件，告知我博客所用的 SSL 证书快到期了，让我提前续期证书，或是重新申请证书，以免影响到我的业务。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775986045262.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775986045262.jpg" srcset="/img/loading.gif"></p>
 <p>说影响到我的业务，其实也没那么夸张，毕竟我的博客没法赚钱，反而还要倒贴钱——<strong>每年租用服务器的费用、每个月的图床支出</strong>……对不能通过博客赚到钱的人来说，搭建博客反而是一种负担。             </p>
 <p>SSL 证书过期带来的直接影响，就是当有人打开网站时，浏览器会出现类似下图的提示，且网友不能看到网站的内容，必须得点击左下角的「高级」，再点击弹出的「继续访问」，才能访问网站。   </p>
 <p>因为增加了这一步操作，且考虑到不少人一看到这个风险提示就会下意识地关掉网页，因此对于业务性质的网站，SSL 证书过期会导致网站的 UV 极速下滑。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775991084503.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775991084503.jpg" srcset="/img/loading.gif"></p>
 <p>前面的铺垫简单解释了 SSL 证书的作用，接下来就以<a href="https://penghh.fun/">我的 Hexo 博客</a>为例，说下更换 SSL 证书的步骤：   </p>
 <h2 id="在腾讯云后台免费申请-SSL-证书"><a href="#在腾讯云后台免费申请-SSL-证书" class="headerlink" title="在腾讯云后台免费申请 SSL 证书"></a>在腾讯云后台免费申请 SSL 证书</h2><p>我的 Hexo 博客用的是腾讯云的服务器，因此这里需要去到腾讯云服务器的后台，其他云服务厂商的操作应该也是类似的。     </p>
 <p>打开腾讯云官网，点击顶部导航栏「产品」，在下方的搜索框输入 SSL，点击下方返回的 SSL 证书。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775996859705.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775996859705.jpg" srcset="/img/loading.gif"></p>
 <p>点击下方的「产品控制台」，进入 SSL 证书管理后台。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775997697867.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775997697867.jpg" srcset="/img/loading.gif"></p>
 <p>如果你和我的情况一样，之前申请的 SSL 证书快到期了，后台会有一个「快速续期」的选项，点击进入新的页面。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775973567537.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775973567537.jpg" srcset="/img/loading.gif"></p>
 <p>打开的页面会让我们选择 SSL 证书的签发机构，这里我选择的是免费证书，签发机构也只有一家——亚洲诚信。    </p>
 <p>如果是首次申请 SSL 证书，需要填入「证书绑定域名」，域名验证放方式选择「自动DNS验证」即可，输入你的邮箱，最后点击下方的「提交」按钮。     </p>
 <p>稍等一小会，没有遇到其他问题的话，它很快就会通过我们的申请。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775999861020.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775999861020.jpg" srcset="/img/loading.gif"></p>
 <p>SSL 证书审核通过后，点击腾讯云右上角的「站内信」，打开腾讯云给我们发的邮件，如下图，点击下方的蓝色按钮，前往证书管理控制台。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776001976927.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776001976927.jpg" srcset="/img/loading.gif"></p>
 <p>在打开的页面，找到下图的「手动部署」，点击蓝色的超链接，下载证书文件。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776002996368.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776002996368.jpg" srcset="/img/loading.gif"></p>
 <p>在 SSL 证书的下载页面，还需要根据服务器（后端服务）使用的语言，来选择要下载的文件。   </p>
 <p>这里就要根据自己博客的具体情况来选啦，我的 Hexo 博客服务器端使用的是 Nginx，因此这里就点击 Nginx 右侧的「下载」按钮。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776003630723.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776003630723.jpg" srcset="/img/loading.gif"></p>
 <p>下载下来会得到一个安装包，解压安装包，里面会有 4 个文件，但其实我们只需要用到其中的 2 个文件，分别是以 <code>.crt</code> 和 <code>.key</code> 为后缀的文件。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776006285879.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776006285879.jpg" srcset="/img/loading.gif"></p>
 <h2 id="上传-SSL-证书前的准备"><a href="#上传-SSL-证书前的准备" class="headerlink" title="上传 SSL 证书前的准备"></a>上传 SSL 证书前的准备</h2><blockquote>
 <p>这一步有一点点麻烦，我在折腾的过程中也是卡在这一步了。    </p>
 </blockquote>
@@ -297,7 +308,7 @@
 <p>Royal TSX 是一款跨平台的远程桌面管理软件，支持 macOS、Windows、iOS 和 Android 系统。它可以管理多种远程桌面协议，包括 Microsoft Remote Desktop Protocol (RDP)、Apple Remote Desktop (ARD)、VNC、SSH 和 Telnet 等。</p>
 <p>通过 Royal TSX，用户可以轻松地连接和管理多个远程计算机和服务器，以及执行各种远程管理任务和操作，如文件传输、终端访问、进程管理和脚本执行等。</p>
 </blockquote>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776016671750.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776016671750.jpg" srcset="/img/loading.gif"></p>
 <p>Royal TSX 官网下载：<br><a target="_blank" rel="noopener" href="https://royalapps.com/ts/mac/download">https://royalapps.com/ts/mac/download</a>     </p>
 <p>简单来讲，这里会用到 Royal TSX 的 SSH 连接和文件传输（SFTP 连接）功能，将我们的电脑和远端的服务器连接起来，同时软件提供了图形化的界面，只要简单拖拽就能实现文件的上传和下载，更适合于没有计算机背景的人。   </p>
 <p>首次打开 Royal TSX，首页显示的 Getting started 给我们提供了使用软件的引导：  </p>
@@ -306,46 +317,46 @@
 <li>创建一个文档      </li>
 <li>添加你的第一个连接      </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16775461363039.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16775461363039.jpg" srcset="/img/loading.gif"></p>
 <p>前面 Notion AI 在介绍 Royal TSX 时，说它可以管理多种远程桌面协议，软件能够支持多种协议，实际上是通过安装插件来实现的，<strong>要用到哪种协议，就给软件安装相对应的插件</strong>。  </p>
 <p>下面以 macOS 版本的 Royal TSX 为例，点击屏幕左上角的 Royal TSX，选择 Plugins。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776043585175.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776043585175.jpg" srcset="/img/loading.gif"></p>
 <p>点击插件面板上方的 Available Plugins，找到下面两个插件——Terminal 和 File Transfer，依次点击插件右侧的 Install 按钮，安装这两个插件。  </p>
 <p>安装插件之后，软件会提示重启软件，按照提示重启即可。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776045265102.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776045265102.jpg" srcset="/img/loading.gif"></p>
 <h3 id="SSH-连接"><a href="#SSH-连接" class="headerlink" title="SSH 连接"></a>SSH 连接</h3><p>点击左上角的 File 选项卡，选择 New Document，新建一个文档，接着按下 Command + S，会弹出一个保存的窗口，可设置文档的名称，你可以自定义文档名称，也可以保持默认的文档名 Connections。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776047432598.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776047432598.jpg" srcset="/img/loading.gif"></p>
 <p>单击选中刚创建的文档 Connections，点击左下角的加号 + ，在弹出的面板，选择 Terminal，打开一个终端。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776051302000.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776051302000.jpg" srcset="/img/loading.gif"></p>
 <p>右击刚创建的 Terminal，选择 Properties，打开属性面板。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776052760854.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776052760854.jpg" srcset="/img/loading.gif"></p>
 <p>打开的属性面板如下，要填入一些信息：  </p>
 <ul>
 <li>Display Name：可以给终端起个有辨识度的名字，方便与等下要添加的「文件传输」区分开来              </li>
 <li>Connection Type：连接类型选择 SSH 连接，后面的 Port 为端口，保持默认的 22 即可           </li>
 <li>Computer Name：这里需要输入服务器的公网 IP，这个可以从腾讯云服务器的管理后台查到🔍        </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776053921124.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776053921124.jpg" srcset="/img/loading.gif"></p>
 <p>接着将左侧切换到 Credentials 选项卡，这里同样要更改一下默认的配置：    </p>
 <p>将右侧的下拉选项更改为下图中的 Specify username and password，选择这个之后，还要在下方填入服务器的用户名和密码。   </p>
 <p>服务器的用户名默认为 root，如果你没改过的话，填入 root 即可，接着再输入服务器的登录密码，如果不慎忘记了登录密码，可以到腾讯云管理后台重置密码。   </p>
 <p>最后点击右下角的 Apply &amp; Close，应用当前的设置，同时关闭设置面板。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776057282966.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776057282966.jpg" srcset="/img/loading.gif"></p>
 <h3 id="SFTP-连接"><a href="#SFTP-连接" class="headerlink" title="SFTP 连接"></a>SFTP 连接</h3><p>再次选中文档 Connections，点击左下角的加号 + ，在弹出的面板，选择 File Transfer，添加文件传输。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776061136083.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776061136083.jpg" srcset="/img/loading.gif"></p>
 <p>和前面配置 SSH 连接一样，选中刚添加的 File Transfer 并右击，选择 Properties，打开属性面板。   </p>
 <ul>
 <li>Connection Type：连接类型选择 SFTP，端口为 22   </li>
 <li>Computer Name：同样是输入服务器的公网 IP     </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776063217811.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776063217811.jpg" srcset="/img/loading.gif"></p>
 <blockquote>
 <p>接下来的这一步就是我在折腾的时候卡住的地方，不确定其他人到这一步会不会也会被卡住，仅作为提示。   </p>
 </blockquote>
 <p>将左侧切换到 Credentials 选项卡，你可以像前面一样，通过用户名和密码实现 SFTP 连接。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776064180109.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776064180109.jpg" srcset="/img/loading.gif"></p>
 <p>在上面的设置面板填入用户名和密码时，它并不会立即进行校验，而是当我们右击刚添加的「文件传输」，选择 Connect 时，它才会对我们填入的服务器用户名和密码进行校验。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
 <p>在 SFTP 校验这一步，Royal TSX 给我弹出了一个错误的提示，说我输入的服务器用户名或密码有误……无法连接到远程的服务器。   </p>
 <blockquote>
 <p>如果你没有遇到这个错误提示，那下面的解决方法的部分可以直接跳过。     </p>
@@ -353,35 +364,38 @@
 <p>尝试了好几次，而且是在一位博主「老郭种树」发布的视频《<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xJ411y7mx/">【补充】Royal TSX SSH 密钥文件登录远程服务器</a>》的帮助下，我才找到了另一种解决方法。  </p>
 <p>除了通过用户名和密码，其实我们还可以通过<strong>密钥文件</strong>登录/连接到远程的服务器。     </p>
 <p>关于如何生成密钥文件，操作比较复杂，可以参考上面提到的视频，扫描二维码即可观看：   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
 <p>在本地生成密钥文件，同时将公钥和私钥上传到服务器的 <code>.ssh</code> 路径后，我们再次打开「文件传输」的属性面板，切换到 Credentials 选项卡。  </p>
 <p>点击 Private Key File，切换到使用密钥文件登录的方式：   </p>
 <p>将电脑本地路径 <code>user/用户名/.ssh</code> 下的私钥文件 <code>id_rsa</code> 拖拽添加到下方的 Private Key File 中，同时在下方输入生成密钥文件时所用的密码，这样就完成了密钥文件登录方式的配置。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776075558350.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776075558350.jpg" srcset="/img/loading.gif"></p>
 <p>关闭设置面板，再次右击「文件传输」，选择 Connect，操作无误地话，这回就能正常连接到远端的服务器了。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776067324690.jpg" srcset="/img/loading.gif"></p>
 <h2 id="将-SSL-证书文件上传到远端服务器"><a href="#将-SSL-证书文件上传到远端服务器" class="headerlink" title="将 SSL 证书文件上传到远端服务器"></a>将 SSL 证书文件上传到远端服务器</h2><p>完成 Royal TSX 的配置之后，接下来就是借助 Royal TSX，将本地的 SSL 证书文件上传到远端的服务器。   </p>
 <p>前面我们右击「文件传输」，选择 Connect 之后，会打开下图的界面，左侧是电脑本地的文件，右侧是远端服务上存放的文件。     </p>
 <p>在右侧的服务器根路径下，新建一个名为 ssl 的文件夹，进入文件夹，再创建一个名为 Nginx 的子文件夹。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776315863971.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776315863971.jpg" srcset="/img/loading.gif"></p>
 <p>打开 Nginx 文件夹，将本地的 2 个证书文件拖拽上传到文件夹中。   </p>
 <blockquote>
 <p>注：这里我对上传后的两个文件进行了重命名。    </p>
 </blockquote>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776319492396.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776319492396.jpg" srcset="/img/loading.gif"></p>
 <p>选中 Royal TSX 左侧的 Terminal(这里我将它重命名为「远程服务器」)，选择 Connect，打开一个黑乎乎的窗口。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776320779411.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776320779411.jpg" srcset="/img/loading.gif"></p>
 <p>在窗口中依次输入如下命令：   </p>
 <p>cd ssl/Nginx<br>chmod 755 penghh.crt<br>chmod 755 penghh.key<br>cd ../..<br>nginx -s reload      </p>
 <p>第 1 行命令，是进入到我们刚创建的 Nginx 文件夹中；<br>第 2、3 行命令，是将我们刚上传的两个 SSL 文件的权限提升到 755；<br>第 4 行命令，是从 Nginx 文件夹返回到服务器的根路径下；<br>第 5 行命令是重启服务。          </p>
 <p>完成以上操作后，就算是大工告成了。   </p>
 <p>此时去到浏览器，打开个人博客或网站，点击浏览器地址栏的小锁，按照下面的步骤，查看证书的截止日期，如果时长为一年，那就是换上了新的 SSL 证书啦！        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/01/16776327515485.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/01/16776327515485.jpg" srcset="/img/loading.gif"></p>
 <p>对不懂技术的人，折腾起来还是有点麻烦的，但最后决定把操作过程写出来，以后跟着这个操作，心里就有谱了。   </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -435,30 +449,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

@@ -1,0 +1,860 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="baidu-site-verification" content="code-PdLAgt4JZr">
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    除了PPT以外，还有什么软件可以做课件？【效率工具指南】 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-09-17 17:52" pubdate>
+        2023年9月17日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">除了PPT以外，还有什么软件可以做课件？【效率工具指南】</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>除了我们熟知的 PPT，还有很多软件都可以用来做课件，如：</p>
+<ul>
+<li>Keynote</li>
+<li><a target="_blank" rel="noopener" href="https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ">boardmix</a>    </li>
+<li>Prezi</li>
+<li>腾讯文档</li>
+<li>Gamma  </li>
+</ul>
+<h2 id="Keynote"><a href="#Keynote" class="headerlink" title="Keynote"></a>Keynote</h2><p>Keynote是一款由苹果公司开发的演示软件。它拥有简单易用的界面和工具，使用者无需专业设计技能就可以创建精美的演示文稿。Keynote提供了多种预设模板，让使用者可以快速上手。同时，它也支持拖放操作，让使用者轻松添加文本、图片、图表等元素。</p>
+<p>Keynote具备强大的文字、段落、对象格式设置功能，可以方便地调整版式。使用者可以在Keynote中插入多种图表，如柱形图、饼图、散点图等，数据还可以与Excel实时链接。</p>
+<p>此外，Keynote提供多种高质量主题和颜色组合供使用者选择，使用者也可以自定义颜色主题。Keynote支持插入数学公式，丰富演示内容。它还可以插入音频和视频。图片的MAGIC MOVE动画效果也是Keynote的一大特色。</p>
+<p>在演示幻灯片时，Keynote支持画笔标注、激光笔提示等，这些功能可以让演示更加生动有趣。生成的演示文稿还可以另存为PDF格式，方便邮件发送和打印。  </p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949433583888.jpg" srcset="/img/loading.gif"></p>
+<p>需要注意的是，虽然Keynote是苹果独家推出的软件，但这不意味着它只能在苹果设备上使用，如iPhone、iPad和Macbook，它也推出了网页版，使用Windows设备的朋友，也可以在浏览器打开iCloud使用简易版的Keynote。   </p>
+<p>对Keynote动画功能的介绍，可以看我早前发布过的一篇文章：  </p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649917260&idx=1&sn=5223de03296d06c7f748c6c1a505eb2d&chksm=83a88361b4df0a77ae1576370e2c1aa547022d6f2280cc327cb55d9fba1591acf5a5d6df8153&token=1386208657&lang=zh_CN#rd">这款重金打造的演示软件，做动画分分钟吊打PPT。</a>    </p>
+<h2 id="boardmix博思白板"><a href="#boardmix博思白板" class="headerlink" title="boardmix博思白板"></a><a target="_blank" rel="noopener" href="https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ">boardmix博思白板</a></h2><p>boardmix博思白板是一款在线协作白板软件，它不仅提供开放的画布空间供多人在线协作，也内置了完整的在线PPT功能，可以用来进行演示和展示。 </p>
+<p>boardmix的PPT编辑界面简洁直观，使用者可以轻松地在画布上插入多种内容块，比如文本框、图片、图表、形状等，来快速构建演示文稿。编辑工具栏提供格式刷、颜色填充、更换字体等功能，可以设计出多样的演示页。  </p>
+<p><a target="_blank" rel="noopener" href="https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ">点击链接，使用boardmix博思白板在线制作PPT</a></p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949418523745.jpg" srcset="/img/loading.gif"></p>
+<p>另外，boardmix支持在演示中嵌入视频，并提供倒计时(计数器)、注释等工具来辅助演示。演示文稿可以实时共享进行协作，也可以发布链接进行在线演示。</p>
+<p>值得一提的是，boardmix的PPT不仅可以在线演示，还可以无缝转换为思维导图、PDF或图片文档，实现脱机使用，用户可以方便地在在线协作模式和脱机演示模式之间切换。   </p>
+<p>使用boardmix在线制作PPT的步骤如下：  </p>
+<p>在浏览器打开<a target="_blank" rel="noopener" href="https://boardmix.cn/ai-whiteboard/?code=Vi1gY4eG4EKZ">boardmix首页</a>，点击左侧的「在线使用」，进入boardmix工作台。   </p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949420530530.jpg" srcset="/img/loading.gif"></p>
+<p>下图是打开的boardmix工作台，点击「演示文稿」，切换到制作PPT的模式，下方有3个选项——</p>
+<ul>
+<li>新建空白演示文稿  </li>
+<li>AI一键生成演示文稿：使用AI功能，输入PPT主题，快速生成一份PPT     </li>
+<li>导入文件转换为演示文稿：支持导入Markdown文件，转换为PPT  </li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/09/17/16949418066063.jpg" srcset="/img/loading.gif"></p>
+<p>如果选择了第一个选项「新建空白演示文稿」，boardmix会创建一个下图的白板，同时打开白板的演示文稿功能，可以从最左侧的面板选择模板，快速创建PPT。   </p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949428337904.jpg" srcset="/img/loading.gif"></p>
+<p>另外一个实用的功能，则是使用boardmix内置的AI功能自动生成一份PPT：  </p>
+<p>点击boardmix白板左上角工具栏的「生成演示文稿」，打开AI生成演示文稿的面板，输入任意PPT主题，AI会依据我们输入的主题，快速生成一份PPT。   </p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949430394671.jpg" srcset="/img/loading.gif"></p>
+<h2 id="Prezi"><a href="#Prezi" class="headerlink" title="Prezi"></a>Prezi</h2><p>Prezi是一款基于云的演示软件，以其独特的”缩放演示”模式而闻名。</p>
+<p>相比传统平面滑动的PPT，Prezi采用了虚拟画布的设计，支持用户以多层次、非线性的方式组织内容，进行放缩式的演示，这种风格更加动态、富有创意。</p>
+<p>Prezi提供了各种演示模板，从简报到产品发布等，用户可以基于模板进行快速编辑，也可以自由绘制思维导图、添加多媒体元素，打造具有视觉冲击力的演示作品。</p>
+<p>Prezi支持在线协作编辑，团队成员可以同时编辑作品，生成的Prezi演示支持在线展示或脱机播放。</p>
+<p>此外，Prezi与PowerPoint完全兼容，支持两者之间无缝转换。它还提供了Presenter模式，可以更加便捷地进行演示。   </p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949433086899.jpg" srcset="/img/loading.gif"></p>
+<h2 id="腾讯文档PPT"><a href="#腾讯文档PPT" class="headerlink" title="腾讯文档PPT"></a>腾讯文档PPT</h2><p>腾讯文档PPT是腾讯文档中提供的在线演示软件，它拥有简洁的界面，支持多人实时协作编辑和评论演示文稿。</p>
+<p>使用腾讯文档PPT可以快速制作演示文稿，它提供多种演示模板，使用拖放方式可以轻松插入文字、图片、形状、图表等元素。腾讯文档PPT还集成了在线图片、图表、视频等资源，使得演示内容更加丰富。</p>
+<p>此外，腾讯文档PPT支持添加动画、插入链接、嵌入视频等功能，可以制作生动的演示内容。生成的演示文稿可以在网页浏览器直接在线演示，也可以下载为PDF或PPT文件进行本地演示。</p>
+<p>腾讯文档PPT也方便内容的共享与协作。用户可以发布和共享演示链接，方便他人在线浏览。它跨平台支持，可以在网页、iOS、Android等不同设备上访问和编辑。</p>
+<p><img src="https://img.penghh.fun/2023/09/17/16949436983979.jpg" srcset="/img/loading.gif"></p>
+<h2 id="Gamma"><a href="#Gamma" class="headerlink" title="Gamma"></a>Gamma</h2><p>Gamma是一款基于网页的在线演示文稿工具，与其他PPT工具最大的差异在于，它融合了类似Notion的文档块编辑器，我们可以像编辑文档一样来制作PPT。  </p>
+<p>作为一款在线工具，Gamma支持在线协作编辑演示文稿，用户可以实时预览效果，无需安装软件，这极大地方便了远程协作。Gamma提供多种炫酷的演示主题和模板供用户选择，用户也可以自定义主题。在线演示时，Gamma可以进行PPT的在线播放，并支持标注，使得演示更加生动。</p>
+<p>此外，Gamma生成的演示文稿可以用链接或二维码的形式发布供他人在线浏览。</p>
+<p>想更近一步了解Gamma的用法，可以查看我之前发布过的文章：  </p>
+<p><a href="https://penghh.fun/2022/11/24/2022-11-24-gamma/">除了PPT和Prezi，还有什么适合做演示的软件或者网站｜Gamma</a>  </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
+<h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
+<p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">   </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Mac/">Mac</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%81%8C%E5%9C%BA/">职场</a>
+                    
+                      <a class="hover-with-bg" href="/tags/PPT/">PPT</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/09/22/2023-9-22-boardmix_material/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">批量保存图片！图片管理软件Eagle平替：boardmix素材库，集剪藏+管理于一体【效率工具指南】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/09/10/2023-9-10-mindmap_export_markdown/">
+                        <span class="hidden-mobile">有哪些思维导图软件支持导出Markdown文件【效率工具指南】</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    }
+    waitElementVisible('comments', loadUtterances)
+  </script>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2023/09/17/2023-9-17-ppt_maker/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "除了PPT以外，还有什么软件可以做课件？【效率工具指南】&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

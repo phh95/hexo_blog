@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -41,9 +43,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -208,22 +219,19 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/01/24/2022-1-24-fcpx/">用 FCPX 给视频加字幕 | MacBook</a>
+        <a href="/2023/01/01/2023-1-1-video_watermark/">给视频加水印，推荐4款好用工具！</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/01/24/2022-1-24-fcpx/">
+        <a href="/2023/01/01/2023-1-1-video_watermark/">
           
           
             
           
-          本文首发于「效率工具指南」文/彭宏豪
-Hello 各位好，我是小豪。
-今天的文章，想来聊一下，如何给视频添加「观看体验更好」的字幕。  
-👉 温馨提示：本文配合之前发过的一期视频食用更佳
-剪辑软件的隐藏用法，给视频加字幕真的太爽啦！   
-剪映电脑版出来之前，给视频添加字幕，不少人可能会使用 Arctime，一款免费的跨平台字幕软件，支持 Windows、macOS 和 Linux 系统。  
-
+          本文首发于微信公众号「效率工具指南」文/彭宏豪        
+Hello 各位好，我是小豪。  
+去年写过一篇给图片加水印的文章《逆行者？别人去图片水印，我却加水印》，好像反响不是特别好，猜测也是平时比较少人用到，后来我想过一个类似的问题，如果把这里的媒介从图片更改为视频，即给视频加水印，这样的需求，得用什么软件呢？   
+因此，今天的这篇文章，简单来分享一下，给视频加水印的 4 种方法，希望能
         </a>
       </p>
 
@@ -231,8 +239,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-01-24 15:57" pubdate>
-              2022-01-24
+            <time datetime="2023-01-01 20:39" pubdate>
+              2023-01-01
             </time>
           </div>
         
@@ -241,9 +249,11 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Mac/">Mac</a>
+              <a href="/tags/OBS/">OBS</a>
             
-              <a href="/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/">视频剪辑</a>
+              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+            
+              <a href="/tags/%E8%A7%86%E9%A2%91%E5%8A%A0%E6%B0%B4%E5%8D%B0/">视频加水印</a>
             
           </div>
         
@@ -257,19 +267,21 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/01/23/2022-1-23-vuetemplate/">VSCode 添加 Vue 模板</a>
+        <a href="/2022/12/31/2022-12-31-summary/">我的 2022 年个人总结｜失落的一年</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/01/23/2022-1-23-vuetemplate/">
+        <a href="/2022/12/31/2022-12-31-summary/">
           
           
             
           
-          Hello 大家好，我是小豪。  
-昨晚在看 coderwhy 老师的 Vue 视频，其中有一小节讲到，如何在 WebStorm 里添加 Vue 模板。
-但我用的编辑器是 VS Code，且视频中没有讲到「如何在 VS Code 中添加 Vue 模板」，后来在网上搜了一下，找到了解决方法，写下这篇短文章作为记录。
-本文想实现的需求是，在 HTML 中输入 vue，再按下 Tab 键，就可以快速添加
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，我是小豪。   
+写这篇文章之前，我内心纠结、犹豫了一会，感觉今年没啥好写的，在想要不要写呢？   
+最后还是决定写啦，才有了你现在看到的这篇文章。  
+我的理解，写总结并不是为了找各种数据来证明自己过得不错，而纯粹只是想在年底做个记录📝，方便以后回过头来稍微有点东西可查，仅此而已。   
+如果你也觉得这个想法不错，不妨
         </a>
       </p>
 
@@ -277,8 +289,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-01-23 10:21" pubdate>
-              2022-01-23
+            <time datetime="2022-12-31 16:45" pubdate>
+              2022-12-31
             </time>
           </div>
         
@@ -287,9 +299,11 @@ Hello 各位好，我是小豪。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
             
-              <a href="/tags/Vue/">Vue</a>
+              <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+            
+              <a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">年度总结</a>
             
           </div>
         
@@ -303,21 +317,19 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/01/03/2022-1-3-pixelmator/">近期值得关注的修图 App</a>
+        <a href="/2022/12/26/2022-12-26-covid19/">新冠感染阳了，记录一下</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/01/03/2022-1-3-pixelmator/">
+        <a href="/2022/12/26/2022-12-26-covid19/">
           
           
             
           
-          本文首发于公众号「效率工具指南」文/彭宏豪  
-☝☝ 扫码加入我的社群   
-Hello 各位早上好，我是小豪。    
-元旦假期出去玩，难免会拍照。  
-今天就给大家介绍一个好用的修图应用——Pixelmator Photo。  
-Pixelmator Photo，是 iPad 上一个功能强大的修图应用，可以调整图片的多个参数，如白平衡、色相饱和度、颜色平衡、色阶和曲线等，涵盖了修图会用到的大部
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+好久没更新，一方面是年底比较忙，另一方面是我阳了，确实没想到，阳来得这么快，连身在 18 线农村的爸妈也中招了。      
+症状那些就不说了，你在朋友圈、社交网络上可以看到很多人都在分享，大致方向一样，细节的就因人而异。    
+外卖送到后请放在门口这几天吃饭，都是靠美团外卖解决的，一个明显的感受是，送餐的速度变慢了，配送费上调了，最直接的
         </a>
       </p>
 
@@ -325,8 +337,8 @@ Pixelmator Photo，是 iPad 上一个功能强大的修图应用，可以调整�
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-01-03 11:47" pubdate>
-              2022-01-03
+            <time datetime="2022-12-26 21:57" pubdate>
+              2022-12-26
             </time>
           </div>
         
@@ -334,109 +346,6 @@ Pixelmator Photo，是 iPad 上一个功能强大的修图应用，可以调整�
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/App/">App</a>
-            
-              <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
-            
-              <a href="/tags/%E4%BF%AE%E5%9B%BE/">修图</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/01/01/2022-1-1-qrcode/">如何美化一个二维码？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/01/01/2022-1-1-qrcode/">
-          
-          
-            
-          
-          本文首发于我的公众号「效率工具指南」文/彭宏豪
-Hello 各位好，我是小豪。2022 新年第一天，祝各位新年快乐。   
-今天这篇文章，来自于昨天同事在排版文章的时候，遇到的一个问题：如何更改默认二维码的黑白两色？    
-想实现的效果如下，将二维码默认的黑色方块更改为红色，默认的白色方块更改为浅黄色。   
-
-最开始想到一个比较笨的方案：使用 PS 的抠图工具，将二维码黑色的小方块抠出来，再单
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-01-01 18:58" pubdate>
-              2022-01-01
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
-            
-              <a href="/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/">二维码</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/31/2021-12-31-my2021/">我的 2021</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/31/2021-12-31-my2021/">
-          
-          
-            
-          
-          很快，2021 年也要过完了，快到让我感慨：2021 这个数字还没写熟，2022 就要来了。    
-按照往年的惯例，简要写一下 2021 年的个人总结。   
-年度 flag 完成情况年初我在得到 App 的一个活动中，立了 3 个 flag：      
-✅ 公众号 1 万关注（目前 1.4 万关注）✅ 换份工作✅ 和女朋友走得长长久久     
-
-公众号概况
-关注数  
-
-从年初的 7038
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-31 21:30" pubdate>
-              2021-12-31
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</a>
             
               <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
             
@@ -452,19 +361,20 @@ Hello 各位好，我是小豪。2022 新年第一天，祝各位新年快乐。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/12/26/2021-12-26-githubshortcut/">GitHub 搭配快捷指令，自动记录每天的起床时间</a>
+        <a href="/2022/12/13/2022-12-13-notice/">「效率工具指南」使用说明书</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/12/26/2021-12-26-githubshortcut/">
+        <a href="/2022/12/13/2022-12-13-notice/">
           
           
             
           
-          Hello 各位好。
-今天想和各位分享一个有意思的小项目——用快捷指令 App 和 GitHub，自动记录每天的起床时间。  
-这个项目源于之前介绍过的 running_page 作者 @yihong0618 的另外一个项目「早起记录」，它可以实现的效果如下：  
-每天起床关闭闹钟后，触发快捷指令 App 运行程序，在 GitHub issue 下面会生成一段话，包含今天的气温、起床时间（具体到秒
+          Hello 各位好，我是小豪。  
+忘了是去年，还是今年年初，因为飞书的宣传，网上刮起了一阵给自己写一份「个人使用说明书」的风，即用一份文档来介绍自己，同时让别人了解如何可以更好地「使用」你。        
+
+最开始觉得这个概念挺好的，曾经也想学着其他人一样，给自己写一份个人使用说明书，但就像很多次在别人面前做自我介绍一样，有点害羞，或是觉得没啥好写的，就把这个想法搁置了。      
+不过，最
         </a>
       </p>
 
@@ -472,8 +382,8 @@ Hello 各位好，我是小豪。2022 新年第一天，祝各位新年快乐。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-26 22:03" pubdate>
-              2021-12-26
+            <time datetime="2022-12-13 09:26" pubdate>
+              2022-12-13
             </time>
           </div>
         
@@ -482,9 +392,11 @@ Hello 各位好，我是小豪。2022 新年第一天，祝各位新年快乐。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/GitHub/">GitHub</a>
+              <a href="/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
             
-              <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%8C%87%E4%BB%A4/">快捷指令</a>
+              <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+              <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/">公众号</a>
             
           </div>
         
@@ -498,22 +410,21 @@ Hello 各位好，我是小豪。2022 新年第一天，祝各位新年快乐。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/12/17/2021-12-17-ipadapps/">iPad 上非常棒的 6 个应用</a>
+        <a href="/2022/12/03/2022-12-3-online_mindmap/">在线的思维导图工具有哪些推荐？8款免费在线思维导图软件推荐！</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/12/17/2021-12-17-ipadapps/">
+        <a href="/2022/12/03/2022-12-3-online_mindmap/">
           
           
             
           
-          文/彭宏豪，本文首发于我的公众号「效率工具指南」      
-Hello 各位晚上好。   
-前几天在知乎上看到一个问题，「你认为最棒的前十位 iPad 应用是哪些」？
-稍微想了下，自己在 iPad 上用过的软件也不多，从中选出 6 个，与各位分享。   
-如果还有其他好用的 App，欢迎在留言区告诉我。     
-ProcreateProcreate，一个非常值得购买的绘画软件。 
-我不会画画，
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+现如今很多软件都流行推出网页版，对于思维导图软件来说也不例外，表现为我们可以看到各式各样的在线思维导图软件。相比传统的基于本地的导图软件，在线思维导图软件有如下突出的优势：  
+
+使用前无需安装，降低用户的使用成本    
+跨平台，大多支持主流的操作系统，例如 Windows、macOS 和 Linux 系统等  
+创建的思维导图文件可保存到
         </a>
       </p>
 
@@ -521,8 +432,8 @@ ProcreateProcreate，一个非常值得购买的绘画软件。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-17 23:12" pubdate>
-              2021-12-17
+            <time datetime="2022-12-03 09:28" pubdate>
+              2022-12-03
             </time>
           </div>
         
@@ -531,9 +442,11 @@ ProcreateProcreate，一个非常值得购买的绘画软件。
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/App/">App</a>
+              <a href="/tags/%E5%B9%95%E5%B8%83/">幕布</a>
             
-              <a href="/tags/iPad/">iPad</a>
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">在线思维导图</a>
             
           </div>
         
@@ -547,20 +460,25 @@ ProcreateProcreate，一个非常值得购买的绘画软件。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/12/13/2021-12-13-mac/">用苹果电脑，有时也是找罪受。</a>
+        <a href="/2022/11/27/2022-11-27-notion_mindmap/">怎么用Notion做思维导图？用自带的功能就够了！【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/12/13/2021-12-13-mac/">
+        <a href="/2022/11/27/2022-11-27-notion_mindmap/">
           
           
             
           
-          文/彭宏豪，本文首发于我的公众号「效率工具指南」     
-Hello 各位好。   
-今天这篇文章，想来唱一下反调，讲讲使用苹果电脑 💻 一些不方便的地方。  
-PPT 中矢量文件无法取消组合有些我们会往 PPT 中插入公司或品牌的 logo，但同样是 logo，有些人的 logo 就高清无码，有些人的面目模糊、惨不忍睹。   
-这两者的差别，很可能就是，一个用的是矢量格式的 logo 文件，
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，我是小豪。   
+众所周知，Notion 非常强大，集成了多种功能，但唯独少了思维导图。  
+关于这个问题，我之前也找了一些方法，思路都是在 Notion 中嵌入带有思维导图功能的第三方网页应用，例如：  
+
+BoardMix博思白板        
+Miro   
+Whimsical   
+
+👉想了解使用第三方导图应用
         </a>
       </p>
 
@@ -568,103 +486,8 @@ PPT 中矢量文件无法取消组合有些我们会往 PPT 中插入公司或�
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-13 23:45" pubdate>
-              2021-12-13
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Mac/">Mac</a>
-            
-              <a href="/tags/Windows/">Windows</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/06/2021-12-6-gitblog/">你可以用 RSS 订阅 GitHub 博客了</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/06/2021-12-6-gitblog/">
-          
-          
-            
-          
-          Hello 各位晚上好。   
-之前写过一篇用 GitHub Issues 来写博客的文章，后来看到有一位名为 @航大 的网友，跟着我写的文章，也在 GitHub 弄了一个同样的博客。   
-看到自己写的文章能影响到他人，这对我来说是一种非常大的激励。   
-
-不过有点遗憾的是，这位网友后来停止更新了，最新的一篇文章停在了 9 月 17 日，不知道是他比较忙、没时间写东西，抑或是忘了博客这件事。 
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-06 21:40" pubdate>
-              2021-12-06
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
-            
-              <a href="/tags/GitHub/">GitHub</a>
-            
-              <a href="/tags/RSS/">RSS</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/12/04/2021-12-4-notion/">将网页内容保存到 Notion 的两个浏览器插件</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/12/04/2021-12-4-notion/">
-          
-          
-            
-          
-          文/彭宏豪，本文首发于我的公众号「效率工具指南」      
-Hello 各位好。   
-之前一篇文章介绍过一款剪藏工具 Cubox，可以很方便地保存公众号文章或网页内容，但这款工具有个不足的地方：收藏超过 200 篇内容，就需要开通会员。   
-除了充钱，Cubox 还有一个不太令我满意的地方，它与我正在使用的 Notion 是两个独立的软件，收藏与记录的东西不能放在同个软件，搜索东西比较麻烦。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-12-04 20:46" pubdate>
-              2021-12-04
+            <time datetime="2022-11-27 16:28" pubdate>
+              2022-11-27
             </time>
           </div>
         
@@ -677,7 +500,205 @@ Hello 各位好。
             
               <a href="/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/">笔记软件</a>
             
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/11/24/2022-11-24-gamma/">除了PPT和Prezi，还有什么适合做演示的软件或者网站｜Gamma【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/11/24/2022-11-24-gamma/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪     
+Hello 各位好，我是小豪。    
+今年最让人眼前一亮的演示软件，莫过于 Gamma，一款被誉为演示届 Notion 般存在的在线演示工具。     
+刚经过简单的使用，我在 Gamma 上看到了 Notion 和 Craft 这两款软件的影子。       
+打开 Gamma 官网，首页写着两句话：像一份文档一样写作，像一份幻灯片一样
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-11-24 00:06" pubdate>
+              2022-11-24
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Notion/">Notion</a>
+            
+              <a href="/tags/PPT/">PPT</a>
+            
+              <a href="/tags/%E5%8A%9E%E5%85%AC%E8%BD%AF%E4%BB%B6/">办公软件</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/11/22/2022-11-22-mindmap/">制作思维导图的软件有哪些？推荐10个好用的思维导图软件！</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/11/22/2022-11-22-mindmap/">
+          
+          
+            
+          
+          本文首发于博客「效率工具指南」文/彭宏豪      
+制作思维导图的软件有哪些？
+——多到选不过来！
+思维导图这个领域太卷了，无论大小厂商，不论什么软件，都想从就那么大的蛋糕上分一口，以至于思维导图软件多到选不过来。
+选择太多，每一款都去试也不太显示，既浪费时间也没那个精力～因此，也给了我们这类「工具人」一个机会，在亲自体验了 N 款导图软件后，想把其中比较好用的 10 款思维导图软件介绍给大家！
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-11-22 23:48" pubdate>
+              2022-11-22
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">在线思维导图</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/11/12/2022-11-12-vscode_plugin/">又一款VSCode神级插件Marp，用Markdown来做PPT【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/11/12/2022-11-12-vscode_plugin/">
+          
+          
+            
+          
+          本文首发于我的 Newsletter「效率工具指南」，欢迎订阅。     
+Hello 各位好，我是小豪。    
+今天这篇文章，想来介绍一款很久之前在一个视频中看到的工具——Marp，正如文章标题写的那样，这是一款基于 Markdown 来做 PPT 的工具。   
+
+Marp 官网：https://marp.app/   
+我最初是在 doyoudo 创始人 @展哥 的前端视频中看到这款工具的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-11-12 12:30" pubdate>
+              2022-11-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
               <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+            
+              <a href="/tags/Markdown/">Markdown</a>
+            
+              <a href="/tags/PPT/">PPT</a>
+            
+              <a href="/tags/VSCode/">VSCode</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/11/10/2022-11-10-picture_compress/">4款免费的图片压缩工具推荐</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/11/10/2022-11-10-picture_compress/">
+          
+          
+            
+          
+          Hello 各位好，我是小豪。    
+今天这篇文章，给大家推荐 4款好用的图片压缩工具，希望能帮到有需要的朋友。      
+01 PixsoPixso，一个对标国外的 Figma 的在线 UI 设计工具，虽然是 UI 设计工具，看起来比较专业，但软件也内置了图片压缩功能，完全免费，且不限制上传的图片大小。   
+点击 Pixso 顶部的 图形工具 右侧的下拉图标 ﹀ ，在弹出的面板，选择图片，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-11-10 00:30" pubdate>
+              2022-11-10
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/">格式转换</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
+            
+              <a href="/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/">图片压缩</a>
             
           </div>
         
@@ -689,7 +710,7 @@ Hello 各位好。
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/7/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/9/"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/7/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/9/"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
   

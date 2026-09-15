@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1k 字
+      1.1k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      11
+      12
        分钟
     </span>
   
@@ -264,52 +275,55 @@
 <p>好久没写 Notion 相关的文章了，主要也是我有好长一段时间没有用 Notion 了，现在用的最多还是 flomo，在网上随处看见点什么、或是摘抄一下读书笔记，都会把它们扔进 flomo 中。   </p>
 <p>说回 Notion，昨晚用 Notion 发现更新了一个新功能，打开数据库中的页面时，增加了一个侧边查看页面内容的视图：   </p>
 <p>官网把这个视图称之为 Side peek，这个设计确实不错，在不改变页面层级的情况下，可以在右侧直接查看页面中的内容，减少了切换页面的操作，当然也支持在这个视图下编辑页面的内容。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585661518440.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585661518440.jpg" srcset="/img/loading.gif"></p>
 <p>点击上方的视图切换按钮，可以将当前的侧视图切换到之前的视图模式：居中视图和整页。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585665266290.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585665266290.jpg" srcset="/img/loading.gif"></p>
 <p>点击上/下切换按钮，可以在保持当前视图的情况下，切换到数据库中的下一个页面。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585667331992.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585667331992.jpg" srcset="/img/loading.gif"></p>
 <p>如果你不喜欢这种新的视图模式，可以点击 database 右上角的「…」，在展开的菜单选择 Layout，点击其中的「Open pages in」，将其更换为原来的 Center peek 或者 Full page。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585668971421.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585668971421.jpg" srcset="/img/loading.gif"></p>
 <h2 id="行内链接预览"><a href="#行内链接预览" class="headerlink" title="行内链接预览"></a>行内链接预览</h2><p>如下图，当我们把鼠标移动到链接上方时，下方会弹出一个预览窗口，让我们在打开链接之前，可以提前预览一下链接的内容。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585648491882.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585648491882.jpg" srcset="/img/loading.gif"></p>
 <p>不过，行内链接预览并不支持所有的链接或应用，从 Notion 更新说明看到的，目前只支持 Jira、GitHub、Figma 等应用。  </p>
 <p>想查看 Notion 支持链接预览的所有应用，可在 Notion 页面中输入 <code>/link</code>，弹出的菜单所展示的应用，插入的链接应该就可以在 Notion 中预览。  </p>
 <p>应用列表名称：Figma、Hex、GRID、Jira、GitHub、Trello、Slack、Asana、Pitch、OneDrive、Zoom、Dropbox、Amplitude。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585652892061.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585652892061.jpg" srcset="/img/loading.gif"></p>
 <p>如果你粘贴到 Notion 的链接来自上面的其中一款应用，弹出的菜单与普通链接也存在着区别，这里提供了 3 个选项：   </p>
 <ul>
 <li>预览（即前面说到的行内链接预览）</li>
 <li>提及（在链接末尾附上链接的域名）  </li>
 <li>普通的链接     </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585641579604.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585641579604.jpg" srcset="/img/loading.gif"></p>
 <p>作为对比，我们来看下，在 Notion 中粘贴普通的链接，例如 Vue3 中文文档链接，它弹出的选项：  </p>
 <ul>
 <li>普通链接    </li>
 <li>创建书签</li>
 <li>嵌入</li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585641917243.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585641917243.jpg" srcset="/img/loading.gif"></p>
 <p>此外，当我们点击行内链接预览窗口右上角的「…」，选择「Turn into preview」，可以将当前的浮窗预览更改为固定的预览视图。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585681116295.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585681116295.jpg" srcset="/img/loading.gif"></p>
 <p>相应地，当切换到固定的预览视图时，预览窗口就会在页面内占据较大的面积。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585683817374.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585683817374.jpg" srcset="/img/loading.gif"></p>
 <h2 id="在页面中创建列的新方法"><a href="#在页面中创建列的新方法" class="headerlink" title="在页面中创建列的新方法"></a>在页面中创建列的新方法</h2><p>之前在页面中创建并列的 block 时，我都是用最传统的方法，将想要并排显示的 block 拖拽到前一个 block 的最右侧，当出现并排的提示时松手，就可以创建两个并排的 block，这两个并排的区块也可以称作两列。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/20220723-171119.gif" srcset="/img/loading.gif" alt="2022-07-23 17.11.19"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/20220723-171119.gif" srcset="/img/loading.gif" alt="2022-07-23 17.11.19"></p>
 <p>Notion 在这次更新中，增加了另外一些创建多列的方法：</p>
 <p>如下图，用鼠标框选多个连续的 block，接着点击区块最前面的菜单，选择将多个 block 转换为 Columns，就可以快速创建出并排的多列。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/xing-nei-lian-jie-yu-lan.gif" srcset="/img/loading.gif" alt="行内链接预览"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/xing-nei-lian-jie-yu-lan.gif" srcset="/img/loading.gif" alt="行内链接预览"></p>
 <p>另外的创建多列的方法：  </p>
 <p>在页面中输入 <code>/col</code>，呼出创建多列的命令，可选择创建 2/3/4/5 列。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585684615641.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585684615641.jpg" srcset="/img/loading.gif"></p>
 <p>假设选择了创建 4 列，由于最开始每一列中都没有内容，会看不到我们已创建的列，这时可以用鼠标框选一下空白区域，就能看到已有的 4 个横向排列的 block 占位符。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585686166258.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585686166258.jpg" srcset="/img/loading.gif"></p>
 <h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>最后简要总结一下 Notion 本次更新的内容：    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/23/16585679908411.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/23/16585679908411.jpg" srcset="/img/loading.gif"></p>
 <p>关于 Notion，如果你还有想了解的，可以在下方的评论区留言，没准我能帮你解答。   </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -363,30 +377,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.2k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      11
+      12
        分钟
     </span>
   
@@ -264,38 +275,41 @@
 <p>去年写过一篇<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649921054&idx=1&sn=9d5ee4b5785d6ef6632ed7898dfc3e67&chksm=83a89233b4df1b257742448ed9c8a2b9be13b59b357f059f5a8c6e85648bcbb2abe7e5a9381a&token=402791595&lang=zh_CN#rd">吐槽语雀文档的文章</a>，没想到过了没多久就打脸了，我把工作中使用的在线文档从石墨换成语雀了，同时还充了语雀会员。  </p>
 <p>有这个转变，还得先感谢网友 @C小调 分享他在语雀上创建的一个知识库，他说<strong>知识库首页的目录，很适合用来呈现我在知识星球上发布的内容</strong>，让未加入星球的用户可以更好地感知社群的价值，同时也方便加入社群的朋友找到自己想要的内容。         </p>
 <p>听到他这么说，当晚就充了语雀的会员，开始用语雀整理社群里的内容，下图是语雀生成的社群内容目录截图。         </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731006568557.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731006568557.jpg" srcset="/img/loading.gif"></p>
 <p>除了这个直观的内容（文档）目录，对比其他的在线文档工具，语雀还有不少亮点：   </p>
 <h2 id="文档被点赞或评论可以收到邮件通知"><a href="#文档被点赞或评论可以收到邮件通知" class="headerlink" title="文档被点赞或评论可以收到邮件通知"></a>文档被点赞或评论可以收到邮件通知</h2><p>在语雀上公开分享的文档，如果被人点赞，或是有人在文档下方留言，就可以收到一封通知邮件。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731019658818.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731019658818.jpg" srcset="/img/loading.gif"></p>
 <p>这个特性，可能有些朋友觉得没啥用，或是稀松平常，但我觉得这种及时反馈，对公开分享的人很重要，尤其是评论通知。  </p>
 <p>在网上分享东西，最开心的事，莫过于分享的内容有人看👀、有人点赞👍、甚至是有人评论💬，这 3 种用户行为的难度，是依次递增的。        </p>
 <p>而在没什么人看的语雀文档上，能收到一条评论或留言，更是难得😂尤其是语雀改版或推出新的会员方案之后，肉眼可见每篇文档的阅读量少得可怜。    </p>
 <p>语雀文档的邮件通知，就保证了我能及时查看文档收到的评论，与此同时，当我回复了评论后，对方同样也能收到邮件通知，这样在茫茫网海偶然相遇的两个人，至少还能有再次交流的机会，而不是一方留了言就从此杳无音信。   </p>
 <p>这个设计，也让我想到了我用 Hexo 框架搭建的博客 <code>https://penghh.fun</code>，评论区所使用的评论插件，存在一个不好的地方，评论的网友只有在评论上方附上邮箱，我才能收到 TA 评论了我的博客的通知，而且如果他没有附上邮箱，即便我回复了 TA 的评论，他也是无法收到通知的，两个人从此断了联系。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731034440966.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731034440966.jpg" srcset="/img/loading.gif"></p>
 <p>语雀文档的这个设计，就很好地解决了我的 Hexo 博客存在的问题～这一点，也是语雀文档区别于其他在线文档的地方。           </p>
 <h2 id="知识库"><a href="#知识库" class="headerlink" title="知识库"></a>知识库</h2><p>用语雀之前，我很长一段时间都用着石墨文档，这两款产品在管理文档上也存在着差异：  </p>
 <p>石墨文档是基于「文件夹」来管理文档，语雀则是基于「知识库」，先有知识库，再在知识库里面创建文档，每个文档下方可以创建另一个文档，但这些文档彼此间又相对独立，与 Notion 的页面嵌套还是存在着差别。            </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731043690583.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731043690583.jpg" srcset="/img/loading.gif"></p>
 <h2 id="个性化的主页（语雀花园）"><a href="#个性化的主页（语雀花园）" class="headerlink" title="个性化的主页（语雀花园）"></a>个性化的主页（语雀花园）</h2><p>每个语雀用户的个人主页，在语雀中被称作「我的花园」，这个页面支持自定义，用户可以基于语雀提供的功能，搭建一个带有个人风格的主页。     </p>
 <p>下面是一些语雀花园的案例：    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731047084955.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731048742827.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731049176596.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731047491978.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731047084955.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731048742827.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731049176596.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731047491978.jpg" srcset="/img/loading.gif"></p>
 <p>更多好看的语雀花园主页：</p>
 <p><a target="_blank" rel="noopener" href="https://www.yuque.com/aikexiansheng/grwv25/eieki93i1kbkegq3#w7X7tXuolg5zdEvvINzmxWiWgxDeCx0S">https://www.yuque.com/aikexiansheng/grwv25/eieki93i1kbkegq3#w7X7tXuolg5zdEvvINzmxWiWgxDeCx0S</a>          </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/16731053099844.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/16731053099844.jpg" srcset="/img/loading.gif"></p>
 <h2 id="使用「图册」制作轮播图"><a href="#使用「图册」制作轮播图" class="headerlink" title="使用「图册」制作轮播图"></a>使用「图册」制作轮播图</h2><p>这是今天刚发现的一个语雀功能，可以使用内置的「图册」轻松制作网页中常见的轮播图效果。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/20230107-233649.gif" srcset="/img/loading.gif" alt="2023-01-07 23.36.49"></p>
+<p><img src="https://img.penghh.fun/2023/01/07/20230107-233649.gif" srcset="/img/loading.gif" alt="2023-01-07 23.36.49"></p>
 <p>想了解如何使用语雀图册功能制作轮播图效果，可以参考官方的帮助文档：     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/07/qrcodea--a1-1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1 -1-"></p>
-<p>上图二维码对应的链接：<a target="_blank" rel="noopener" href="https://www.yuque.com/yuque/gpvawt/kto0b55men1k7m9q">如何使用语雀图册功能制作轮播图</a>       </p>
+<p><img src="https://img.penghh.fun/2023/01/07/qrcodea--a1-1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1 -1-"></p>
+<p>上图二维码对应的链接：<a target="_blank" rel="noopener" href="https://www.yuque.com/yuque/gpvawt/kto0b55men1k7m9q">如何使用语雀图册功能制作轮播图</a>   </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -349,30 +363,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

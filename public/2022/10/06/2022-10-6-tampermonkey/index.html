@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.2k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      12
+      13
        分钟
     </span>
   
@@ -265,20 +276,20 @@
 <p>今天回到深圳，趁着不用做其他事情，写了一个很简单的油猴脚本：<strong>获取微信公众号文章封面</strong>。   </p>
 <p>这个油猴脚本已提交到寻找各类油猴脚本的网站 Greasy Fork，如果你平时也有获取公众号文章封面的需求，可以在浏览器打开下方的链接安装这个脚本：  </p>
 <p><a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN/scripts/452548-%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2">https://greasyfork.org/zh-CN/scripts/452548-%E8%8E%B7%E5%8F%96%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2</a></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/06/16650455889598.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/06/16650455889598.jpg" srcset="/img/loading.gif"></p>
 <p>写这个油猴脚本的想法💡由来已久，只是一直没有付诸行动，会觉得按照之前手动获取封面的方式来写代码很难。   </p>
 <p>但经过下午一点时间的琢磨，还在群里请教了一些朋友，把代码写出来，却发现异常地简单，用下面一行代码，就能搞定我获取公众号文章封面的需求：      </p>
 <pre><code class="hljs crmsh">window.open(document.querySelector(&#x27;<span class="hljs-keyword">meta</span>[<span class="hljs-keyword">property</span><span class="hljs-title"></span>=<span class="hljs-string">&quot;og:image&quot;</span>]&#x27;).content);</code></pre>
 
 <h2 id="脚本使用方法"><a href="#脚本使用方法" class="headerlink" title="脚本使用方法"></a>脚本使用方法</h2><p>「获取微信公众号文章封面」油猴脚本的使用方法：  </p>
 <p>浏览器安装了脚本之后，当你在浏览器打开任意一篇公众号文章，脚本会自动运行——打开一个新的标签页，里面就会显示公众号文章的封面，如下图所示。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/06/16650473197987.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/06/16650473197987.jpg" srcset="/img/loading.gif"></p>
 <p>需要说明的是，由于这个油猴脚本包含了一个自动打开新标签页的操作，首次使用时可能会被浏览器误以为是「有害的弹窗」而被拦截。  </p>
 <p>解除拦截的方法：点击浏览器地址栏右侧带有「红色小叉号」的图标，选择「总是允许」就可以啦。    </p>
 <h2 id="脚本代码的简要介绍"><a href="#脚本代码的简要介绍" class="headerlink" title="脚本代码的简要介绍"></a>脚本代码的简要介绍</h2><p>下面简单说一下代码的由来和含义：   </p>
 <p>既然我们的需求是要拿到公众号文章的封面，首要的步骤就是找到文章封面的位置，或者更确切地说是<strong>封面图片的链接</strong>。     </p>
 <p>按下 F12 打开浏览器开发者工具，分析下面的 HTML 代码，就能在属性名为 <code>og:image</code> 的 meta 标签中找到封面图片的链接，即 content 属性的值，就是封面图片的链接（图床链接）。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/06/16650463185503.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/06/16650463185503.jpg" srcset="/img/loading.gif"></p>
 <p>要拿到 content 属性的值，我们可以使用 JavaScript(DOM 操作) 和 CSS 选择器，两者搭配一下，就能拿到 meta 对象中的 content 属性的值：    </p>
 <pre><code class="hljs crmsh">document.querySelector(&#x27;<span class="hljs-keyword">meta</span>[<span class="hljs-keyword">property</span><span class="hljs-title"></span>=<span class="hljs-string">&quot;og:image&quot;</span>]&#x27;).content;</code></pre>
 
@@ -288,18 +299,21 @@
 <p>这样就得到了最终的一行代码。   </p>
 <h2 id="将代码发布为人人可用的油猴脚本"><a href="#将代码发布为人人可用的油猴脚本" class="headerlink" title="将代码发布为人人可用的油猴脚本"></a>将代码发布为人人可用的油猴脚本</h2><p>当然，写完前面的一行代码后，实际上我只能在自己的电脑上使用，而无法很方便地分享给其他人使用，因此，一种更好的方式是，把这行代码发布为人人可安装、可用的油猴脚本。   </p>
 <p>因此，到这里问题就变成了，<strong>如何写一个油猴脚本？</strong>   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/06/16650476850497.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/06/16650476850497.jpg" srcset="/img/loading.gif"></p>
 <p>关于如何写一个简单的油猴脚本，可以参考一位 Up 主「不坑老师」发布的视频教程：   </p>
 <p>我发布的油猴脚本，也是参考这位 Up 主的教程制作出来的，这里就不复读了。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/06/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
+<p><img src="https://img.penghh.fun/2022/10/06/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
 <p>写油猴脚本用到的参考资料汇总：   </p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UU4y1r72Y">不用安编辑器，教你编写属于自己的第一个油猴脚本</a>，<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UU4y1r72Y">https://www.bilibili.com/video/BV1UU4y1r72Y</a>             </li>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/485574687">【油猴脚本-菜单(设置按钮) GM_getValue/GM_setValue/GM_registerMenuCommand报错原因】设置按钮的制作和报错的坑</a>，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/485574687">https://zhuanlan.zhihu.com/p/485574687</a>   </li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/apple20154350217/article/details/78639739">javascript跳转到新页面的三种方法</a>，<a target="_blank" rel="noopener" href="https://blog.csdn.net/apple20154350217/article/details/78639739">https://blog.csdn.net/apple20154350217/article/details/78639739</a>   </li>
 </ul>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -353,30 +367,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

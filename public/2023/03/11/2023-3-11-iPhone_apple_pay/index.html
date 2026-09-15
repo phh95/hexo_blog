@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.4k 字
+      1.5k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      14
+      15
        分钟
     </span>
   
@@ -262,15 +273,15 @@
               <p>本文首发于微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/aaATPaQYMOrN0rzZOfK6-g">效率工具指南</a>」<br>文/彭宏豪         </p>
 <p>Hello 各位好，我是小豪。   </p>
 <p>这周有个同事用的 iPhone 手机，不慎被锁定🔒了，在尝试解锁时，输入太多次错误的锁屏密码，导致最后屏幕显示「iPhone 已停用」，不得不抹除手机的数据，将其还原为未设置锁屏密码的状态。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/16785146676993.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/11/16785146676993.jpg" srcset="/img/loading.gif"></p>
 <p>看到这你可能会纳闷，手机天天用，好端端地，又不是失忆了，怎么会忘了手机的锁屏密码？   </p>
 <p>同事的手机被锁，感觉有一小小小小小部分责任在我，他听我说可以在 Apple 钱包里添加一张「深圳通/交通卡」，在坐地铁过闸机的时候方便一点，<strong>手机感应一下就能过闸</strong>，而不需要特地打开微信，找到乘车码小程序。   </p>
 <p>不过没想到的是，在 Apple 钱包添加交通卡的过程中，会提示我们设置一个支付密码，这个支付密码会替换掉原来的锁屏密码……</p>
 <p>这一步有点坑，如果你把支付密码设置为锁屏一样的密码，那你大概率不会遇到手机被锁定的问题，而如果你是个「马大哈」，随手设置了一个不容易记住的密码，那等你要用手机过闸时，会遇到一件莫名其妙的事情——iPhone 会提示你输入密码，而且你可能会误以为是让你输入锁屏密码，但其实它想让你输入的是 Apple 钱包的支付密码。    </p>
 <p>此时你如果不冷静下来回忆一下，之前是否有设置过其他的密码，就是直愣愣地输入 N 次锁屏密码，那你的手机就会被锁定，而且可能还会引发一系列问题：上班迟到、约会迟到、航班延误、无法购买东西、没法联系别人……       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/img5055.PNG" srcset="/img/loading.gif" alt="IMG_5055"></p>
+<p><img src="https://img.penghh.fun/2023/03/11/img5055.PNG" srcset="/img/loading.gif" alt="IMG_5055"></p>
 <p>不止是我的同事遇到这个问题，我在网上看到有网友也分享了类似的遭遇……   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/03/11/16785147247280.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/03/11/16785147247280.jpg" srcset="/img/loading.gif"></p>
 <p>遇到这种问题，越发地感觉到 Plan B 的重要性：   </p>
 <ul>
 <li>出门在外，最好备点现金，现金可以放在手机壳里    </li>
@@ -296,10 +307,13 @@
 <p>相关资料：  </p>
 <p><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT212951">如果你看到“iPhone 不可用”/“iPad 不可用”信息或“安全锁定”屏幕</a>，<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT212951">https://support.apple.com/zh-cn/HT212951</a>     </p>
 <p><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204306">如果你忘记了 iPhone 密码</a>，<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT204306">https://support.apple.com/zh-cn/HT204306</a>       </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -351,30 +365,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

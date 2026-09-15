@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -41,9 +43,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -208,23 +219,20 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/07/09/2022-7-9-videocompress/">如何将视频压缩到指定的大小？</a>
+        <a href="/2023/05/03/2023-5-3-notionforms/">NotionForms：第三方Notion表单工具，用来做调查问卷收集数据【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/07/09/2022-7-9-videocompress/">
+        <a href="/2023/05/03/2023-5-3-notionforms/">
           
           
             
           
-          本文首发于微信公众号「效率工具指南」文/彭宏豪       
+          本文首发于微信公众号「效率工具指南」文/彭宏豪     
 Hello 各位好，我是小豪。   
-今天这篇文章，想来聊一下视频压缩这个话题。
-如果只是单纯选择一款视频压缩工具，可以选择的压缩工具非常多：  
-
-Windows：小丸工具箱
-Mac：Permute（付费软件，与 Mac 上非常出名的下载工具 Downie 来自一家公司）      
-Window/Mac：Handbrake、Quic
+好久没写 Notion 相关的内容了，今天想起放假前看到的一个使用案例，因此这篇文章，来介绍一下在 Notion 中使用表单或调查问卷的方法。   
+表单/调查问卷的使用场景说起表单或调查问卷，很多人应该并不陌生，在过去 3 年疫情期间我们填了各式各样的信息申报问卷……      
+除了用于收集信息，表
         </a>
       </p>
 
@@ -232,8 +240,8 @@ Window/Mac：Handbrake、Quic
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-07-09 03:25" pubdate>
-              2022-07-09
+            <time datetime="2023-05-03 22:05" pubdate>
+              2023-05-03
             </time>
           </div>
         
@@ -242,9 +250,13 @@ Window/Mac：Handbrake、Quic
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
+              <a href="/tags/Notion/">Notion</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
+            
               <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
             
-              <a href="/tags/%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9/">视频压缩</a>
+              <a href="/tags/%E8%A1%A8%E5%8D%95/">表单</a>
             
           </div>
         
@@ -258,20 +270,19 @@ Window/Mac：Handbrake、Quic
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/06/28/2022-6-28-mac/">如何在Mac上快速切换窗口？</a>
+        <a href="/2023/04/22/2023-4-22-bilibili/">B站工具合集：B站视频和封面下载，带你玩转B站【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/06/28/2022-6-28-mac/">
+        <a href="/2023/04/22/2023-4-22-bilibili/">
           
           
             
           
-          本文首发于公众号「效率工具指南」文/彭宏豪  
-Hello 各位好，我是小豪。   
-从 2020 年用 Mac 电脑以来，至今唯一还不习惯的是 Mac 上的窗口切换。  
-当一个应用开了多个窗口之后，切换起来不是很习惯，你能想象其中一种切换方式是：右击 Dock 栏的软件图标，在弹出的菜单，才能看到应用打开的所有窗口。  
-这种窗口切换，对比 Windows 上的「鼠标悬停在任务栏图标上方」，就
+          本文首发于微信公众号「效率工具指南」文/彭宏豪  
+Hello 各位好，这里是效率工具指南，我是小豪。  
+很早之前给大家介绍过一款下载 B 站视频的浏览器插件「bilibili哔哩哔哩B站下载助手」，最近看到有人反馈说插件没法安装，或是提示插件损坏……导致没法从 B 站下载自己想要的视频。  
+基于此，这里给大家介绍另一款免费下载 B 站视频的插件——哔哩哔哩下载助手，目前这款插件目前已上架 C
         </a>
       </p>
 
@@ -279,8 +290,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-28 00:36" pubdate>
-              2022-06-28
+            <time datetime="2023-04-22 13:25" pubdate>
+              2023-04-22
             </time>
           </div>
         
@@ -291,7 +302,311 @@ Hello 各位好，我是小豪。
             
               <a href="/tags/Mac/">Mac</a>
             
-              <a href="/tags/macOS/">macOS</a>
+              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+            
+              <a href="/tags/B%E7%AB%99/">B站</a>
+            
+              <a href="/tags/%E4%B8%8B%E8%BD%BD/">下载</a>
+            
+              <a href="/tags/Downie/">Downie</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/16/2023-4-16-aimindmap/">AI时代，思维导图软件也卷起来了！AI思维导图软件，长啥样【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/04/16/2023-4-16-aimindmap/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，我是小豪。   
+AI 的热度🔥从 2 月份一直延续到了现在，好像还没有看到要降温的趋势，而且这把🔥从最开始的智能对话（聊天）、AI 绘图，延伸到了其他众多方面：       
+
+视频：descript     
+设计：Adobe Firefly
+科研：ChatPDF   
+商业：Rationale      
+…… 
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-16 11:31" pubdate>
+              2023-04-16
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">在线思维导图</a>
+            
+              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/15/2023-4-15-obs/">免费直播录屏软件OBS更新！分享2个超好用的技巧【附OBS安装包下载】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/04/15/2023-4-15-obs/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，我是小豪。  
+之前写过不少关于 OBS 使用技巧的文章，很长一段时间我都没有去更新这个软件，直到最近要用到 OBS 的一个新功能，我才把 Mac 电脑安装的软件更新到了最新版。   
+最新版 OBS 最大的变化在于，它对软件的 UI 界面进行了重新设计，给每个按钮加上圆角矩形作为背景，让不同的按钮之间的区分更明显，看起来
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-15 14:40" pubdate>
+              2023-04-15
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%9B%B4%E6%92%AD/">直播</a>
+            
+              <a href="/tags/OBS/">OBS</a>
+            
+              <a href="/tags/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/">录屏软件</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/11/2023-4-11-chatgpt/">国内用不了ChatGPT，来试试这个免费的ChatGPT替代品Poe【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/04/11/2023-4-11-chatgpt/">
+          
+          
+            
+          
+          本文首发于博客「效率工具指南」，未经授权，禁止转载。文/彭宏豪     
+Hello 各位好，我是小豪。  
+刚在知识星球里看到一位网友的提问，「现在国内还有什么方式可以注册和使用 chatgpt」，Fenng 大辉老师给这位网友提供了一个 ChatGPT 的替代软件——Poe。        
+
+虽然我平时会在心里自诩是工具达人😂，但 Poe 这个软件，还是第一次注意到🤦    
+Poe，是
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-11 00:10" pubdate>
+              2023-04-11
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
+            
+              <a href="/tags/AI/">AI</a>
+            
+              <a href="/tags/Quora/">Quora</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/09/2023-4-9-translator/">看不懂英文？这4个翻译软件总有一款能帮你｜谷歌翻译替代工具【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/04/09/2023-4-9-translator/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，我是小豪。  
+很久以前，我写过一篇汇总了多款翻译工具的文章《不吹不黑，看懂外国网站的翻译工具都在这里了》，发表于 2021 年，随着时间的流逝，里面介绍的一些工具，现在看来有些「陈旧」，尤其是 ChatGPT 出现之后，它在语言翻译方面，也有惊人的表现，因此就着这个由来已久的话题，重新写一篇文章，希望下面分享的工具，能帮
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-09 17:21" pubdate>
+              2023-04-09
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+            
+              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+            
+              <a href="/tags/AI/">AI</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/04/01/2023-4-1-mockup/">Mac电脑套壳截图软件有哪些？这3个在线样机工具别错过Mockup【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/04/01/2023-4-1-mockup/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」，欢迎移步关注文/彭宏豪    
+Hello 各位好，我是小豪。   
+前两天刚录完一个 Mac 电脑截图软件合集的视频，就其中提到的，截图软件 iShot 有一个特色功能「带壳截图」，可以给电脑截图自动添加一个苹果电脑的样机（Mockup），我想到一个新的问题，如果不购买 iShot，我们是否还有其他的方法，可以给电脑截图加上样机呢？   
+基于此，我从网上找
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-04-01 16:27" pubdate>
+              2023-04-01
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
+            
+              <a href="/tags/Figma/">Figma</a>
+            
+              <a href="/tags/%E6%A0%B7%E6%9C%BA/">样机</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/03/27/2023-3-27-10mindmap/">思维导图App哪个好？2023十大好用的思维导图软件推荐！</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/03/27/2023-3-27-10mindmap/">
+          
+          
+            
+          
+          
+思维导图是一种用于表达和组织思想的图形化工具。它是一种通过视觉方式展示和组织信息的技术，通过在中心主题周围绘制分支和支持主题的分支，帮助人们将信息、想法和概念组织成层次结构，以便更好地理解和记忆。 
+在了解了思维导图的好处之后，许多小伙伴就想找一些免费好用的思维导图App，来绘制自己想要的导图，无奈市场上现有的思维导图软件太多，不知道选哪一款好？
+那么今天这篇文章，我们就来测评一下国内外非常受欢
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-03-27 22:44" pubdate>
+              2023-03-27
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">在线思维导图</a>
             
               <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
             
@@ -307,167 +622,20 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/06/26/2022-6-26-miniprogram/">微信小程序开发学习笔记 - 以网易云音乐小程序项目为例</a>
+        <a href="/2023/03/26/2023-3-26-feishu_export/">如何批量导出飞书文档？【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/06/26/2022-6-26-miniprogram/">
+        <a href="/2023/03/26/2023-3-26-feishu_export/">
           
           
             
           
-          注：笔记来自 coderwhy 老师的视频教程小程序音乐项目开发实战-大神coderwhy新课    
-笔记编辑者：彭宏豪    
-项目成果展示最后制作出来的音乐小程序，可以查看我发布在 B 站上的视频：学着做了一个音乐小程序｜前端开发【效率工具指南】    
-项目亮点
-轮播图实现在不同尺寸设备上的适配      
-音乐播放页面在不同尺寸设备上的适配     
-小程序插槽无法像 Vue 一样设置默
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-26 12:06" pubdate>
-              2022-06-26
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
-            
-              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-            
-              <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/06/10/2022-6-10-shimo/">如何批量导出石墨文档中的内容？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/06/10/2022-6-10-shimo/">
-          
-          
-            
-          
-          本文首发于公众号「效率工具指南」文/彭宏豪      
-​Hello 各位晚上好，我是小豪。​​上次在一篇文章《靠软件赚钱，真的太难了》中说到，我目前在用的在线文档工具是石墨文档，大体上它的功能都能满足我的需求，不过正如我在挑选文档或笔记类工具时，都会考虑软件是否提供了「数据导出」功能，以方便我在想切换到其他的工具时，可以随时导出数据。​​石墨文档虽然提供了数据导出功能，但导出时仅限于单个文档，无
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-10 23:32" pubdate>
-              2022-06-10
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%9F%B3%E5%A2%A8%E6%96%87%E6%A1%A3/">石墨文档</a>
-            
-              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
-            
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/">数据迁移</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/31/2022-5-31-heic/">Windows电脑如何打开heic格式的图片？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/31/2022-5-31-heic/">
-          
-          
-            
-          
-          本文首发于公众号「效率工具指南」文/彭宏豪    
-​Hello 各位晚上好。
-今天想来说一下，使用 Windows 系统的朋友经常会遇到的一个问题：从 iPhone 或者苹果设备上发送到 Windows 电脑的图片，在打开时会遇到下图的提示。  
-这种情况，通常是在打开一种特殊的图片格式才会遇到，它就是来自苹果专有的图片格式 heic。   
-使用 Win10 自带的「照片」虽然没办法打开 he
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-31 01:20" pubdate>
-              2022-05-31
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Windows/">Windows</a>
-            
-              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
-            
-              <a href="/tags/B%E7%AB%99/">B站</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/25/2022-5-25-shimo/">靠软件赚钱，真的太难了｜石墨文档</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/25/2022-5-25-shimo/">
-          
-          
-            
-          
-          本文首发于公众号「效率工具指南」文/彭宏豪   
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
 Hello 各位好，我是小豪。   
-昨天在公司用着石墨文档的时候，发生了一个小插曲：  
-原本可以免费使用的「搜索文档正文」功能，在刷新页面后，变成了「个人高级版」中的一项权益，真像一句话说的「翻脸比翻书还快」。  
-
-说这个小插曲，并不是想吐槽「石墨文档你咋能这样，别的在线文档都是免费的功能，你却拿来收费，吃相这么难看」，反而是想说：在国内想靠
+最近飞书开了一年一度的大会「春季未来无限大会」，开会的时候是上班时间，老实说我没看，也没有怎么关注……      
+不说大会，来说说飞书中和个人用户更密切相关的一项应用——飞书文档。   
+今年应该是飞书「商业化」的关键之年（用户养肥了可以开始收钱了），在飞书官网可以看到一个「版本对比｜飞书」的页面，如下
         </a>
       </p>
 
@@ -475,8 +643,8 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-25 01:31" pubdate>
-              2022-05-25
+            <time datetime="2023-03-26 14:47" pubdate>
+              2023-03-26
             </time>
           </div>
         
@@ -484,58 +652,14 @@ Hello 各位好，我是小豪。
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%9F%B3%E5%A2%A8%E6%96%87%E6%A1%A3/">石墨文档</a>
             
               <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/">在线文档</a>
             
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/22/2022-5-22-notiontoblog/">如何使用Notion制作个人网站？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/22/2022-5-22-notiontoblog/">
-          
-          
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/">数据迁移</a>
             
-          
-          本文首发于公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。   
-之前写过一篇基于 Notion + Next.js + Vercel 搭建个人网站的文章，老实说折腾起来有些麻烦，而且现在照着那篇文章去操作，可能还会因为代码（依赖的包）版本的不同而遇到新的问题。  
-如果你之前看过上面的文章，但弄到一半就放弃了，没关系，今天来介绍一种超级简单的个人网站搭建方法，只需要用到一
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-22 12:19" pubdate>
-              2022-05-22
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
+              <a href="/tags/%E9%A3%9E%E4%B9%A6%E6%96%87%E6%A1%A3/">飞书文档</a>
             
-              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
-            
-              <a href="/tags/Notion/">Notion</a>
-            
-              <a href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">网站搭建</a>
+              <a href="/tags/%E9%A3%9E%E4%B9%A6/">飞书</a>
             
           </div>
         
@@ -549,21 +673,20 @@ Hello 各位好，我是小豪。
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/05/14/2022-5-14-iPhone/">4个相见恨晚的iPhone使用技巧，关键时刻还能救你一命。</a>
+        <a href="/2023/03/26/2023-3-26-filetransfer/">文件传输：怎样把手机上的文件传输到电脑上？【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/05/14/2022-5-14-iPhone/">
+        <a href="/2023/03/26/2023-3-26-filetransfer/">
           
           
             
           
-          本文首发于公众号「效率工具指南」作者/彭宏豪       
-Hello 各位好，我是小豪。  
-好久没有写过手机📱使用技巧方面的东西，今天就来开整！   
-这篇文章想给大家介绍一些手机上的「救命🆘/急救」小技巧，希望你永远不会用到。   
-SOS 紧急联络这个相信不少用过 iPhone 的朋友都知道，长按电源键和音量键（上下音量键都可以），会打开 iPhone 的关机页面。
-在关机页面会出现「
+          把手机上的文件传输到电脑上，有这么几种常见的办法：
+
+隔空投送：如果你的手机为 iPhone，电脑为 MacBook 或者 iMac 等苹果设备，可以使用「隔空投送」进行传输，速度非常快，最为推荐，我目前最常使用的是这一种。      
+
+USB 连接：将手机通过 USB 线连接到电脑上，手机会被电脑识别为外部设备。在手机的通知栏中点击“USB 传输”或者“数据传输”等选项，然后在电脑上打开文件管
         </a>
       </p>
 
@@ -571,8 +694,8 @@ SOS 紧急联络这个相信不少用过 iPhone 的朋友都知道，长按电�
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-14 21:37" pubdate>
-              2022-05-14
+            <time datetime="2023-03-26 09:57" pubdate>
+              2023-03-26
             </time>
           </div>
         
@@ -581,106 +704,15 @@ SOS 紧急联络这个相信不少用过 iPhone 的朋友都知道，长按电�
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/App/">App</a>
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/Windows/">Windows</a>
+            
+              <a href="/tags/macOS/">macOS</a>
             
               <a href="/tags/iPhone/">iPhone</a>
             
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/04/2022-5-4-apps/">近期值得关注的 App</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/04/2022-5-4-apps/">
-          
-          
-            
-          
-          本文首发于公众号「效率工具指南」作者/彭宏豪     
-Hello 各位好，我是小豪。今天照例来更新一下这个不定期更新的栏目「近期值得关注的 App」，希望能给你带来一些有用的信息。
-Enjoy~       
-GoodnotesGoodnotes，一款在 iPad 上非常受欢迎的手写笔记应用，在上个月宣布由付费下载转为「免费下载 + 内购解锁」的方式。  
-如果你之前没有购买过 Goodnote
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-04 21:53" pubdate>
-              2022-05-04
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/App/">App</a>
-            
-              <a href="/tags/iPad/">iPad</a>
-            
-              <a href="/tags/iPhone/">iPhone</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/04/16/2022-4-16-4399games/">怀旧！电脑上怎么玩4399小游戏？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/04/16/2022-4-16-4399games/">
-          
-          
-            
-          
-          Hello 各位晚上好。  
-去年写过一篇关于 Flash 停用的文章，介绍了 4 种应对 Flash 停用的方法，其中介绍了一个浏览器插件 Ruffle。  
-今天想来纠正一下，即便是安装了 Ruffle 插件，在用到 Flash 技术的网页游戏页面，例如 4399 小游戏，还是会无法正常加载，导致玩不了游戏。    
-
-对于这个问题，我找到了两个解决方法，希望能帮到想玩网页小游戏的朋友。  
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-04-16 20:58" pubdate>
-              2022-04-16
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Flash/">Flash</a>
-            
-              <a href="/tags/4399/">4399</a>
+              <a href="/tags/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/">文件传输</a>
             
           </div>
         
@@ -692,7 +724,7 @@ GoodnotesGoodnotes，一款在 iPad 上非常受欢迎的手写笔记应用，�
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/5/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/7/"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/5/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/7/"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
   

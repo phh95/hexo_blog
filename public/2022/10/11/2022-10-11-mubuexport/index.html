@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      1.2k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      11
+      12
        分钟
     </span>
   
@@ -265,24 +276,24 @@
 <p>先来看一下从幕布导出前后的对比：   </p>
 <p>下图左侧是导出前的幕布文件，右侧是导出后在 Markdown 编辑器 MWeb 打开的 Markdown 文件。   </p>
 <p>对比了导出前后的文件，发现导出的部分 Markdown 文件存在<strong>文本丢失</strong>的问题，这个问题会出现在某一行文本带有<strong>粗体</strong>样式的时候，导出的 Markdown 只保留了粗体样式中的文本。          </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654635347301.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654635347301.jpg" srcset="/img/loading.gif"></p>
 <p>不过我发现，<strong>文本丢失的问题，目前只出现在创建时间比较早的文档上</strong>，我猜测是在幕布推出 Markdown 功能之前创建的文档，导出时所在的行如果带有粗体样式，就会发生内容丢失，而如果是之后创建的文档，就不会出现这个问题。          </p>
 <p>上面在幕布中创建的读书笔记，是纯粹的文本内容，为了更全面地了解这个导出工具的能力，我还测试了<strong>导出带有图片</strong>的幕布文件。   </p>
 <p>下图是带有图片的幕布文件导出前后的对比：  </p>
 <p>导出的 Markdown 文件会生成一个压缩包，里面带有原文件中附带的图片，因此使用 MWeb 打开的 Markdown 文件(下图右侧)，图片也能正常显示，但有个小小的不足——幕布中插入的 gif 动画会变成一张静态的 jpg 图片。             </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654657992107.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654657992107.jpg" srcset="/img/loading.gif"></p>
 <p>总体而言，我对这个导出工具还是比较满意的，虽然多少存在一些问题，但能把我放在幕布中的大部分内容导出，我就很满意了。    </p>
 <h2 id="幕布导出器-Mubu-Dumper"><a href="#幕布导出器-Mubu-Dumper" class="headerlink" title="幕布导出器 - Mubu Dumper"></a>幕布导出器 - Mubu Dumper</h2><p>前面用到的幕布批量导出 Markdown 工具，就是下图的浏览器插件：<strong>幕布导出器 - Mubu Dumper</strong>。</p>
 <p>这个插件目前只上架到了 Chrome Web Store，还没上架 Edge 的插件商店。        </p>
 <p>有意思的是，我还留意到了这个插件名称下方的域名 <code>xmind.app</code>，用过国内另外一款思维导图软件 XMind 的朋友，想必对这个域名并不陌生。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654667162953.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654667162953.jpg" srcset="/img/loading.gif"></p>
 <p>浏览器插件「幕布导出器 - Mubu Dumper」安装地址：<br><a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E5%99%A8-mubu-dumper/nhpebeoohnmbgeigmojaebjfliekikkb/related">https://chrome.google.com/webstore/detail/%E5%B9%95%E5%B8%83%E5%AF%BC%E5%87%BA%E5%99%A8-mubu-dumper/nhpebeoohnmbgeigmojaebjfliekikkb/related</a> </p>
 <p>安装插件后，在浏览器打开网页版的幕布，点击浏览器右上角的插件图标，在弹出的面板，可以选择导出 所有文件、单个文件夹或是单个文件。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654678724168.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654678724168.jpg" srcset="/img/loading.gif"></p>
 <p>勾选☑️ 文件之后，点击下方的「导出」按钮，在弹出的二级菜单，可以选择导出的文件格式：  </p>
 <p>默认导出 xmind 格式的文件，不过下方也提供了更通用的 Markdown 格式。      </p>
 <p>这里之所以提供了 Markdown 格式，不确定是不是只提供 xmind 格式的话，会让人看起来是在「明目张胆」地撬幕布的墙角，所以出于体面一些的考虑，这里也提供了更通用的 Markdown 格式。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654683129332.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654683129332.jpg" srcset="/img/loading.gif"></p>
 <p>不过，撬别人墙角，在国内很多产品都可以看到，不独有 XMind 一家：   </p>
 <ul>
 <li>国内很多模仿 XMind 的思维导图软件：支持导入 xmind 文件    </li>
@@ -291,13 +302,16 @@
 </ul>
 <p>不仅如此，有些产品的「帮助文档」中，还明目张胆地列出了如何将其他产品的文件导入自己产品的方法，你说会有多少人注意到呢？       </p>
 <p>绝大多数用户都不会在意这些事情，因为这些下三滥的操作多了，原本不正确的事情也会变成是理所当然。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/11/16654689727150.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/11/16654689727150.jpg" srcset="/img/loading.gif"></p>
 <p>看到这里，你说：       </p>
 <p>情怀有用吗？<br>体面有用吗？<br>体面能当饭吃吗？<br>产品理念有用吗？<br>团队气质有用吗？     </p>
 <p>在没有赚到钱让产品或团队可持续地活下来，扯那么多虚的，有用吗？    </p>
 <p>少谈情怀，多干正事。        </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -353,30 +367,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      921 字
+      1k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      9
+      10
        分钟
     </span>
   
@@ -265,33 +276,36 @@
 <p>如果你之前看过上面的文章，但弄到一半就放弃了，没关系，今天来介绍一种超级简单的个人网站搭建方法，只需要用到一个工具——<strong>Popsy</strong>。   </p>
 <p>Popsy，一个免费将 Notion 页面转换为网站的在线工具。使用 Popsy 之前，请确保你已经有一个 Google 账号。</p>
 <p>没有 Google 账号的朋友，可以查看往期文章：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649912873&idx=1&sn=7a11acaec4173d7a9501359b4aa5d524&chksm=83a87204b4dffb12a3b1e058dbddbba43e293dcef288db6391927660bac6aca610c62f21e9f8&token=201204900&lang=zh_CN#rd">2021年，如何注册一个Google账号？</a>      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531882183970.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531882183970.jpg" srcset="/img/loading.gif"></p>
 <p>下图是我使用 Notion + Popsy 搭建出来的网站首页，访问地址 ▶▶ <a target="_blank" rel="noopener" href="https://penghh.popsy.site/">https://penghh.popsy.site/</a>    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531874725550.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531874725550.jpg" srcset="/img/loading.gif"></p>
 <p>打开 Popsy 的官网 <code>https://popsy.co/</code>，将 Notion 页面链接粘贴到中间的输入框，登录 Google 账号，按照提示一直往下点点点，就能将 Notion 页面转换为网站。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531896808461.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531896808461.jpg" srcset="/img/loading.gif"></p>
 <h2 id="网站域名"><a href="#网站域名" class="headerlink" title="网站域名"></a>网站域名</h2><p>Notion 页面转换为网站后，Popsy 会给你的网站提供一个域名，你可以自定义域名的前半部分，后半部分的 <code>popsy.site</code> 则是统一的。    </p>
 <p>域名自定义的部分可以多次修改，因此不用担心第一次没取一个好记的域名而不得不重新创建一个网站。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531899027089.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531899027089.jpg" srcset="/img/loading.gif"></p>
 <h2 id="设置标签页图标和网站图标"><a href="#设置标签页图标和网站图标" class="headerlink" title="设置标签页图标和网站图标"></a>设置标签页图标和网站图标</h2><p>在网站域名下方，Popsy 还提供了设置页面图标和网站图标的选项。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531913208537.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531913208537.jpg" srcset="/img/loading.gif"></p>
 <p>页面图标 Site favicon，即每次打开页面，位于浏览器标签页的小图标，这个图标尺寸不宜过大，建议选择 16x16 或 32x32 的尺寸即可。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531916541821.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531916541821.jpg" srcset="/img/loading.gif"></p>
 <h2 id="手动同步-Notion-数据"><a href="#手动同步-Notion-数据" class="headerlink" title="手动同步 Notion 数据"></a>手动同步 Notion 数据</h2><p>当你在 Notion 中更新了页面的内容，使用 Popsy 搭建的网站也会自动更新。    </p>
 <p>如果网站更新不及时，你可以打开 Popsy 的管理后台，点击左侧的「Sync from Notion」，手动同步 Notion 页面的数据。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531902326402.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531902326402.jpg" srcset="/img/loading.gif"></p>
 <h2 id="更换网站主题"><a href="#更换网站主题" class="headerlink" title="更换网站主题"></a>更换网站主题</h2><p>Popsy 提供了 8 种网站主题，点击左侧的主题名称，可以实时预览每种主题的效果。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531893830451.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531893830451.jpg" srcset="/img/loading.gif"></p>
 <h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2><p>前面介绍的更换网站主题，可以一键更换网站的主题样式，但不能细致地调节网站的布局、字体、文本大小等。  </p>
 <p>如果你想更精细化地调节网站的样式，Popsy 也提供了相应的支持，点击管理后台左侧栏的「Customize theme」，进入自定义主题的界面，左侧提供了多个调整布局的选项，调整后可以实时预览效果。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531918152716.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531918152716.jpg" srcset="/img/loading.gif"></p>
 <p>但比较尴尬的是，当你完成调整后，点击顶部的保存按钮，Popsy 会弹出让你付费成为会员的窗口，每月为 8 美元，付费后才能保存你刚刚调整好的样式。 </p>
 <p>Popsy 的会员权益包含：自定义主题、移除网站左下角的 Popsy 图标、谷歌网站流量分析、添加自定义的代码。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/05/22/16531923224767.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/05/22/16531923224767.jpg" srcset="/img/loading.gif"></p>
 <h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>最后，简单总结一下：   </p>
 <p>如果你图简单，不想改代码、不购买域名、不配置 DNS，使用 Popsy 就能快速得到一个属于自己的个人网站，而且网站的数据最终还是存放在 Notion 中，不用担心 Popsy 之后可能会出现的关停，给个人数据带来损失。  </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
 
             </div>
             <hr>
@@ -345,30 +359,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

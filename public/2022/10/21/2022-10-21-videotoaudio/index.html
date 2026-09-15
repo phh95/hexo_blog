@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      760 字
+      857 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      8
        分钟
     </span>
   
@@ -267,31 +278,34 @@
 <p>由于 iPhone 不支持在手机上更改文件格式的后缀，因此如果你想在 iPhone 或 iPad 上提取音频，可以使用下面介绍的方法。</p>
 <h2 id="02-快捷指令"><a href="#02-快捷指令" class="headerlink" title="02. 快捷指令"></a>02. 快捷指令</h2><p>快捷指令是 iPhone 和 iPad 独有的应用，因此这个方法只适合使用苹果设备的朋友。</p>
 <p>使用相机扫描下方的二维码，按照页面提示，在快捷指令中添加「提取音频」。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663141562589.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663141562589.jpg" srcset="/img/loading.gif"></p>
 <p>添加「提取音频」快捷指令后，点击运行「提取音频」，从相册中选择想要提取音频的视频。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663142224802.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663142224802.jpg" srcset="/img/loading.gif"></p>
 <p>接着需要选择保存音频的位置，你可以将音频保存在 iPhone 本地或 iCloud 云盘中。</p>
 <p>保存之后，打开文件 App，找到保存音频的文件夹，就能看到从视频中提取的音频。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663142363165.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663142363165.jpg" srcset="/img/loading.gif"></p>
 <h2 id="03-Convertio"><a href="#03-Convertio" class="headerlink" title="03. Convertio"></a>03. Convertio</h2><p><a target="_blank" rel="noopener" href="https://convertio.co/zh/mp4-mp3/">https://convertio.co/zh/mp4-mp3/</a>  </p>
 <p>Convertio，是一个多功能的文件格式转换网站，它支持转换的文件格式有图像、文档、电子书、音频和视频等。</p>
 <p>由于我们想提取的是音频，根据待提取视频的格式选择转换前的视频格式，转换后选择音频格式 MP3，接着上传视频文件，等待网站完成音频的提取。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663142623493.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663142623493.jpg" srcset="/img/loading.gif"></p>
 <p>当然，对于免费用户而言，Convertio 仅支持转换不超过 100 MB 的文件。如果待提取的视频文件超过 100 MB，可以使用下面这个终极工具。</p>
 <h2 id="04-Premiere"><a href="#04-Premiere" class="headerlink" title="04. Premiere"></a>04. Premiere</h2><p>Premiere，是设计公司 Adobe 推出的视频剪辑软件，它的功能非常强大，前面介绍的工具能做的，它一样能做，而且还可能做得更好。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663142769369.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663142769369.jpg" srcset="/img/loading.gif"></p>
 <p>打开 Pr，新建一个项目工程，将视频拖拽到时间轴，右击视频，选择「取消链接」，将原本绑定在一起的视频和音频分离。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663142993475.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663142993475.jpg" srcset="/img/loading.gif"></p>
 <p>接着选中视频（在 Pr 中，被选中的对象会呈现为灰色），按 Delete 键删除，只保留音频。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663143063984.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663143063984.jpg" srcset="/img/loading.gif"></p>
 <p>点击「文件」选项卡，选择「导出–媒体」。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663143147580.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663143147580.jpg" srcset="/img/loading.gif"></p>
 <p>在弹出的窗口，将格式设置为「MP3」。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663143222049.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663143222049.jpg" srcset="/img/loading.gif"></p>
 <p>点击「输出名称」右侧的蓝色文字，设置导出的音频文件名称和保存的位置，最后点击底部的「导出」按钮即可。</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/10/21/16663143323411.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/10/21/16663143323411.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">       </p>
 
             </div>
             <hr>
@@ -345,30 +359,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

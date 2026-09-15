@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      1.6k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15
+      16
        分钟
     </span>
   
@@ -272,7 +283,7 @@
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18e411u7RR/">活久见！笔记软件Notion也能制作思维导图啦！【效率工具指南】</a>             </p>
 <p>除了这些，我最近还看到了另外一个不错的方法，不需要借助第三方应用，使用 Notion 的<strong>代码块</strong>，就能直接在 Notion 中创建思维导图。         </p>
 <p>创建的思维导图如下：   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695237621440.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695237621440.jpg" srcset="/img/loading.gif"></p>
 <p>这个方法的优点：  </p>
 <ul>
 <li>不需要借助外部应用，完全免费         </li>
@@ -288,9 +299,9 @@
 </ul>
 <p>看完使用 Notion 代码块绘制思维导图的优缺点，接下来就来看看如何绘制吧～     </p>
 <p>在 Notion 中输入斜杠 <code>/code</code>，点击下方返回的 Code，添加一个代码块。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695241623814.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695241623814.jpg" srcset="/img/loading.gif"></p>
 <p>点击代码块左上角「向下」的小箭头，在弹出面板的搜索框输入 <strong>Mermaid</strong> 并单击，将代码块所使用的语言设置为 Mermaid。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695242610462.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695242610462.jpg" srcset="/img/loading.gif"></p>
 <blockquote>
 <p>补充一点小知识：    </p>
 <p>这里选择的 Mermaid 语言，是一个基于 JavaScript 的图表和图表工具，它使用受到 Markdown 启发的文本定义和渲染器，来动态创建和修改图表，例如<strong>流程图、时序图、类图、状态图、用户旅程图、甘特图、饼状图、需求图、Git 分支图、思维导图</strong>等。     </p>
@@ -306,7 +317,7 @@
 公司架构<span class="hljs-comment">--&gt;产品</span></code></pre>
 
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695286652598.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695286652598.jpg" srcset="/img/loading.gif"></p>
 <p>简单解释一下输入的这些内容/符号的含义：    </p>
 <p>第一行的 graph LR;  </p>
 <p>graph 是告诉程序我要开始绘图了；<br>LR 是绘制从左到右的图形，这里的 L 和 R 分别是 Left 和 Right 的缩写。  </p>
@@ -319,10 +330,10 @@
 <p>后面的就比较好理解了，从一个节点到下一个节点，节点内容中间加 2 个短横线 - 和 1 个大于号就好了，即 <code>--&gt;</code>。  </p>
 <p>如果我们想在节点间的连接线上添加内容，如下面导图圈出的文本，则是在两个节点中间的 <code>--&gt;</code>插入 <code>--你想在导图连接线上添加的内容</code>。    </p>
 <p>掌握使用 Mermaid 的这几个要点，<strong>在 Notion 中绘制一个简单的思维导图</strong>就绰绰有余了。        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695303427924.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695303427924.jpg" srcset="/img/loading.gif"></p>
 <h2 id="用-Mermaid-在-Notion-中绘制其他的图形"><a href="#用-Mermaid-在-Notion-中绘制其他的图形" class="headerlink" title="用 Mermaid 在 Notion 中绘制其他的图形"></a>用 Mermaid 在 Notion 中绘制其他的图形</h2><p>前面说到 Mermaid 可以绘制多种图形，除了思维导图，如果你想在 Notion 中绘制其他的图形/图表，也可以考虑使用 Mermaid 来绘制：  </p>
 <h3 id="绘制流程图"><a href="#绘制流程图" class="headerlink" title="绘制流程图"></a>绘制流程图</h3><p>流程图中不同的形状有着相对应的含义，例如：矩形/圆角矩形表示流程图的开始，菱形表示判断，柱形表示数据……   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695320089639.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695320089639.jpg" srcset="/img/loading.gif"></p>
 <p>绘制流程图时，在第一行输入流程图对应的英文 flowchart，且在后面写上流程图的方向，上图的方向是 TB，即从上往下。   </p>
 <p>如果是像前面创建思维导图一样，<strong>直接输入文本</strong>，在流程图中渲染得到的就是<strong>矩形</strong>。   </p>
 <p>其他形状对应的写法如下：  </p>
@@ -337,14 +348,17 @@
 <h3 id="绘制饼状图"><a href="#绘制饼状图" class="headerlink" title="绘制饼状图"></a>绘制饼状图</h3><p>用 Mermaid 绘制饼状图，则在第一行输入表示饼状图的 pie，后面跟上 title 和饼状图的名称。  </p>
 <p>下面的则是组成饼状图的每一项，遵循程序中「<strong>键值对</strong>」的写法，左侧是<strong>项目名称</strong>，中间隔一个英文冒号，右侧是对应的<strong>比例</strong>或者<strong>数值</strong>（绝对值）。     </p>
 <p>如果为数值，Mermaid 会自动计算数值在数值在总和中所占的比例，而不需要我们手动计算对应的比例。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/27/16695325577276.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/27/16695325577276.jpg" srcset="/img/loading.gif"></p>
 <p>关于 Mermaid 的用法，就简单介绍到这里咯，介绍它并不是说大家都要用它来绘制图形，而是提供一种选择：     </p>
 <p>如果你想在 Notion 中绘制一些简单的图形/图表，例如思维导图或者饼状图，那么可以考虑用它，但对于一些复杂的图形，建议还是<strong>用更专业的工具</strong>，而不是被自己所掌握的语言、工具甚至是思维所束缚～   </p>
 <p>让工具回归工具，让你成为你。    </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
 
             </div>
             <hr>
@@ -359,7 +373,7 @@
                     
                       <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6/">笔记软件</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
+                      <a class="hover-with-bg" href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
                     
                   </div>
                 
@@ -398,30 +412,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

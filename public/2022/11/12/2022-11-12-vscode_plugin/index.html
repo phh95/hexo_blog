@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.7k 字
+      1.8k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17
+      18
        分钟
     </span>
   
@@ -262,35 +273,35 @@
               <p>本文首发于我的 <a target="_blank" rel="noopener" href="https://penghh.zhubai.love/posts/2203059185087090688">Newsletter「效率工具指南」</a>，欢迎订阅。     </p>
 <p>Hello 各位好，我是小豪。    </p>
 <p>今天这篇文章，想来介绍一款很久之前在一个视频中看到的工具——Marp，正如文章标题写的那样，这是一款基于 Markdown 来做 PPT 的工具。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16681792907364.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16681792907364.jpg" srcset="/img/loading.gif"></p>
 <p>Marp 官网：<br><a target="_blank" rel="noopener" href="https://marp.app/">https://marp.app/</a>   </p>
 <p>我最初是在 doyoudo 创始人 @展哥 的前端视频中看到这款工具的，左侧是 Markdown 语法，右侧是渲染得到的幻灯片。  </p>
 <p>因为对这款工具比较感兴趣，我也注意到了软件左上角的名称，就把软件名记到了「幕布」里，想着有一天买了 Mac 也要试一下这款软件。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16681794054239.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16681794054239.jpg" srcset="/img/loading.gif"></p>
 <p>然后就一直被我遗忘到了现在，但实际情况是，这款软件也能在 Windows 或 Linux 系统上使用，并不局限于 macOS 系统。   </p>
 <p>今天要介绍的是 Marp 推出的 VS Code 插件——<strong>Marp for VS Code</strong>，在 VS Code 安装了这个插件后，意味着我们也可用 VS Code 来制作幻灯片了。    </p>
 <p>说到这，不得不再次感慨 VS Code 的强大——除了不能生孩子，啥都能做。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16681820992253.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16681820992253.jpg" srcset="/img/loading.gif"></p>
 <p>安装了 Marp for VS Code 插件后，不需要任何配置，就能直接做 PPT。      </p>
 <p>点击 VS Code「文件」选项卡，选择「新建文件」，在弹出的面板，文件类型选择 <strong>Marp Markdown</strong>。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16681779123091.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16681779123091.jpg" srcset="/img/loading.gif"></p>
 <p>选择 Marp Markdown 文件后，会新建一个下图的文件，开头有一个配置选项 <code>marp: true</code>，表示使用 Marp 来创建 PPT。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682174486364.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682174486364.jpg" srcset="/img/loading.gif"></p>
 <p>点击文件右上角的「预览」按钮，就可以在右侧看到第一个幻灯片页面。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682193869163.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682193869163.jpg" srcset="/img/loading.gif"></p>
 <p>上面空空如也，接下来就轮到我们用 Markdown 语法大展身手了：  </p>
 <p>对于熟悉 Markdown 的朋友不用多说，就像是写文章一样来写 PPT。   </p>
 <p>如果想要创建第二个页面，只要在末尾添加 3 个短横线 <code>-</code>，下方就会多出一张新的幻灯片。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682195202992.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682195202992.jpg" srcset="/img/loading.gif"></p>
 <p>不过，如果我们想要在幻灯片中插入图片，就会略微麻烦一些。   </p>
 <p>直接插入的本地图片，渲染后会显示为丢失，解决的方法是先将本地图片<strong>上传到网上（图床）</strong>，再粘贴图片链接🔗，图片才能正常显示。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682199694760.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682199694760.jpg" srcset="/img/loading.gif"></p>
 <p>插入的图片会显示为原始的大小，如果图片比较大，会占据整个幻灯片页面，影响其他内容的展示。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682203088914.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682203088914.jpg" srcset="/img/loading.gif"></p>
 <p>要想解决这个问题，只需要在 Markdown 图片名称的位置，配置一下图片的宽度或高度：  </p>
 <p><code>w:300 h:300</code>  </p>
 <p>这里的 w 和 h 分别是 width 和 height 的缩写，注意 <strong>w 和 h 必须是小写</strong>。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682203796142.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682203796142.jpg" srcset="/img/loading.gif"></p>
 <h2 id="更改全局主题"><a href="#更改全局主题" class="headerlink" title="更改全局主题"></a>更改全局主题</h2><p>Marp 渲染得到的幻灯片默认为白底蓝/黑字，如果你不喜欢默认的样式，可以在 Markdown 文件的开头，更改 theme 字段的值，来更改幻灯片的全局主题。      </p>
 <p>theme 字段有 3 个值：  </p>
 <ul>
@@ -298,41 +309,44 @@
 <li>uncover   </li>
 <li>gaia     </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682207136574.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682207136574.jpg" srcset="/img/loading.gif"></p>
 <p>下图是 uncover 主题的效果，所有内容都<strong>居中显示</strong>，引用内容的样式从竖线变为双引号。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682210046434.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682210046434.jpg" srcset="/img/loading.gif"></p>
 <p>下图是 gaia 主题的效果，白色背景更改为<strong>浅黄色</strong>，有点像一些阅读类 App 的暖光/护眼模式，但我不确定这种颜色是否真的护眼……        </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682211160349.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682211160349.jpg" srcset="/img/loading.gif"></p>
 <p>如果想用 gaia 主题<strong>浅黄色的背景</strong>，但又想像 uncover 主题那样，让内容<strong>居中显示</strong>，可不可以做到呢？   </p>
 <p>——Yes！   </p>
 <p>只要在文件开头的配置中，再添加一个 class 字段，值设置为 lead 即可。   </p>
 <p>不过最终的效果还是有一点差别，添加了引用和无序列表样式的内容，还是会保持原来的靠左显示。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682214200719.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682214200719.jpg" srcset="/img/loading.gif"></p>
 <h2 id="更换单个幻灯片的背景和文字颜色"><a href="#更换单个幻灯片的背景和文字颜色" class="headerlink" title="更换单个幻灯片的背景和文字颜色"></a>更换单个幻灯片的背景和文字颜色</h2><p>前面设置的主题，属于<strong>全局样式</strong>，会影响到所有幻灯片的背景颜色。  </p>
 <p>如果我们想自定义其中一个或多个页面的颜色，也是可以做到的。   </p>
 <p>在想要更改幻灯片背景色的页面开头，加上 <code>&lt;!-- _backgroundColor: 颜色--&gt;</code> 字段，就可以更改页面的背景色。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682220926219.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682220926219.jpg" srcset="/img/loading.gif"></p>
 <p>这里的颜色可以是颜色的英文，例如上面的蓝色 blue，也可以是 rgb 值，这有点像是在写 CSS 样式了😂          </p>
 <p>更换背景色之后，如果新的背景色与文本内容的颜色区分不明显，就会影响到文本内容的正常观看，这时就需要更改文字的颜色啦。   </p>
 <p>更改文本内容的颜色，需要在下面多配置一个选项 <code>&lt;!-- _color: 颜色--&gt;</code>，就能自定义文本的颜色。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682224461487.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682224461487.jpg" srcset="/img/loading.gif"></p>
 <p>既然可以修改单张幻灯片的背景色，那有些人可能就会想到：可不可以更改所有幻灯片的背景色呢？   </p>
 <p>也是可以的～只要在文件开头新增一个选项 backgroundColor，就能自定义所有幻灯片的背景色。   </p>
 <p>当然，<strong>页面单独设置的背景色会覆盖掉全局设置的颜色</strong>，正如你在下图看到的，即便我们将全局的背景色更改为黄色，第二页还是维持了单独设置的蓝色。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682227116421.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682227116421.jpg" srcset="/img/loading.gif"></p>
 <h2 id="将幻灯片导出为-PDF"><a href="#将幻灯片导出为-PDF" class="headerlink" title="将幻灯片导出为 PDF"></a>将幻灯片导出为 PDF</h2><p>最后，无论用 Marp 和 VS Code 来写 PPT 有多么好，最终还是要落回到地面，思考一个问题：如何把你做好的 PPT 分享给其他人？如何让你兼容更多的人或场景呢？   </p>
 <p>还好 Marp 也为我们考虑到了，支持将渲染得到的 PPT 导出为 PDF 文件。   </p>
 <p>方法如下：  </p>
 <p>点击 Marp Markdown 文件右上角的 Marp 图标（三角形图标），在弹出的面板，选择「Export Slide Deck」，就可以将 PPT 导出为 PDF 啦～       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16682231746370.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16682231746370.jpg" srcset="/img/loading.gif"></p>
 <h2 id="⚠️注意事项"><a href="#⚠️注意事项" class="headerlink" title="⚠️注意事项"></a>⚠️注意事项</h2><p>如果你的 VS Code 安装了 Markdown 渲染插件 Markdown Preview Enhanced，需要先将这个插件「禁用」或是「卸载」，转而使用 VS Code 后来集成的 Markdown 预览功能，才能正常看到渲染后的 PPT 页面。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/11/12/16681795751416.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/11/12/16681795751416.jpg" srcset="/img/loading.gif"></p>
 <h2 id="了解更多"><a href="#了解更多" class="headerlink" title="了解更多"></a>了解更多</h2><p>基于 Marp 制作 PPT 的基本用法，就介绍到这里啦，如果你想更深入地了解 Marp 的用法，可以查看 连玉君 老师博客上的一篇文章：   </p>
 <p><a target="_blank" rel="noopener" href="https://www.lianxh.cn/news/521900220dd33.html">用Markdown制作幻灯片-五分钟学会Marp（下篇）-M110b</a>     </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">     </p>
 
             </div>
             <hr>
@@ -388,30 +402,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

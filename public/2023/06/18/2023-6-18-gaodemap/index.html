@@ -1,0 +1,918 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+        <link rel="icon" type="image/png" href="/img/blogicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- 谷歌广告 -->
+        <script data-ad-client="ca-pub-2387054913975173" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+        
+                <meta name="baidu-site-verification" content="code-PdLAgt4JZr">
+                <meta name="theme-color" content="#2f4154">
+                <meta name="description" content="软件爱好者，分享好玩有趣的效率工具或软件，致力成为国内优质的工具测评媒体">
+                <meta name="author" content="Angola Peng">
+                <meta name="keywords" content="效率工具,软件,Macbook,前端,工具,App,博客,写作">
+                <title>
+                    高德地图有哪些鲜为人知的使用技巧和功能？【效率工具指南】 - 彭宏豪的个人博客，个人电子产品使用心得
+                </title>
+
+                <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+                    <script  src="/js/utils.js" ></script>
+                        <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>效率工具指南</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/sport/">
+                <i class="iconfont icon-map"></i>
+                跑步
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-06-18 11:30" pubdate>
+        2023年6月18日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      25
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-post-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-post-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <a target="_blank" rel="noopener" href="https://github.com/phh95/hexo_blog" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 1031;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">高德地图有哪些鲜为人知的使用技巧和功能？【效率工具指南】</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <p>本文首发于微信公众号「<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/eUvmeqVtbMhWjdNFGavLqA">效率工具指南</a>」<br>文/彭宏豪    </p>
+<p>Hello 各位好，我是小豪。     </p>
+<p>好久没有介绍手机上的应用了，今天就来分享一下，很多人日常在用的<strong>高德地图 App</strong>，都有哪些鲜为人知的使用技巧和功能？   </p>
+<p>如果你也发现了高德中一些好玩/有意思的功能，欢迎在底部的评论区留言呀！！      </p>
+<h2 id="打车"><a href="#打车" class="headerlink" title="打车"></a>打车</h2><p>这个其实现在变成了高德的常规操作了，在高德里搜索出行线路后，切换到「打车」，流程很自然也很丝滑，而且高德里面有很多家出行公司可选，选择比滴滴丰富多了：  </p>
+<ul>
+<li>神州专车  </li>
+<li>T3 出行</li>
+<li>打表出租车</li>
+<li>阳光出行</li>
+<li>妥妥 E 行</li>
+<li>首汽约车</li>
+<li>如祺出行</li>
+<li>……</li>
+</ul>
+<h2 id="搜附近的「厕所」"><a href="#搜附近的「厕所」" class="headerlink" title="搜附近的「厕所」"></a>搜附近的「厕所」</h2><p>人有三急，出门在外，难免会遇上肚子不舒服，这时候用高德来搜附近的厕所，就很合适。            </p>
+<p>一般首选麦当劳或者肯德基的厕所😂没得选的话，其他也只能凑合了。    </p>
+<p><img src="https://img.penghh.fun/2023/06/18/img6597.jpg" srcset="/img/loading.gif" alt="IMG_6597"></p>
+<h2 id="语音提示「红灯即将变绿」"><a href="#语音提示「红灯即将变绿」" class="headerlink" title="语音提示「红灯即将变绿」"></a>语音提示「红灯即将变绿」</h2><p>红灯即将变绿，是一个让我比较<strong>惊喜</strong>的语音导航细节，第一次知道这个，还是在去年打的一趟顺风车上发现的，当时司机停下来等红灯，等到前面的红灯数着倒计时、即将变绿的时候，高德地图的语言导航也会同时说一声：  </p>
+<p>红灯即将变绿。  </p>
+<p>这个细节真的很到位，因为不少人停下车来会玩起手机，有时玩得入神了，忘了交通灯🚥已经变绿，还会被后面的车哔哔哔……</p>
+<h2 id="顺路搜"><a href="#顺路搜" class="headerlink" title="顺路搜"></a>顺路搜</h2><p>顺路搜，正如其名，就是顺路搜一下路线上是否有我们恰好想要去的地方，比如最常见的<strong>加油站</strong>，出远门之前就近加一下油。</p>
+<p>这个功能我觉得挺方便的，不需要回到首页，先搜去往附近的加油站的路线，加完油再重新规导航路线，而是可以把两个目的地都合并到一条路线中。  </p>
+<p>顺路搜的入口：</p>
+<ul>
+<li>驾车路线下，左下角的「顺路搜」  </li>
+<li>选择一条路线后，在导航模式下，左上角的「顺路搜」   </li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/06/18/stiiitch20230617032320.jpg" srcset="/img/loading.gif" alt="STIIITCH_2023_06_17_03_23_20"></p>
+<p>当我们点击顺路搜，高德会在下面列出你可能想去的地方：  </p>
+<ul>
+<li>加油站/充电站/加气站</li>
+<li>洗车/汽修</li>
+<li>厕所</li>
+<li>美食/快餐/烧烤/奶茶/咖啡</li>
+<li>酒店</li>
+<li>地铁站</li>
+<li>便利店</li>
+<li>花店</li>
+<li>药店</li>
+<li>超市</li>
+<li>服务区</li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/06/18/img6592.jpg" srcset="/img/loading.gif" alt="IMG_6592"></p>
+<h2 id="点亮城市"><a href="#点亮城市" class="headerlink" title="点亮城市"></a>点亮城市</h2><p>之前看一些经常到处飞的人，会在朋友圈晒出「航旅纵横」的点亮城市截图，展示自己去过的城市。  </p>
+<p>不确定高德地图是不是从这里学习的，高德「我的」页面中也有「点亮城市」的入口，点进去之后就能看到自己去过的城市。  </p>
+<p><img src="https://img.penghh.fun/2023/06/18/stiiitch20230617025912.jpg" srcset="/img/loading.gif" alt="STIIITCH_2023_06_17_02_59_12"></p>
+<p>还有个小细节，如果你刚到一个新的城市，可以打开高德地图，刚进入 App 的时候会有一个类似下图的动画「欢迎来到漳州市」，点下方的「<strong>去点亮</strong>」按钮，点亮的城市就会自动 +1。</p>
+<p><img src="https://img.penghh.fun/2023/06/18/img5699.PNG" srcset="/img/loading.gif" alt="IMG_5699"></p>
+<h2 id="附近"><a href="#附近" class="headerlink" title="附近"></a>附近</h2><p>如果你有留意这两年的新闻或公关稿，会发现，原本好像是美团专属的「生活服务/本地生活」赛道，有着越来越多的平台或 App 也想来分一杯羹：     </p>
+<ul>
+<li>抖音（可以买团购券）</li>
+<li>快手</li>
+<li>小红书   </li>
+<li>淘票票   </li>
+<li>智行火车票     </li>
+<li>……       </li>
+</ul>
+<p><img src="https://img.penghh.fun/2023/06/18/16870503772204.jpg" srcset="/img/loading.gif"></p>
+<p>包括今天介绍的高德地图，高德地图本身拥有丰富的地理信息数据，为它开拓本地生活业务提供了巨大的优势，用户可以很方便找到附近的餐厅、超市、电影院、酒店等等。   </p>
+<p>即便我们在美团或大众点评中找好了想要去的餐厅，最终到出门这个环节，还是会用到地图类的 App 来提供导航，那高德把你在美团或大众点评中会搜索的生活服务，集成到自己的 App 中，也就顺利成章了。  </p>
+<p>我们在 App 的产品设计上也能看到高德对这一块业务的重视，它将生活服务放到了第二个名为「附近」的 Tab 中，点开就能看到一个很像美团的页面，如下图。  </p>
+<p>点击「更多」，进入下图右侧的页面，高德会将所有生活服务业务划分为几个板块：  </p>
+<ul>
+<li>热门   </li>
+<li>吃  </li>
+<li>住：酒店</li>
+<li>行：加油站/汽车站/火车票代售/停车场……</li>
+<li>玩：网吧/洗浴/足疗/KTV/电影院/酒吧……  </li>
+<li>游：景点/游乐园/公园/博物馆……   </li>
+<li>生活：医院/银行/快递/诊所/美容美发/ATM……</li>
+<li>购：超市/商场/药店/书店……</li>
+</ul>
+<p>业务看起来似乎比美团更丰富了😂狼子野心，昭然若揭。    </p>
+<p><img src="https://img.penghh.fun/2023/06/18/stiiitch20230618092708.jpg" srcset="/img/loading.gif" alt="STIIITCH_2023_06_18_09_27_08"></p>
+<p>高德里面的生活服务业务虽然很丰富，但要让用户把在别的 App 中养成的习惯扭转过来，可能还需要重点运营那些与高德 App 本身高度契合的场景，而不是单纯依靠服务种类的丰富度。  </p>
+<p>我在高德上为数不多会用到「附近」这个功能的场景：  </p>
+<ul>
+<li>看一下某个地方附近的餐厅    </li>
+<li>看一下相同的酒店，高德的价格是否会比美团的便宜一些  </li>
+</ul>
+<p>很久之前写过一篇文章《<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAxMjY0NTY5OA==&mid=2649914200&idx=1&sn=39619a48640fa8f78c0f50a1d2c386a5&chksm=83a87f75b4dff663c819f441a0557fcd2f71822caa17650d8ebf90fee00505d60eb0bb82caf9&token=678487577&lang=zh_CN#rd">生活中的各种「价格歧视」</a>》，说到高德里面会提供同一个酒店在不同平台上的价格信息，这些平台包含：携程、飞猪（阿里）、去哪儿、同程、艺龙等，对价格比较敏感的人，在预订酒店的时候可以留意一下。   </p>
+<p>而对于有车一族，使用「附近」功能的场景可能是：  </p>
+<ul>
+<li>找一下附近的加油站/充电站/换电站  </li>
+<li>找一下附近的 4S 店/汽修店/贴膜店  </li>
+<li>找一下附近的停车场🅿️         </li>
+</ul>
+<h2 id="租车-卖车"><a href="#租车-卖车" class="headerlink" title="租车/卖车"></a>租车/卖车</h2><p>刚开始看到这两个功能的时候，我都震惊了，连这些服务都有，高德你是不是「管」得太宽了😂    </p>
+<p>功能入口：「我的」页面 &gt;&gt; 我的车辆，点击「更多」，可以打开「<strong>高德车服</strong>」小程序，里面提供了更多和用车相关的服务，比如代驾、ETC（不是自动抬杠哈）、汽车托运、道路救援、车险等等。     </p>
+<p>像我这种无车人士，想体验一天有车的感觉，就可以选择租车，租车平台也有很多个，比如神州租车、一嗨租车、联动云租车（可按小时租车）……   </p>
+<p>不同租车平台价格好像都差不多，但都有一个套路：最开始显示的价格好像都很便宜的样子——80+元/天，点进去详情页就会发现，基本都是 300——400 起步。   </p>
+<p>我在神州和一嗨上都租过最便宜的那种车，连中控台（倒车影像）和雷达都没有……对新手特别不友好🤦‍♂️怕撞到车要赔的话，最好再加多一个保险。      </p>
+<p><img src="https://img.penghh.fun/2023/06/18/stiiitch20230618100738.jpg" srcset="/img/loading.gif" alt="STIIITCH_2023_06_18_10_07_38"></p>
+<h2 id="戏精「一条小团团」语音包"><a href="#戏精「一条小团团」语音包" class="headerlink" title="戏精「一条小团团」语音包"></a>戏精「一条小团团」语音包</h2><p>用了高德地图很多年，一直用的是林志玲的语音包，直到后来有两次和朋友李志铭出门，他开的语音导航，冒出了一个很新奇、中二的戏精「一条小团团」。  </p>
+<p>刚开始听着觉得有点不习惯，因为感觉开车是比较严肃的事情，这个戏精的语音不会让人分神吗😂后来听习惯了，觉得还挺有意思的哈哈哈哈哈：   </p>
+<ul>
+<li>喂～喂！喂~喂！喂！出发了还不系安全带，干哈呢？（这个有点吵）      </li>
+<li>虽然我游戏玩得菜，但是导航我是专业的，听我的准没错，我是一条小duanduan </li>
+<li>跟你说，今天由我来导航吧，你不能凶我，因为你不娶我，所以你不能凶我</li>
+<li>你个臭猪你怎么才来呀，我都等你好久了</li>
+<li>兄弟我已经等你多时了，来吧，今天由我来为你导航，我是你的好兄弟，小团团！   </li>
+<li>来了老弟，团团开始给你导航喽，打起精神来，不要那么丧，Everybody high 起来！   </li>
+<li>虽然前方拥堵，但您仍在最优路线上（听君一席话，如听一席话）</li>
+<li>前方经过拥堵路段哦，不要着急，如果你有急事的话没关系，我陪着你</li>
+<li>前面是事故多发地，阿团提醒你一定要更加小心哦  </li>
+<li>服务区服务区，团团最爱的服务区，一起喝杯奶茶吧，一起喝杯奶茶吧，不要拒绝我啦       </li>
+<li>完了完了，你超速了，你超速了，快！快减速，快减速，冷静一下</li>
+<li>前面可能有点堵呀，你要是无聊的话，要不我给你唱个歌  </li>
+<li>今天滴导航就到此结束啦，大家也要记得吃饭呀，因为我马上要去吃饭啦，所以我就不跟你多逼逼啦，我要准备溜溜球啦，你也快点走了吧，因为你不走，我也走不了啊，快点结束吧，快点关门吧，拜拜啦           </li>
+</ul>
+<p>好了，以上就是今天想分享的内容，希望对你有帮助。      </p>
+<p>如果对你也有帮助的话，别忘了点击下方的<strong>点赞、在看</strong>和<strong>分享</strong>按钮，<strong>你的小小支持，是我持续更新的最大动力</strong>，我们下次再见。  </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
+<h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
+<p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
+<h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">   </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">使用技巧</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE/">高德地图</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/07/01/2023-7-1-sony/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Sony索尼相机照片如何传输到iPhone手机【效率工具指南】</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/06/16/2023-6-16-618discount/">
+                        <span class="hidden-mobile">618购买正版软件最佳时机，最低5折起！【效率工具指南】</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <script type="text/javascript">
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    }
+    waitElementVisible('comments', loadUtterances)
+  </script>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+    
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">粤ICP备2020100125号-1</a>
+    
+  </div>
+
+
+      
+
+          <!-- 在网页底部添加本站已运行的时间 -->
+          <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+          <script>
+            var now = new Date();
+            function createtime() {
+              var grt = new Date("10/15/2020 23:49:00");//在此处修改你的建站时间
+              now.setTime(now.getTime() + 250);
+              days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+              seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+              document.getElementById("timeDate").innerHTML = "本站已运行 " + dnum + " 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()", 250);
+          </script>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer>
+  (function () {
+    // 查询存储的记录
+    function getRecord(Counter, target) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {target, time: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    }
+
+    // 发起自增请求
+    function increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    }
+
+    // 构建自增请求体
+    function buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "time": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    }
+
+    // 校验是否为有效的 UV
+    function validUV() {
+      var key = 'LeanCloud_UV_Flag';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    }
+
+    function addCount(Counter) {
+      var enableIncr = 'true' === 'true' && window.location.hostname !== 'localhost';
+      var getterArr = [];
+      var incrArr = [];
+
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#leancloud-site-pv-container');
+      if (pvCtn || enableIncr) {
+        var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+          incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-pv');
+          if (ele) {
+            ele.innerText = record.time + 1;
+            if (pvCtn) {
+              pvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#leancloud-site-uv-container');
+      if (uvCtn || enableIncr) {
+        var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+          var vuv = validUV();
+          vuv && incrArr.push(buildIncrement(record.objectId))
+          var ele = document.querySelector('#leancloud-site-uv');
+          if (ele) {
+            ele.innerText = record.time + (vuv ? 1 : 0);
+            if (uvCtn) {
+              uvCtn.style.display = 'inline';
+            }
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 如果是文章，请求文章的浏览数，并自增
+      if ('true' === 'true') {
+        var viewCtn = document.querySelector('#leancloud-post-views-container');
+        if (viewCtn || enableIncr) {
+          var target = decodeURI('/2023/06/18/2023-6-18-gaodemap/');
+          var viewGetter = getRecord(Counter, target).then((record) => {
+            incrArr.push(buildIncrement(record.objectId))
+            if (viewCtn) {
+              var ele = document.querySelector('#leancloud-post-views');
+              if (ele) {
+                ele.innerText = (record.time || 0) + 1;
+                viewCtn.style.display = 'inline';
+              }
+            }
+          });
+          getterArr.push(viewGetter);
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && increment(Counter, incrArr);
+        })
+      }
+    }
+
+    var app_id = 'mFS2oVoiTOElp63tFewejr7m-gzGzoHsz'
+    var app_key = '0HcqFXhoeStKHmFebO3wbd01'
+    var server_url = ''
+
+    function fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': app_id,
+            'X-LC-Key': app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+
+      addCount(Counter);
+    }
+
+    var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(resp => resp.json())
+        .then(({api_server}) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "高德地图有哪些鲜为人知的使用技巧和功能？【效率工具指南】&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

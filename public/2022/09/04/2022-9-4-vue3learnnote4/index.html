@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      5.4k 字
+      5.5k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      60
+      61
        分钟
     </span>
   
@@ -261,11 +272,11 @@
             <div class="markdown-body" id="post-body">
               <p>注：学习笔记来自 coderwhy 老师的 Vue3 课程。    </p>
 <h2 id="VueRouter-路由使用"><a href="#VueRouter-路由使用" class="headerlink" title="VueRouter 路由使用"></a>VueRouter 路由使用</h2><h3 id="认识前端路由"><a href="#认识前端路由" class="headerlink" title="认识前端路由"></a>认识前端路由</h3><p>路由器主要维护的是一个<strong>映射表</strong>：ip 地址和真实电脑的 mac 地址间的映射。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16601512331215.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16601512331215.jpg" srcset="/img/loading.gif"></p>
 <p>后端路由阶段（后端渲染）   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16601515472630.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16601515472630.jpg" srcset="/img/loading.gif"></p>
 <p>前后端分离阶段（前端渲染）</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16601523401862.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16601523401862.jpg" srcset="/img/loading.gif"></p>
 <p>SPA开发阶段</p>
 <p>SPA：是 Single Page Application 的缩写，单页面应用。  </p>
 <p>当我们改变 URL 路径的时候，不要向静态服务器发起请求（页面不要发生刷新），该怎么实现呢？ </p>
@@ -277,14 +288,14 @@
 <p>这两种方法本质上是一样的：<strong>根据不同的路径，前端渲染不同的内容</strong>（映射）。            </p>
 <h3 id="URL-的哈希值"><a href="#URL-的哈希值" class="headerlink" title="URL 的哈希值"></a>URL 的哈希值</h3><p>路由的原理，其实就是监听 URL 的哈希值，当哈希值变化的时候，改变页面中的组件，实现页面内容的变化。</p>
 <p>哈希的优势就是兼容性更好，在老版 IE 中也可以运行，但是缺陷是 URL 有一个井号 #，显得不像一个真实的路径。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16603558153951.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16603558153951.jpg" srcset="/img/loading.gif"></p>
 <p>下图是 URL 哈希值变化的一个 demo，通过监听哈希值的变化，修改 div 容器中的内容。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16603548692169.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16603548692169.jpg" srcset="/img/loading.gif"></p>
 <h3 id="HTML5-的-History"><a href="#HTML5-的-History" class="headerlink" title="HTML5 的 History"></a>HTML5 的 History</h3><p>History 是 HTML5 新增的对象（接口）。这个接口有 6 种模式改变 URL 而不刷新页面：   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16603650369565.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16603650369565.jpg" srcset="/img/loading.gif"></p>
 <p>当路径改变的时候，不会向服务器发起请求，而是由前端决定我们要渲染什么样的内容。  </p>
 <p>history 的 pushState 是压栈操作，当我们点击超链接时，打开的内容会堆叠在前一个内容上方，当点击浏览器左上角的「后退」按钮，回退到前一个页面，当前的内容就会弹出栈。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16603651142023.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16603651142023.jpg" srcset="/img/loading.gif"></p>
 <h3 id="认识-Vue-路由"><a href="#认识-Vue-路由" class="headerlink" title="认识 Vue 路由"></a>认识 Vue 路由</h3><p>Vue Router 是路径和组件之间的映射关系。  </p>
 <p>在 Vue Router 的单页面应用中，页面的路径的改变就是组件的切换。  </p>
 <p>使用 Vue Router 之前，需要先安装路由：   </p>
@@ -294,68 +305,68 @@
 <p>声明一个数组 routes，每一个元素是一个对象，用于<strong>配置路径和组件之间的映射关系</strong>。     </p>
 <p>接着使用 createRouter() 创建一个路由对象 router，将数组传入函数，同时 history 字段指定我们要用哪种模式的路由——hash 还是 history。  </p>
 <p>最后导出路由对象。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604397790321.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604397790321.jpg" srcset="/img/loading.gif"></p>
 <p>在项目的入口文件 <code>main.js</code> 中，导入路由对象，调用 app 的 use() 方法安装 router 对象，类似于之前使用插件一样。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604400548426.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604400548426.jpg" srcset="/img/loading.gif"></p>
 <p>在 <code>App.vue</code> 使用时，使用 <code>router-view</code> 进行占位。  </p>
 <p><code>router-view</code> 和 <code>router-link</code> 是 Vue 内置的组件，无需注册就能直接使用。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604402847974.jpg" srcset="/img/loading.gif"></p>
-<h3 id="路由的默认路径"><a href="#路由的默认路径" class="headerlink" title="路由的默认路径"></a>路由的默认路径</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604686696052.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604402847974.jpg" srcset="/img/loading.gif"></p>
+<h3 id="路由的默认路径"><a href="#路由的默认路径" class="headerlink" title="路由的默认路径"></a>路由的默认路径</h3><p><img src="https://img.penghh.fun/2022/09/04/16604686696052.jpg" srcset="/img/loading.gif"></p>
 <p>当我们直接打开 <code>localhost:8081</code> 时，控制台会有一个警告，提示路径 <code>/</code> 无法匹配。     </p>
 <p>对于这个问题，我们需要在路由配置中，给路径 <code>/</code> 配置一个重定向，重定向到路径 <code>/home</code> 所在的主页。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604407290804.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604407290804.jpg" srcset="/img/loading.gif"></p>
 <p>在数组 routes 给路径 <code>/</code> 添加重定向之后，当我们在浏览器打开 <code>localhost:8081</code>，它就会自动重定向到 Home 组件所在的页面 <code>localhost:8081/#/home</code>。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604418469923.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604418469923.jpg" srcset="/img/loading.gif"></p>
 <h3 id="router-link"><a href="#router-link" class="headerlink" title="router-link"></a>router-link</h3><p>router-link 是 Vue 内置的组件，经过浏览器渲染最终会变成 a 标签。   </p>
 <p>这个组件可以配置多个属性：    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604907719588.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604907719588.jpg" srcset="/img/loading.gif"></p>
 <p>active-class 属性的默认值为 router-link-active，如果你觉得这个类名太长，可以给 router-link 添加 active-class 属性，用来自定义激活 a 元素后的类名。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16604910070625.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16604910070625.jpg" srcset="/img/loading.gif"></p>
 <h3 id="路由懒加载"><a href="#路由懒加载" class="headerlink" title="路由懒加载"></a>路由懒加载</h3><p>如果一个页面添加了很多个路由（组件），在构建（打包）的时候，默认会将所有组件都打包到 <code>app.js</code> 中，打包的文件太大，不利于网页的首次加载。   </p>
 <p>我们可以参考以前在处理大组件的「异步组件」的操作，对路由进行<strong>分包</strong>的操作，将暂时不需要用到的组件单独打包，在需要用到、或者浏览器闲置的时候，再从网上下载下来。  </p>
 <p>那想要实现路由懒加载，该如何修改之前写好的代码呢？   </p>
 <p>来到路由文件夹 router 下的 <code>index.js</code> 文件中，注释通过 import…from 导入组件的方式，修改映射关系中的配置：  </p>
 <p>将组件更改为通过 import() 函数导入，下面是箭头函数的写法。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605203942418.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605203942418.jpg" srcset="/img/loading.gif"></p>
 <p>更改代码之后，重新运行 <code>npm run build</code> 进行打包，dist &gt; js 文件夹就会多出 4 个 js 文件，这 4 个文件就分别对应分包的 Home 和 About 组件。  </p>
 <p>如果我们想知道，分包的 js 文件具体对应哪一个组件，我们可以使用 Webpack 的<strong>魔法注释</strong>（magic comments）：    </p>
 <p>在 import() 函数传入的参数，最前面加多一个 webpackChunkName 的注释。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605209249996.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605209249996.jpg" srcset="/img/loading.gif"></p>
 <h3 id="路由的其他属性"><a href="#路由的其他属性" class="headerlink" title="路由的其他属性"></a>路由的其他属性</h3><p>在路由的 <code>index.js</code> 文件配置映射关系时，我们可以给 routes 数组中的 route 对象添加 2 个其他的属性：   </p>
 <ul>
 <li>name：给 route 对象起一个名字  </li>
 <li>meta：元数据，给 route 对象添加额外的信息    </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605756221257.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605756221257.jpg" srcset="/img/loading.gif"></p>
 <h3 id="动态路由基本匹配"><a href="#动态路由基本匹配" class="headerlink" title="动态路由基本匹配"></a>动态路由基本匹配</h3><p>路由的路径不是写死的，给路径一个<strong>占位的默认值</strong>，就像下图的 <code>/:username</code> 就是占位的默认值，在使用时通过 router-link 的 to 属性传入一个具体的值。  </p>
 <p>之后在对应的组件里面，通过 $route 获取到。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605789454841.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605789454841.jpg" srcset="/img/loading.gif"></p>
 <p>给占位的默认值传入一个具体的值 phh。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605791970654.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605791970654.jpg" srcset="/img/loading.gif"></p>
 <h3 id="获取动态路由的值"><a href="#获取动态路由的值" class="headerlink" title="获取动态路由的值"></a>获取动态路由的值</h3><p>如果我们想拿到路径中包含的具体值，可以通过 $route 对象。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605802341899.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605793853940.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605802341899.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16605793853940.jpg" srcset="/img/loading.gif"></p>
 <p>如果想在 setup() 中拿到具体的值，需要用到 Vue-router 提供的一个 hook——useRoute。   </p>
-<p> <img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605800588180.jpg" srcset="/img/loading.gif"></p>
-<h3 id="动态路由匹配多个参数"><a href="#动态路由匹配多个参数" class="headerlink" title="动态路由匹配多个参数"></a>动态路由匹配多个参数</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16605803017751.jpg" srcset="/img/loading.gif"></p>
+<p> <img src="https://img.penghh.fun/2022/09/04/16605800588180.jpg" srcset="/img/loading.gif"></p>
+<h3 id="动态路由匹配多个参数"><a href="#动态路由匹配多个参数" class="headerlink" title="动态路由匹配多个参数"></a>动态路由匹配多个参数</h3><p><img src="https://img.penghh.fun/2022/09/04/16605803017751.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Not-Found"><a href="#Not-Found" class="headerlink" title="Not Found"></a>Not Found</h3><p>当用户输入的路径与我们在 router 文件夹下的 <code>index.js</code> 文件中的配置不一致时，为了给用户提供更好的体验，我们最好再添加一个 Not Found 的组件，当输入的路径与配置的路径不一致时，就显示 Not Found 组件。   </p>
 <p>在配置 path 字段时，用到路径匹配 <code>pathMatch(.*)</code>，写法是固定的。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16606620193775.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16606620193775.jpg" srcset="/img/loading.gif"></p>
 <p>匹配规则末尾加星号 * ，会将路径解析为元素为字符串的数组。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16606658842976.jpg" srcset="/img/loading.gif"></p>
-<h3 id="路由的嵌套"><a href="#路由的嵌套" class="headerlink" title="路由的嵌套"></a>路由的嵌套</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16606963778526.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16606658842976.jpg" srcset="/img/loading.gif"></p>
+<h3 id="路由的嵌套"><a href="#路由的嵌套" class="headerlink" title="路由的嵌套"></a>路由的嵌套</h3><p><img src="https://img.penghh.fun/2022/09/04/16606963778526.jpg" srcset="/img/loading.gif"></p>
 <p>Home 组件中嵌套另外两个子组件 HomeMessage 和 HomeGood 组件。  </p>
 <p>在配置 routes 映射关系时，需要在 home 路由下增加一个 <strong>children 字段</strong>，children 字段是一个数组，数组中的每一个元素是一个对象。   </p>
 <p>需要注意的是，在 children 中配置路径时，前面不需要加多一个斜杠 / ，只需要写路径的名称就好，像下图右侧的 message 和 good。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16606665391551.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16606665391551.jpg" srcset="/img/loading.gif"></p>
 <h2 id="编程式导航"><a href="#编程式导航" class="headerlink" title="编程式导航"></a>编程式导航</h2><p>如果我们不使用 Vue 路由封装好的 router-link 组件，还可以实现在不同页面间的跳转吗？  </p>
 <p>——可以的，这时就需要用到<strong>编程式导航</strong>。  </p>
 <p>下面的例子，给 button 绑定一个点击事件 jumpToAbout，即点击按钮之后，会跳转到「关于」页面。   </p>
 <p>在 script 标签中添加 methods 字段，书写一个函数 jumpToAbout() ，实现点击跳转。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16607493842567.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16607493842567.jpg" srcset="/img/loading.gif"></p>
 <p>如果我们在 Composition API 中书写绑定的点击事件，因为 setup() 没有绑定 this，因此我们要先从 Vue 路由中导入 useRouter。  </p>
 <p>声明得到一个 router 对象后，再在点击事件中调用 router 对象的 push 方法。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16607584275659.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16607584275659.jpg" srcset="/img/loading.gif"></p>
 <p>在不同的 router-link 进行页面的跳转，其实执行的是 pushState 的操作，即压栈，新页面会「压」在旧页面上方。   </p>
 <h3 id="router-link-的-v-slot"><a href="#router-link-的-v-slot" class="headerlink" title="router-link 的 v-slot"></a>router-link 的 v-slot</h3><p>之前我们使用 Vue 路由内置的 router-link 组件时，默认都是在组件中添加文本，但其实 router-link 组件支持使用插槽。   </p>
 <p>作用域插槽 v-slot，可以将 router-link 组件的数据传入组件内部的插槽中。   </p>
@@ -367,20 +378,20 @@
 <li>isActive：是否当前处于活跃的状态       </li>
 <li>isExactActive：是否当前处于精确的活跃状态      </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609247264264.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609247264264.jpg" srcset="/img/loading.gif"></p>
 <p>router-link 可以按照插槽的方式，来自定义组件内部显示的是一个元素，还是一个组件，或者是显示来自 v-slot 传入的 props 对象的诸多元素。   </p>
 <p>从 Vue-router 4 开始，它对 router-link 做了这么一个扩展，有了 v-slot 这个扩展，也让它变得更加灵活。       </p>
-<h3 id="router-view-的-v-slot"><a href="#router-view-的-v-slot" class="headerlink" title="router-view 的 v-slot"></a>router-view 的 v-slot</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609680497636.jpg" srcset="/img/loading.gif"></p>
+<h3 id="router-view-的-v-slot"><a href="#router-view-的-v-slot" class="headerlink" title="router-view 的 v-slot"></a>router-view 的 v-slot</h3><p><img src="https://img.penghh.fun/2022/09/04/16609680497636.jpg" srcset="/img/loading.gif"></p>
 <p>router-view 组件是一个占位符，会显示我们传入的各种组件。  </p>
 <p>如果想实现，当我们点击按钮切换到不同的组件时，router-view 显示的组件会带有过渡动画，该怎么做呢？    </p>
 <p>——这里还是要用到作用域插槽。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609648260908.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609648260908.jpg" srcset="/img/loading.gif"></p>
 <p>router-view 默认情况下时拿不到占位符中显示的组件，为了给其中显示的组件添加动画，就需要用到作用域插槽。   </p>
 <p>在 router-view 中添加 v-slot 属性，传入 props 对象，使用 <code>props.Component</code> 就能拿到占位符中显示的组件。       </p>
 <p>在其中使用动态组件 component，组件的 is 属性绑定 <code>props.Component</code>，最后再将动态组件放入 transition 组件，添加 CSS 样式，这样当我们点击按钮切换组件时，就会带有过渡动画。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609654425721.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609654425721.jpg" srcset="/img/loading.gif"></p>
 <p>代码的另外一种写法，在传入 v-slot 直接对 props 进行解构，解构拿到 Component 属性。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609719246789.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609719246789.jpg" srcset="/img/loading.gif"></p>
 <h3 id="动态添加路由"><a href="#动态添加路由" class="headerlink" title="动态添加路由"></a>动态添加路由</h3><p>在之前的练习代码中，我们都是在 <code>index.js</code> 中提前配置好了所有的路由，即最开始注册的路由都是写死的。  </p>
 <pre><code class="hljs stata"><span class="hljs-keyword">const</span> routes = [&#123;&#125;,&#123;&#125;,&#123;path:<span class="hljs-string">&quot;/order&quot;</span>&#125;]
 <span class="hljs-keyword">const</span> router = createRouter(&#123;routes&#125;)
@@ -388,7 +399,7 @@
 
 <p>但在一些后台管理系统的开发中，因为<strong>人员权限</strong>的不同，不同人可访问的路由应该是不同的，而不是每个人都可以访问相同的路由，为了实现这一点，就需要用到动态添加路由：  </p>
 <p>根据人员权限的不同，服务器返回不同的路由，每个人在后台管理系统左侧导航栏看到的选项也就是不同的。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609725986052.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609725986052.jpg" srcset="/img/loading.gif"></p>
 <p>动态添加路由：一开始注册路由时，routes 数组为空数组，之后在<strong>路由导航守卫</strong>中进行判断，根据菜单或人员的角色，注册对应的路由。   </p>
 <pre><code class="hljs reasonml">const routes = <span class="hljs-literal">[]</span>
 const router = create<span class="hljs-constructor">Router(&#123;<span class="hljs-params">routes</span>&#125;)</span>
@@ -406,36 +417,36 @@ app.use(router);</code></pre>
 
 
 <p>动态添加路由</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609796122148.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609796122148.jpg" srcset="/img/loading.gif"></p>
 <p>将原本放在 routes 数组中的对象单独拿出来，调用 router 对象的 addRoute 方法传入。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609796833987.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609796833987.jpg" srcset="/img/loading.gif"></p>
 <h3 id="动态删除路由"><a href="#动态删除路由" class="headerlink" title="动态删除路由"></a>动态删除路由</h3><p>动态删除路由有 3 种方式：  </p>
 <ul>
 <li>添加一个 name 相同的路由（更确切地说是替换，而不是删除）    </li>
 <li>通过 removeRoute 方法，传入路由的名称 name  </li>
 <li>通过调用 addRoute 返回的函数   </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16609799046523.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16609799046523.jpg" srcset="/img/loading.gif"></p>
 <h3 id="路由导航守卫"><a href="#路由导航守卫" class="headerlink" title="路由导航守卫"></a>路由导航守卫</h3><p>路由导航守卫：在页面跳转时，增加一些判断条件，例如检查当前用户是否登录，如果是未登录的状态，可以让用户先跳转到登录页，登录完再跳到目标页面。 </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16610113922402.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16610113922402.jpg" srcset="/img/loading.gif"></p>
 <p>在 router 文件夹下的 <code>index.js</code>，使用 router 对象的 beforeEach 方法（前置守卫），传入一个函数，这个函数需要传入两个参数 to 和 from，还有一个可选参数 next。    </p>
 <p>这里的 to 和 from 都是 route 对象。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16610128455045.jpg" srcset="/img/loading.gif"></p>
-<h3 id="完整的路由导航守卫解析流程"><a href="#完整的路由导航守卫解析流程" class="headerlink" title="完整的路由导航守卫解析流程"></a>完整的路由导航守卫解析流程</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16610138516063.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16610128455045.jpg" srcset="/img/loading.gif"></p>
+<h3 id="完整的路由导航守卫解析流程"><a href="#完整的路由导航守卫解析流程" class="headerlink" title="完整的路由导航守卫解析流程"></a>完整的路由导航守卫解析流程</h3><p><img src="https://img.penghh.fun/2022/09/04/16610138516063.jpg" srcset="/img/loading.gif"></p>
 <h2 id="Vuex-的状态管理"><a href="#Vuex-的状态管理" class="headerlink" title="Vuex 的状态管理"></a>Vuex 的状态管理</h2><h3 id="什么是状态管理"><a href="#什么是状态管理" class="headerlink" title="什么是状态管理"></a>什么是状态管理</h3><p>单向数据流</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16612129200632.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16612129200632.jpg" srcset="/img/loading.gif"></p>
 <p>复杂的状态管理：  </p>
 <ul>
 <li>父组件从子组件拿数据，会破坏原本的单向数据流  </li>
 <li>通过组件数据的传递，当其中一个组件的层级太深时，传递数据也不方便。      </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16612148596369.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16612148596369.jpg" srcset="/img/loading.gif"></p>
 <p>Vuex 的状态管理：   </p>
 <p>借鉴了 React 的 Redux。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16612153415029.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16612153415029.jpg" srcset="/img/loading.gif"></p>
 <p>Vuex 状态管理的流程：   </p>
 <p>Mutations 不能异步操作，为了解决这个问题，Vuex 多增加了一个层——Actions。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16612158023013.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16612158023013.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Vuex-的安装"><a href="#Vuex-的安装" class="headerlink" title="Vuex 的安装"></a>Vuex 的安装</h3><p>在终端输入下面的命令，即可安装 Vuex：   </p>
 <pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> install vuex@next</code></pre>
 
@@ -448,20 +459,20 @@ app.use(router);</code></pre>
 <p>state 即状态，用来存放共享的数据，它的写法类似于 Options API 的 data 的写法。   </p>
 <p>mutations 则是写以前写在 methods 中的方法。 </p>
 <p>最后还要导出 store 对象。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615287834352.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615287834352.jpg" srcset="/img/loading.gif"></p>
 <p>在入口文件 <code>main.js</code> 导入 store 对象，接着要和<strong>使用插件</strong>类似的方法，将 store 对象传入 use() 中。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615615032381.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615615032381.jpg" srcset="/img/loading.gif"></p>
 <p>前面两步就完成了 vuex 的配置，来到 <code>App.vue</code> 文件。    </p>
 <p>template 模板使用 store（仓库）中的数据（即 state 数据），需要用 <code>$store.state.counter</code> 的写法。    </p>
 <p>而按钮绑定的事件，想触发 mutations 中定义的方法，需要使用 commit() 进行提交。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615618870315.jpg" srcset="/img/loading.gif"></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16614735708550.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615618870315.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16614735708550.jpg" srcset="/img/loading.gif"></p>
 <h3 id="单一状态树"><a href="#单一状态树" class="headerlink" title="单一状态树"></a>单一状态树</h3><p>Vuex 使用单一状态树，用一个 store 对象就包含了全部的应用层级的状态。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615264660726.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615264660726.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Vue-Devtool"><a href="#Vue-Devtool" class="headerlink" title="Vue Devtool"></a>Vue Devtool</h3><p>Vue 官方提供的一个调试工具，本质上是一个 Chrome 插件。   </p>
 <p>插件安装链接：<br><a target="_blank" rel="noopener" href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related?utm_source=chrome-ntp-icon">https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related?utm_source=chrome-ntp-icon</a></p>
 <h3 id="state-展示的辅助函数"><a href="#state-展示的辅助函数" class="headerlink" title="state 展示的辅助函数"></a>state 展示的辅助函数</h3><p>template 模板使用 mustache 语法 <code>$store.state.counter</code>来调用 state 中的数据，看起来比较冗长，我们可以使用 computed 作为替代。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615665004044.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615665004044.jpg" srcset="/img/loading.gif"></p>
 <p>但 computed 也存在一个问题，每个数据都要单独进行定义，如上图定义的 sCounter、sName、sAge，也是有些冗余。   </p>
 <p>为了让代码变得更简洁，可以使用 vuex 提供的<strong>辅助函数 mapState</strong>，它是对 state 数据的映射。   </p>
 <p>先从 vuex 导入辅助函数 mapState。   </p>
@@ -472,11 +483,11 @@ app.use(router);</code></pre>
 <li>对象   </li>
 </ul>
 <p>如果传入的是对象，我们可以对从 state 传入的数据进行重命名，例如下图的 counter 命名为 sCounter。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615694915244.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615694915244.jpg" srcset="/img/loading.gif"></p>
 <h3 id="在-Composition-API-中使用-mapState"><a href="#在-Composition-API-中使用-mapState" class="headerlink" title="在 Composition API 中使用 mapState"></a>在 Composition API 中使用 mapState</h3><p>前面是在 Options API 中的计算属性使用 mapState，如果换到 Compostion API，该如何使用 mapState 呢？     </p>
 <p>老师在课上封装了一个名为 useState 的 hooks，将数组或对象传入 useState 中，也能实现同样的效果。   </p>
 <p>hooks 本质上是一个函数，只是因为它在 setup 中使用，因此我们把它称之为 hook。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16615848295472.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16615848295472.jpg" srcset="/img/loading.gif"></p>
 <h2 id="Vuex-的-5-大核心"><a href="#Vuex-的-5-大核心" class="headerlink" title="Vuex 的 5 大核心"></a>Vuex 的 5 大核心</h2><p>Vuex 有 5 大核心：   </p>
 <ul>
 <li>state(状态)     </li>
@@ -501,81 +512,81 @@ app.use(router);</code></pre>
 &#125;)</code></pre>
 
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16616622282974.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16616622282974.jpg" srcset="/img/loading.gif"></p>
 <h3 id="在-Composition-API-中使用-mapGetters"><a href="#在-Composition-API-中使用-mapGetters" class="headerlink" title="在 Composition API 中使用 mapGetters"></a>在 Composition API 中使用 mapGetters</h3><p>和 mapState 一样，封装一个 hooks <code>useGetters</code>。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16616654755554.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16616654755554.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Mutation-基本使用"><a href="#Mutation-基本使用" class="headerlink" title="Mutation 基本使用"></a>Mutation 基本使用</h3><p>更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16616656752442.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16616656752442.jpg" srcset="/img/loading.gif"></p>
 <p>commit() 提交可以传入两个参数，第一个是类型，即 mutation 中定义的函数名，第二个参数可以是一个数字，也可以是一个对象 payload。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16616683896212.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16616683896212.jpg" srcset="/img/loading.gif"></p>
 <p>commit() 还提供了另外一种书写代码的方式，可在 commit 中直接传入一个对象，在对象的 type 字段写明调用的是 mutations 中的哪个函数。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16616688581061.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16616688581061.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Mutation-的辅助函数-mapMutation"><a href="#Mutation-的辅助函数-mapMutation" class="headerlink" title="Mutation 的辅助函数 mapMutation"></a>Mutation 的辅助函数 mapMutation</h3><p>使用辅助函数 mapMutations，可以将我们我们在 store 的 <code>index.js</code> 文件 mutations 定义的方法，映射到 <code>Home.vue</code> 的 methods 字段中。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16617871859210.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16617871859210.jpg" srcset="/img/loading.gif"></p>
 <h3 id="在-Composition-API-中使用-mapMutations"><a href="#在-Composition-API-中使用-mapMutations" class="headerlink" title="在 Composition API 中使用 mapMutations"></a>在 Composition API 中使用 mapMutations</h3><p>在 setup() 中使用 mapMutations 比较简单，不需要对 mapMutations 返回的函数进行转化。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16617876584967.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16617876584967.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Actions-的基本使用"><a href="#Actions-的基本使用" class="headerlink" title="Actions 的基本使用"></a>Actions 的基本使用</h3><p>Actions 类似于 mutation，不同在于：   </p>
 <ul>
 <li>Actions 提交的是 mutation，而不是直接变更状态（state）   </li>
 <li>Actions 可以包含任意异步操作   </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16618183378069.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16618183378069.jpg" srcset="/img/loading.gif"></p>
 <p>在 store 文件夹的 <code>index.js</code> 的 store 对象中添加 actions 字段：  </p>
 <p>actions 中定义的函数，可以传一个参数 context，也可以传两个参数 context 和 payload，第二个参数 payload，用来接收组件传递过来的数据，例如字符串或对象。     </p>
 <p>actions 的工作方式是，提交一个 commit，触发 mutations 中定义的方法，最后引起 state 中数据的改变。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619081623326.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16619081623326.jpg" srcset="/img/loading.gif"></p>
 <p><code>Home.vue</code> 组件中，需要使用 <code>$store</code> 对象的 dispatch 方法<strong>派发事件</strong>。  </p>
 <p>dispatch 可以传入一个参数，也可以传入 2 个参数，第二个参数可在派发事件的同时携带其他数据，会传入 actions 的 payload 对象中。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619096588785.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16619096588785.jpg" srcset="/img/loading.gif"></p>
 <p>这里的 dispatch() 传入的参数为对象类型时，还有另外一种代码书写方式：  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619109318581.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16619109318581.jpg" srcset="/img/loading.gif"></p>
 <h3 id="Actions-的辅助函数"><a href="#Actions-的辅助函数" class="headerlink" title="Actions 的辅助函数"></a>Actions 的辅助函数</h3><p>Actions 的辅助函数：mapActions</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619919958645.jpg" srcset="/img/loading.gif"></p>
-<h3 id="Actions-的异步操作"><a href="#Actions-的异步操作" class="headerlink" title="Actions 的异步操作"></a>Actions 的异步操作</h3><p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619918631337.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16619919958645.jpg" srcset="/img/loading.gif"></p>
+<h3 id="Actions-的异步操作"><a href="#Actions-的异步操作" class="headerlink" title="Actions 的异步操作"></a>Actions 的异步操作</h3><p><img src="https://img.penghh.fun/2022/09/04/16619918631337.jpg" srcset="/img/loading.gif"></p>
 <p>在组件里面，想要知道某一次派发出去的 actions 有没有完成的话，需要让当前的 actions 返回一个 Promise。</p>
 <p>在返回 Promise 的情况下，完成的时候会调用 resolve，发生错误的时候会调用 reject。  </p>
 <h3 id="Vuex-Module-模块的使用"><a href="#Vuex-Module-模块的使用" class="headerlink" title="Vuex Module 模块的使用"></a>Vuex Module 模块的使用</h3><p>为什么要使用模块 Module？   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16619932121650.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16619932121650.jpg" srcset="/img/loading.gif"></p>
 <p>将原本放在 store 文件夹下 <code>index.js</code> 中的数据拆分为多个模块，在 store 文件夹下创建一个名为 modules 的文件夹，用来存放一个或多个模块。  </p>
 <p>每个模块，本质上就是一个对象，包含 state、mutations、actions、modules 字段，定义好之后导出模块。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621370772809.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621370772809.jpg" srcset="/img/loading.gif"></p>
 <p>在 <code>index.js</code> 导入拆分的模块，在 store 对象的 modules 字段使用刚导入的模块。   </p>
 <p>因为两个模块是使用 export default 导出，因此在导入时可重新命名模块的名称：  </p>
 <p>homeModule ➡️ home<br>userModule ➡️ user    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621373048819.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621373048819.jpg" srcset="/img/loading.gif"></p>
 <p>最后，在 <code>Home.vue</code> 组件中使用模块，譬如获取模块中定义的数据：   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621378592556.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621378592556.jpg" srcset="/img/loading.gif"></p>
 <h3 id="module-的局部状态"><a href="#module-的局部状态" class="headerlink" title="module 的局部状态"></a>module 的局部状态</h3><p>对于模块内部的 mutations 和 getters，接收的第一个参数是模块的局部状态对象。   </p>
 <p>命名空间</p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621700483330.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621700483330.jpg" srcset="/img/loading.gif"></p>
 <p>在模块对象的开头加上 <code>namespaced: true</code>，这样就给模块添加了命名空间。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621701545516.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621701545516.jpg" srcset="/img/loading.gif"></p>
 <h3 id="细节补充"><a href="#细节补充" class="headerlink" title="细节补充"></a>细节补充</h3><p>前面学习 getters 时，最多只给其中定义的函数传入 2 个参数 state 和 getters，而模块中的 getters 函数最多可以传入 4 个参数，另外的 2 个参数 rootState 和 rootGetters 可分别获取根文件 <code>index.js</code> 中的数据和 getters。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621682229707.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621682229707.jpg" srcset="/img/loading.gif"></p>
 <p>模块 actions 中定义的函数，可对传入的 context 对象进行解构，总共包含了 6 个参数——commit、dispatch、state、rootState、getters、rootGetters。      </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621694653956.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621694653956.jpg" srcset="/img/loading.gif"></p>
 <p>module 修改或派发根组件  </p>
 <p>如果我们希望在 module 的 actions 中修改 root 中的 state，可以在 commit() 或 dispatch() 传入 1 个对象参数 <code>&#123;root: true&#125;</code>。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621705423962.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621705423962.jpg" srcset="/img/loading.gif"></p>
 <h3 id="modules-的辅助函数"><a href="#modules-的辅助函数" class="headerlink" title="modules 的辅助函数"></a>modules 的辅助函数</h3><p>和前面一样，template 模板中书写的 mustache 语法变得越来越长，为了简化代码，modules 模块同样可以使用辅助函数。   </p>
 <p>modules 辅助函数的代码有 3 种书写方式：  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622031364643.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622031364643.jpg" srcset="/img/loading.gif"></p>
 <ul>
 <li>方式二：在辅助函数中指明使用的是哪个模块             </li>
 </ul>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621757109468.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621757109468.jpg" srcset="/img/loading.gif"></p>
 <ul>
 <li>方式三：从 vuex 中导入函数 createNamespacedHelpers，在函数中传入模块名。     </li>
 </ul>
 <p>createNamespacedHelpers() 传入模块名，得到的是一个对象，里面有多个方法，可以在使用 const 声明变量时直接进行解构。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16621781836976.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16621781836976.jpg" srcset="/img/loading.gif"></p>
 <h3 id="在-Composition-API-中使用-modules"><a href="#在-Composition-API-中使用-modules" class="headerlink" title="在 Composition API 中使用 modules"></a>在 Composition API 中使用 modules</h3><p>和前面一样，从模块获取 state 和 getters 数据时，需要用到我们自己封装的 useState 和 useGetters 函数。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622515346958.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622515346958.jpg" srcset="/img/loading.gif"></p>
 <p>前面在封装 useState 和 useGetters 函数时，我们没有考虑到「模块」的情况，因此需要对代码进行补充：   </p>
 <p>useState() 多传入一个参数 moduleName，对传入的模块名进行判断——模块名是否为字符串，且不为空。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622517348188.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622517348188.jpg" srcset="/img/loading.gif"></p>
 <h2 id="nextTick"><a href="#nextTick" class="headerlink" title="nextTick"></a>nextTick</h2><p>nextTick，是 Vue 提供的一个 API。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622955227161.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622955227161.jpg" srcset="/img/loading.gif"></p>
 <p>nextTick 的原理       </p>
 <p>Vue 内部会执行很多任务：   </p>
 <ul>
@@ -590,22 +601,25 @@ app.use(router);</code></pre>
 </ul>
 <p>在同时有微任务队列和宏任务队列的情况下，JS 会优先执行微任务队列中的任务(task)。           </p>
 <p>Vue 内部对队列进行了巧妙地处理，<strong>将队列中的任务都加入到了微任务队列中</strong>，而 nextTick() 中传入的函数，也会将函数对应的任务放入到微任务队列的末尾。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622813900893.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622813900893.jpg" srcset="/img/loading.gif"></p>
 <h2 id="historyApiFallback"><a href="#historyApiFallback" class="headerlink" title="historyApiFallback"></a>historyApiFallback</h2><p>这是一个和 <strong>Vue 路由/Webpack</strong> 相关的知识点。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16623005342221.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16623005342221.jpg" srcset="/img/loading.gif"></p>
 <p>historyApiFallback，是 Webpack 中的一个配置，它位于 <code>node_modules &gt; @vue &gt; cli-service &gt; lib &gt; commands &gt; serve.js</code> 文件<br>中。</p>
 <p>这个配置默认为 true，当我们进入一个页面后，重新刷新页面，（配置后）能让页面正常显示，而不会返回 404。   </p>
 <p>之所以能实现这个，是因为它将当前的路径重定向到了首页 <code>index.html</code>，保证路径与页面的对应关系是正确的。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16622990138120.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16622990138120.jpg" srcset="/img/loading.gif"></p>
 <p>Vue 的脚手架 Vue-cli 是基于 Webpack 的，如果我们想修改 Webpack 中的配置，有 2 种方式：  </p>
 <ul>
 <li>修改 cli-service 源码   </li>
 <li>在项目根目录下创建一个 <code>vue.config.js</code> 文件，在里面修改 Webpack 的配置   </li>
 </ul>
 <p>在 <code>vue.config.js</code> 文件中将 historyApiFallback 配置为 false，它会覆盖 node_modules 中配置的 true。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16623004248904.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16623004248904.jpg" srcset="/img/loading.gif"></p>
 <p>historyApiFallback 配置为 false 时，当我们刷新打开的页面，会出现下面的错误。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/09/04/16623003436230.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/09/04/16623003436230.jpg" srcset="/img/loading.gif"></p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 
             </div>
             <hr>
@@ -659,30 +673,31 @@ app.use(router);</code></pre>
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

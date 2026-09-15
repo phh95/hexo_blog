@@ -228,8 +228,8 @@ sup > a::before,
 }
 html,
 body {
-  font-size: 16px;
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-size: 18px;
+  font-family: LXGW Wenkai Screen;
 }
 html,
 body,
@@ -789,7 +789,7 @@ img[srcset] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-family: LXGW Wenkai Screen;
   color: var(--post-text-color);
 }
 .markdown-body h1,

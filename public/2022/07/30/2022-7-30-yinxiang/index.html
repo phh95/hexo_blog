@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2k 字
+      2.1k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      21
+      22
        分钟
     </span>
   
@@ -267,12 +278,12 @@
 <li>下载链接失效了还不是最糟糕的，失效了我可以重新分享出来，更恶心的是，有朋友反馈说，安装了旧版的应用后，首次启动会弹出下面的提示，不更新到最新版本，就无法查看存储在软件中的笔记</li>
 </ul>
 <p>这不是明摆着不让用户用回旧版的应用吗？<strong>为了阻止用户转移本应属于自己的笔记数据，真是什么下三滥的招都用出来</strong>。       </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/ishot20220730111137.png" srcset="/img/loading.gif" alt="iShot_2022-07-30_11.11.37"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/ishot20220730111137.png" srcset="/img/loading.gif" alt="iShot_2022-07-30_11.11.37"></p>
 <p>不过，即便这样，我还是找到了另外一个从印象笔记导出 enex 格式的方法，这个方法稍微有一点麻烦，需要用到 Python 和命令行。       </p>
 <p>这个方法用了国外一位开发者 vzhd1701 写的一个项目「evernote-backup」，有用 GitHub 的朋友也可以去到 GitHub 给这个项目点个 Star，共同感谢这位开发者的付出。   </p>
 <p>GitHub 项目「evernote-backup」地址：   </p>
 <p><a target="_blank" rel="noopener" href="https://github.com/vzhd1701/evernote-backup">https://github.com/vzhd1701/evernote-backup</a></p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591866903796.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591866903796.jpg" srcset="/img/loading.gif"></p>
 <h2 id="安装-Python"><a href="#安装-Python" class="headerlink" title="安装 Python"></a>安装 Python</h2><p>使用 evernote-backup 导出笔记之前，请先在自己的电脑上安装 Python。   </p>
 <p>Python 官网：<br><a target="_blank" rel="noopener" href="https://www.python.org/">https://www.python.org/</a>   </p>
 <p>使用 Mac 电脑的朋友，除了从 Python 官网下载安装包，也可以通过终端的 Homebrew 进行安装，具体方法，可以参考我之前发布的一篇文章：  </p>
@@ -306,7 +317,7 @@
 
 <p>这里需要注意的是，这个项目既可以导出 Evernote 的笔记，也能导出中国版 Evernote 印象笔记的数据，如果是导出印象笔记，这个初始化数据库命令的末尾就要加上 <code>--backend china</code>，如果是导出 Evernote 的数据，就要把上面命令中的 <code>--backend china</code> 去掉。   </p>
 <p>终端会提示让你<strong>输入印象笔记的账户</strong>和<strong>密码</strong>，按照提示输入即可，如果程序能顺利运行，终端最终会返回一句 Successfully initialized database for user。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591880882942.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591880882942.jpg" srcset="/img/loading.gif"></p>
 <p>但我在运行这个命令的时候，遇到了一个错误，报错信息如下：  </p>
 <pre><code class="hljs groovy"><span class="hljs-attr">SSLCertVerificationError:</span> [<span class="hljs-attr">SSL:</span> CERTIFICATE_VERIFY_FAILED] certificate verify <span class="hljs-attr">failed:</span> unable to get local issuer certificate (_ssl.<span class="hljs-attr">c:</span><span class="hljs-number">1123</span>)</code></pre>
 
@@ -318,29 +329,29 @@
 <p>如果你也遇到类似的问题，可以试着用上面的方法，如果还是不行，也可以尝试项目作者提供的另外一种方法，在终端粘贴下面的命令：  </p>
 <pre><code class="hljs awk"><span class="hljs-regexp">/Applications/</span>Python\ <span class="hljs-number">3.9</span>/Install\ Certificates.command</code></pre>
 
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591885073911.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591885073911.jpg" srcset="/img/loading.gif"></p>
 <p>运行前面的命令解决遇到的这个问题后，再运行最初的初始化数据库的命令，顺利的话，电脑本地就会多出一个名为 <code>en_backup.db</code> 的文件。   </p>
 <h2 id="下载笔记数据"><a href="#下载笔记数据" class="headerlink" title="下载笔记数据"></a>下载笔记数据</h2><p>接着在终端粘贴下面的命令，并按下回车，就能同步拿到账号中的数据。   </p>
 <pre><code class="hljs sql">evernote-<span class="hljs-keyword">backup</span> <span class="hljs-keyword">sync</span></code></pre>
 
 <p>如果你的账号里有比较多的数据，这一步运行起来会花费较多的时间，如果刚好遇上你要关机或者出门，那么没关系，你可以随时终止这个命令的运行。  </p>
 <p>因为这个工具支持<strong>断点下载</strong>，你可以在中途随时停止，之后重新运行这个命令，它会从上一次停止的地方继续下载，不需要重头再来。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591891303912.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591891303912.jpg" srcset="/img/loading.gif"></p>
 <h2 id="输出-enex-格式的文件"><a href="#输出-enex-格式的文件" class="headerlink" title="输出 enex 格式的文件"></a>输出 enex 格式的文件</h2><p>等到第二步完成之后，就可以将笔记数据下载为本地的 enex 文件了。   </p>
 <p>在终端粘贴下面的命令，并按下回车： </p>
 <pre><code class="hljs elm"><span class="hljs-title">evernote</span>-backup ex<span class="hljs-keyword">port</span> output_dir/</code></pre>
 
 <p>等待程序走完，就会在本地生成一个名为 <code>output_dir</code> 的文件夹，里面就存放了我们导出的所有 enex 文件，如下图所示。   </p>
 <p>需要说明的是，下图中每一个 enex 文件，实际上对应的是印象笔记中的每一个「笔记本」，如果你在笔记本里创建了多条笔记，那每个 enex 文件里就会包含多条笔记的。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591894673026.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591894673026.jpg" srcset="/img/loading.gif"></p>
 <p>得到所有的 enex 文件后，我试着将其中一个名为「得到 App 笔记」的 enex 文件导入 OneNote，导入后的效果如下：  </p>
 <p>这个 enex 文件包含了我在使用「得到」App 阅读不同电子书划线、评论或转发的内容，导入的效果还能接受。  </p>
 <p>我也终于拿回了本该属于我的数据。           </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/16591896552414.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/16591896552414.jpg" srcset="/img/loading.gif"></p>
 <h2 id="将-enex-文件导入-Notion"><a href="#将-enex-文件导入-Notion" class="headerlink" title="将 enex 文件导入 Notion"></a>将 enex 文件导入 Notion</h2><p>除了导入微软的 OneNote，我们还可以将 enex 文件导入笔记软件 Notion。   </p>
 <p>Notion 默认不支持直接导入 enex 文件，但我们可以使用这位开发者写的另外一个工具「enex2notion」，这里的数字 2 是 to，即把 enex 导入 Notion。  </p>
 <p>关于这个工具的使用，可以查看一位博主「Jerry Zhu」写的文章《<a target="_blank" rel="noopener" href="https://imho.plus/form-evernote-to-notion/">印象笔记近乎完美的迁移至Notion</a>》，这里就不复读了，他也写得很详细了：   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2022/07/30/qrcodea--a1-2.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1 -2-"></p>
+<p><img src="https://img.penghh.fun/2022/07/30/qrcodea--a1-2.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1 -2-"></p>
 <h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>最后再来说说印象笔记这款产品：</p>
 <p>它从最初是一款比较小众的产品，到后来被很多人自发安利（曾经还有一群人叫印象笔记布道师？），或是在微博评论区随处可见的 <code>@我的印象笔记</code>，变成好多人都熟知的笔记产品，可以说开头或者中间的发展阶段都很好。  </p>
 <p>但不知道为什么后来就变成这样了呢：   </p>
@@ -354,8 +365,11 @@
 <p>我也不知道它咋变成了现在这个样子？       </p>
 <p>看到这里，如果你知道身边的朋友有在用印象笔记的，不妨把这篇文章转发给 TA 们，有些用了多年印象笔记的用户，却对 TA 在用的产品变成这样浑然不知，想想也是非常可怕的一件事，对吧？    </p>
 <p><strong>印象笔记，终于活成了自己最讨厌的样子。</strong>    </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">         </p>
 
             </div>
             <hr>
@@ -411,30 +425,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -54,9 +56,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -207,7 +218,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.7k 字
+      1.8k 字
     </span>
   
 
@@ -217,7 +228,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16
+      17
        分钟
     </span>
   
@@ -266,39 +277,39 @@
 <h2 id="剪辑软件"><a href="#剪辑软件" class="headerlink" title="剪辑软件"></a>剪辑软件</h2><p>如果你不想为了给视频加水印而特地去下载别的软件，那么剪辑软件就是一个特别合适的选择。  </p>
 <p>以电脑上的「剪映专业版」为例，先将要添加水印的视频导入软件，并添加到时间轴上。  </p>
 <p>如果是想添加<strong>文字水印</strong>，就点击左上角的「文本」，在视频素材上方添加一个<strong>文本轨道（图层）</strong>，输入文字水印的内容，同时将文本的持续时间拉到与视频素材一样长，再调整一下文本的大小和位置，这样一个简单的文字水印就做好了。  </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725682601642.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725682601642.jpg" srcset="/img/loading.gif"></p>
 <p>如果是想添加图片水印，也是类似的道理，差别就在于需要先准备好一张 PNG 格式（透明背景）的图片水印，再导入剪辑软件中。   </p>
 <p>用剪辑软件添加水印，还有一个更高级的玩法，那就是添加<strong>动态水印</strong>，譬如添加类似新闻视频底部的<strong>滚动字幕</strong>（也叫<strong>跑马灯字幕</strong>），这种制作起来其实也不难，只需要你了解「如何给文本设置关键帧」，就能制作出动态水印。   </p>
 <h2 id="OBS"><a href="#OBS" class="headerlink" title="OBS"></a>OBS</h2><p>如果你是想给自己录制的视频添加水印，其实不必等到视频录制好之后再添加水印，而是在录制的同时就能添加水印，省去后期添加视频水印的操作。  </p>
 <p>要想实现在录制视频的同时添加水印，一个很好的方法就是，使用 OBS 来录制视频。  </p>
 <p>OBS 这里就不过多介绍了，往期的内容也介绍过挺多次了。  </p>
 <p>点击 OBS 左下方「来源」的加号 + ，依次添加「屏幕捕获」和「文本」，这里要注意添加的顺序，先添加「屏幕捕获」，再添加「文本」，这里的文本就是用来作为文字水印的图层。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725691972312.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725691972312.jpg" srcset="/img/loading.gif"></p>
 <p>点击添加「文本」后，会弹出下面的窗口，在文本框的位置输入文字水印的内容，默认的字体是英文，如果是输入中文内容，顶部的预览窗口会显示为乱码，因此我们还要点击「选择字体」，将默认的字体更改为<strong>支持中文的字体</strong>，譬如微软雅黑或者思源黑体等。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725695258084.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725695258084.jpg" srcset="/img/loading.gif"></p>
 <p>在 OBS 的预览窗口，长按鼠标左键并拖拽文本水印四周的任意一个<strong>锚点</strong>，可以自由调整文本水印的大小，同时还可以自动移动水印的位置。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725697956279.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725697956279.jpg" srcset="/img/loading.gif"></p>
 <p>如果想让静止的文本水印动起来，可以给文本图层添加特效： </p>
 <p>右键单击「来源」中的文本图层，在弹出的面板，选择「滤镜」。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725700506939.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725700506939.jpg" srcset="/img/loading.gif"></p>
 <p>在打开的「效果滤镜」面板，点击左下角的加号 + ，选择「<strong>滚动</strong>」，就可以给原先静止的文字水印添加滚动效果，制作出类似跑马灯字幕的效果啦！    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725701336232.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725701336232.jpg" srcset="/img/loading.gif"></p>
 <p>完成以上设置后，点击 OBS 右下方的「开始录制」，就能录制出带有文本水印的视频内容了。    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725703077671.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725703077671.jpg" srcset="/img/loading.gif"></p>
 <h2 id="万兴优转"><a href="#万兴优转" class="headerlink" title="万兴优转"></a>万兴优转</h2><p>万兴优转，一个多功能的视频处理工具，其中就包含了给视频添加水印的功能，如下图，点击「水印编辑」，打开添加水印的面板。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725737607118.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725737607118.jpg" srcset="/img/loading.gif"></p>
 <p>不得不说，万兴右转内置的「添加水印」功能还挺全的：既能添加图片水印，也能添加文本水印，而且还支持添加动态水印，难得有一款软件考虑得还挺周到的。  </p>
 <p>不过，我还有一点想吐槽的，添加的文本水印，无论是在预览窗口，还是最终导出的视频，<strong>文字都是被拉伸过的</strong>……看起来很丑，这一点我觉得对强迫症来说是无法忍受的，也不知道是不是负责这功能的产品经理，根本就没用过这个功能……    </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725738982780.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725738982780.jpg" srcset="/img/loading.gif"></p>
 <h2 id="芦笋录屏"><a href="#芦笋录屏" class="headerlink" title="芦笋录屏"></a>芦笋录屏</h2><p>最后，还想给各位介绍在线录屏软件「芦笋录屏」的一个小功能，它同样可以给视频添加水印，不过这功能是会员专属的～   </p>
 <blockquote>
 <p>新用户专属福利：如果你之前没有用过芦笋录屏，但想免费用上会员专属的功能，可以扫描下方的二维码注册账号，可以免费获得 30 天的高级版会员。   </p>
 </blockquote>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/qrcodea--a1.jpg" srcset="/img/loading.gif" alt="QRcode_A — a1"></p>
 <p>在视频的播放页面，将鼠标指针移动到视频的右侧，就能看到芦笋提供的「水印」功能。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725745512616.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725745512616.jpg" srcset="/img/loading.gif"></p>
 <p>在水印编辑页面，开启「添加水印」，在输入框中输入文字，下方可以调整文字水印的透明度和位置，最后点击「保存」，就能给视频添加水印啦。   </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725748988673.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725748988673.jpg" srcset="/img/loading.gif"></p>
 <p>芦笋本身支持以链接的方式分享视频，当然你也可以选择将视频下载到本地，再通过其他工具传输视频文件。  </p>
 <p>对于使用芦笋添加了水印的视频，在将视频下载到本地之前，芦笋提供了 2 个选项：  </p>
 <ul>
@@ -306,13 +317,16 @@
 <li>原始视频（未处理过的原始视频）    </li>
 </ul>
 <p>这个小细节还挺贴心的，你可以根据需要，选择下载对应的视频版本～     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2023/01/01/16725750795101.jpg" srcset="/img/loading.gif"></p>
+<p><img src="https://img.penghh.fun/2023/01/01/16725750795101.jpg" srcset="/img/loading.gif"></p>
 <p>以上分享的 4 个工具，就是我目前了解的给视频添加水印的方法，希望能帮到有需要的朋友。  </p>
 <p>如果你知道其他更好用的工具，也欢迎在下方👇的评论区留言，与大家一起分享。     </p>
+<h2 id="扫码加入我在知识星球上创建的社群「效率工具指南」"><a href="#扫码加入我在知识星球上创建的社群「效率工具指南」" class="headerlink" title="扫码加入我在知识星球上创建的社群「效率工具指南」"></a>扫码加入我在知识星球上创建的社群「效率工具指南」</h2><p>如果你觉得本文帮到了你，想支持我做得更好，欢迎戳下方图片，加入我的知识星球。     </p>
+<p>关于社群「效率工具指南」的介绍，可以查看我在语雀文档上发布的文档：<a target="_blank" rel="noopener" href="https://www.yuque.com/penghonghao/af0aai/glwrg2dl0dqlegi6?singleDoc#">知识星球「效率工具指南」简介</a>    </p>
+<p><img src="https://img.penghh.fun/2023/03/25/48844555552858t2.JPG" srcset="/img/loading.gif" alt="48844555552858T2">   </p>
 <h2 id="订阅我在竹白上创建的-Newsletter"><a href="#订阅我在竹白上创建的-Newsletter" class="headerlink" title="订阅我在竹白上创建的 Newsletter"></a>订阅我在竹白上创建的 Newsletter</h2><p>如果对你有帮助的话，别忘了点击下方的链接，订阅我的 Newsletter，之后发布了新的内容，就能第一时间收到通知啦～  </p>
 <p><a target="_blank" rel="noopener" href="https://penghh.zhubai.love/">👉在竹白上订阅效率工具指南</a>         </p>
 <h2 id="欢迎关注"><a href="#欢迎关注" class="headerlink" title="欢迎关注"></a>欢迎关注</h2><p>以上，就是本次想和你分享的内容，希望能够对你有一点帮助。     </p>
-<p><img src="https://article-picbed-1302715071.cos.ap-guangzhou.myqcloud.com/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
+<p><img src="https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png" srcset="/img/loading.gif" alt="公众号：效率工具指南">      </p>
 
             </div>
             <hr>
@@ -366,30 +380,31 @@
               <article class="comments" id="comments">
                 
                 
-  <div id="vcomments"></div>
   <script type="text/javascript">
-    function loadValine() {
-      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "jdElMNU0cUs0Do7VY86SW5eF-gzGzoHsz",
-          app_key: "W1C4SSU2QtkkD5pD5uSCV2Hi",
-          placeholder: "🌅快来评论一下吧，评论的时候可以写下你可爱的昵称哦ヾﾉ≧∀≦)o",
-          path: window.location.pathname,
-          avatar: "retro",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "",
-        });
-      });
+    function loadUtterances() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'phh95/hexo_blog');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
     }
-    waitElementVisible('vcomments', loadValine);
+    waitElementVisible('comments', loadUtterances)
   </script>
-  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
-      powered by Valine.</a></noscript>
 
 
               </article>

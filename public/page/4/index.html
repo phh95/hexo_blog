@@ -7,6 +7,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <!-- 通过cdn引入霞鹜文楷字体 -->
+        <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
         <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
         <link rel="icon" type="image/png" href="/img/blogicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
@@ -41,9 +43,18 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
 
                     <script  src="/js/utils.js" ></script>
                         <script  src="/js/color-schema.js" ></script>
+         <!-- 引入必要的JavaScript库 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="彭宏豪的个人博客，个人电子产品使用心得" type="application/atom+xml">
 </head>
 
@@ -208,21 +219,20 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/10/19/2022-10-19-vue_emelentplus/">Vue前端项目集成element-plus组件库：全局引入和按需引入</a>
+        <a href="/2023/09/26/2023-9-26-office_mindmap/">人均思维导图软件，现在的办公软件都卷成这样了【效率工具指南】</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2022/10/19/2022-10-19-vue_emelentplus/">
+        <a href="/2023/09/26/2023-9-26-office_mindmap/">
           
           
             
           
-          
-注：标题的「按需引入」可细分为 2 种，按需引入和按需自动引入，更推荐使用后一种。      
-
-element-plus，基于 Vue 3.0 的桌面端组件库。      
-element-plus 的使用方式和很多其他的组件库是一样的，所以学会 element-plus，其他类似 ant-design-vue、NaiveUI、VantUI 都是差不多的。   
-安装 element-plus
+          本文首发于微信公众号「效率工具指南」文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。  
+现在似乎每个行业或细分领域，都进入到了充分竞争的红海阶段……没有新的增量，只能在已有的存量上不断「卷」。
+以我所在的软件行业为例，即便是之前看来已经处于充分竞争状态的思维导图软件类别，在去年和今年仍有不断新的厂商加入，想从这个早已是红海的市场分一杯羹，导致的一个现象就是：
+现在但凡是个和办公相关
         </a>
       </p>
 
@@ -230,481 +240,8 @@ element-plus 的使用方式和很多其他的组件库是一样的，所以学�
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2022-10-19 09:06" pubdate>
-              2022-10-19
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
-            
-              <a href="/tags/Vue/">Vue</a>
-            
-              <a href="/tags/ElementPlus/">ElementPlus</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/10/17/2022-10-17-macdynamicwallpaper/">Mac电脑动态壁纸软件推荐【效率工具指南】</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/10/17/2022-10-17-macdynamicwallpaper/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪    
-Hello 各位好，我是小豪。  
-今天来推荐 2 个 Mac 电脑上的动态壁纸软件：  
-
-Plash   
-Dynamic Wallpaper  
-
-
-使用 Windows 系统的朋友，可以使用很出名的 Wallpaper Engine，或是查看我之前发布过的一篇文章：史上第二全的壁纸下载攻略，以后别再找人要壁纸了    
-
-PlashP
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-10-17 23:55" pubdate>
-              2022-10-17
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Mac/">Mac</a>
-            
-              <a href="/tags/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6/">开源软件</a>
-            
-              <a href="/tags/%E5%A3%81%E7%BA%B8/">壁纸</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/10/16/2022-10-16-Gif/">免费制作Gif的软件或网站【效率工具指南】</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/10/16/2022-10-16-Gif/">
-          
-          
-            
-          
-          Hello 各位好，我是小豪。
-用过免费最强大的Gif制作软件或网站，当属EZGif，老外开发的网站，免费无套路：  
-
-EZGif 顶部的导航栏列出了这款工具的各项功能——  
-
-图片中的中文是用浏览器插件翻译的，不太准确。  
-
-
-GIF Maker：GIF制作
-Vide to GIF：视频转换为 GIF
-Resize：重新调整大小
-Rotato：旋转   
-Crop：画面裁剪      
-C
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-10-16 08:55" pubdate>
-              2022-10-16
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Mac/">Mac</a>
-            
-              <a href="/tags/Windows/">Windows</a>
-            
-              <a href="/tags/Gif/">Gif</a>
-            
-              <a href="/tags/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">在线工具</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/10/11/2022-10-11-mubuexport/">思维导图软件幕布导出Markdown【效率工具指南】</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/10/11/2022-10-11-mubuexport/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪      
-Hello 各位好，我是小豪。    
-继之前写过石墨文档批量导出之后，今天我想对许久没更新的思维导图软件「幕布」动手了——从幕布中批量导出 Markdown 文件，预防之后幕布可能关停带来的数据丢失。         
-先来看一下从幕布导出前后的对比：   
-下图左侧是导出前的幕布文件，右侧是导出后在 Markdown 编辑器 MWeb
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-10-11 15:03" pubdate>
-              2022-10-11
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B9%95%E5%B8%83/">幕布</a>
-            
-              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
-            
-              <a href="/tags/Markdown/">Markdown</a>
-            
-              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BD%AF%E4%BB%B6/">思维导图软件</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/25/2022-9-25-vue3learnnote5/">前端框架 Vue3 + TypeScript 学习笔记（五）</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/25/2022-9-25-vue3learnnote5/">
-          
-          
-            
-          
-          注：学习笔记来自 coderwhy 老师的 Vue3 课程，由彭宏豪整理。    
-TypeScript
-当然，即便像 JS 这么优秀的语言，也是存在一些痛点的：    
-
-类型带来的问题   
-
-JS 中定义的函数，很多时候都会存在 2 个问题：  
-
-没有对传入的参数的类型进行校验    
-没有对是否传入参数进行校验    
-
-JS 没有对我们传入的参数进行任何的限制，只有等到运行代码期间才发
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-25 10:55" pubdate>
-              2022-09-25
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
-            
-              <a href="/tags/Vue/">Vue</a>
-            
-              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/24/2022-9-24-obs/">录屏软件OBS使用技巧：圆形人像和应用LUT</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/24/2022-9-24-obs/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪        
-Hello 各位好，我是小豪。  
-之前写过不少关于 OBS 使用技巧的文章，很长一段时间我都没有去更新这个软件，直到最近要用到 OBS 的一个新功能，我才把 Mac 电脑安装的软件更新到了最新版。   
-最新版 OBS 最大的变化在于，它对软件的 UI 界面进行了重新设计，给每个按钮加上圆角矩形作为背景，让不同的按钮之间的区分更明显
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-24 10:22" pubdate>
-              2022-09-24
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Notion/">Notion</a>
-            
-              <a href="/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
-            
-              <a href="/tags/Spotify/">Spotify</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/10/2022-9-10-notion_music/">在笔记软件Notion中嵌入Spotify音乐歌单</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/10/2022-9-10-notion_music/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪      
-Hello 各位好，我是小豪。     
-今天双节狂喜（中秋节 + 教师节），先祝各位节日快乐。   
-今天这篇文章，分享一点比较轻松的东西：如何在笔记软件 Notion 中嵌入音乐歌单？  
-下图右侧是我在 Notion 中嵌入的一个 Spotify 歌单，里面包含 100 首音乐，随机点击一首音乐，就可以直接在 Notion 中播放。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-10 11:15" pubdate>
-              2022-09-10
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Notion/">Notion</a>
-            
-              <a href="/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
-            
-              <a href="/tags/Spotify/">Spotify</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/09/2022-9-9-spotify/">Spotify美化！我的Spotify竟然和Apple Music长得那么像？</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/09/2022-9-9-spotify/">
-          
-          
-            
-          
-                      
-
-
-本文首发于微信公众号「效率工具指南」文/彭宏豪        
-Hello 各位晚上好，我是小豪。   
-今天来写点比较轻松的东西，接着上回发布的一篇文章《音乐播放器Spotify太丑？给它换个皮肤，立马大变样》，继续来说一下音乐应用 Spotify 美化的事情。   
-上一篇文章，已经把 Spotify 绿色的主色调更改为下图的样式，且歌词增加了滚动效果——会随着音
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-09 01:03" pubdate>
-              2022-09-09
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
-            
-              <a href="/tags/Spotify/">Spotify</a>
-            
-              <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">主题美化</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/04/2022-9-4-vue3learnnote4/">前端框架 Vue3 学习笔记（四）</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/04/2022-9-4-vue3learnnote4/">
-          
-          
-            
-          
-          注：学习笔记来自 coderwhy 老师的 Vue3 课程。    
-VueRouter 路由使用认识前端路由路由器主要维护的是一个映射表：ip 地址和真实电脑的 mac 地址间的映射。   
-
-后端路由阶段（后端渲染）   
-
-前后端分离阶段（前端渲染）
-
-SPA开发阶段
-SPA：是 Single Page Application 的缩写，单页面应用。  
-当我们改变 URL 路径的时候，不要向
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-04 22:20" pubdate>
-              2022-09-04
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
-            
-              <a href="/tags/Vue/">Vue</a>
-            
-              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/09/04/2022-9-4-wemedia/">我的公众号 2 万关注了，感谢有你。</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/09/04/2022-9-4-wemedia/">
-          
-          
-            
-          
-          本文首发于微信公众号「效率工具指南」文/彭宏豪   
-昨天，我的公众号到达 2 万关注了，首先要感谢还关注这个号的朋友，因为有你们的关注和支持，帮助我达成了这个目标。   
-前天晚上看后台的关注数快到 2 万之前，我去翻了一下去年的数据，想看看我的号达到 1 万关注的确切时间——2021 年 6 月 17 日。   
-
-之所以要关注这个时间点，是因为我想回顾一下，从 0 做到 1 万，和 1 万关
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-09-04 00:28" pubdate>
-              2022-09-04
+            <time datetime="2023-09-26 09:22" pubdate>
+              2023-09-26
             </time>
           </div>
         
@@ -715,9 +252,470 @@ SPA：是 Single Page Application 的缩写，单页面应用。
             
               <a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a>
             
-              <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
             
-              <a href="/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/">公众号</a>
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/09/22/2023-9-22-boardmix_material/">批量保存图片！图片管理软件Eagle平替：boardmix素材库，集剪藏+管理于一体【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/09/22/2023-9-22-boardmix_material/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪
+Hello 各位好，这里是效率工具指南。我是小豪。   
+图片等素材的管理，可分为2个阶段，一个是素材的采集，把在不同网页或应用中看到的素材集中采集到一个地方；另一个是素材的管理，对采集得到的素材进行管理，如为图片添加标签、描述，将素材分类存放到不同的文件夹。
+目前市面上有不少整合了素材采集和素材管理这2个阶段的软件，既提供采集素材的工具，最典型的就
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-22 22:45" pubdate>
+              2023-09-22
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+              <a href="/tags/boardmix/">boardmix</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/09/17/2023-9-17-ppt_maker/">除了PPT以外，还有什么软件可以做课件？【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/09/17/2023-9-17-ppt_maker/">
+          
+          
+            
+          
+          除了我们熟知的 PPT，还有很多软件都可以用来做课件，如：
+
+Keynote
+boardmix    
+Prezi
+腾讯文档
+Gamma  
+
+KeynoteKeynote是一款由苹果公司开发的演示软件。它拥有简单易用的界面和工具，使用者无需专业设计技能就可以创建精美的演示文稿。Keynote提供了多种预设模板，让使用者可以快速上手。同时，它也支持拖放操作，让使用者轻松添加文本、图片、图表等元素。
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-17 17:52" pubdate>
+              2023-09-17
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/%E8%81%8C%E5%9C%BA/">职场</a>
+            
+              <a href="/tags/PPT/">PPT</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/09/10/2023-9-10-mindmap_export_markdown/">有哪些思维导图软件支持导出Markdown文件【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/09/10/2023-9-10-mindmap_export_markdown/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+
+👉 近期公号阅读崩了，请按照上图的提示，将我的公众号设置为「星标✨」，这样每次更新了文章，就能第一时间看到啦。     
+
+Hello 各位好，这里是效率工具指南。我是小豪。   
+如果你和我一样，比较在意自己在各类笔记软件/文档软件/思维导图软件中创建的内容，想拥有随时可以迁移导出的自由，那么在选择使用某款软件之前，最好先关注一下它支持
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-10 12:32" pubdate>
+              2023-09-10
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+              <a href="/tags/MindNode/">MindNode</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/09/09/2023-9-9-student_discount/">开学季学生优惠:苹果教育优惠|苹果音乐|boardmix在线白板开学季特惠…</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/09/09/2023-9-9-student_discount/">
+          
+          
+            
+          
+          本文首发于微信公众号「效率工具指南」文/彭宏豪    
+Hello 各位好，这里是效率工具指南。我是小豪。   
+很久以前在某家新媒体公司工作的时候，有时会写一下「省钱」或「学生优惠」主题的文章，后来换了工作，就没怎么留意这方面的东西了。  
+最近正赶上开学季，又有另外一个契机，突然又想起这个久远的选题，那不得来写一篇文章？   
+总之，环境不好，赚钱不易，有毛堪薅直须薅，莫待无毛空薅羊。
+01 
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-09 16:06" pubdate>
+              2023-09-09
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Apple/">Apple</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+              <a href="/tags/%E8%8B%B9%E6%9E%9C/">苹果</a>
+            
+              <a href="/tags/%E5%AD%A6%E7%94%9F%E4%BC%98%E6%83%A0/">学生优惠</a>
+            
+              <a href="/tags/%E6%95%99%E8%82%B2%E4%BC%98%E6%83%A0/">教育优惠</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/09/05/2023-9-5-tencent_document/">腾讯文档鲜为人知的使用技巧：剪藏保存公众号文章|转存文件|OCR识别文字【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/09/05/2023-9-5-tencent_document/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」文/彭宏豪   
+Hello 各位好，这里是效率工具指南。  
+之前有发布过一篇文章《国内的在线文档工具–石墨文档、腾讯文档、语雀文档，选哪款好？》，简单对比了国内 3 款主流的在线文档软件，文章里虽然同时提到了 3 款软件，但工作中我常用的只有 2 款——语雀文档和腾讯文档：  
+
+语雀文档个人自用，工作中写稿基本都用语雀文档，有一个知识库累计已有上百万字
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-05 22:16" pubdate>
+              2023-09-05
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BE%AE%E4%BF%A1/">微信</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3/">在线文档</a>
+            
+              <a href="/tags/%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3/">腾讯文档</a>
+            
+              <a href="/tags/OCR/">OCR</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/08/31/2023-8-31-boardmix/">在线思维导图软件boardmix，思维导图一键转PPT【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/08/31/2023-8-31-boardmix/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」文/彭宏豪   
+Hello 各位好，我是小豪。  
+平时工作比较忙，等到闲下来的时候就只想「葛优躺」，没什么心思去关注一些新出的软件或者是过去推荐过的软件后续的更新。
+不过，也想起很久没有写一篇长文来专门介绍一款软件了，甚是羞愧，感觉逐渐丢掉了自己曾「引以为傲」的技能……      
+择日不如撞日，今天这篇文章，就来给大家介绍之前推荐过的一款在线思维导图软
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-31 23:33" pubdate>
+              2023-08-31
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/PPT/">PPT</a>
+            
+              <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+            
+              <a href="/tags/%E5%9C%A8%E7%BA%BF%E7%99%BD%E6%9D%BF/">在线白板</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/08/19/2023-8-19-webclipper/">收藏的内容404了？收好这4个剪藏工具，万无一失！【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/08/19/2023-8-19-webclipper/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」文/彭宏豪   
+Hello 各位周末好，这里是效率工具指南。我是小豪。  
+
+!! 插播一则消息：   
+我写的第一个付费专栏《视频号 OBS 推流直播：搭建一个好看专业的直播间》上线了，感兴趣的朋友可以戳下方👇👇的链接查看专栏介绍    
+&gt;&gt;戳这里，查看专栏《视频号 OBS 推流直播》     
+
+相信很多人都有过这样的经历，网上冲浪看
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-08-19 14:56" pubdate>
+              2023-08-19
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/">数据备份</a>
+            
+              <a href="/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">效率工具</a>
+            
+              <a href="/tags/%E5%89%AA%E8%97%8F/">剪藏</a>
+            
+              <a href="/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/07/25/2023-7-25-linkedin/">LinkedIn领英退出中国，想再次用上领英，该怎么办？【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/07/25/2023-7-25-linkedin/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」文/彭宏豪   
+这两天一个比较重要的事情，是进入中国市场将近十年的海外求职平台「领英职场」宣布彻底退出中国，与之形成鲜明对比的是，boss直聘最近似乎风头正盛，在朋友圈、公司附近的大屏上都能看见广告，不知道是不是想趁势拉拢一波领英流失的用户……    
+商业就是这么残酷，你的黯然离场，他的歌舞升平，起高楼宴宾客。   
+其实早在 2021 年，领英就以“营
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-07-25 23:14" pubdate>
+              2023-07-25
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%8B%E8%BD%BD/">下载</a>
+            
+              <a href="/tags/LinkedIn/">LinkedIn</a>
+            
+              <a href="/tags/%E9%A2%86%E8%8B%B1/">领英</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2023/07/14/2023-7-14-homepod/">苹果音箱HomePod mini怎么连接到MacBook电脑？【效率工具指南】</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2023/07/14/2023-7-14-homepod/">
+          
+          
+            
+          
+          本文首发于我的微信公众号「效率工具指南」文/彭宏豪   
+买了苹果家的音箱 HomePod mini觊觎苹果家的音箱已久，2000 多块的 HomePod 贵了，600 多块的 HomePod mini 还是可以买来听个响，打开一种新体验。  
+我用手机录了一段钟立风的《在路边》的开头，感兴趣的朋友可以戳下面👇👇的视频（发布在微博上），试听一下效果。  
+HomePod mini 初体验   
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-07-14 22:25" pubdate>
+              2023-07-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Mac/">Mac</a>
+            
+              <a href="/tags/Apple/">Apple</a>
+            
+              <a href="/tags/%E6%95%B0%E7%A0%81/">数码</a>
+            
+              <a href="/tags/HomePod/">HomePod</a>
+            
+              <a href="/tags/%E8%8B%B9%E6%9E%9C/">苹果</a>
             
           </div>
         
@@ -729,7 +727,7 @@ SPA：是 Single Page Application 的缩写，单页面应用。
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/3/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/3/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/5/"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
   
