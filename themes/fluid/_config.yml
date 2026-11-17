@@ -487,6 +487,13 @@ links:
       image: 'https://bu.dusays.com/2022/05/02/626f92e193879.jpg'
     }
 
+    - {
+      title: '小贺Alex',
+      intro: '苔花如米小，也学牡丹开｜AI 观察与个人成长',
+      link: 'https://www.hejinguo.cn/',
+      image: 'https://www.hejinguo.cn/assets/moon.png'
+    }
+
 rss: /atom.xml
 
 aplayer:
