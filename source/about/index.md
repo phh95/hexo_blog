@@ -22,7 +22,7 @@ layout: about
 
 ## 🛒 我可以提供的服务     
 
-* 软件深度测评，过往合作品牌：万兴优转、万兴播爆、[QQ](https://zhuanlan.zhihu.com/p/568342138)、[魔音工坊](https://zhuanlan.zhihu.com/p/621884742)等      
+* 软件深度测评，过往合作品牌：[沉浸式翻译插件](https://www.bilibili.com/video/BV1g3436UEKj/)、[AI 语音工具 MosMos 种草视频](https://www.bilibili.com/video/BV16TH36XEkJ/)、万兴优转、万兴播爆、[QQ](https://zhuanlan.zhihu.com/p/568342138)、[魔音工坊](https://zhuanlan.zhihu.com/p/621884742)等      
 * 基于微信公众号的付费专栏《[OBS直播：搭建一个好看专业的直播间](https://mp.weixin.qq.com/s/iRSY4qStavyrns5KXWfM6Q)》    
 * 基于知识星球的付费社群「效率工具指南」
 
@@ -35,12 +35,15 @@ layout: about
 
 你可以在以下平台找到我：
 
-微信：penghonghao95
-微信公众号：[效率工具指南](https://mp.weixin.qq.com/s/_izXrRi6eLav8NfLRaD6Mg)（ID：PengTalk15）   
+* 微信：zsxq95
+* 微信公众号：[效率工具指南](https://mp.weixin.qq.com/s/_izXrRi6eLav8NfLRaD6Mg)（ID：PengTalk15）   
 
 ![微信公众号：效率工具指南](https://img.penghh.fun/2021/05/28/gong-zhong-hao-wei-bu-er-wei-ma-dailogo.png)   
 
-知乎：[彭宏豪](https://www.zhihu.com/people/angola-84)         
+* 微信视频号：好个柯基    
+* B 站：[效率工具指南](https://space.bilibili.com/18105372)         
+* 小红书：[效率工具指南](https://www.xiaohongshu.com/user/profile/5e3780ae0000000001001ece)       
+* 知乎：[彭宏豪](https://www.zhihu.com/people/angola-84)         
 
 有博客且志同道合的朋友，欢迎来交换友链。     
 
